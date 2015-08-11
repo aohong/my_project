@@ -23,12 +23,10 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="bjcre" />
-        <module name="db-frame" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="bjcre" target="1.5" />
-      <module name="db-frame" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

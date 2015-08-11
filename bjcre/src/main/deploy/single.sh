@@ -9,19 +9,21 @@ DEFAULT_JAVA_OPTS=" -server -Xmx1g -Xms256m  -XX:PermSize=128m -Xss256k -XX:+Dis
 
 #引入外部参数配置文件:
 SHELL_PARAMS="$BASE_PATH/params.conf"
-if [ -f "$SHELL_PARAMS" ]; then 
+if [ -f "$SHELL_PARAMS" ]; then
 	. $SHELL_PARAMS
 fi
 
 #定义变量:
 APP_PATH=${APP_PATH:-`dirname "$BASE_PATH"`}
-CLASS_PATH=${CLASS_PATH:-$APP_PATH/config:$APP_PATH/lib/*}
+#CLASS_PATH=${CLASS_PATH:-$APP_PATH/config:$APP_PATH/lib/*}
+CLASS_PATH=${CLASS_PATH}:$APP_PATH/config:$APP_PATH/lib/*
 JAVA_OPTS=${JAVA_OPTS:-$DEFAULT_JAVA_OPTS}
-MAIN_CLASS=${MAIN_CLASS:-"com.bjcre.server.WebStart 8080 /test bjcre-1.0-SNAPSHOT/"}
+MAIN_CLASS=${MAIN_CLASS:-"com.bjcre.server.WebStart 8080 /test $APP_PATH/config"}
 
+echo $APP_PATH
 
 exist(){
-			if test $( pgrep -f "$MAIN_CLASS $APP_PATH" | wc -l ) -eq 0 
+			if test $( pgrep -f "$MAIN_CLASS $APP_PATH" | wc -l ) -eq 0
 			then
 				return 1
 			else
@@ -30,25 +32,25 @@ exist(){
 }
 
 start(){
-		
+
 		echo $APP_PATH
 		if exist; then
-				echo "settle_web is already running."
+				echo "bjcre is already running."
 				exit 1
 		else
 	    	cd $APP_PATH
-				nohup java $JAVA_OPTS -cp $CLASS_PATH $MAIN_CLASS $APP_PATH 2> /dev/null & 
-				echo "settle_web is started."
+				nohup java $JAVA_OPTS -cp $CLASS_PATH $MAIN_CLASS $APP_PATH 2> /dev/null &
+				echo "bjcre is started."
 		fi
 }
 
 stop(){
 		runningPID=`pgrep -f "$MAIN_CLASS $APP_PATH"`
 		if [ "$runningPID" ]; then
-				echo "settle_web pid: $runningPID"
+				echo "bjcre pid: $runningPID"
         count=0
         kwait=5
-        echo "settle_web is stopping, please wait..."
+        echo "bjcre is stopping, please wait..."
         kill -15 $runningPID
 					until [ `ps --pid $runningPID 2> /dev/null | grep -c $runningPID 2> /dev/null` -eq '0' ] || [ $count -gt $kwait ]
 		        do
@@ -60,18 +62,18 @@ stop(){
 	            kill -9 $runningPID
 	        fi
         clear
-        echo "settle_web is stopped."
+        echo "bjcre is stopped."
     else
-    		echo "settle_web has not been started."
+    		echo "bjcre has not been started."
     fi
 }
 
 check(){
    if exist; then
-   	 echo "settle_web is alive."
+   	 echo "bjcre is alive."
    	 exit 0
    else
-   	 echo "settle_web is dead."
+   	 echo "bjcre is dead."
    	 exit -1
    fi
 }
