@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html slick-uniqueid="3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        var _stat_cst = new Date().getTime();
+    </script>
+    <meta name="description" content="发布出租">
+
+    <meta name="format-detection" content="telephone=no">
+    <title>发布出租</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/Broker_Register.css" type="text/css">
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common/common.js"></script>
+    <script type="text/javascript" src="../js/Broker_Register.js"></script>
+    <script type="text/javascript">
+    </script>
+    <!--<script src="./manager_register_files/st" async=""></script>-->
+</head>
+<body>
+
+<div id="container">
+    <div class="container clearfix">
+        <div class="register">
+            <h1>发布</h1>
+
+            <!--<form action="" method="POST">-->
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr id="tr_main_business">
+                        <th>类型：</th>
+                        <td class="business"colspan="2">
+                            <input type="radio" id="mainbusiness_1" name="mainbusiness" value="1"
+                                   checked="checked"><label>出租</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="mainbusiness_2" name="mainbusiness" value="2"><label>求租</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="mainbusiness_3" name="mainbusiness" value="3"><label>出售</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="mainbusiness_4" name="mainbusiness" value="4"><label>求购</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <!--<td class="" id="business_tips" style="display:none">-->
+                        <!--<div class="check_error" id="tip_business_error">-->
+                        <!--</div>-->
+                        <!--<div class="check_ok" id="tip_business_ok">&nbsp;</div>-->
+                        <!--</td>-->
+                    </tr>
+                    <tr>
+                        <th>标题：</th>
+                        <td class="td_input">
+                            <input type="text" id="title" class="input_text " name="title" value="" maxlength="">
+                        </td>
+                        <td class="td_tips" id="mobiletip">
+                            <div class="tip_mobile_1"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>楼盘名称：</th>
+                        <td class="td_input">
+                            <input type="text" id="building_name" class="input_text " name="building_name" value="" maxlength="">
+                        </td>
+                        <td class="td_tips" id="passwordtip">
+                            <div class=""></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>所在区域：</th>
+                        <td class="td_input">
+                            <input type="text" id="checkpwd" class="input_text" name="checkpwd" value=""
+                                   maxlength="16">
+                        </td>
+                        <td class="td_tips" id="pwdtip">
+                            <div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>地址：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip">
+                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_name_3" style="display:none">
+                                请填写您的真实姓名(请勿使用空格)。
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>类型：</th>
+                        <td colspan="2">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td class="td_input">
+                                        <div class="relative" style="z-index:15">
+                                            <input type="radio" id="building_type_1" name="building_type" value="1"
+                                                   checked="checked"><label>写字楼</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" id="building_type_2" name="building_type" value="2"><label>住宅</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        </div>
+                                    </td>
+                                    <td id="companytip" class="td_tips">
+                                        <div id="companytip1" class="check_ok" style="display:none">&nbsp;</div>
+                                        <div id="companytip2" class="check_error" style="display:none;">请在列表中选择您的所属公司。
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>价格：</th>
+                        <td class="td_input">
+                            <input type="text" id="price" class="input_text" name="price" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="pricetip">
+                            <div class="relative" style="z-index:15">
+                                <input type="radio" id="price_type_1" name="price_type" value="1"
+                                       checked="checked"><label>元/㎡/天</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" id="price_type_2" name="price_type" value="2"><label>元/月</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            </div>
+                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_name_3" style="display:none">
+                                请填写您的真实姓名(请勿使用空格)。
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>面积：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip">
+                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_name_3" style="display:none">
+                                请填写您的真实姓名(请勿使用空格)。
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>联系人：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip">
+                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_name_3" style="display:none">
+                                请填写您的真实姓名(请勿使用空格)。
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>联系电话：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip">
+                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_name_3" style="display:none">
+                                请填写您的真实姓名(请勿使用空格)。
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>说明：</th>
+                        <td class="td_input" colspan="2">
+                            <!--<input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">-->
+                            <textarea id="description" name="description" style="width: 400px;" rows="10"> </textarea>
+                        </td>
+                    </tr>
+                    <!--<tr id="store" style="display:none">-->
+                        <!--<th>所在门店：</th>-->
+                        <!--<td colspan="2">-->
+                            <!--<table width="100%" border="0" cellpadding="0" cellspacing="0">-->
+                                <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td class="td_input">-->
+                                        <!--<div class="relative" style="z-index:12;">-->
+                                            <!--<input type="text" id="storename" class="input_text" autocomplete="off"-->
+                                                   <!--name="storename" value="" maxlength="">-->
+                                            <!--<input type="hidden" name="storeid" id="storeid" value="0">-->
+
+                                            <!--<div class="search_content" id="shoplist" style="display:none"></div>-->
+                                        <!--</div>-->
+                                    <!--</td>-->
+                                    <!--<td class="td_tips" id="storetip">-->
+                                        <!--<div class="check_ok" style="display:none">&nbsp;</div>-->
+                                        <!--<div class="check_error" style="display:none;">请在列表中选择您的所在门店。</div>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr id="tr_area_1" style="display:none">-->
+                        <!--<th>工作范围：</th>-->
+                        <!--<td colspan="2">-->
+                            <!--<table width="100%" border="0" cellpadding="0" cellspacing="0">-->
+                                <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td class="td_area">-->
+                                        <!--<div class="select_content area_content clearfix">-->
+                                            <!--<a id="select_area" href="javascript:void(0);" class="select_boxer">-->
+                                                <!--<span id="selectareatext" class="select_txt">请选择区域</span>-->
+                                                <!--<input type="hidden" name="selectareaid" id="selectareaid" value="0">-->
+                                                <!--<span class="arrow"></span>-->
+                                            <!--</a>-->
+                                            <!--<ul id="searchlistarea" class="searchlist h241" style="display:none">-->
+                                                <!--<li><a typeid="601" href="javascript:void(0);">海淀</a></li>-->
+                                                <!--<li><a typeid="642" href="javascript:void(0);">朝阳</a></li>-->
+                                                <!--<li><a typeid="690" href="javascript:void(0);">东城</a></li>-->
+                                                <!--<li><a typeid="704" href="javascript:void(0);">西城</a></li>-->
+                                                <!--<li><a typeid="729" href="javascript:void(0);">崇文</a></li>-->
+                                                <!--<li><a typeid="740" href="javascript:void(0);">宣武</a></li>-->
+                                                <!--<li><a typeid="753" href="javascript:void(0);">丰台</a></li>-->
+                                                <!--<li><a typeid="787" href="javascript:void(0);">石景山</a></li>-->
+                                                <!--<li><a typeid="802" href="javascript:void(0);">房山</a></li>-->
+                                                <!--<li><a typeid="815" href="javascript:void(0);">门头沟</a></li>-->
+                                                <!--<li><a typeid="818" href="javascript:void(0);">通州</a></li>-->
+                                                <!--<li><a typeid="837" href="javascript:void(0);">顺义</a></li>-->
+                                                <!--<li><a typeid="843" href="javascript:void(0);">昌平</a></li>-->
+                                                <!--<li><a typeid="856" href="javascript:void(0);">密云</a></li>-->
+                                                <!--<li><a typeid="858" href="javascript:void(0);">怀柔</a></li>-->
+                                                <!--<li><a typeid="860" href="javascript:void(0);">延庆</a></li>-->
+                                                <!--<li><a typeid="863" href="javascript:void(0);">平谷</a></li>-->
+                                                <!--<li><a typeid="865" href="javascript:void(0);">大兴</a></li>-->
+                                                <!--<li><a typeid="2678" href="javascript:void(0);">周边</a></li>-->
+                                            <!--</ul>-->
+                                        <!--</div>-->
+                                        <!--<div class="select_content block_content clearfix">-->
+                                            <!--<a id="select_block" href="javascript:void(0);" class="select_boxer">-->
+                                                <!--<span id="selectblocktext" class="select_txt">请选择板块</span>-->
+                                                <!--<input type="hidden" name="selectblockid" id="selectblockid" value="0">-->
+                                                <!--<span class="arrow"></span>-->
+                                            <!--</a>-->
+                                            <!--<ul id="searchlistblock" class="searchlist h241" style="display:none">-->
+                                            <!--</ul>-->
+                                        <!--</div>-->
+                                    <!--</td>-->
+                                    <!--<td id="areatip" class="td_area_tips">-->
+                                        <!--<div class="check_ok tip_area_1" style="display: none;">&nbsp;</div>-->
+                                        <!--<div class="check_error tip_area_3" style="display: none;">请选择区域。</div>-->
+                                        <!--<div class="check_error tip_area_4" style="display: none;">请选择版块。</div>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr id="tr_area_2" style="display:none">-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<th>校验码：</th>-->
+                        <!--<td colspan="2">-->
+                            <!--<table width="100%" border="0" cellpadding="0" cellspacing="0">-->
+                                <!--<tbody>-->
+                                <!--<tr>-->
+                                    <!--<td width="350">-->
+                                        <!--<input class="input_text" name="code" value="" maxlength="4"-->
+                                               <!--style="width:118px">-->
+                                        <!--<img width="100" height="26" style="vertical-align:middle;border:0px;"-->
+                                             <!--id="seccode" src="./manager_register_files/register_verify_code"-->
+                                             <!--onclick="javascript:this.src=&#39;/ajkbroker/security/register_verify_code?cn=anjukereg&amp;x=120&amp;y=40&amp;s=30&amp;x1=2&amp;y1=46&amp;x2=12&amp;y2=38&amp;id=&#39; + Math.round(Math.random()*1000);">-->
+                                        <!--看不清？-->
+                                        <!--<div title="换一张" onclick="javascript:jQuery(&#39;#seccode&#39;).click();"-->
+                                             <!--style="display:inline; cursor: pointer; color:blue; text-decoration: underline;">-->
+                                            <!--换一张-->
+                                        <!--</div>-->
+                                    <!--</td>-->
+                                    <!--<td width="220">-->
+                                        <!--<div class="check_ok" style="display:none">&nbsp;</div>-->
+                                        <!--<div class="check_error" style="display:none;">请填写校验码。</div>-->
+                                    <!--</td>-->
+                                <!--</tr>-->
+                                <!--</tbody>-->
+                            <!--</table>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <tr>
+                        <th>上传图片&nbsp;</th>
+                        <td colspan="2">
+                            <!--<input type="hidden" name="files" value="register">-->
+                            <input type="file"  class="" value="上传图片">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td colspan="2">
+                            <input type="hidden" name="action" value="register">
+                            <!--<input id="publish" style="width: 100px;color: #FFFFFF; background-color: #0041D9; border: solid" type="submit" class="publish" value="马上发布">-->
+                            <button id="publish" style="width: 100px;color: #FFFFFF; background-color: #0041D9; border: solid">马上发布</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            <!--</form>-->
+        </div>
+        <!--<div class="side_tips">中介门店店长注册，请拨打：<br><span>400-620-9008（9:00-18:00）</span></div>-->
+    </div>
+    <script type="text/javascript">
+        jQuery("#selectareaid").val(0);
+        jQuery("#selectblockid").val(0);
+        jQuery("#storeid").val(0);
+        $("#publish").click(function(){
+//            window.location.href = URL_PRE+'index.html';
+            window.location.href = 'rent_info.html';
+        });
+    </script>
+</div>
+
+
+
+
+</body>
+</html>

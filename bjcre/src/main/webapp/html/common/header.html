@@ -1,0 +1,155 @@
+<link rel="stylesheet" rev="stylesheet" href="http://localhost:8080/test/css/common/index.css" type="text/css" />
+<link rel="stylesheet" rev="stylesheet" href="http://localhost:8080/test/css/common/header.css" type="text/css" />
+
+<div id="header"><!-- START: 顶通广告 -->
+
+    <div class="top-nav  glbNavigation ">
+        <div class="glbListNavigation1180 nav-content">
+            <ul class="L_tabsnew">
+                <div class="glbListNavigation1180 nav-content">
+                    <span class="logo">北京商业物业网</span>
+                </div>
+            </ul>
+
+            <!-- 用户信息 -->
+            <div class="R_user" url="http://user.bjcre.com/">
+                <div class="login_info">
+                    <div class="dropdown custom-login">
+                        <div class="title">
+                            <a href="http://localhost:8080/test/html/manager_register.html" class="u_l" rel="nofollow">经纪人注册</a>
+                            <!--<a href="http://localhost:8080/test/html/login.html" class="u_l" rel="nofollow">登录</a>-->
+                            <!--<a href="http://localhost:8080/test/html/register.html" class="u_r" rel="nofollow">注册</a>-->
+                            <i class="icon arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="dropdown user-login l" id="login_l">
+                        <div class="title m">
+                            <a href="http://localhost:8080/test/html/login.html" class="u_l" rel="nofollow">用户登录</a>
+                            <a href="http://localhost:8080/test/html/register.html" class="u_r" rel="nofollow">注册</a>
+                            <i class="icon arrow-down"></i>
+                        </div>
+                        <div class="list o_b" style="display: none;">
+                            <ul style="">
+                                <li><a href="http://user.bjcre.com/my/login?history=aHR0cDovL3VzZXIuYW5qdWtlLmNvbS9mYXZvcml0ZS94aW5mYW5nLw==" _soj="" rel="nofollow">我的收藏</a></li>
+                                <li><a href="http://user.bjcre.com/my/login?history=aHR0cDovL3VzZXIuYW5qdWtlLmNvbS9mYW5nL2xvdXBhbi12aWV3ZWQv" _soj="" rel="nofollow">浏览历史</a></li>
+                                <li><a href="http://user.bjcre.com/my/login?history=aHR0cDovL3VzZXIuYW5qdWtlLmNvbS9zdWJzY3JpYmUvbWFuYWdlL2xpc3Qv" _soj="" rel="nofollow">订阅管理</a></li>
+                                <li><a href="http://user.bjcre.com/my/login?history=aHR0cDovL3VzZXIuYW5qdWtlLmNvbS9tZW1iZXIvYXNrL215Lw==" _soj="" rel="nofollow">我的问答</a></li>
+                                <li class="hr"></li>
+                                <li><a target="_blank" href="http://i.bjcre.com/publish" _soj="i_dhfa" rel="nofollow">我要发房</a></li>
+                                <li><a href="http://user.bjcre.com/my/login?history=aHR0cDovL2kueHpsLmFuanVrZS5jb20=" _soj="i_dhmge" rel="nofollow">我的房源</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dropdown favorite last-child r" id="login_r">
+                        <div class="title">
+                            <a class="my" _soj="" href="http://user.bjcre.com/my/login?history=aHR0cDovL3VzZXIuYW5qdWtlLmNvbS9mYXZvcml0ZS94aW5mYW5nLw==" rel="nofollow">收藏夹</a>
+                            <!-- <i class="icon arrow-down"></i> -->
+                        </div>
+                        <div class="list" style="display: none;">
+                            <ul class="m_l t" style="">
+                                <li class="empty">
+                                    <span>您的收藏夹是空的，赶紧收藏吧！</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="sec-nav">
+    <div class="glbListNavigation1180 sec-bar nav-content">
+        <a href="http://localhost:8080/test/html/rent.html" hidefocus="true" _soj="navigation" class="sec_link   sec_curr link_shangyedichan"  >出租</a>
+        <a href="http://localhost:8080/test/index.html" hidefocus="true" _soj="navigation" class="sec_link"  >出售</a>
+        <a href="http://localhost:8080/test/index.html" hidefocus="true" _soj="navigation" class="sec_link  "  >求租</a>
+        <a href="http://localhost:8080/test/index.html" hidefocus="true" _soj="navigation" class="sec_link  "  >求购</a>
+    </div>
+</div>
+
+<!-- 回到顶部，二维码，收藏夹 -->
+<div class="j_sidebar_130928">
+    <a href="javascript:void(0)" id="favirote" title="加入浏览器收藏夹"></a>
+    <!--<a target="_blank" href="http://beijing.bjcre.com/suggestion/" id="suggestion" title="意见反馈"></a>-->
+    <a href="javascript:void(0)" id="backTop" style="visibility:hidden;" title="返回顶部"></a>
+</div>
+
+<script type="text/javascript">
+    (function(){
+        //当页面加载时判断是否滚动超过400px 显示回到顶部
+        scroll();
+
+        //判断页面滚动超过400px，显示回到顶部，小于400px隐藏
+        J.on(window, "scroll", function(){
+            scroll();
+        });
+
+        //页面load时判断浏览器宽度，小于1024则隐藏
+        min1024();
+
+        //页面缩放时判断浏览器宽度，小于1024则隐藏
+        J.on(window, "resize", function(){
+            min1024();
+        });
+
+        //回到顶部
+        J.g("backTop").on("click", function(){
+            if(document.documentElement.scrollTop > 0){
+                document.documentElement.scrollTop = 0;
+            }else if(document.body.scrollTop > 0){
+                document.body.scrollTop = 0;
+            }
+            _scrollTop = 0;
+            J.site.trackEvent('click_backTop');
+        });
+
+        //点击收藏夹功能
+        J.g("favirote").on("click", function(){
+            addFavirote('http://bj.xzl.bjcre.com/zu/?from=navigation&from=favorite', document.title);
+            J.site.trackEvent('click_addFavirote');
+        });
+
+        //判断是否滚动到400px
+        function scroll(){
+            var _scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if(_scrollTop >= 400){
+                J.g("backTop").setStyle({"visibility":"visible"});
+            }else{
+                J.g("backTop").setStyle({"visibility":"hidden"});
+            }
+        }
+
+        function addFavirote(url, title){
+            if(document.all) { // 判断是否ie
+                window.external.addFavorite(url, title);
+            }else{
+                alert("抱歉，您的浏览器不支持此操作。\n\n 收藏失败，请使用Ctrl+D添加至浏览器哦！");
+            }
+        }
+
+        //如果浏览器宽度小于1024，则不显示二维码图片
+        function min1024(){
+            //获取页面宽度，小于1080P，则设置隐藏临界点为1185,大于或等于则设置隐藏临界点为1297
+            var _pageWidth = J.g("container").width(), _offsetWidth = 1285;
+            if(_pageWidth <1080){
+                _offsetWidth = 1120;
+            }else{
+                _offsetWidth = 1232;
+            }
+            if(document.documentElement.clientWidth < _offsetWidth){
+                J.g("favirote").hide();
+                J.g("suggestion").hide();
+            }else{
+                J.g("favirote").show();
+                J.g("suggestion").show();
+            }
+        }
+    })();
+
+
+</script>

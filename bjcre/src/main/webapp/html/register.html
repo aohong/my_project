@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta name="format-detection" content="telephone=no" />
+  <title>普通用户注册 - 北京商业物联网</title> 
+  <link rel="stylesheet" rev="stylesheet" href="../css/register.css" type="text/css" /> 
+  <link rel="icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" />
+  <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../js/common/common.js"></script>
+ </head>
+ <body data-page="My_Register_RegisterPage" class="width1024"> 
+  <div id="container"> 
+   <div id="content">
+    <div class="blc_title"> 
+     <h1>10秒快速注册</h1> 
+     <span>已经是会员?</span> 
+     <a href="./login.html">直接登录</a>
+    </div> 
+    <div class="content2"> 
+     <ul class="pg_content"> 
+      <li> <label class="txt">帐号：</label> <input type="text" class="ipt" maxlength="50" id="txtUserName" placeholder="请输入手机号或邮箱" name="userName" /> <span style="display: none" class="v_tooltip v_success"></span> <label id="info_userName" style="display: none;" class="v_error">用于登录和找回密码，不会公开</label> <label style="display: none" class="deftxt">用于登录和找回密码，不会公开</label> </li>
+      <li> <label class="txt">密码：</label> <input type="password" maxlength="50" id="txtPassWord" class="ipt" /> <span style="display: none" class="v_tooltip v_success"></span> <label id="info_PassWord" style="display: none" class="v_error">请输入6-32个字符，不能使用<br />&lt; &quot; &gt; ' &amp;和空格</label> <label style="display:none" class="deftxt">请输入6-32个字符，不能使用<br />&lt; &quot; &gt; ' &amp;和空格</label> </li> 
+      <li class="li_code" id="b_mail" style="display: none"> <label class="txt">验证码：</label> <input id="verify_pic" class="ipt" style="width: 74px;" type="text" name="code" /> <img style="display:inline;height: 32px;width: 120px;cursor:pointer;vertical-align: top;" id="img_mail" src="http://member.bjcre.com/captcha" /> <a style="line-height: 32px;" href="#" onclick="return false;">换一张</a> <label class="v_error" style="display: none;width: 170px;">验证码不能为空</label> </li>
+      <li class="li_code" id="b_tel" style="display: none"> <label class="txt">验证码：</label> <input class="ipt" style="width: 74px;" type="text" name="code" /> <input class="cik_code" type="button" value="点击获取验证码" /> <label class="v_error" style="display: none">验证码不能为空</label> </li>
+      <!--<li style="line-height: 22px;"> <input id="ipt_ckb" class="ipt_ckb" checked="checked" type="checkbox" name="ckb" /> 我已阅读并接受《<a target="_blank" href="http://my.bjcre.com/help/question/7">用户服务协议</a>》 <label id="info_agg" style="display: none" class="v_error">请先勾选服务协议</label> </li> -->
+      <li style="margin-bottom: 50px;"> <input class="pg_btn_register" type="button" /> </li> 
+      <li style="width: 275px;"> </li> 
+     </ul> 
+    </div> 
+   </div>
+  </div>
+
+
+ </body>
+ <script type="text/javascript">
+  $(document).ready(function(){
+
+   $("#txtPassWord").keyup(function(e){
+    if(e.keyCode==13){
+     $(".pg_btn_register").click();
+    }
+   });
+   $(".pg_btn_register").click(function(){
+//    alert(1);
+    window.location.href="./user_info.html";
+   });
+
+
+  });
+ </script>
+
+</html>

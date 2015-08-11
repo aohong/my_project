@@ -1,0 +1,2187 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, form, button, input, textarea, fieldset, blockquote, img, iframe, pre, code, hr, legend {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #333;
+    font: 12px Arial, Helvetica, sans-serif, Simsun;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+input, select, input, textarea {
+    font-size: 12px;
+    outline: none;
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+    margin-bottom:;
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th {
+    text-align: left;
+}
+
+address, cite, code, em, th, i, strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #0041D9;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: none;
+}
+
+#header, #container, #footer {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.clearfix:after, #container:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix, #container {
+    *zoom: 1;
+}
+
+.clearboth {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    text-align: center;
+}
+
+#container {
+    min-height: 500px;
+    _height: 500px;
+}
+
+.triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 5px;
+    border-color: #fff transparent transparent;
+    border-style: solid dashed dashed;
+    position: absolute;
+}
+
+.triangle-t {
+    border-color: #fff transparent transparent;
+    border-style: solid dashed dashed;
+}
+
+.triangle-b {
+    border-color: transparent transparent #fff;
+    border-style: dashed dashed solid dashed;
+}
+
+#header {
+    position: relative;
+    z-index: 80;
+    width: 960px;
+    padding: 10px 0 15px 20px;
+}
+
+.simple-header {
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    width: 269px;
+    height: 30px;
+    /*background: url(http://pages.anjukestatic.com/img/b_ajk/common/broker-logo.png) no-repeat 0 0;*/
+    position: relative;
+}
+
+.logo a {
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    overflow: hidden;
+    text-indent: -999999px;
+}
+
+.logo .ajk-logo {
+    width: 104px;
+    height: 30px;
+    top: 0;
+    left: 0;
+}
+
+.logo .broker-logo {
+    width: 145px;
+    height: 20px;
+    left: 124px;
+    top: 10px;
+}
+
+.login-layout {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    line-height: 18px;
+}
+
+.login-layout a {
+    margin: 0 9px 0 8px;
+}
+
+.user-info {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 25px;
+    line-height: 18px;
+}
+
+.user-info li {
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+
+.user-info li a {
+    color: #666;
+}
+
+.user-info li a:hover {
+    color: #f60;
+}
+
+.user-info .line {
+    color: #d9d9d9;
+    margin: 3px 15px 0;
+    background: #d9d9d9;
+    width: 1px;
+    font-size: 0;
+    height: 12px;
+    line-height: 12px;
+    _display: inline;
+}
+
+.user-info .sms {
+    padding-left: 25px;
+}
+
+.user-info .sms a, .user-info .sms span {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 6px 0 3px;
+    background: #FF8432;
+    border: 1px solid #FF8432;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+}
+
+.user-info .sms span {
+    background: #999;
+    border-color: #999;
+}
+
+.user-info .sms a:hover {
+    color: #fff;
+}
+
+.user-info .sms em {
+    padding-left: 5px;
+}
+
+.user-info .shop {
+    position: relative;
+}
+
+.user-info .shop .shop-select {
+    position: relative;
+    display: block;
+    padding-right: 14px;
+}
+
+.user-info .shop .triangle {
+    top: 7px;
+    left: 52px;
+    border-color: #a6a6a6 transparent transparent;
+    *top: 4px;
+}
+
+.user-info .hover .triangle {
+    top: 1px;
+    left: 52px;
+    border-color: transparent transparent #a6a6a6;
+    border-style: dashed dashed solid dashed;
+    border-width: 6px \9;
+    top: -1px \9;
+    *top: -3px;
+}
+
+.user-info .hover .shop-list {
+    display: block;
+}
+
+.user-info .shop-list {
+    display: none;
+    border: #e8e8e8 1px solid;
+    background: #fff;
+    position: absolute;
+    left: -11px;
+    top: -3px;
+}
+
+.user-info .shop-list .shop-select {
+    margin: 2px 0 0 10px;
+    white-space: nowrap;
+}
+
+.user-info .shop-list .list {
+    padding-bottom: 6px;
+}
+
+.user-info .shop-list .list a {
+    display: block;
+    margin: 6px 1px 0;
+    padding: 0 9px;
+    white-space: nowrap;
+}
+
+.user-info .shop-list .list a:hover {
+    background: #f7f7f7;
+}
+
+#nav {
+    position: relative;
+    z-index: 70;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #E26700;
+    border-left: none;
+    border-right: none;
+    background: #FF8432;
+    -moz-box-shadow: 0 3px 3px #ededed;
+    -webkit-box-shadow: 0 3px 3px #ededed;
+    box-shadow: 0 3px 3px #ededed;
+}
+
+.nav-list {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.nav-list li {
+    float: left;
+    position: relative;
+    z-index: 20;
+    font-size: 0;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/broker-logo.png) no-repeat -273px center;
+    margin-left: -2px;
+}
+
+.nav-list li .nav-item {
+    display: block;
+    float: left;
+    height: 36px;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #fff;
+}
+
+.nav-list .center .nav-item {
+    padding-right: 45px;
+}
+
+.nav-list li .nav-item:hover, .nav-list .selected .nav-item {
+    background: #E26700;
+    color: #fff;
+}
+
+.nav-list .home {
+    background: none;
+    margin-left: 0;
+}
+
+.nav-list .hover, .nav-list .selected {
+    z-index: 21;
+    background: none;
+}
+
+.nav-list li .triangle {
+    top: 16px;
+    right: 30px;
+}
+
+.nav-list .hover .triangle {
+    top: 10px;
+    right: 30px;
+    border-color: transparent transparent #fff;
+    border-style: dashed dashed solid dashed;
+    border-width: 6px \9;
+    top: 8px \9;
+}
+
+.nav-list .nav-item-list {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 6px 20px 6px 30px;
+    display: none;
+}
+
+.nav-list .nav-item-list a {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #375199;
+    white-space: nowrap;
+}
+
+.nav-list .nav-item-list a:hover {
+    color: #f60;
+}
+
+.nav-list .hover .nav-item-list {
+    display: block;
+}
+
+.nav-list .nav-item-iframe {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 35px;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+
+.nav-list .hover .nav-item-iframe {
+    display: block;
+}
+
+#footer {
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    margin: 30px auto 0;
+    padding: 8px 0 20px;
+}
+
+.footer-link {
+    padding-bottom: 8px;
+}
+
+.footer-link a {
+    color: #666;
+    margin: 0 10px 0 9px;
+}
+
+#footer p {
+    line-height: 16px;
+    color: #999;
+}
+
+#footer .icp, #footer .icp:hover {
+    color: #999;
+    text-decoration: underline;
+}
+
+#footer .mailto, #footer .mailto:hover {
+    font-size: 11px;
+    text-decoration: underline;
+    color: #0069ad;
+}
+
+.btn {
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding-right: 15px;
+    border: 0 none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn span {
+    float: left;
+    height: 100%;
+    padding-left: 15px;
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn, .btn span {
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/btn_sprites.jpg) no-repeat 0 0;
+}
+
+.btn-a, .btn-b, .btn-c {
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-a, .btn-b {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.btn-a:hover {
+    background-position: -110px 0;
+}
+
+.btn-b {
+    background-position: 0 -40px;
+}
+
+.btn-b:hover {
+    background-position: -110px -40px;
+}
+
+.btn-c {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    background-position: 0 -80px;
+}
+
+.btn-c:hover {
+    background-position: -110px -80px;
+}
+
+.btn-d {
+    height: 34px;
+    line-height: 34px;
+    background-position: 100% -160px;
+}
+
+.btn-d span {
+    background-position: 0 -120px;
+}
+
+.btn-d:hover {
+    background-position: 100% -240px;
+}
+
+.btn-d:hover span {
+    background-position: 0 -200px;
+}
+
+.btn-e {
+    height: 30px;
+    line-height: 30px;
+    background-position: 100% -320px;
+}
+
+.btn-e span {
+    background-position: 0 -280px;
+}
+
+.btn-e:hover {
+    background-position: 100% -400px;
+}
+
+.btn-e:hover span {
+    background-position: 0 -360px;
+}
+
+.btn-f {
+    height: 26px;
+    line-height: 26px;
+    background-position: 100% -480px;
+}
+
+.btn-f span {
+    background-position: 0 -440px;
+}
+
+.btn-f:hover {
+    background-position: 100% -560px;
+}
+
+.btn-f:hover span {
+    background-position: 0 -520px;
+}
+
+.comm-icon {
+    width: 14px;
+    height: 16px;
+    float: left;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/icon_sprites_02.png) no-repeat;
+    margin: 0 5px 0 -10px;
+    _margin-right: 2px;
+}
+
+.sucess-icon {
+    background-position: -40px 2px;
+}
+
+.hint-icon {
+    background-position: -40px -18px;
+}
+
+.error-icon {
+    background-position: -40px -58px;
+}
+
+.horn-icon {
+    background-position: -40px -116px;
+}
+
+.bulb-icon {
+    background-position: -40px -180px;
+}
+
+.prompt-icon {
+    background-position: -40px -38px;
+}
+
+.tipsbox {
+    padding: 5px 20px;
+    line-height: 18px;
+}
+
+.tipsbox .comm-icon {
+    margin-left: -10px;
+}
+
+.warn-tips, .arrow-tips {
+    border: 1px solid #FEBE6F;
+    background: #FFFCEE;
+}
+
+.inform-tips {
+    border: 1px solid #BFD8A7;
+    background: #F7FFF7;
+}
+
+.error-tips {
+    border: 1px solid #FFA4A4;
+    background: #FFECEC;
+}
+
+.arrow-tips {
+    padding: 5px 10px;
+}
+
+.tipsbox .arrow-up {
+    float: left;
+    width: 20px;
+    height: 11px;
+    margin: -16px 0 0 0;
+    display: inline-block;
+    background-position: -60px -160px;
+    position: relative;
+    z-index: 1;
+    left: 23px;
+}
+
+#aside {
+    float: left;
+    width: 180px;
+}
+
+.main-col {
+    float: right;
+    width: 760px;
+    padding-bottom: 30px;
+}
+
+.main-col h2 {
+    color: #333;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Microsoft Yahei";
+    padding-bottom: 20px;
+}
+
+.tab-menu {
+    _overflow: hidden;
+    height: 33px;
+    border-bottom: 1px solid #cecece;
+}
+
+.tab-menu a {
+    float: left;
+    margin-right: 3px;
+    padding: 0 20px;
+    height: 32px;
+    line-height: 32px;
+    color: #666;
+    background: url(http://pages.anjukestatic.com/img/myanjuke/myv2/p3345_tag.png) repeat-x 1px 0;
+    border: 1px solid #d9d9d9;
+    border-bottom: none;
+    font-size: 14px;
+}
+
+.tab-menu a:hover {
+    color: #f60;
+}
+
+.tab-menu .cur {
+    position: relative;
+    z-index: 2;
+    height: 33px;
+    background: #fff;
+}
+
+.suc-status, .war-status {
+    padding: 30px 0 10px 30px;
+}
+
+.suc-status .comm-icon, .war-status .comm-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+
+.war-status .war-icon {
+    background-position: 0 -40px;
+}
+
+.suc-status h4, .war-status h4 {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #333;
+}
+
+.suc-status a, .war-status a {
+    font-size: 12px;
+    font-family: Simsun;
+}
+
+.suc-status .link, .war-status .link {
+    display: block;
+}
+
+.suc-status em, .war-status em {
+    padding-right: 5px;
+}
+
+.nav-list .icon-fx {
+    margin: 9px 10px 0 0;
+    _margin: 8px 7px 0 0;
+    width: 15px;
+    height: 17px;
+    background-position: 0 -240px;
+}
+
+.nav-list .new-icon {
+    position: absolute;
+    top: -6px;
+    left: 48px;
+    width: 21px;
+    height: 16px;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/new.gif) no-repeat 0 0;
+    margin: 0;
+}
+
+.nav-list .hot-icon {
+    position: absolute;
+    top: -6px;
+    left: 48px;
+    width: 21px;
+    height: 16px;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/hot_icon.gif) no-repeat 0 0;
+    margin: 0;
+}
+
+.idcard-pop-box .inner {
+    width: 500px;
+    height: 130px;
+    padding: 30px 30px 30px 50px;
+}
+
+.idcard-pop-box h1 {
+    font-size: 25px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "\9ED1\4F53";
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.idcard-pop-box p.normal-p {
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.idcard-pop-box .edit-btn-box {
+    text-align: center;
+}
+
+.app-entrance {
+    position: absolute;
+    bottom: -3px;
+    _bottom: -1px;
+    right: 138px;
+}
+
+.app-entrance a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 147px;
+    height: 48px;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/home/simple_app_entrance.png) no-repeat 0 0;
+}
+
+#dialog-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=35);
+    -moz-opacity: .35;
+    -khtml-opacity: .35;
+    opacity: .35;
+}
+
+#dialog-box {
+    z-index: 10001;
+}
+
+.pop-box {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding: 5px;
+    background: rgba(102, 102, 102, 0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#7F666666', endColorstr='#7F666666');
+    border-radius: 5px;
+}
+
+:root .pop-box {
+    filter: none;
+}
+
+.pop-box .inner {
+    position: relative;
+    width: 378px;
+    padding-bottom: 25px;
+    background: #fff;
+    border: 1px solid #999;
+}
+
+.pop-box .close {
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/sale/dialog-box-bg.gif) no-repeat 1px 0;
+    cursor: pointer;
+}
+
+.pop-box .close:hover {
+    background-position: -17px 0;
+}
+
+.pop-box h3 {
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    text-indent: 20px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.pop-box .info {
+    padding: 18px 20px 0;
+}
+
+.pop-box .btn-box {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.pop-box .btn-d {
+    margin-left: 8px;
+}
+
+.pop-box .btn-d span {
+    padding: 0 9px 0 30px;
+    font-size: 12px;
+}
+
+.com-title {
+    color: #333;
+}
+
+h3.com-title {
+    font-family: "Microsoft YaHei";
+    font-size: 28px;
+}
+
+h4.com-title {
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+}
+
+h5.com-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h6.com-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.com-ico {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 17px;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/icon-1.12.png) no-repeat;
+}
+
+.success-ico {
+    background-position: -34px 0;
+}
+
+.warn-ico {
+    background-position: -34px -16px;
+}
+
+.prompt-ico {
+    background-position: -34px -32px;
+}
+
+.help-ico {
+    background-position: -34px -48px;
+}
+
+.error-ico {
+    background-position: -34px -64px;
+}
+
+.info-ico {
+    background-position: -34px -80px;
+}
+
+.point-ico {
+    background-position: -34px -96px;
+}
+
+.upload-ico {
+    background-position: -34px -113px;
+}
+
+.download-ico {
+    background-position: -34px -130px;
+}
+
+.plus-ico {
+    background-position: -34px -147px;
+}
+
+.success-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 0;
+}
+
+.warn-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 -34px;
+}
+
+.prompt-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 -68px;
+}
+
+.help-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 -102px;
+}
+
+.error-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 -136px;
+}
+
+.point-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 -170px;
+}
+
+.alert-big-ico {
+    width: 34px;
+    height: 34px;
+    background-position: 0 -204px;
+}
+
+.pru-ico {
+    background: #5F93FF;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.gre-ico {
+    background: #60AD00;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.org-ico {
+    background: #F60;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.blu-ico {
+    background: #00D3E5;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.red-ico {
+    background: #F00;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.bro-ico {
+    background: #952002;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.gry-ico {
+    background: #bbb;
+    width: auto;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.duotu-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -1px;
+}
+
+.shouji-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -21px;
+}
+
+.jingpin-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -41px;
+}
+
+.zhutui-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -61px;
+}
+
+.zhongdeng-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -81px;
+}
+
+.lianghao-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -100px;
+}
+
+.youzhi-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -119px;
+}
+
+.weigui-ico {
+    width: 29px;
+    height: 16px;
+    background-position: -69px -138px;
+}
+
+.recommend-ico {
+    width: 36px;
+    height: 36px;
+    background-position: -245px -80px;
+}
+
+.grabtop-ico {
+    width: 70px;
+    height: 22px;
+    background-position: -244px -154px;
+}
+
+.costeffective-ico {
+    width: 70px;
+    height: 22px;
+    background-position: -244px -124px;
+}
+
+.onedollar-ico {
+    width: 70px;
+    height: 22px;
+    background-position: -244px -184px;
+}
+
+.duotu-ico-dis {
+    width: 29px;
+    height: 16px;
+    background-position: -139px 0;
+}
+
+.daipin-ico-dis {
+    width: 29px;
+    height: 16px;
+    background-position: -139px -157px;
+}
+
+.imgs-ico {
+    width: 16px;
+    height: 12px;
+    background-position: -104px -62px;
+}
+
+.quality-ico {
+    width: 21px;
+    height: 22px;
+    background-position: -101px -37px;
+}
+
+.jingpin-ico-dis {
+    width: 29px;
+    height: 16px;
+    background-position: -139px -41px;
+}
+
+.pause-ico {
+    background-position: -104px -81px;
+}
+
+.start-ico {
+    background-position: -104px -100px;
+}
+
+.analyze-ico {
+    background-position: -34px -166px;
+}
+
+.down-ico {
+    background-position: -103px -119px;
+}
+
+.down-dis-ico {
+    background-position: -121px -119px;
+}
+
+.up-ico {
+    background-position: -103px -138px;
+}
+
+.up-dis-ico {
+    background-position: -121px -138px;
+}
+
+.del-ico {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background-position: -102px 0;
+}
+
+.del-ico:hover {
+    background-position: -119px 0;
+}
+
+.setup-ico {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background-position: -102px -21px;
+}
+
+.setup-ico:hover {
+    background-position: -119px -20px;
+}
+
+.arr-ico-top {
+    width: 17px;
+    height: 9px;
+    background-position: -50px 0;
+}
+
+.hug-ico {
+    display: inline-block;
+    width: 64px;
+    height: 52px;
+    overflow: hidden;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/icon-huge-1.0.png) no-repeat;
+}
+
+.hug-ico-suc {
+    background-position: 0 0;
+}
+
+.com-btn {
+    display: inline-block;
+    background: #F7F7F7;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    *zoom: 1;
+    *display: inline;
+}
+
+.com-btn:hover {
+    text-decoration: none;
+    color: #f60;
+}
+
+a.com-btn-dis, a.com-btn-dis:hover {
+    color: #999;
+    background: #f2f2f2;
+}
+
+.btn-huge {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.btn-huge .com-ico {
+    float: left;
+    margin: 8px 5px 0 -5px;
+}
+
+.btn-big {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.btn-big .com-ico {
+    float: left;
+    margin: 6px 5px 0 0;
+}
+
+.btn-mid {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+
+.btn-min {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.btn-org {
+    background: #f80;
+    color: #fff;
+    border: 1px solid #f80;
+}
+
+.btn-org:hover {
+    background: #f60;
+    color: #fff;
+    border: 1px solid #f60;
+}
+
+a.btn-org-dis, a.btn-org-dis:hover {
+    background: #ccc;
+    color: #fff;
+    cursor: default;
+    border: 1px solid #ccc;
+}
+
+.btn-gre {
+    background: #62ab00;
+    color: #fff;
+    border: 1px solid #62ab00;
+}
+
+.btn-gre:hover {
+    background: #579700;
+    color: #fff;
+    border: 1px solid #579700;
+}
+
+a.btn-gre-dis, a.btn-gre-dis:hover {
+    background: #ccc;
+    color: #fff;
+    cursor: default;
+    border: 1px solid #ccc;
+}
+
+.com-btn-imgsBtn {
+    display: inline-block;
+    *zoom: 1;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/common/buttons-1.0.png) no-repeat;
+}
+
+.imgBtn-prev {
+    width: 17px;
+    height: 31px;
+}
+
+.imgBtn-prev:hover {
+    background-position: 0 -40px;
+}
+
+.imgBtn-next {
+    width: 17px;
+    height: 31px;
+    background-position: 0 -80px;
+}
+
+.imgBtn-next:hover {
+    background-position: 0 -120px;
+}
+
+.com-box {
+    *zoom: 1;
+}
+
+.com-box:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.box-default {
+    border: 1px solid #e8e8e8;
+}
+
+.box-default .box-title {
+    position: relative;
+    height: 36px;
+    padding: 0 20px;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 36px;
+    background: #f8f8f8;
+    color: #000;
+    font-size: 14px;
+}
+
+.box-default .box-title span {
+    color: #999;
+}
+
+.box-default .box-title strong {
+    font-weight: bold;
+}
+
+.box-default .box-title .link {
+    position: absolute;
+    line-height: 36px;
+    right: 20px;
+    top: 0;
+    font-size: 12px;
+}
+
+.box-gray {
+    border: 1px solid #e7e7e7;
+    background: #f8f8f8;
+}
+
+.box-gray .box-title {
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px 15px 0;
+    font-size: 16px;
+}
+
+.box-gray .box-title strong {
+    font-weight: bold;
+}
+
+.box-gray .box-title .link {
+    position: absolute;
+    line-height: 26px;
+    right: 10px;
+    top: 6px;
+    font-size: 12px;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #333;
+}
+
+.breadcrumbs a {
+    color: #375199;
+}
+
+.breadcrumbs a:hover {
+    color: #f60;
+}
+
+.breadcrumbs span {
+    margin: 0 5px;
+    color: #999;
+}
+
+br {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: "微软雅黑", Simsun, Arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #474747;
+    line-height: 24px;
+}
+
+.inform-tips {
+    margin: 10px 10px 0;
+}
+
+.register {
+    width: 655px;
+    padding-left: 55px;
+    float: left;
+}
+
+.register h1 {
+    margin-bottom: 7px;
+}
+
+.register h1 span {
+    color: #999;
+    font-size: 12px;
+    font-family: Simsun, Arial;
+}
+
+.register h1 span em {
+    color: #f00;
+    font-family: Arial;
+    margin: 3px 3px 0 3px;
+}
+
+.register table tr td, .register table tr th {
+    vertical-align: middle;
+    height: 52px;
+}
+
+.register table tr th {
+    color: #333;
+    font-size: 14px;
+    width: 75px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+td.td_red {
+    width: 10px;
+    color: #f00;
+    font-family: Arial;
+}
+
+td.td_input {
+    width: 188px;
+}
+
+td.td_tips {
+    width: 382px;
+    color: #666;
+}
+
+td.td_area {
+    width: 300px;
+}
+
+td.td_accept {
+    width: 210px;
+}
+
+td.td_accept_tips {
+    width: 365px;
+}
+
+.input_text {
+    border: 1px solid #9C9C9C;
+    height: 28px;
+    line-height: 28px;
+    width: 171px;
+    font-family: Arial, Simsun;
+    padding-left: 5px;
+}
+
+.input_on {
+    border-color: #A3D273;
+}
+
+.check_error {
+    color: #f00;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/register_icons.png) no-repeat -185px 1px;
+    padding-left: 18px;
+    line-height: 15px;
+}
+
+.check_ok {
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/register_icons.png) no-repeat -151px 0;
+    padding-left: 18px;
+    width: 14px;
+    height: 15px;
+}
+
+.reg_but {
+    border: none;
+    width: 136px;
+    height: 32px;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/register_icons.png) no-repeat 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.search_content {
+    width: 176px;
+    border: 1px solid #9C9C9C;
+    background: #fff;
+    position: absolute;
+    z-index: 12;
+    left: 0;
+    top: 29px;
+}
+
+.search_content .match {
+    width: 100%;
+    border-bottom: 1px solid #9C9C9C;
+    text-indent: 11px;
+}
+
+.search_content .match dt {
+    color: #f00;
+    line-height: 21px;
+    padding-top: 2px;
+}
+
+.search_content .match dd {
+    height: 20px;
+}
+
+.search_content .match dd a {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    color: #333;
+}
+
+.search_content .match dd a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #3399FE;
+}
+
+.search_content .searchlist.h173 {
+    height: 173px;
+    overflow-y: auto;
+}
+
+.searchlist {
+    width: 100%;
+}
+
+.searchlist li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.searchlist li a {
+    display: block;
+    height: 100%;
+    text-indent: 11px;
+    color: #333;
+}
+
+.searchlist li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #3399FE;
+}
+
+.select_content {
+    float: left;
+    width: 138px;
+    height: 26px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    border: 1px solid #9C9C9C;
+    z-index: 10;
+}
+
+.select_content a.select_boxer {
+    width: 138px;
+    height: 26px;
+    color: #333;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.select_content a.select_boxer:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.select_content a.select_boxer span.select_txt {
+    float: left;
+    color: #333;
+    line-height: 26px;
+    text-indent: 8px;
+    width: 118px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.select_content a.select_boxer span.arrow {
+    float: right;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/register_icons.png) no-repeat 0 -40px;
+    width: 17px;
+    height: 18px;
+    margin: 3px 2px 0 0;
+    cursor: pointer;
+    _display: inline;
+}
+
+.select_content ul.searchlist {
+    position: absolute;
+    left: -1px;
+    top: 26px;
+    background: #fff;
+    z-index: 10;
+    border: 1px solid #9C9C9C;
+}
+
+.h241 {
+    height: 241px;
+    overflow-y: auto;
+}
+
+.citylist {
+    width: 323px;
+    height: auto;
+    border: 1px solid #9C9C9C;
+    position: absolute;
+    left: -1px;
+    top: 26px;
+    background: #fff;
+}
+
+.citylist .city_tab {
+    height: 19px;
+    margin: 10px 0 0 12px;
+    position: relative;
+    z-index: 19;
+}
+
+.citylist .city_tab a, .citylist .city_tab a:hover {
+    display: block;
+    float: left;
+    margin-right: 12px;
+    height: 19px;
+    line-height: 19px;
+    width: auto;
+    text-align: center;
+    color: #0100FE;
+    text-decoration: none;
+}
+
+.citylist .city_tab a.on, .citylist .city_tab a.on:hover {
+    border: #9c9c9c 1px solid;
+    border-bottom: none;
+    background: #e1e1e1;
+    color: #262626;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.citylist ul {
+    width: 300px;
+    padding: 8px 0 6px 0;
+    border-top: #9c9c9c 1px solid;
+    margin: -1px 0 0 12px;
+    position: relative;
+    z-index: 18;
+}
+
+.citylist ul li {
+    width: 70px;
+    float: left;
+    margin-right: 5px;
+}
+
+.citylist ul li a {
+    display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 5px;
+}
+
+.citylist ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #3399FE;
+}
+
+.side_tips {
+    width: 230px;
+    float: left;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/register_side_border.png) no-repeat 0 0;
+    padding: 17px 0 180px 30px;
+    line-height: 22px;
+}
+
+.login_tips {
+    width: 600px;
+    height: 102px;
+    border: #e1e1e1 1px solid;
+    padding: 58px 0 0 47px;
+    margin: 0 0 300px 30px;
+}
+
+.login_tips dl {
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/register_icons.png) no-repeat -147px -21px;
+    padding-left: 88px;
+    height: 46px;
+    color: #666;
+}
+
+.login_tips dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.login_tips dl dt dd {
+    line-height: 22px;
+}
+
+.regist_content h1 {
+    margin: 0 0 8px 54px;
+}
+
+.regist_content .content {
+    width: 644px;
+    height: 310px;
+    border: #e1e1e1 1px solid;
+    padding: 2px;
+    background: #fff;
+    margin-left: 29px;
+}
+
+.regist_content .content .steps {
+    position: relative;
+    width: 644px;
+    height: 30px;
+    background: #eee;
+}
+
+.regist_content .content .steps li {
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+}
+
+.regist_content .content .steps li span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #a4a4a4;
+}
+
+.regist_content .content .steps li.on span {
+    color: #51841D;
+    background: #D0F5AA;
+    width: 100%;
+}
+
+.regist_content .content .steps li#step01, .regist_content .content .steps li#step02 {
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/steps_bg.gif) no-repeat right 0;
+    padding-right: 22px;
+    text-indent: 94px;
+}
+
+.regist_content .content .steps li#step01 {
+    width: 223px;
+    z-index: 5;
+}
+
+.regist_content .content .steps li#step02 {
+    width: 213px;
+    left: 223px;
+    z-index: 4;
+}
+
+.regist_content .content .steps li#step04 {
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/steps_bg.gif) no-repeat right 0;
+    padding-right: 22px;
+    text-indent: 94px;
+    width: 332px;
+    text-indent: 142px;
+    z-index: 2;
+}
+
+.regist_content .content .steps li#step01.on, .regist_content .content .steps li#step02.on, .regist_content .content .steps li#step04.on {
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/steps_bg.gif) no-repeat right -33px;
+}
+
+.regist_content .content .steps li#step03 {
+    width: 208px;
+    left: 436px;
+    z-index: 3;
+    text-indent: 85px;
+}
+
+.regist_content .content .steps li#step03.on {
+    background: #D0F5AA;
+}
+
+.regist_content .content .steps li#step05 {
+    width: 312px;
+    left: 332px;
+    z-index: 1;
+    text-indent: 125px;
+}
+
+.regist_content .content .steps li#step05.on {
+    background: #D0F5AA;
+}
+
+.regist_content .content table tr td, .regist_content .content table tr th {
+    vertical-align: middle;
+    height: 40px;
+}
+
+.regist_content .content table tr th {
+    color: #333;
+    font-size: 14px;
+    width: 122px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.regist_content .content table tr th.t16 {
+    height: 16px;
+}
+
+.regist_content .content table tr th.t20 {
+    height: 20px;
+}
+
+.next_but, .submit_but {
+    border: none;
+    display: block;
+    width: 136px;
+    height: 32px;
+    background: url(http://pages.anjukestatic.com/img/member/findpassport_bg.png) no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.next_but {
+    background-position: 0 -93px;
+}
+
+.submit_but {
+    background-position: 0 -127px;
+}
+
+input.code, input.code_disabled {
+    border: none;
+    display: block;
+    width: 90px;
+    height: 23px;
+    background: url(http://pages.anjukestatic.com/img/member/findpassport_bg.png) no-repeat 0 -163px;
+    text-align: center;
+    line-height: 23px;
+    color: #000;
+    cursor: pointer;
+}
+
+input.code_disabled {
+    background-position: 0 -188px;
+    color: #afafaf;
+}
+
+.code_tips {
+    background: url(http://pages.anjukestatic.com/img/member/findpassport_bg.png) repeat-x 0 -31px;
+    height: 29px;
+    width: 321px;
+    line-height: 29px;
+    color: #777;
+}
+
+.code_tips span {
+    float: left;
+    background: url(http://pages.anjukestatic.com/img/member/findpassport_bg.png) no-repeat;
+    height: 29px;
+}
+
+.code_tips span.tips_left {
+    background-position: 0 0;
+    text-indent: 33px;
+}
+
+.code_tips span.tips_right {
+    float: right;
+    background-position: right -62px;
+    padding-right: 18px;
+}
+
+.reset_success {
+    padding: 60px 0 0 58px;
+    width: 550px;
+    line-height: 21px;
+    color: #666;
+}
+
+.reset_success dl {
+    background: url(http://pages.anjukestatic.com/img/member/findpassport_bg.png) no-repeat 0 -213px;
+    padding-left: 75px;
+}
+
+.reset_success dt {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.reset_success dt span {
+    display: block;
+    color: #51841D;
+    font-size: 12px;
+}
+
+.business label {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+}
+
+.mtop36 {
+    margin-top: 36px;
+}
+
+.tips_content {
+    width: 562px;
+    height: 24px;
+    padding: 8px 14px;
+    border: #ff9797 1px solid;
+    background: #fedddd;
+    margin: 14px 0 33px 24px;
+}
+
+.tips_content span {
+    display: block;
+    background: url(http://pages.anjukestatic.com/img/member/findpassport_bg.png) no-repeat -110px -164px;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 34px;
+    color: #141414;
+    font-size: 14px;
+}
+
+.invite_content h1 {
+    margin: 0 0 8px 54px;
+}
+
+.invite_content .content {
+    width: 625px;
+    height: auto;
+    padding: 25px 0 0 23px;
+    border: #e1e1e1 1px solid;
+    background: #fff;
+    margin-left: 29px;
+}
+
+.invite_content dl {
+    width: 603px;
+    border-bottom: #dcdcdc 1px solid;
+}
+
+.invite_content dl.invite_dl01 {
+    padding-bottom: 12px;
+}
+
+.invite_content dl.invite_dl01 dt {
+    float: left;
+    width: 72px;
+    margin: 0 0 0 6px;
+    _display: inline;
+}
+
+.invite_content dl.invite_dl01 dt a, .invite_content dl.invite_dl01 dt a img {
+    display: block;
+}
+
+.invite_content dl.invite_dl01 dt a img {
+    border: #81A6B8 1px solid;
+    width: 53px;
+    height: 73px;
+}
+
+.invite_content dl.invite_dl01 dd {
+    float: left;
+    width: 525px;
+    line-height: 22px;
+    height: 22px;
+}
+
+.invite_content dl.invite_dl01 dd.first {
+    padding-top: 12px;
+}
+
+.invite_content dl.invite_dl01 dd.first a {
+    color: #0041D9;
+    font-weight: bold;
+}
+
+.invite_content dl.invite_dl01 dd.first a:hover {
+    color: #f60;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.invite_content dl.invite_dl02 dt {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-indent: 6px;
+    margin: 14px 0 19px 0;
+}
+
+.invite_content dl.invite_dl02 dd {
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.invite_content dl.invite_dl02 dd a {
+    display: block;
+    float: left;
+    width: 104px;
+    height: 63px;
+    background: url(http://pages.anjukestatic.com/img/member/invite_bg.gif) no-repeat;
+    margin: 0 24px 0 6px;
+    _display: inline;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.invite_content dl.invite_dl02 dd a.ajk_logo {
+    background-position: 0 0;
+}
+
+.invite_content dl.invite_dl02 dd a.hz_logo {
+    background-position: -106px 0;
+}
+
+.invite_content dl.invite_dl02 dd a.jp_logo {
+    background-position: -212px 0;
+}
+
+.invite_content dl.invite_dl03 {
+    padding: 30px 0 0 0;
+    line-height: 18px;
+    border-bottom: none;
+}
+
+.invite_content dl.invite_dl03 dd a {
+    display: block;
+    background: url(http://pages.anjukestatic.com/img/member/invite_bg.gif) no-repeat -318px 0;
+    width: 212px;
+    height: 51px;
+    margin: 13px 0 29px 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.msgtips {
+    width: 432px;
+    height: 150px;
+    border: #589719 1px solid;
+    background: #fff;
+}
+
+.msgtips .title {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #6CAF29;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.msgtips .title a {
+    display: block;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/close_icons.gif) no-repeat 0 0;
+    width: 13px;
+    height: 13px;
+    float: right;
+    margin: 6px 7px 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.msgtips .msg_content {
+    padding: 28px 45px 0 63px;
+    background: #fff;
+    height: 86px;
+}
+
+.msgtips .msg_content p {
+    line-height: 18px;
+    color: #262626;
+}
+
+.msgtips .msg_content div {
+    margin-top: 18px;
+}
+
+.msgtips .msg_content div a, .msgtips .msg_content div a:hover {
+    display: block;
+    float: right;
+    width: 72px;
+    height: 27px;
+    background: url(http://pages.anjukestatic.com/img/b_ajk/reg/msgtips_icons.gif) no-repeat 0 0;
+    margin-left: 13px;
+    _display: inline;
+    text-align: center;
+    line-height: 27px;
+    color: #333;
+    text-decoration: none;
+}
+
+.ui-icon-closethick {
+    display: none;
+}
+
+h1.passport {
+    width: 620px;
+}
+
+h1.passport a {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    margin-top: 9px;
+}

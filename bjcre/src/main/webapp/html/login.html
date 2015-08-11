@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0100)./my/login?history=aHR0cDovL3VzZXIuYW5qdWtlLmNvbS9tZW1iZXIvbW9kaWZ5L2hlYWRwaWMv -->
+<html slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="format-detection" content="telephone=no">
+<title>用户登录</title>
+
+<link rel="stylesheet" rev="stylesheet" href="../css/Member_Web_User_Login.css" type="text/css">
+<!-- -->
+
+    <link rel="icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" />
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common/common.js"></script>
+
+<body data-page="Member_Web_User_LoginPage">
+<div id="container" style="width: 100%;">
+    <div id="content" style="/*width: 1278px;*/ background-position-x: -211px;">
+        <i class="login-top"></i>
+<div class="wrap">
+    <div class="wel-login">
+	<p class="wel-login-title">欢迎登录</p>
+	<div class="wel-login-content">
+		<div class="login-panel">
+    	<!--<div class="login-title">-->
+        		<!--<a class="cur-font" href="javascript:void(0);">账号密码登录</a>-->
+        		<!--<i class="title-split"></i>-->
+        		<!--<a href="javascript:void(0);">手机验证码登录</a>-->
+
+        	<!--</div>-->
+
+    	<!--<div class="l-pos curr-title"><i class="user-iconfont"></i></div>-->
+
+    	<!-- 帐号密码登录 -->
+
+
+
+        <form id="account-login" class="account-login validate_def" method="post">
+
+                <div class="input-box" style="margin-top:30px;_width:345px;">
+
+                        <i class="user-iconfont"></i>
+
+                        <input class="account-name" type="text" placeholder="手机号/邮箱/用户名" maxlength="60" data-validate="require$&lt;i class=&#39;user-iconfont&#39;&gt;&lt;/i&gt;请输入手机号/邮箱/用户名">
+
+                    <p class="" id=""></p></div>
+
+
+                <div class="input-box">
+
+                        <i class="user-iconfont"></i>
+
+                       <input class="account-pwd" type="password" placeholder="密码" maxlength="32" data-validate="require$&lt;i class=&#39;user-iconfont&#39;&gt;&lt;/i&gt;请输入密码">
+
+                <p id="check-tip" class="check-tip" style="display: none"><i class="user-iconfont"></i>帐号或密码不正确</p>
+                </div>
+               <div class="account-other">
+
+                        <label><input id="account-remember" type="checkbox" checked="" value="记住我">记住我</label>
+
+                        <a target="_blank" href="./pass?type=forget">忘记密码？</a>
+
+                    </div>
+
+                <input id="accountSubmit" class="submit-btn" type="button" value="登   录">
+
+            </form>
+
+
+</div>
+
+
+		<!--<div class="third-login">-->
+	<!--<p class="login-title">合作帐号登录：</p>-->
+        <!--<div class="register">-->
+        <!--<p class="login-txt">没有帐号？</p>-->
+        <!--<a href="./register" class="login-operate">立即注册</a>-->
+    <!--</div>-->
+    <!--</div>	</div>-->
+</div></div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#account-pwd").keyup(function(e){
+            if(e.keyCode==13){
+                $("#accountSubmit").click();
+            }
+        });
+        $("#accountSubmit").click(function(){
+            window.location.href="../index.html";
+        });
+
+
+    });
+</script>
+
+</body></html>

@@ -1,0 +1,5141 @@
+body {
+    margin: 0;
+    color: #333;
+    font-family: Arial, Helvetica, \5b8b\4f53, sans-serif;
+    font-size: 12px;
+    text-align: center
+}
+
+.clearfix:after, .clearboth:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfix, .clearboth {
+    zoom: 1
+}
+
+#loginnav {
+    margin: 0;
+    text-align: left
+}
+
+#container {
+    margin: auto;
+    text-align: left;
+    width: 970px;
+    z-index: 0
+}
+
+#content {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 970px
+}
+
+#footer {
+    margin-top: 10px
+}
+
+a:link, a:visited, a:active {
+    color: #0041d9;
+    outline: none medium none;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+a.icp {
+    color: #666;
+    text-decoration: underline
+}
+
+h1 {
+    color: #525252;
+    font-size: 24px;
+    margin: 20px 0 15px 0
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+select {
+    border: 1px solid #b3b3b3;
+    font-size: 12px;
+    padding: 2px
+}
+
+ul li {
+    padding: 0;
+    margin: 0
+}
+
+div.spacebar {
+    clear: both
+}
+
+.text_c {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    text-align: center;
+    height: 30px;
+    overflow: hidden
+}
+
+.partner_line {
+    border-top: #ccc solid 1px;
+    zoom: 1;
+    height: 0;
+    overflow: hidden
+}
+
+.partner_line:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.footerLinkpack {
+    width: 970px
+}
+
+.partner {
+    background-color: #f9f9f9;
+    padding: 8px 0;
+    width: 970px;
+    border-top: 1px solid #e0e0e0 !important;
+    border-bottom: 0 !important;
+    line-height: 1.6em;
+    zoom: 1
+}
+
+.partner:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.partner span {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 86px
+}
+
+.partner ul {
+    float: right;
+    overflow: hidden;
+    width: 874px
+}
+
+.partner li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    margin-right: 15px;
+    display: inline;
+    width: 94px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.partner li a {
+    outline: medium none;
+    text-decoration: none;
+    color: #999 !important
+}
+
+.partner li a:hover {
+    color: #f60 !important
+}
+
+.partner li a:after {
+    color: #999
+}
+
+.space05em {
+    padding-left: .5em
+}
+
+.space1em {
+    padding-left: 1em
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#city-panel {
+    position: absolute;
+    z-index: 30000;
+    border: 1px solid #d8d8d8;
+    background-color: #f9f9f9;
+    width: 350px;
+    padding: 7px 0 0 0;
+    left: 0;
+    top: 22px;
+    border-radius: 0 0 4px 4px
+}
+
+#city-panel dl {
+    width: 322px;
+    padding: 7px 0 6px 0;
+    margin: 0 13px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 23px;
+    overflow: hidden;
+    zoom: 1
+}
+
+#city-panel dt {
+    width: 72px;
+    float: left;
+    color: #666
+}
+
+#city-panel dd {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    zoom: 1
+}
+
+#city-panel dd a {
+    float: left;
+    padding: 0 11px 0 0;
+    white-space: nowrap
+}
+
+#city-panel dd a:link, .moreCity:link, #city-panel dd a:visited, .moreCity:visited, #city-panel dd a:active, .moreCity:active {
+    color: #1a519f;
+    text-decoration: none
+}
+
+#city-panel dd a:hover, .moreCity:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+#city-panel .blank {
+    float: left;
+    height: 22px;
+    line-height: 14px;
+    width: 332px;
+    text-align: right;
+    margin-top: -3px;
+    margin-left: 2px;
+    background-color: #f9f9f9
+}
+
+#container {
+    width: 100% !important
+}
+
+/*#header {*/
+    /*width: 100%;*/
+    /*height: 40px;*/
+    /*background-color: #62ab00;*/
+    /*font-family: "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", tahoma, arial, simhei*/
+/*}*/
+
+#content {
+    width: 1180px;
+    margin: 0 auto
+}
+
+.glbR {
+    display: none
+}
+
+.glbListNavigation {
+    height: 40px
+}
+
+.glbListNavigation .select_icon {
+    color: #fff;
+    cursor: pointer
+}
+
+.glbListNavigation .cur_citynew {
+    float: left;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 1px;
+    z-index: 30000
+}
+
+.glbListNavigation .logo {
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/CommLogoV3.png") no-repeat;
+    width: 90px;
+    height: 30px;
+    float: left;
+    margin-top: 4px
+}
+
+.glbListNavigation .city_icon {
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/navigation.png") no-repeat 0 -195px;
+    _background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/navigation.gif") no-repeat 0 -195px;
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px
+}
+
+.L_tabsnew {
+    float: left;
+    margin-left: 15px
+}
+
+.L_tabsnew li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer
+}
+
+.a_navnew {
+    padding: 0 15px;
+    font-size: 16px;
+    display: block
+}
+
+.a_navnew:link, .a_navnew:visited, .a_navnew:active, .a_navnew:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.arrow_upnew {
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/navigation.png") 0 -224px no-repeat;
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    left: 34px;
+    _background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/navigation.gif") 0 -224px no-repeat
+}
+
+.sec_divnew {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    border: 1px solid #d8d8d8;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #666;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 15px;
+    line-height: 18px;
+    z-index: 20000
+}
+
+.sec_divnew a {
+    display: block;
+    margin: 15px 10px 0 10px;
+    padding: 0 10px
+}
+
+.sec_divnew a:link, .sec_divnew a:visited, .sec_divnew a:active {
+    color: #666;
+    text-decoration: none
+}
+
+.sec_divnew a:hover {
+    color: #528e01;
+    text-decoration: none
+}
+
+.div_xinfang {
+    width: 90px
+}
+
+.div_ershoufang, .div_zufang {
+    width: 105px
+}
+
+.div_shangyedichan {
+    width: 125px
+}
+
+.underline {
+    border-top: 1px solid #ccc;
+    padding-top: 15px !important
+}
+
+.li_selected {
+    background-color: #528e01;
+    border-radius: 2px
+}
+
+.li_hover {
+    background-color: #4a8101
+}
+
+/*#header .over {*/
+    /*background-color: #528e01 !important;*/
+    /*border-radius: 2px*/
+/*}*/
+
+.appContainer {
+    padding-left: 2px;
+    width: 120px;
+    height: 40px;
+    float: left;
+    cursor: pointer
+}
+
+.downapp {
+    width: 120px;
+    height: 27px;
+    border-radius: 2px;
+    background-color: #dce8cc;
+    margin-top: 6px;
+    display: block;
+    cursor: pointer
+}
+
+.downapp:hover {
+    background-color: #f2f6e3;
+    text-decoration: none
+}
+
+.apppic1, .apppic2, .apptext {
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/navigation.png") no-repeat;
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/header/navigation.gif") no-repeat;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-top: 3px
+}
+
+.apppic1 {
+    background-position: 0 -71px;
+    width: 16px;
+    height: 20px;
+    margin-left: 5px
+}
+
+.apppic2 {
+    background-position: 0 -110px;
+    width: 20px;
+    height: 20px
+}
+
+.apptext {
+    width: 60px;
+    height: 20px
+}
+
+.apptext {
+    background: 0;
+    color: #666;
+    vertical-align: top;
+    line-height: 22px;
+    font-size: 14px
+}
+
+.o_b {
+    top: 39px !important
+}
+
+.R_user {
+    _height: 40px !important
+}
+
+.login_info {
+    height: 40px !important
+}
+
+.login_info .tip_d {
+    top: 13px !important;
+    left: 90px
+}
+
+/*.login_info .l .m {*/
+    /*height: 40px !important;*/
+    /*line-height: 40px !important;*/
+    /*background-position: 0 11px !important*/
+/*}*/
+
+.login_info .usr {
+    line-height: 39px !important
+}
+
+.up_down_sc, .up_down_usr {
+    top: 15px !important
+}
+
+.login_info .r {
+    height: 39px !important
+}
+
+.login_info .r .my {
+    background-position: 0 -25px !important;
+    height: 40px !important;
+    line-height: 40px !important
+}
+
+.login_info .r .m_l {
+    top: 40px !important
+}
+
+.login_info .login_tip {
+    display: none !important
+}
+
+.glbListNavigation {
+    width: 1180px;
+    margin: 0 auto
+}
+
+/*#header {*/
+    /*margin-bottom: 10px*/
+/*}*/
+
+.a_navnew {
+    padding: 0 9px;
+    *padding: 0 8px
+}
+
+.sec_divnew {
+    font-size: 14px
+}
+
+/*#header .R_user .glbR {*/
+    /*display: none*/
+/*}*/
+
+dl, dt, dd {
+    list-style: none outside none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+#city_selector {
+    margin: 0 0 0 16px;
+    position: relative;
+    float: none;
+    display: inline;
+    top: -1px
+}
+
+.glbL .city_title {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    padding-right: 12px
+}
+
+.glbL .city_title_icon {
+    background-position: 0 5px;
+    padding: 0 4px;
+    margin-left: 9px
+}
+
+.glbL .city_float {
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+    position: absolute;
+    width: 324px;
+    z-index: 999;
+    left: 40px;
+    top: 36px;
+    padding: 5px 12px
+}
+
+.glbL iframe {
+    position: absolute;
+    z-index: 100;
+    top: 23px;
+    left: 10px
+}
+
+.glbL .city_float .city_float_more {
+    background-color: #FFF;
+    margin-top: -3px;
+    height: 20px;
+    line-height: 20px
+}
+
+.glbL .city_float dl {
+    border-bottom: 1px dashed #d5d5d5
+}
+
+.glbL .city_float dt {
+    width: 55px;
+    font-weight: 100;
+    padding: 3px 0 0;
+    _display: inline;
+    line-height: 25px
+}
+
+.glbL .city_float dd {
+    background-color: #fff;
+    _display: inline;
+    line-height: 25px;
+    width: 250px;
+    padding: 3px 0
+}
+
+.city_float dd li {
+    padding: 0 11px 0 0;
+    _display: inline;
+    float: left
+}
+
+.city_float dd li a {
+    white-space: nowrap
+}
+
+.txt_r {
+    text-align: right
+}
+
+.f_l {
+    float: left
+}
+
+.f_r {
+    float: right
+}
+
+.clear_box {
+    width: 322px;
+    overflow: hidden
+}
+
+/*#header {*/
+    /*position: relative;*/
+    /*z-index: 999*/
+/*}*/
+
+.header-top dl, .header-top dt, .header-top dd {
+    padding: 0;
+    margin: 0
+}
+
+.header-top {
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    font-family: "Hiragino Sans GB", "宋体";
+    z-index: 999999;
+    border-bottom: 1px solid #d6d6d6;
+    background: url(http://pages.jinpu.com/images/web/page_public.png) repeat-x 0 0
+}
+
+.header-top-center {
+    position: relative;
+    height: 100%;
+    width: 958px;
+    padding-left: 11px;
+    margin: 0 auto;
+    z-index: 999
+}
+
+.header-top-center a:hover {
+    color: #f60 !important
+}
+
+.header-top .gray, .header-top .gray:active {
+    color: #666 !important
+}
+
+.header-top .top-menu {
+    display: inline;
+    float: left;
+    line-height: 14px;
+    line-height: 14px
+}
+
+.header-top .top-menu .hi {
+    margin-top: 1px
+}
+
+.header-top .hi {
+    float: left;
+    height: 12px;
+    width: 0;
+    overflow: hidden;
+    border-left: 1px solid #d3d3d3;
+    margin: 0 11px
+}
+
+.top-menu a {
+    float: left;
+    color: #666 !important
+}
+
+body .header-top .text-top {
+    margin-top: 6px
+}
+
+.top-userinfo {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.top-userinfo .hi2 {
+    height: 12px;
+    float: left;
+    width: 0;
+    overflow: hidden;
+    border-left: 1px solid #d3d3d3;
+    margin: 6px 11px 0 11px
+}
+
+.top-userinfo .fl {
+    float: left
+}
+
+.welcome a {
+    color: #0041d9;
+    margin-left: 3px
+}
+
+.welcome a.membername {
+    color: #666
+}
+
+.myjinpu {
+    padding-right: 10px
+}
+
+.myjinpu a {
+    color: #0041d9
+}
+
+.mybroker {
+    display: inline;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 11px;
+    float: left;
+    height: 26px;
+    position: relative;
+    background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat -94px -149px;
+    padding-left: 30px;
+    border-left: 1px solid #d3d3d3
+}
+
+.mybroker a.title {
+    float: left;
+    height: 26px;
+    padding-right: 20px;
+    background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat right -177px;
+    font-weight: normal;
+    color: #666
+}
+
+.mybroker-menu {
+    position: absolute;
+    right: -3px;
+    top: 26px;
+    width: 188px;
+    border: 1px solid #d3d3d3;
+    border-top: 0;
+    cursor: default;
+    display: none;
+    background: #fff;
+    white-space: nowrap;
+    word-wrap: normal
+}
+
+.mybroker-menu dl {
+    width: 170px;
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 auto;
+    padding: 5px 0
+}
+
+.mybroker-menu dl dt, .mybroker-menu dl dd {
+    float: left;
+    line-height: 22px;
+    margin: 0;
+    display: inline;
+    word-wrap: normal
+}
+
+.mybroker-menu dl dt {
+    height: 44px;
+    padding: 0 10px 0 7px
+}
+
+.mybroker-menu dl dd {
+    float: left;
+    height: 22px;
+    padding: 0 3px;
+    margin: 0
+}
+
+.mybroker-menu dl dd a {
+    color: #395999 !important;
+    word-wrap: normal
+}
+
+.mybroker-menu dl.bottom {
+    border: 0
+}
+
+.mybroker-over {
+    background-color: #fff
+}
+
+.mybroker-over-patch {
+    position: absolute;
+    height: 27px;
+    width: 2px;
+    right: -3px;
+    top: 0;
+    background: #fff;
+    border-right: 1px solid #d3d3d3;
+    display: none
+}
+
+.developers {
+    padding-right: 5px;
+    background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat -94px -149px;
+    padding-left: 30px;
+    border-left: 1px solid #d3d3d3;
+    margin-left: 11px
+}
+
+.login a {
+    margin: 0 2px;
+    color: #3d527f !important
+}
+
+.login2 {
+    padding-right: 8px
+}
+
+.login2 .fs {
+    float: left
+}
+
+body .login2 a, body .login2 a:active {
+    color: #666
+}
+
+.header-outage {
+    background-color: #ffc;
+    border: 1px solid #d6d6d6;
+    border-top: 0;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 13px;
+    width: 955px;
+    margin: auto
+}
+
+.membername:hover {
+    text-decoration: underline !important
+}
+
+body .mybroker a.blue {
+    color: #0041d9
+}
+
+.home_icon {
+    display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 4px 3px 0 10px;
+    background: url(http://pages.jinpu.com/images/header/home_icon.gif) no-repeat 0 0
+}
+
+.fl a.mycollect {
+    display: inline-block;
+    margin: 0 0 0 4px
+}
+
+.footerLinkTitle {
+    CLEAR: left;
+    PADDING-RIGHT: 10px;
+    FLOAT: left;
+    WIDTH: 180px;
+    TEXT-ALIGN: right
+}
+
+.footerLink {
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 750px
+}
+
+.footerLink a {
+    padding-right: 10px
+}
+
+.sidebarLink {
+    padding: 20px 0 0 12px;
+    line-height: 22px
+}
+
+.partner {
+    background-color: #f9f9f9;
+    float: left;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 970px
+}
+
+.partner span {
+    display: block;
+    float: left;
+    line-height: 1.6em;
+    padding-left: 30px;
+    text-align: left;
+    width: 940px
+}
+
+.partner ul {
+    color: #999;
+    display: block;
+    float: left;
+    margin: 3px 0 6px;
+    overflow: hidden;
+    padding: 0 10px 0 30px;
+    width: 940px
+}
+
+.partner li {
+    display: block;
+    float: left;
+    line-height: 1.6em;
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: 85px
+}
+
+.partner li a:hover {
+    color: #999 !important;
+    text-decoration: underline
+}
+
+.friendlinks {
+    clear: both;
+    margin: 0 auto;
+    width: 750px;
+    text-align: center;
+    padding-top: 10px
+}
+
+.friendlinks span {
+    margin: 0 4px;
+    white-space: nowrap
+}
+
+#view_footer {
+    background: #f9f9f9;
+    width: 970px
+}
+
+#view_footer dl, #view_footer .rel_house {
+    margin: 0;
+    clear: both;
+    width: 970px;
+    overflow: hidden;
+    _zoom: 1
+}
+
+#view_footer dt, #view_footer .rel_house .tit {
+    width: 130px;
+    text-align: right;
+    float: left;
+    line-height: 26px;
+    margin-right: 20px
+}
+
+#view_footer dd {
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    white-space: nowrap;
+    padding-top: 1px;
+    line-height: 24px
+}
+
+#view_footer .rel_house .rel_list {
+    float: left;
+    width: 820px
+}
+
+#view_footer .rel_house .rel_hid {
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden
+}
+
+#view_footer .rel_house .rel_list a {
+    float: left;
+    margin: 1px 20px 0 0;
+    white-space: nowrap;
+    line-height: 24px
+}
+
+#city_list {
+    width: 970px;
+    margin: 0 auto;
+    padding: 10px 0 0 0
+}
+
+#city_list ul {
+    margin: 0;
+    list-style-type: none;
+    width: 967px;
+    padding: 7px 0 10px 1px;
+    border: 1px #e0e0e0 solid
+}
+
+#city_list:after, #city_list ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+#city_list li {
+    float: left;
+    width: 86px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 0 0 10px
+}
+
+#city_list li a {
+    white-space: nowrap;
+    color: #656565
+}
+
+#city_list li a:hover {
+    color: #333;
+    text-decoration: underline
+}
+
+.flink-hid {
+    height: 22px;
+    overflow: hidden
+}
+
+.flink-hid a {
+    white-space: nowrap
+}
+
+.bottom_div {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #939186;
+    line-height: 15px
+}
+
+.link_span {
+    padding-left: 9px;
+    padding-right: 10px;
+    line-height: 25px
+}
+
+.link_span a:link, .link_span a:visited {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none
+}
+
+.link_span a:hover {
+    color: #333;
+    text-decoration: underline
+}
+
+.content #footer {
+    margin-top: 0
+}
+
+#container #footer {
+    margin-top: 0
+}
+
+#comm_list {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left
+}
+
+#comm_list ul {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 610px
+}
+
+#comm_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#comm_list ul a:link, #comm_list ul a:visited {
+    color: #666
+}
+
+#comm_list ul a:hover, #comm_list ul a:active {
+    color: #333;
+    text-decoration: underline
+}
+
+#map_list {
+    width: 970px;
+    margin: 0 auto
+}
+
+#map_list ul {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 100px
+}
+
+#map_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#map_list ul a:link, #map_list ul a:visited {
+    color: #666
+}
+
+#map_list ul a:hover, #map_list ul a:active {
+    color: #333
+}
+
+#house_list {
+    width: 970px;
+    margin: 0 auto
+}
+
+#house_list ul {
+    width: 330px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 320px
+}
+
+#house_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#house_list ul a:link, #house_list ul a:visited {
+    color: #666
+}
+
+#house_list ul a:hover, #house_list ul a:active {
+    color: #333
+}
+
+#header .glbSearch {
+    margin: 10px 0 0;
+    _margin-top: -9px;
+    z-index: 1
+}
+
+.glbSearch .glbForm {
+    position: relative
+}
+
+.glbSearch .icon {
+    display: inline-block;
+    background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_icons.png") 0 0 no-repeat
+}
+
+.glbSearch .kw {
+    width: 486px;
+    padding: 7px 0 5px 15px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #cdcdcd;
+    border-right: 0;
+    color: #999;
+    border-radius: 3px;
+    vertical-align: top;
+    outline: 0;
+    font-size: 12px
+}
+
+.glbSearch .kw_hover {
+    border: 1px solid #f60;
+    border-right: 0;
+    color: #333
+}
+
+.glbSearch .btn {
+    position: absolute;
+    top: 0;
+    *top: 1px;
+    left: 500px;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0 none;
+    cursor: pointer;
+    background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_btn.png") 0 0 no-repeat;
+    overflow: hidden
+}
+
+.glbSearch .btn:hover {
+    background-position: 0 -36px
+}
+
+.glbSearch .home_close {
+    background-position: 0 -120px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    position: absolute;
+    right: 477px;
+    top: 10px;
+    width: 15px
+}
+
+.glbSearch .smap:link, .glbSearch .smap:visited {
+    position: absolute;
+    top: 10px;
+    left: 630px;
+    padding: 0 0 0 16px;
+    background-position: 0 -85px;
+    height: 17px;
+    *line-height: 17px;
+    vertical-align: top;
+    color: #0041d9;
+    *top: 12px
+}
+
+.glbSearch .smap:hover {
+    color: #f60
+}
+
+.forView {
+    position: absolute;
+    right: 0;
+    width: auto
+}
+
+.forView .glbSearch {
+    float: right;
+    width: 442px
+}
+
+.forView .kw {
+    padding: 5px 0 3px 15px;
+    width: 335px
+}
+
+.forView .home_close {
+    right: 101px;
+    top: 8px
+}
+
+.forView .btn {
+    background-position: 0 -72px;
+    height: 30px;
+    left: 349px;
+    width: 93px
+}
+
+.rec_new_props {
+    margin-top: 20px;
+    zoom: 1;
+    border: 1px solid #cde0ef;
+    background: url(http://pages.jinpu.com/images/office/interested-bg.gif) repeat-x left top;
+    margin-bottom: 20px
+}
+
+.rec_new_props_top {
+    height: 38px;
+    line-height: 38px;
+    zoom: 1
+}
+
+.rec_new_props_top .title {
+    float: left;
+    font-size: 14px;
+    display: inline;
+    margin-left: 20px
+}
+
+.rec_new_props_top .back-top {
+    float: right;
+    margin-right: 10px;
+    color: #45629e;
+    line-height: 130%;
+    padding-top: 9px
+}
+
+.rec_new_props_top .back-top:hover {
+    color: #f60
+}
+
+.rec_new_props_top .back-top:hover span {
+    color: #f60
+}
+
+.rec_new_props_top .back-top .icon-up {
+    float: right;
+    margin-top: 2px;
+    margin-top: 1px \9
+}
+
+.rec_new_props_top .back-top span {
+    float: right;
+    color: #45629e;
+    cursor: default
+}
+
+.rec_new_props_cont {
+    padding-left: 14px;
+    margin: 0 10px;
+    overflow: hidden
+}
+
+.rec_new_props_cont .go_lok_nam {
+    width: 300px;
+    float: left;
+    padding: 5px;
+    line-height: 18px
+}
+
+.rec_new_props_cont .go_lok_nam .left_img {
+    float: left
+}
+
+.rec_new_props_cont .go_lok_nam .go_lok_bu {
+    margin-left: 140px
+}
+
+.rec_new_props_cont .orange {
+    color: #F60
+}
+
+#crumb {
+    margin: 17px 0 0 15px;
+    _margin-top: 0;
+    color: #1f52b2;
+    font-family: SimSun
+}
+
+#navigation {
+    border-bottom: 2px solid #090;
+    height: 28px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 6
+}
+
+.navigation_title {
+    overflow: hidden;
+    zoom: 1;
+    line-height: 46px;
+    padding: 6px 0 5px 15px
+}
+
+.navigation_title h2 {
+    font-size: 25px;
+    float: left;
+    font-family: "微软雅黑";
+    font-weight: normal
+}
+
+.navigation_title div {
+    float: right;
+    font-size: 14px;
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/bg_icon_tel.png) no-repeat 0 15px;
+    padding-left: 28px
+}
+
+.navigation_title div b {
+    font-size: 17px;
+    font-family: Tahoma;
+    padding: 0 5px
+}
+
+.navigation_list {
+    height: 32px;
+    width: 968px;
+    position: relative;
+    z-index: 9999
+}
+
+#navigation li {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 8px 0 0
+}
+
+#navigation li a, #navigation li a:link, #navigation li a:active, #navigation li a:visited {
+    display: block;
+    color: #335296;
+    outline: 0;
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/xiaoqu_bg4.png) no-repeat scroll 0 -50px transparent;
+    color: #333;
+    height: 30px;
+    padding: 0 0 0 13px;
+    text-decoration: none;
+    float: left
+}
+
+#navigation li a span, #navigation li a:link span, #navigation li a:active span, #navigation li a:visited span {
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/xiaoqu_bg4.png) no-repeat scroll right -50px transparent;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    padding: 0 13px 0 0
+}
+
+#navigation li a:hover {
+    background-position: 0 -100px
+}
+
+#navigation li a:hover span {
+    background-position: right -100px
+}
+
+#navigation li.selected a, #navigation li.selected a:link, #navigation li.selected a:active, #navigation li.selected a:hover, #navigation li.selected a:visited {
+    background-position: 0 0;
+    color: #FFF
+}
+
+#navigation li.selected a span, #navigation li.selected a:link span, #navigation li.selected a:active span, #navigation li.selected a:hover span, #navigation li.selected a:visited span {
+    background-position: right 0;
+    color: #FFF
+}
+
+.house_introduction {
+    font-size: 14px;
+    padding-left: 15px;
+    position: relative;
+    top: 4px
+}
+
+.several {
+    padding-left: 9px;
+    float: left
+}
+
+.several em {
+    font-style: normal;
+    color: #eb5f00
+}
+
+.xin-navigation {
+    height: 30px;
+    position: relative;
+    z-index: 10
+}
+
+.fixedpos_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    -webkit-box-shadow: 0 1px 2px #c6c6c6;
+    -moz-box-shadow: 0 1px 2px #c6c6c6;
+    box-shadow: 0 1px 2px #c6c6c6;
+    height: 32px;
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/public_new.gif) repeat-x 0 0;
+    border: 1px #d0d0d0 solid
+}
+
+.positpos_page {
+    position: absolute;
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/public_new.gif) repeat-x 0 0;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    border-bottom: 1px #d0d0d0 solid
+}
+
+.fixedpos_page ul.navigation_list, .positpos_page ul.navigation_list {
+    border: 0
+}
+
+.pos_tel_box {
+    display: none
+}
+
+.fixedpos_page .pos_tel_box, .positpos_page .pos_tel_box {
+    position: relative;
+    width: 970px;
+    margin: 0 auto;
+    display: block;
+    top: -32px;
+    z-index: 10000
+}
+
+.fixedpos_page .pos_tel_box .pos_tel, .positpos_page .pos_tel_box .pos_tel {
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/page_public.gif) no-repeat -15px -280px;
+    padding-left: 31px;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    height: 19px;
+    line-height: 19px
+}
+
+.fixedpos_page .pos_tel_box .pos_tel span, .positpos_page .pos_tel_box .pos_tel span {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 4px;
+    vertical-align: bottom
+}
+
+#header .forView {
+    _margin-top: -20px
+}
+
+.j_sidebar_130928 {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 50px;
+    z-index: 99999;
+    _position: absolute;
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-59))
+}
+
+.j_sidebar_130928 a {
+    background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/sidebar_140103.png") no-repeat
+}
+
+.j_sidebar_130928 #favirote {
+    background-position: 0 0;
+    width: 48px;
+    height: 45px;
+    margin-bottom: 15px;
+    display: block
+}
+
+.j_sidebar_130928 #favirote:hover {
+    background-position: 0 -45px
+}
+
+.j_sidebar_130928 #weixin {
+    background-position: 0 -90px;
+    width: 48px;
+    height: 42px;
+    margin-bottom: 14px;
+    display: block
+}
+
+.j_sidebar_130928 #weixin:hover {
+    background-position: 0 -132px
+}
+
+.j_sidebar_130928 #suggestion {
+    background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/res_logo.png") no-repeat -3px 0;
+    width: 55px;
+    height: 47px;
+    margin-bottom: 15px;
+    display: block
+}
+
+.j_sidebar_130928 #suggestion:hover {
+    background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/res_logo.png") no-repeat -2px -68px
+}
+
+.j_sidebar_130928 #backTop {
+    background-position: 0 -174px;
+    width: 50px;
+    height: 51px;
+    display: block
+}
+
+.j_sidebar_130928 #backTop:hover {
+    background-position: 0 -225px
+}
+
+.j_erweima {
+    width: 99px;
+    height: 121px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    position: absolute;
+    bottom: 59px;
+    _bottom: 58px;
+    left: -132px;
+    padding: 10px;
+    background-color: #fff
+}
+
+.j_erweima .tag {
+    position: absolute;
+    background: #fff url("http://pages.jinpu.com/images/ajkglobal/3/sidebar_140103.png") no-repeat -50px -2px;
+    width: 6px;
+    height: 11px;
+    right: -6px;
+    bottom: 12px;
+    overflow: hidden
+}
+
+.j_erweima .close {
+    background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/sidebar_140103.png") no-repeat -56px 0;
+    width: 8px;
+    height: 9px;
+    float: right;
+    cursor: pointer;
+    margin-top: 3px
+}
+
+.j_erweima .title {
+    display: block;
+    float: left;
+    color: #666;
+    _margin-top: 1px
+}
+
+.j_erweima .top {
+    margin-bottom: 9px;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    margin-top: -2px
+}
+
+#container {
+    overflow: hidden
+}
+
+* html {
+    _background-image: url(about:blank);
+    _background-attachment: fixed
+}
+
+.popup-box {
+    font-size: 12px;
+    background: #d9d9d9;
+    width: 579px;
+    height: 100%;
+    padding: 12px
+}
+
+.panel_def_box {
+    width: 100%
+}
+
+.popup-box .popup-container {
+    background: #fff;
+    width: 507px;
+    border: 1px solid #999;
+    padding: 35px 35px 23px 35px;
+    _padding: 35px 2px 23px 35px;
+    height: 100%;
+    position: relative
+}
+
+.popup-container .tab-content {
+    width: 100%;
+    overflow: hidden
+}
+
+.popup-box .popup-container .tab-trgs {
+    padding: 0;
+    margin: 0
+}
+
+.rss-box .tab-content .right-main {
+    width: 415px !important;
+    text-align: left
+}
+
+.popup-box .popup-container .tab-trgs li {
+    list-style: none
+}
+
+.rss-box .right-main h3 {
+    font-size: 14px !important
+}
+
+.rssok-box {
+    height: auto !important
+}
+
+.popup-box {
+    font-size: 12px;
+    background: #d9d9d9;
+    width: 579px;
+    height: 100%;
+    padding: 10px
+}
+
+.rss-box .right-main h3 {
+    font-size: 14px
+}
+
+.popup-box .popup-container {
+    background: #fff;
+    width: 507px;
+    border: 1px solid #999;
+    padding: 30px 35px 30px 35px !important;
+    height: 100%;
+    position: relative
+}
+
+.popup-box .popup-container .tab-trgs {
+    padding: 0;
+    margin: 0
+}
+
+.popup-box .popup-container .tab-trgs li {
+    list-style: none
+}
+
+.panel_def_close {
+    display: block;
+    position: absolute;
+    background: url("http://pages.jinpu.com/images/close_icon.gif") no-repeat;
+    width: 13px;
+    height: 12px;
+    right: 28px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 999
+}
+
+.rss-box .tab-trgs {
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #ccc
+}
+
+.rss-box .tab-trgs li {
+    width: 85px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    color: #333;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    background: #f5f5f5;
+    cursor: pointer
+}
+
+.rss-box .tab-trgs li:first-child {
+    border-left: 1px solid #ccc
+}
+
+.rss-box .tab-trgs li.first {
+    _border-left: 1px solid #ccc
+}
+
+.rss-box .tab-trgs li.cur {
+    height: 25px;
+    color: #60a80c
+}
+
+.rss-box .tab-content-list {
+    margin-top: 20px
+}
+
+.rss-box .tab-content .left-img {
+    float: left
+}
+
+.rss-box .tab-content .email-bg {
+    width: 82px;
+    height: 54px
+}
+
+.rss-box .tab-content .phone-bg {
+    background: url("http://pages.jinpu.com/images/left_thumbs.gif") no-repeat 0 -77px;
+    width: 57px;
+    height: 83px;
+    float: left
+}
+
+.rss-box .tab-content .right-main {
+    float: left;
+    margin-left: 10px;
+    width: 420px;
+    _width: 419px
+}
+
+.rss-box .right-main h3 {
+    margin: 0
+}
+
+.rss-box .right-main p {
+    margin: 15px 0 0 0;
+    padding: 0;
+    position: relative
+}
+
+.rss-box .right-main p input {
+    height: 20px
+}
+
+.form-block a.xiaomos {
+    color: #999
+}
+
+.form-block a.xiaomos:hover {
+    color: #f60
+}
+
+.form-block .val-right a, .form-block .re-code-link {
+    color: #999
+}
+
+.rss-box .right-main p input[name="phone-num"], .rss-box .right-main p input[name="email-addr"] {
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 3px;
+    -moz-box-shadow: 0 1px 3px #ccc inset;
+    -webkit-box-shadow: 0 1px 3px #ccc inset;
+    box-shadow: 0 1px 3px #ccc inset;
+    margin-right: 10px
+}
+
+.rss-box .right-main p input[name="re-code"] {
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 3px;
+    -moz-box-shadow: 0 1px 3px #ccc inset;
+    -webkit-box-shadow: 0 1px 3px #ccc inset;
+    box-shadow: 0 1px 3px #ccc inset
+}
+
+.rss-box .right-main .form-act {
+    margin: 20px 0 0 0
+}
+
+.rss-box .right-main .form-act .comfirm {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: url("http://pages.jinpu.com/images/prop_success.png") no-repeat;
+    width: 108px;
+    border: 0;
+    text-decoration: none;
+    margin: 0
+}
+
+.rss-box .right-main .form-act a {
+    color: #0041d9;
+    text-decoration: none;
+    margin-left: 10px
+}
+
+.rss-box .dec-ft {
+    color: #999;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px
+}
+
+.rss-box .dec-ft p {
+    margin: 0;
+    line-height: 12px
+}
+
+.rss-box .dec-ft p a {
+    color: #999
+}
+
+.rss-box .right-main .h-dec {
+    margin: 5px 0 0 0;
+    line-height: 20px;
+    color: #999
+}
+
+.rssok-box {
+    height: 100px
+}
+
+.rssok-box .popup-container {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    vertical-align: middle
+}
+
+.rssok-box .popup-container a {
+    font-size: 12px;
+    color: #0041d9;
+    margin-left: 15px
+}
+
+a.print_ico {
+    background: url("http://pages.jinpu.com/images/web/sendforiphone.png") no-repeat -31px 1px !important
+}
+
+.print_ico:hover, a.print_ico:hover {
+    background: url("http://pages.jinpu.com/images/web/sendforiphone.png") no-repeat -31px 1px !important
+}
+
+.rssok-box .popup-container .success-icon {
+    background: url("http://pages.jinpu.com/images/success_icon.gif") no-repeat;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px
+}
+
+.popup-box .val-right {
+    background: url("http://pages.jinpu.com/images/val_icons.gif") no-repeat;
+    padding-left: 20px;
+    height: 14px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.popup-box .val-wrong {
+    background: url("http://pages.jinpu.com/images/val_icons.png") no-repeat 0 -22px;
+    padding-left: 15px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #fe0201
+}
+
+.popup-box .re-code-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 26px;
+    margin: 0 5px 0 8px;
+    _margin: 0 3px 0 5px
+}
+
+.rss-box .dec-ft p a:link, .rss-box .dec-ft p a:visited, .rss-box .dec-ft p a:active {
+    text-decoration: underline !important;
+    *height: 16px !important;
+    *line-height: 16px !important
+}
+
+#seccode-info {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    _right: auto !important
+}
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, button, input, textarea, p, address, em, label, img, th, td, iframe, sub, sup {
+    padding: 0;
+    margin: 0
+}
+
+#content {
+    width: 970px;
+    padding-top: 5px
+}
+
+.appContainer {
+    display: none
+}
+
+.glbListNavigation {
+    width: 970px
+}
+
+#glbSearch {
+    position: absolute;
+    top: 2px;
+    right: 92px
+}
+
+.glbSearch .home_close {
+    right: 12px
+}
+
+.map-cont {
+    margin: 5px 0 20px 0
+}
+
+.clearboth {
+    zoom: 1
+}
+
+.clearboth:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.numfont {
+    font-family: tahoma
+}
+
+h1, h2, h3, h4, h5, p, dt, dl, dd {
+    padding: 0;
+    margin: 0
+}
+
+.landingpage {
+    margin: 20px 0 11px;
+    padding-left: 35px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    background: url("http://pages.jinpu.com/images/web/search_icon.gif") no-repeat 10px 10px #f5f8ff;
+    border: 1px solid #bcd8f5
+}
+
+.landingpage .highlight, .map-cont-right a.fixerror:hover {
+    color: #f60
+}
+
+.landingpage a {
+    display: inline-block;
+    padding: 0 5px
+}
+
+.prints {
+    background: url("http://pages.jinpu.com/images/web/page_bottom_new.gif") !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 -32px !important;
+    border: none !important;
+    width: 88px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    overflow: hidden;
+    padding: 0 0 0 12px
+}
+
+.icon-palm, .icon-star, .icon-identity-card, .icon-business-license, .icon-identity-card-stale, .icon-business-license-stale, .icon-prompt, .icon-fork, .icon-hook, .icon-mark, .icon-up, .icon-phone_big {
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+    background-image: url(http://pages.jinpu.com/images/office/icons1.png);
+    background-repeat: no-repeat;
+    zoom: 1
+}
+
+.icon-palm {
+    width: 12px;
+    height: 14px;
+    background-position: -64px 0
+}
+
+.icon-star {
+    width: 14px;
+    height: 15px;
+    background-position: -120px 0
+}
+
+.icon-identity-card {
+    width: 22px;
+    height: 15px;
+    background-position: -76px 0
+}
+
+.icon-identity-card-stale {
+    width: 22px;
+    height: 15px;
+    background-position: -76px -15px
+}
+
+.icon-business-license {
+    display: inline-block;
+    width: 22px;
+    height: 15px;
+    background-position: -98px 0
+}
+
+.icon-business-license-stale {
+    display: inline-block;
+    width: 22px;
+    height: 15px;
+    background-position: -98px -15px
+}
+
+.icon-prompt {
+    width: 12px;
+    height: 12px;
+    background-position: -12px 0
+}
+
+.icon-fork {
+    width: 12px;
+    height: 12px;
+    background-position: 0 0;
+    background-image: url(http://pages.jinpu.com/images/office/icon-gray-fork.png)
+}
+
+.icon-hook {
+    width: 12px;
+    height: 12px;
+    background-position: -24px 0
+}
+
+.icon-mark {
+    width: 12px;
+    height: 18px;
+    background-position: -134px 0
+}
+
+.icon-phone {
+    width: 46px;
+    height: 47px;
+    background: url(http://pages.jinpu.com/images/office/icons1.png) no-repeat scroll right 0 transparent
+}
+
+.icon-up {
+    width: 5px;
+    height: 11px;
+    background-position: 0 -36px
+}
+
+.icon-diamond {
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(http://pages.jinpu.com/images/broker/ineg_jz.gif) no-repeat scroll 0 0 transparent
+}
+
+.office .crumb-box {
+    height: 40px;
+    line-height: 30px
+}
+
+.office .crumb-box .crumb {
+    float: left;
+    font-size: 12px;
+    padding-left: 15px;
+    font-family: SimSun
+}
+
+.office .crumb-box .crumb a {
+    color: #1f52b2
+}
+
+.office .crumb-box .crumb a:hover {
+    color: #f60
+}
+
+.office .crumb-box .crumb em {
+    color: #45629e
+}
+
+.office .crumb-box .crumb span {
+    padding-left: 5px
+}
+
+.office .crumb-box .inform {
+    float: right;
+    line-height: 100%;
+    margin-top: 7px;
+    margin-right: 2px;
+    color: #45629e;
+    cursor: pointer
+}
+
+.office .crumb-box .inform:hover, .my_operation a:hover, .office-top-right .district-count a:hover, .office-top-right .broker-name a:hover, .bottom-phone .action a:hover, .house-recommend ul li dl dd.title a:hover, .house-recommend ul li dl dt a:hover {
+    color: #f60
+}
+
+.office .crumb-box .inform * {
+    vertical-align: middle
+}
+
+.office .crumb-box .inform span {
+    float: right;
+    padding-left: 4px;
+    margin-top: 1px;
+    *margin-top: 2px
+}
+
+.office .crumb-box .inform em {
+    float: right
+}
+
+.office .office-top {
+    border: 1px solid #9bd038;
+    height: 408px;
+    position: relative;
+    z-index: 9;
+    background: url(http://pages.jinpu.com/images/office/repeat_hd_mod.jpg) repeat-x 0 0
+}
+
+.office-top-left {
+    width: 718px;
+    float: left;
+    display: inline;
+    margin-left: 30px;
+    position: relative;
+    z-index: 100
+}
+
+.office-top-left-left {
+    width: 328px;
+    float: left
+}
+
+.office-top-left-right {
+    width: 354px;
+    float: right
+}
+
+.office-top-left .office-title {
+    font-size: 16px;
+    text-align: center;
+    height: 58px;
+    line-height: 58px;
+    color: #333;
+    overflow: hidden
+}
+
+.office-top-right {
+    font-size: 12px;
+    width: 178px;
+    float: right;
+    border-left: 1px solid #9bd038;
+    height: 100%;
+    background-color: #fcfef9;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.office-datum1 li {
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px dotted #ccc;
+    line-height: 28px;
+    float: left;
+    font-size: 13px
+}
+
+.office-datum1 li.ext-icon {
+    position: relative
+}
+
+.office-datum1 li.ext-icon strong {
+    float: left
+}
+
+.office-datum1 li.ext-icon span {
+    float: left
+}
+
+.office-datum1 li.ext-icon .icon-prompt {
+    float: left;
+    margin-top: 8px
+}
+
+.officeqa-show {
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    left: 108px;
+    display: none;
+    line-height: 22px
+}
+
+.officeqa-show .tit {
+    font-size: 12px;
+    text-indent: 7px;
+    color: #666;
+    font-weight: normal;
+    width: 100%;
+    height: 30px;
+    line-height: 37px;
+    overflow: hidden;
+    background: url(http://pages.jinpu.com/images/office/tipbg.gif) no-repeat left top
+}
+
+.officeqa-show .con {
+    text-justify: inter-ideograph;
+    text-align: justify;
+    color: #660;
+    width: 100%;
+    padding-bottom: 5px;
+    background: url(http://pages.jinpu.com/images/office/tipbg.gif) no-repeat left bottom
+}
+
+.officeqa-show .con .con-padding {
+    padding: 5px 7px 0 7px
+}
+
+.office-datum1 li strong {
+    font-weight: normal;
+    padding-right: 5px;
+    padding-left: 15px;
+    float: left
+}
+
+.office-datum1 li .numbers {
+    padding: 0;
+    margin: 0;
+    font-size: 14px
+}
+
+.office-datum1 li .price {
+    font-style: normal;
+    font-size: 22px
+}
+
+.office-datum1 li .prices {
+    color: #eb6100;
+    font-weight: bold;
+    font-family: '宋体'
+}
+
+.crumb .propnav {
+    margin: 0
+}
+
+.broker-phone-border {
+    border: 1px solid #bbd6f0;
+    height: 64px;
+    background: #f6f9ff;
+    margin-top: 19px
+}
+
+.broker-phone-border .broker-phone {
+    border: 1px solid #fff;
+    border-bottom: 0;
+    overflow: hidden
+}
+
+.broker-phone .icon-phone {
+    float: left;
+    display: inline;
+    margin: 9px 0 0 13px
+}
+
+.broker-phone .phone, .broker-phone .subtit {
+    width: 279px;
+    float: right
+}
+
+.broker-phone .phone {
+    font-size: 24px;
+    font-weight: bold
+}
+
+.broker-phone .phone span {
+    float: left
+}
+
+.broker-phone .phone .convey {
+    font-size: 13px;
+    margin: 0 2px 0 5px;
+    height: 35px;
+    line-height: 32px;
+    padding-top: 2px;
+    font-weight: normal
+}
+
+.broker-phone .subtit {
+    color: #666;
+    font-size: 12px;
+    margin: 9px 0 3px 0
+}
+
+.office-hidden-border {
+    border: 1px solid #f7be33;
+    background-color: #fff3d9;
+    repeat-x left 1px;
+    margin-top: 19px;
+    margin-bottom: 12px;
+    text-align: center
+}
+
+.office-hidden-border h2 {
+    font-size: 16px;
+    line-height: 77px
+}
+
+.office-hidden-border .office-hidden {
+    height: 77px;
+    border-bottom: 0;
+    overflow: hidden
+}
+
+.office-top-left-left .slide-bottom {
+    overflow: hidden;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 5px
+}
+
+.office-top-left-left .slide-bottom .view-house-photo {
+    float: left;
+    font-family: '宋体';
+    color: #45629e
+}
+
+.office-top-left-left .slide-bottom a.view-house-photo:hover {
+    color: #f60
+}
+
+.view-house-photo em {
+    font-style: normal
+}
+
+.office-top-left-left .slide-bottom .store-up {
+    float: right;
+    margin-right: 3px
+}
+
+.office-top-left-left .slide-bottom .store-up span {
+    float: right
+}
+
+.office-top-left-left .slide-bottom .store-up .icon-heart {
+    margin-right: 5px;
+    float: right;
+    margin-top: 6px;
+    *margin-top: 4px
+}
+
+.office-top-right .headimg {
+    padding-top: 52px;
+    text-align: center
+}
+
+.office-top-right .headimg img {
+    width: 100px;
+    height: 133px
+}
+
+.office-top-right .developer_logo {
+    padding-top: 78px;
+    text-align: center
+}
+
+.office-top-right .developer_logo img {
+    width: 150px
+}
+
+.office-top-right .broker-name {
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #496094;
+    margin: 6px 0 8px 0
+}
+
+.office-top-right .broker-name a {
+    color: #375199
+}
+
+.office-top-right .rank {
+    height: 25px;
+    line-height: 25px;
+    text-align: center
+}
+
+.office-top-right .rank .icon-star {
+    margin: 0 2px
+}
+
+.office-top-right .attestation {
+    height: 23px;
+    line-height: 23px;
+    text-align: center
+}
+
+.office-top-right .attestation .icon-business-license, .office-top-right .attestation .icon-identity-card {
+    margin: 0 4px
+}
+
+.office-top-right .company {
+    width: 124px;
+    line-height: 18px;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 3px
+}
+
+.office-top-right .company .title {
+    float: left;
+    font-weight: normal
+}
+
+.office-top-right .company .value {
+    float: right;
+    width: 88px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.office-top-right .district-count {
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    width: 124px;
+    margin: auto;
+    text-align: left
+}
+
+.office-top-right .district-count a {
+    color: #3d538d
+}
+
+.office-top-right .district-count strong {
+    font-weight: normal
+}
+
+.office-top-right .go-shop {
+    text-align: center;
+    padding: 9px 0 1px 0
+}
+
+.office-top-right .go-shop a {
+    margin-left: -2px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    width: 118px;
+    background: url(http://pages.jinpu.com/images/office/buttons-bg.gif) repeat-x left -134px;
+    border: 1px solid #dadedf;
+    color: #375199
+}
+
+.office-top-right .go-shop a:hover {
+    color: #f60
+}
+
+.office-top-right-padding {
+    height: 100%
+}
+
+.office-details {
+    padding-top: 20px
+}
+
+.office-details-top {
+    width: 970px;
+    height: 28px
+}
+
+.office-details-top .office-details-tab {
+    float: left
+}
+
+.office-details-top .office-details-tab li {
+    float: left;
+    width: 96px;
+    height: 27px;
+    line-height: 27px;
+    background: url(http://pages.jinpu.com/images/office/bg_btn.png) no-repeat scroll -95px -337px transparent;
+    border-bottom: 0;
+    display: inline-block;
+    margin-right: 1px
+}
+
+.office-details-top .office-details-tab li.cur {
+    background: url(http://pages.jinpu.com/images/office/bg_btn.png) no-repeat scroll 0 -337px transparent;
+    overflow: hidden;
+    font-weight: bold;
+    border-bottom: 0;
+    height: 28px;
+    width: 90px
+}
+
+.office-details-top .office-details-tab li a {
+    display: block;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #000;
+    float: left
+}
+
+.office-details-top .office-details-tab li a:hover {
+    text-decoration: none;
+    background: url(http://pages.jinpu.com/images/office/bg_btn.png) no-repeat scroll 195px -337px transparent
+}
+
+.office-details-top .office-details-tab li.cur a {
+    color: #fff;
+    border-bottom: 0;
+    padding: 0 14px
+}
+
+.office-details-form-time {
+    line-height: 28px;
+    height: 28px;
+    float: right;
+    color: #686868
+}
+
+.office-details-bottom {
+    background: url(http://pages.jinpu.com/images/office/repeat_hd_mod.jpg) repeat-x 0 0
+}
+
+.map_title_bg {
+    background: url(http://pages.jinpu.com/images/office/repeat_hd_mod.jpg) repeat-x 0 0
+}
+
+.details-box {
+    border-top: 1px solid #9bd038;
+    padding: 0 0 0 20px;
+    zoom: 1
+}
+
+.details-box-rent {
+    margin: 30px 0 0 0
+}
+
+.details-box-title {
+    height: 45px;
+    background-color: none
+}
+
+.details-box .details-box-title-right {
+    float: right;
+    height: 34px;
+    margin-right: 10px;
+    display: inline;
+    width: 346px
+}
+
+.details-box .details-box-content {
+    width: 970px;
+    overflow: hidden
+}
+
+.details-box .details-box-title-left {
+    float: left;
+    height: 100%;
+    line-height: 45px
+}
+
+.details-box .details-box-title-left .tit {
+    float: left;
+    height: 100%;
+    font-size: 14px
+}
+
+.details-box .details-box-title-left .tit a {
+    color: #333
+}
+
+.details-box .details-box-title-left .tit a:hover {
+    color: #f60
+}
+
+.details-box .details-box-title-left .link {
+    float: left;
+    height: 100%;
+    padding-left: 20px
+}
+
+.details-box .pandect {
+    font-size: 14px;
+    width: 730px
+}
+
+.details-box .pandect ul li {
+    display: list-time;
+    list-style: disc outside none
+}
+
+.details-box .pandect ol li {
+    list-style: decimal outside none
+}
+
+.de-first .details-box-title {
+    height: 20px;
+    overflow: hidden
+}
+
+.details-go-top * {
+    vertical-align: middle
+}
+
+.details-go-top {
+    color: #426198;
+    float: right;
+    padding-top: 10px;
+    width: 68px
+}
+
+.details-go-top span {
+    float: right;
+    color: #3d538d
+}
+
+.details-go-top:hover span {
+    color: #f60
+}
+
+.details-go-top em {
+    float: right;
+    margin-top: 2px;
+    *margin-top: 0;
+    margin-top: 0 \0
+}
+
+.details-box .details-box-title-right .details-fixe {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #656565;
+    *margin-top: 8px;
+    margin-top: 9px \0
+}
+
+.details-box .details-box-title-right .details-fixe:hover {
+    color: #f60
+}
+
+.house-images span.first {
+    margin-top: 0
+}
+
+.house-images p {
+    font-size: 14px;
+    line-height: 36px;
+    margin-left: 5px
+}
+
+.housep {
+    padding: 30px 0 0 20px
+}
+
+.house-sets {
+    border: 1px solid #e7e7e7;
+    border-width: 1px 0 1px 0;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px
+}
+
+.house-sets * {
+    vertical-align: middle
+}
+
+.house-sets span {
+    margin: 0 5px
+}
+
+.house-sets span.forkbox {
+    color: #999
+}
+
+.house-sets em {
+    font-style: normal
+}
+
+.house-sets .icon-fork, .house-sets .icon-hook {
+    margin-right: 2px
+}
+
+.map-box {
+    border-top: 1px solid #e7e7e7;
+    margin-top: 1px;
+    padding-top: 5px;
+    position: relative;
+    width: 948px
+}
+
+.house-info strong {
+    font-weight: normal
+}
+
+.house-info .price-row {
+    height: 26px;
+    line-height: 26px
+}
+
+.house-info .price-row strong {
+    padding-right: 5px
+}
+
+.house-info .price-row em {
+    font-style: normal;
+    color: #f60;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.house-info .price-row a {
+    padding-left: 10px
+}
+
+.house-info .house-attr {
+    background: #f6f6f6;
+    font-size: 12px;
+    padding: 8px 0 14px 15px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    width: 100%
+}
+
+.house-info {
+    line-height: 22px;
+    margin: 20px 0 0 0;
+    width: 606px;
+    padding: 0 0 0 20px;
+    overflow: hidden
+}
+
+.house-info .house-attr .c1 {
+    width: 233px
+}
+
+.house-info .house-attr .c2 {
+    width: 224px
+}
+
+.house-info .house-attr .c3 {
+    width: 131px
+}
+
+.house-info .house-attr td {
+    padding: 2px 0 2px 0;
+    height: 22px;
+    line-height: 22px
+}
+
+.house-info .house-attr td strong {
+    width: 65px
+}
+
+.house-info h3 {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    padding-bottom: 3px
+}
+
+.map-box .map-title {
+    font-size: 15px
+}
+
+.map-cont .map-cont-left {
+    width: 600px;
+    height: 252px;
+    border: 1px solid #fff;
+    font-size: 1px;
+    position: relative
+}
+
+.map-cont .map-cont-left-border {
+    float: left;
+    border: 1px solid #dcdcdc
+}
+
+.map-cont .map-cont-right {
+    width: 319px;
+    float: right
+}
+
+.map-cont-right .tit {
+    line-height: 22px;
+    font-size: 14px
+}
+
+.map-cont-right .address {
+    line-height: 32px
+}
+
+.confbox .f1 {
+    height: 24px;
+    line-height: 24px
+}
+
+.confbox .f1 .icon-mark {
+    margin: 0 6px 0 0
+}
+
+.map-cont-right a.fixerror, .number_exp {
+    color: #999
+}
+
+.confbox .conf {
+    padding-left: 20px
+}
+
+.confbox .conf li {
+    float: left;
+    width: 72px;
+    height: 24px;
+    line-height: 24px
+}
+
+.confbox .conf li.list_sec {
+    width: 200px
+}
+
+.confbox .f1 * {
+    vertical-align: middle
+}
+
+.go-map {
+    padding: 8px 0 8px 0
+}
+
+.go-map a.viewmap {
+    display: block;
+    height: 36px;
+    overflow: hidden;
+    text-indent: 300px;
+    white-space: nowrap;
+    width: 165px;
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/public_new.gif) repeat-x -35px -553px
+}
+
+.go-fixerror {
+    padding-top: 5px;
+    color: #6a6a6a
+}
+
+.map-cont .map-cont-right .go-fixerror a {
+    color: #6a6a6a
+}
+
+.map-cont .map-cont-right .go-fixerror a:hover {
+    color: #f60
+}
+
+.house-images {
+    text-align: center
+}
+
+.house-images span {
+    margin: 0 auto 7px auto;
+    display: inline-block;
+    clear: both
+}
+
+.house-images span img {
+    padding: 2px;
+    border: 1px solid #ddd;
+    display: block
+}
+
+.house-images span em {
+    font-style: normal;
+    display: block;
+    text-align: center;
+    padding: 3px 0 2px 0;
+    margin: 0 auto
+}
+
+.house-photo-top {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    width: 606px
+}
+
+.house-photo-top-left {
+    float: left;
+    padding-left: 20px
+}
+
+.house-photo-top-left strong {
+    font-size: 14px;
+    padding-right: 10px
+}
+
+.house-photo-top-left a {
+    margin: 0 6px
+}
+
+.house-photo-top-right {
+    float: right;
+    padding-right: 20px;
+    line-height: 130%;
+    padding-top: 9px
+}
+
+.house-photo-top-right .gotop {
+    color: #45629e
+}
+
+.house-photo-top-right .gotop:hover {
+    color: #f60
+}
+
+.house-photo-top-right .gotop:hover span {
+    color: #f60
+}
+
+.house-photo-top-right .gotop .icon-up {
+    float: right;
+    margin-top: 3px
+}
+
+.house-photo-top-right .gotop span {
+    float: right;
+    margin-top: 1px;
+    cursor: default;
+    color: #45629e
+}
+
+.house-photo-list li {
+    float: left;
+    width: 106px;
+    display: inline;
+    margin-right: 19px
+}
+
+.house-photo-list li a {
+    float: left;
+    border: 1px solid #ccc;
+    padding: 1px
+}
+
+.house-photo-list li a img {
+    float: left;
+    width: 100px;
+    height: 75px
+}
+
+.house-photo-list li span {
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center
+}
+
+.house-photo-list li.list_last {
+    margin-right: 0
+}
+
+.house-photo-cont {
+    width: 606px
+}
+
+.house-photo-cont ul {
+    width: 606px;
+    margin-left: 20px
+}
+
+.bottom-phone {
+    height: 78px;
+    border: 1px solid #bbd6f0;
+    background: #f6f9ff;
+    margin-top: 30px;
+    position: relative
+}
+
+.gotop_pos {
+    position: absolute;
+    right: 6px;
+    top: -5px
+}
+
+.bottom-phone .icon-phone_big {
+    float: left;
+    margin-top: 15px;
+    margin-left: 19px
+}
+
+.left-phone {
+    width: 390px;
+    height: 100%;
+    float: left
+}
+
+.left-phone .phone {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    float: left;
+    padding: 1px 0 0 18px
+}
+
+.left-phone .phone span {
+    float: left
+}
+
+.left-phone .phone .convey {
+    font-size: 13px;
+    margin: 0 2px 0 5px;
+    height: 35px;
+    line-height: 32px;
+    padding-top: 2px;
+    font-weight: normal
+}
+
+.left-phone .des {
+    color: #666;
+    float: left;
+    padding: 18px 0 0 20px
+}
+
+.bottom-phone .user-name {
+    float: left;
+    height: 78px;
+    line-height: 78px;
+    font-size: 16px;
+    margin-left: 26px
+}
+
+.bottom-phone .user-name a {
+    color: #333
+}
+
+.bottom-phone .user-name span {
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: normal
+}
+
+.bottom-phone .action {
+    float: left;
+    padding-top: 24px;
+    padding-left: 30px
+}
+
+.bottom-phone .action a {
+    float: left;
+    margin: 0 5px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 28px;
+    border: 1px solid #e8e9eb;
+    width: 98px;
+    background: url(http://pages.jinpu.com/images/office/buttons-bg.gif) repeat-x 0 -162px;
+    text-align: center;
+    color: #335296
+}
+
+.bottom-phone .action a span {
+    padding-left: 5px;
+    *line-height: 32px;
+    line-height: 32px \0;
+    color: #3d538d
+}
+
+.bottom-phone .action a:hover span {
+    color: #f60
+}
+
+.bottom-phone .action a .icon-heart, .bottom-phone .action a .icon-palm {
+    float: left;
+    margin-top: 8px;
+    margin-left: 14px
+}
+
+.bottom-phone .action a.collect_click {
+    background: url("http://pages.jinpu.com/images/web/page_bottom_new.gif") no-repeat 0 0;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden
+}
+
+.bottom-phone .action a.collect_click:hover {
+    background: url("http://pages.jinpu.com/images/web/page_bottom_new.gif") no-repeat 0 0;
+    color: #f60
+}
+
+.bottom-phone .action a.print_click {
+    background: url("http://pages.jinpu.com/images/web/page_bottom_new.gif") no-repeat 0 -32px;
+    border: 0;
+    width: 88px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0 0 0 12px
+}
+
+.bottom-phone .action a.print_click:hover {
+    background: url("http://pages.jinpu.com/images/web/page_bottom_new.gif") no-repeat 0 -95px;
+    color: #f60
+}
+
+.bottom-phone .action a.has_collect {
+    background: url("http://pages.jinpu.com/images/web/page_bottom_new.gif") no-repeat 0 -63px
+}
+
+.bottom-phone .action a.has_collect span {
+    color: #999
+}
+
+.interested {
+    zoom: 1;
+    border: 1px solid #ccc;
+    margin: 10px 0 0 0
+}
+
+.interested-top {
+    height: 38px;
+    line-height: 38px;
+    zoom: 1
+}
+
+.interested-top .title {
+    float: left;
+    font-size: 14px;
+    display: inline;
+    margin-left: 20px
+}
+
+.interested-top .back-top {
+    float: right;
+    margin-right: 10px;
+    color: #45629e;
+    line-height: 130%;
+    padding-top: 9px
+}
+
+.interested-top .back-top:hover {
+    color: #f60
+}
+
+.interested-top .back-top:hover span {
+    color: #f60
+}
+
+.interested-top .back-top .icon-up {
+    float: right;
+    margin-top: 2px;
+    margin-top: 1px \9
+}
+
+.interested-top .back-top span {
+    float: right;
+    color: #45629e;
+    cursor: default
+}
+
+.interested-cont {
+    padding-bottom: 18px;
+    padding-left: 14px
+}
+
+.int-house-box {
+    float: left;
+    margin: 0 10px;
+    padding: 8px 0;
+    display: inline;
+    zoom: 1
+}
+
+.int-house {
+    width: 152px;
+    float: left;
+    height: 195px;
+    display: inline;
+    margin: 0 8px;
+    overflow: hidden;
+    cursor: pointer;
+    zoom: 1
+}
+
+body .incur {
+    border: 1px solid #ccc;
+    margin: 0 9px;
+    padding: 7px 0
+}
+
+.int-house td, .int-house dt {
+    overflow: hidden
+}
+
+.int-house .img {
+    margin-bottom: 5px;
+    text-align: center;
+    border: 1px solid #DDD;
+    overflow: hidden
+}
+
+.int-house .title {
+    height: 20px;
+    line-height: 20px;
+    width: 152px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.int-house .title a {
+    color: #0837db
+}
+
+.int-house .title a:hover {
+    color: #f60
+}
+
+.int-house .price {
+    height: 18px;
+    line-height: 18px;
+    color: #eb6100
+}
+
+.int-house .rank, .int-house .building {
+    height: 18px;
+    line-height: 18px
+}
+
+.more-house {
+    border: 1px solid #e1e1e1;
+    padding: 10px 0;
+    margin: 20px 0
+}
+
+.more-house .f1 {
+    height: 26px;
+    line-height: 26px
+}
+
+.more-house .f1 strong {
+    float: left;
+    width: 145px;
+    text-align: right;
+    font-weight: normal
+}
+
+.more-house .f1 a {
+    padding: 0 13px;
+    color: #3d538d
+}
+
+.more-house .f1 a:hover {
+    color: #f60
+}
+
+.slide-box {
+    width: 326px
+}
+
+.slide .slide-view {
+    height: 240px;
+    width: 320px;
+    border: 1px solid #cecccd;
+    text-align: center;
+    position: relative;
+    padding: 2px
+}
+
+.slide .slide-view-loading {
+    background: url(http://pages.jinpu.com/images/office/loading.gif) no-repeat center center
+}
+
+.slide .slide-view .slide-img {
+    width: 320px;
+    height: 240px;
+    float: left
+}
+
+.slide .slide-list {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5px
+}
+
+.slide .slide-list ul {
+    width: 110%
+}
+
+.slide .slide-list ul li {
+    float: left;
+    width: 73px;
+    height: 62px;
+    position: relative;
+    font-size: 0;
+    display: inline;
+    margin-right: 10px
+}
+
+.slide .slide-list ul li a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    border: 1px solid #efefef;
+    height: 54px;
+    text-align: center
+}
+
+.slide .slide-list ul li a:hover {
+    border-color: #ccc
+}
+
+.slide .slide-list ul li a img {
+    margin-top: 2px;
+    width: 67px;
+    height: 50px
+}
+
+.slide .slide-list ul li.cur {
+    background: url(http://pages.jinpu.com/images/office/triangle.gif) no-repeat center top
+}
+
+.slide .slide-list ul li.cur a {
+    border-color: #ccc
+}
+
+.bubble-box {
+    position: absolute;
+    height: 38px;
+    background: url(http://pages.jinpu.com/images/office/bubble.gif) no-repeat left top;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 24px;
+    left: 50%;
+    top: 50%;
+    margin-top: -38px
+}
+
+.bubble-box h3 {
+    float: left;
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+    padding-left: 17px;
+    padding-right: 9px
+}
+
+.bubble-box h3 a {
+    color: #fff
+}
+
+.bubble-box .bubble-right {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    height: 100%;
+    width: 5px;
+    background: url(http://pages.jinpu.com/images/office/bubble.gif) no-repeat right top
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none
+}
+
+.traffic {
+    padding-left: 25px;
+    background: url(http://pages.jinpu.com/images/office/traffic.png) no-repeat left 5px;
+    line-height: 20px
+}
+
+.traffic .tits {
+    line-height: 20px;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+
+.traffic .transit strong {
+    float: left;
+    width: 45px;
+    font-weight: bold;
+    overflow: hidden;
+    zoom: 1
+}
+
+.traffic .transit span {
+    float: right;
+    width: 255px;
+    overflow: hidden;
+    zoom: 1
+}
+
+.go-map a.viewmap {
+    float: left
+}
+
+.go-map a.fixerror {
+    float: left;
+    line-height: 120%;
+    margin-top: 7px;
+    margin-left: 19px
+}
+
+.details-box .price_trend {
+    margin: 20px 0 0 0
+}
+
+.details-box .price_trend h2 {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    line-height: 32px;
+    height: 32px
+}
+
+.details-box .price_trend .chart_box {
+    width: 600px;
+    height: 219px;
+    border: 1px solid #dedede;
+    float: left
+}
+
+.details-box .price_trend .chart_info {
+    float: right;
+    width: 319px;
+    line-height: 22px;
+    padding-top: 4px
+}
+
+.details-box .price_trend h4 {
+    font-size: 14px;
+    color: #0041d9;
+    padding: 0 0 8px 0
+}
+
+.details-box .price_trend h4.block {
+    background-position: 0 -22px
+}
+
+.details-box .price_trend p {
+    padding: 0
+}
+
+.details-box .price_trend a {
+    display: block
+}
+
+.details-box .price_trend .price {
+    color: #f60;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.details-box .price_trend .up {
+    color: #f60;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.details-box .price_trend .down {
+    color: #090;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.details-box .price_trend .equal {
+    color: #333
+}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden
+}
+
+.new_active {
+    margin: 30px 10px 10px 10px;
+    background-color: #ecf3ff;
+    padding: 10px;
+    border: 2px solid #ddebff;
+    color: #369;
+    line-height: 21px
+}
+
+.new_active .active_title {
+    color: #333
+}
+
+.laba {
+    margin-right: 5px;
+    padding-bottom: 5px
+}
+
+.active_desc {
+    background-color: #fffaec;
+    border: 2px solid #f8cfa5;
+    padding: 10px
+}
+
+.active_desc .detail_desc {
+    padding-left: 20px
+}
+
+.phone {
+    font-family: Tahoma
+}
+
+.office-datum1 li span {
+    overflow: hidden;
+    display: inline-block;
+    height: 28px;
+    float: left
+}
+
+.operation_fir {
+    width: 220px
+}
+
+.stylefont {
+    font-style: normal;
+    font-size: 14px;
+    font-family: Arial, Helvetica;
+    font-weight: bold
+}
+
+.my_operation {
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #e0e0e0;
+    border-top: 0;
+    background: url("http://pages.jinpu.com/images/office/page_list.png") repeat-x 0 0;
+    padding-left: 72px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    zoom: 1
+}
+
+a.coll_icon {
+    background: url("http://pages.jinpu.com/images/web/fav_sprite.gif") 0 2px no-repeat;
+    padding-left: 19px;
+    float: left
+}
+
+a.coll_icon:hover {
+    color: #f60
+}
+
+a.has_collect {
+    background: url("http://pages.jinpu.com/images/web/fav_sprite.gif") 0 -30px no-repeat
+}
+
+a.has_collect span {
+    color: #999
+}
+
+a.print_ico {
+    float: right;
+    background: url("http://pages.jinpu.com/images/web/page_ico.gif") no-repeat -2px -43px;
+    padding-left: 19px;
+    margin-right: 60px !important
+}
+
+a.print_ico:hover {
+    background: url("http://pages.jinpu.com/images/web/page_ico.gif") no-repeat -2px -70px;
+    color: #f60
+}
+
+.my_operation a {
+    color: #455f9e
+}
+
+.icon-phone_big {
+    background: url("http://pages.jinpu.com/images/office/icons1.png") no-repeat right 0;
+    height: 47px;
+    width: 46px
+}
+
+.pic_tit {
+    padding: 10px 0 4px 20px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    border-top: 1px solid #9bd038
+}
+
+.details-box .price_trend p.house_more {
+    padding-top: 5px
+}
+
+.number_exp {
+    position: relative;
+    bottom: 3px
+}
+
+.price_new_sma {
+    color: #eb6100;
+    font-family: '宋体'
+}
+
+.font_st {
+    font-family: '宋体'
+}
+
+body .details-box .default-style {
+    line-height: normal !important;
+    font-family: Simsun, Arial, Verdana, sans-serif
+}
+
+body .details-box .default-style p {
+    margin: 14px 0
+}
+
+.house-recommend {
+    border: #ccc 1px solid;
+    margin: 20px 0 5px 0;
+    zoom: 1
+}
+
+.house-recommend ul li {
+    float: left;
+    width: 150px;
+    padding: 0 5px 16px 32px;
+    overflow: hidden
+}
+
+.house-recommend ul li a.house-image, .house-recommend ul li img {
+    display: block
+}
+
+.house-recommend ul li dl {
+    margin-top: 5px
+}
+
+.house-recommend ul li dl dt {
+    max-height: 40px;
+    line-height: 20px;
+    overflow: hidden
+}
+
+.house-recommend ul li dl dt a {
+    color: #666
+}
+
+.house-recommend ul li dl dd {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden
+}
+
+.house-recommend ul li dl dd.title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 2px 0 5px 0
+}
+
+.house-recommend ul li dl dd.title a {
+    color: #333
+}
+
+.house-recommend ul li dl dd.price {
+    color: #eb6100
+}
+
+body .related {
+    padding: 0;
+    border: 0 !important
+}
+
+body .alike {
+    padding: 0;
+    border: 0 !important
+}
+
+body .mylinks {
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    zoom: 1
+}
+
+.mylinks-box {
+    padding-top: 25px
+}
+
+.go_top {
+    background: url("http://pages.jinpu.com/images/newhouse/go-top.png") no-repeat scroll 0 0;
+    bottom: 100px;
+    color: #fff;
+    margin-left: 971px;
+    position: fixed;
+    text-align: center;
+    width: 27px;
+    height: 84px;
+    text-indent: -9999px;
+    overflow: hidden
+}
+
+a.gotop-con, a.gotop-con:visited, a.gotop-con:active {
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 30px 2px 16px
+}
+
+.mylink-top-pad {
+    zoom: 1;
+    padding: 8px 0;
+    background: #f9f9f9
+}
+
+.mylink-top-pad:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.develop_head {
+    height: 82px;
+    background: url(http://pages.jinpu.com/images/office/repeat_82.jpg) repeat-x 0 0;
+    padding: 12px 0 0 0
+}
+
+.develop_logo {
+    float: left;
+    display: inline;
+    height: 70px;
+    width: 70px;
+    border: 1px solid #e3eff7;
+    margin-left: 14px
+}
+
+.develop_title {
+    float: left;
+    padding: 10px 0 0 14px
+}
+
+.develop_title h2 a {
+    font-size: 25px;
+    color: #333 !important
+}
+
+.develop_title h2 a:hover {
+    text-decoration: none
+}
+
+.develop_title p {
+    font-size: 14px;
+    padding-top: 6px
+}
+
+.developer_ico {
+    display: inline-block;
+    width: 44px;
+    height: 18px;
+    background: url("http://pages.jinpu.com/images/developer/develop_public.gif") no-repeat 0 -51px;
+    vertical-align: middle;
+    margin-left: 8px;
+    overflow: hidden
+}
+
+.develop_pic {
+    float: left;
+    display: inline;
+    width: 444px;
+    height: 363px;
+    border: 1px solid #ddd;
+    padding: 6px 6px 0 6px
+}
+
+.develop_pic p {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px
+}
+
+.look_pic {
+    background: url("http://pages.jinpu.com/images/developer/develop_public.gif") no-repeat -35px -76px;
+    padding-left: 20px;
+    color: #004b91 !important
+}
+
+.develop_right {
+    float: left;
+    width: 470px;
+    padding: 6px 0 0 40px
+}
+
+.develop_list li {
+    height: 18px;
+    line-height: 18px;
+    border-bottom: 1px dotted #CCC;
+    padding: 8px 0 8px 15px;
+    _padding: 6px 0 7px 15px;
+    overflow: hidden;
+    zoom: 1
+}
+
+.develop_list li label {
+    padding-right: 6px;
+    float: left
+}
+
+.develop_list li span {
+    display: inline-block;
+    float: left
+}
+
+.rent_price {
+    color: #eb6100;
+    font-weight: bold;
+    margin-top: -3px
+}
+
+.orange_color {
+    color: #eb6100
+}
+
+.rent_price em {
+    bottom: -2px;
+    font-family: arial;
+    font-size: 22px;
+    font-style: normal;
+    position: relative
+}
+
+.list_fir {
+    width: 236px;
+    padding-right: 5px
+}
+
+.list_sec {
+    width: 212px
+}
+
+.develop_name {
+    width: 175px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.develop_box {
+    margin-top: 33px;
+    border: 1px solid #c8dff6;
+    padding: 1px;
+    height: 118px;
+    width: 466px
+}
+
+.box_bg {
+    height: 118px;
+    background: url("http://pages.jinpu.com/images/developer/develop_public.png") repeat-x left bottom #FFF
+}
+
+.box_bg div {
+    float: left;
+    display: inline
+}
+
+.tel_ico {
+    width: 46px;
+    height: 47px;
+    background: url("http://pages.jinpu.com/images/office/icons1.png") no-repeat right 0;
+    margin: 26px 16px 0 18px
+}
+
+.tel_infor {
+    padding: 25px 26px 0 0
+}
+
+.developer span {
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 8px
+}
+
+.develop_tel {
+    font-family: Tahoma;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 2px
+}
+
+.develop_tel span {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 4px;
+    vertical-align: middle
+}
+
+.develop_tip {
+    color: #999;
+    padding-top: 3px
+}
+
+.develop_photo {
+    padding-top: 14px
+}
+
+.phone_zyx {
+    background: url("http://pages.jinpu.com/images/zyx/public_zyx.png") repeat-x 0 0;
+    border: 1px solid #c8dff6
+}
+
+.phone_big_zyx {
+    background: url("http://pages.jinpu.com/images/office/icons1.png") no-repeat right 0;
+    width: 46px;
+    height: 47px
+}
+
+a.alt_ico {
+    background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 0;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 13px 37px 0 5px;
+    vertical-align: middle;
+    overflow: hidden;
+    float: left
+}
+
+a.alt_ico:hover {
+    background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 -13px
+}
+
+.expenses_ico {
+    background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 -26px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px;
+    height: 13px;
+    *+height: 15px;
+    _height: 13px;
+    line-height: 13px;
+    _line-height: 14px;
+    *+line-height: 14px;
+    font-style: normal
+}
+
+.expenses_box {
+    position: absolute;
+    left: -11px;
+    top: -5px;
+    *+top: -2px;
+    _top: 1px;
+    width: 210px;
+    height: 50px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 2px 4px #CCC;
+    -moz-box-shadow: 1px 2px 4px #CCC;
+    -webkit-box-shadow: 1px 2px 4px #CCC;
+    background: #f7f7f9;
+    z-index: 1000;
+    line-height: 25px;
+    *+line-height: 30px;
+    padding: 5px 6px 5px 10px;
+    display: none;
+    z-index: 9999
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .expenses_box {
+        top: -4px
+    }
+}
+
+.expenses_type {
+    color: #999
+}
+
+a.expenses_closed {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    overflow: hidden;
+    background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 -41px;
+    display: block;
+    width: 10px;
+    height: 10px
+}
+
+a.expenses_closed:hover {
+    background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 -53px
+}
+
+.expenses_price {
+    color: #eb5f00;
+    font-style: normal
+}
+
+.expenses_price b {
+    font-size: 14px
+}
+
+.expenses_cont {
+    position: relative;
+    float: left;
+    _padding-top: 8px
+}
+
+.expenses_box .expenses_ico {
+    *+background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 -24px;
+    _background: url("http://pages.jinpu.com/images/office/office_public.gif") no-repeat 0 -24px;
+    _line-height: 16px
+}
+
+em {
+    font-style: normal
+}
+
+.office-top-opt {
+    border: 1px solid #CCC;
+    height: auto
+}
+
+.office-top-left-opt {
+    width: 365px;
+    float: left;
+    display: inline;
+    margin-left: 30px;
+    _margin-left: 25px;
+    z-index: 100
+}
+
+.office-top-right-opt {
+    width: 530px;
+    float: right;
+    margin: 0 42px 0 0;
+    _margin: 0 20px 0 0
+}
+
+.office-title {
+    font-size: 16px;
+    text-align: center;
+    height: 58px;
+    line-height: 58px;
+    color: #333;
+    overflow: hidden
+}
+
+.ho_de_inf {
+    width: 530px;
+    margin: 5px 0 0 0;
+    overflow: hidden
+}
+
+.ho_de_inf li {
+    float: left;
+    width: 250px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0 0 15px;
+    border: 1px dashed #e5e5e5;
+    border-width: 0 0 1px 0
+}
+
+.ho_de_inf li.long_width {
+    width: 529px
+}
+
+.ho_de_inf li .mod_txt1 {
+    display: inline-block;
+    color: #e86316;
+    font-weight: bold
+}
+
+.mod_txt1 .mod_font_bold {
+    display: inline-block;
+    margin: 0 6px 0 0;
+    font-size: 22px;
+    font-family: arial
+}
+
+.ho_de_inf li .txt_normal {
+    font-weight: normal;
+    color: #e86316
+}
+
+.ho_de_inf li .mt-r {
+    display: inline-block;
+    margin: 0 6px 0 0
+}
+
+.ho_de_inf li .mod_txt2 {
+    color: #000
+}
+
+.ho_de_inf li.long_width em.map_link {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 0 5px
+}
+
+.rel-infs {
+    width: 500px;
+    background: #fff9ed;
+    border: 1px solid #ffce89;
+    padding: 15px;
+    margin: 15px 0 30px 0
+}
+
+.rel-infs h3 {
+    font-size: 14px
+}
+
+.rel-infs p {
+    font-size: 14px;
+    margin: 13px 0 0 0
+}
+
+.rel-infs .imglist {
+    margin: 15px 0 0 0;
+    padding: 0;
+    height: 138px;
+    overflow: hidden
+}
+
+.imglist li {
+    float: left;
+    width: 104px;
+    height: 134px;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 1px 0;
+    border: 1px solid #fff9ed;
+    overflow: hidden
+}
+
+.imglist li.hover-mouse {
+    border: 1px solid #ccc
+}
+
+.imglist li.last_li {
+    margin: 0
+}
+
+.imglist li img {
+    border: 0;
+    width: 100px;
+    height: 75px
+}
+
+.imglist li p {
+    font-size: 12px;
+    margin: 0;
+    height: 18px;
+    line-height: 18px;
+    text-align: left;
+    padding: 0 0 0 1px
+}
+
+.imglist li .mb-title {
+    line-height: 18px;
+    margin: 3px 0 0 0;
+    width: 100px;
+    _width: 95px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 7px;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis
+}
+
+.imglist li .mb-price {
+    color: #eb5f00
+}
+
+.imglist li .mb-area {
+    overflow: hidden
+}
+
+.rel-more-links {
+    border-top: 1px solid #e0e0e0;
+    padding: 11px 0 0 2px;
+    margin: 13px 0 0 0
+}
+
+.rel-more-links span {
+    display: inline-block
+}
+
+.rel-more-links .links-entrance {
+    display: inline-block;
+    margin: 0 0 0 4px
+}
+
+.rel-more-links .links-entrance a {
+    display: inline-block;
+    margin: 0 38px 0 0;
+    color: #333
+}
+
+.links-entrance a:hover {
+    color: #f60
+}
+
+.office {
+    font-size: 12px
+}
+
+.offline_cont {
+    margin-top: 7px
+}
+
+.offline_pic {
+    display: inline;
+    float: left;
+    width: 240px;
+    height: 180px;
+    border: 3px solid #eee
+}
+
+.offline_infor {
+    float: left;
+    width: 450px;
+    padding-left: 30px
+}
+
+.offline_infor h3 {
+    font-size: 14px;
+    padding: 2px 0 6px 0
+}
+
+.offline_infor li {
+    line-height: 24px;
+    font-size: 13px
+}
+
+.offline_infor li.fir {
+    display: inline;
+    float: left;
+    width: 274px
+}
+
+.offline_infor li.sec {
+    display: inline;
+    float: left;
+    width: 164px
+}
+
+.offline_infor li.level {
+    clear: both;
+    width: 100%
+}
+
+.offline_infor li span.offline_price {
+    color: #e86316;
+    font-weight: bold
+}
+
+.offline_infor li span.gray_color {
+    color: #808080;
+    font-weight: bold
+}
+
+.offline_infor li span.orange_color {
+    color: #eb5f00
+}
+
+.offline_infor li span.offline_price .font_style {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 6px 0 0
+}
+
+.offline_infor li span a.alt_ico {
+    background: url("http://pages.jinpu.com/images/office/shop_public.gif") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 10px;
+    margin: 3px 0 0 0;
+    overflow: hidden;
+    vertical-align: text-top;
+    width: 10px
+}
+
+.offline_infor li span a.alt_ico:hover {
+    background: url("http://pages.jinpu.com/images/office/shop_public.gif") no-repeat scroll 0 -13px
+}
+
+.offline_house {
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    width: 438px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    color: #666
+}
+
+.similar_cont {
+    border: 2px solid #ffbd59;
+    background: #fff4e6;
+    margin: 19px 0 9px 0;
+    padding-bottom: 9px
+}
+
+.similar_cont h3 {
+    font-size: 14px;
+    padding: 13px 0 13px 18px
+}
+
+.similar_cont ul li {
+    display: inline;
+    float: left;
+    width: 465px;
+    padding: 0 0 13px 18px
+}
+
+.similar_cont ul li .similar_pic {
+    display: inline;
+    float: left;
+    width: 67px;
+    height: 50px;
+    margin: 5px 13px 0 0
+}
+
+.similar_cont ul li .similar_infor {
+    float: left;
+    width: 350px;
+    line-height: 24px
+}
+
+.similar_cont ul li .similar_infor p {
+    width: 350px;
+    height: 24px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+.similar_cont ul li .similar_infor p a {
+    text-decoration: underline
+}
+
+.similar_cont ul li span.similar_price {
+    color: #eb5f00;
+    padding-right: 8px
+}
+
+.similar_cont ul li span.similar_price b {
+    font-size: 14px
+}
+
+.similar_more {
+    color: #666;
+    padding: 2px 0 2px 18px
+}
+
+.similar_more a {
+    color: #666 !important;
+    padding: 0 21px 0 11px
+}
+
+.details-box-content .more_img_btn {
+    height: 33px;
+    width: 604px;
+    margin: 0 auto;
+    padding-bottom: 12px
+}
+
+.details-box-content .more_img_btn a {
+    display: inline-block;
+    height: 33px;
+    width: 604px;
+    background: url("http://pages.jinpu.com/images/web/link_more_prof.png") 0 0 repeat-x;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    color: #3c5a98;
+    border: 1px solid #d6d6d6
+}
+
+.details-box-content .more_img_btn a:hover {
+    display: inline-block;
+    height: 33px;
+    width: 604px;
+    background: url("http://pages.jinpu.com/images/web/link_more_prof.png") 0 -33px repeat-x;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    color: #f60;
+    border: 1px solid #bdbdbd
+}
+
+div.my_member_marked_new {
+    background-color: #d9d9d9;
+    border: medium none;
+    padding: 10px;
+    width: 409px
+}
+
+.my_member_marked_new .outerborder {
+    width: 409px;
+    border: #999 1px solid
+}
+
+.my_member_marked_new .border {
+    background: #fff;
+    padding: 10px 10px;
+    border: 0;
+    width: auto
+}
+
+.my_member_marked_new div.full div.msg div {
+    padding: 4px
+}
+
+.my_member_marked_new div.full div.msg div.txt {
+    float: left;
+    width: 220px;
+    margin: -100px 0 0 120px;
+    display: inline
+}
+
+.my_member_marked_new div.full div.msg div.txt div {
+    margin: 7px 0
+}
+
+.my_member_marked_new div.full div.msg div.txt a.border {
+    border: 1px solid #9fc120;
+    background: url(http://pages.jinpu.com/images/web/bg6_1x25.gif);
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer
+}
+
+.my_member_marked_new div.close {
+    text-align: right;
+    cursor: pointer
+}
+
+.my_member_marked_new div.full div.msg div.img {
+    margin: 9px 0 15px 15px;
+    width: 94px
+}
+
+.my_member_marked_new div.full div.msg div.txt div.title {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 0
+}
+
+.my_member_marked_new ul.msg {
+    background: url(http://pages.jinpu.com/images/web/icon.faceok_90x75.gif) no-repeat;
+    margin: 13px 0 14px 5px
+}
+
+.my_member_marked_new ul.msg dt {
+    margin-left: 104px;
+    margin-bottom: 14px
+}
+
+.my_member_marked_new ul.msg dd {
+    margin-left: 104px;
+    font-size: 14px
+}
+
+.my_member_marked_new ul.msg dd span.favprotitle {
+    *text-indent: -40px
+}
+
+.my_member_marked_new ul.msg dt b {
+    font-size: 14px
+}
+
+.my_member_marked_new ul.msg dd .close {
+    border: 1px solid #9fc120;
+    background: url(http://pages.jinpu.com/images/web/bg6_1x25.gif);
+    width: 68px;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 0;
+    margin-top: 11px
+}
+
+.my_member_marked_new ul.msg dd .ask {
+    border: 1px solid #CCC;
+    background: url(http://pages.jinpu.com/images/web/btn_gray_bg_1x24.gif);
+    width: 92px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 0;
+    margin-top: 11px;
+    margin-left: 11px;
+    *margin-left: 7px
+}
+
+.my_member_marked_new .ico-success, .my_member_marked_new .go-on {
+    background: url(http://pages.jinpu.com/images/web/prop_success.png) no-repeat 0 0
+}
+
+.my_member_marked_new div.msg {
+    display: none;
+    position: relative;
+    padding: 30px 0 30px 110px;
+    background: #fff
+}
+
+.my_member_marked_new div.msg p {
+    overflow: hidden;
+    zoom: 1;
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left
+}
+
+.my_member_marked_new .ico-success {
+    float: left;
+    width: 30px;
+    height: 25px;
+    margin: 5px 10px 0 0;
+    background: url(http://pages.jinpu.com/images/web/fav_sprite.gif) no-repeat 0 -85px
+}
+
+.my_member_marked_new div.msg a {
+    color: #0041d9;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: Simsun
+}
+
+.my_member_marked_new .go-on {
+    width: 108px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.my_member_marked_new div.msg i.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 9px;
+    height: 10px;
+    background: url(http://pages.jinpu.com/images/web/icon_close_9x10.gif) no-repeat 0 0
+}
+
+.my_member_marked_new div.msg .close {
+    display: block;
+    cursor: pointer
+}
+
+.my_member_marked_new .recommend {
+    background: #f3f3f3;
+    border-top: 1px solid #CCC;
+    padding: 10px 0 0 19px
+}
+
+.my_member_marked_new .recommend .tips {
+    display: block;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold
+}
+
+.my_member_marked_new .recommend ul {
+    margin: 6px 0 0 8px
+}
+
+.my_member_marked_new .recommend ul li {
+    padding-bottom: 9px
+}
+
+.my_member_marked_new .recommend ul li .photo {
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    width: 62px;
+    padding-top: 2px
+}
+
+.my_member_marked_new .recommend ul li .details {
+    display: inline-block;
+    vertical-align: top;
+    width: 295px;
+    overflow: hidden;
+    padding-left: 10px;
+    *display: inline;
+    *zoom: 1
+}
+
+.my_member_marked_new .recommend ul li .details h3, .my_member_marked_new .recommend ul li .details h4 {
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    width: 285px;
+    line-height: 18px
+}
+
+.my_member_marked_new .recommend ul li .details h3 {
+    white-space: nowrap
+}
+
+.my_member_marked_new .recommend ul li .details h4.commname {
+    color: #666
+}
+
+.my_member_marked_new .recommend ul li .details h4 strong {
+    color: #f60;
+    font-size: 14px
+}
+
+.fav_full .outerborder .msg {
+    padding: 20px 0
+}
+
+.fav_full .outerborder .msg p {
+    height: 30px;
+    text-align: center
+}
+
+.fav_full .outerborder .msg .go-on {
+    margin: 0 auto
+}
+
+.fav_full .outerborder .fav_full_tip {
+    text-align: center;
+    width: 245px;
+    margin: 5px auto 0
+}
+
+#collection_layer .tip_midd {
+    background-color: #fff;
+    border: 1px solid #666;
+    height: 95px;
+    margin: 9px;
+    width: 348px
+}
+
+.panel_def iframe {
+    height: 0;
+    width: 0
+}
+
+#unique_dialog iframe {
+    display: none
+}
+
+.panel_def {
+    z-index: 999999 !important
+}
+
+.panel_def iframe {
+    display: none
+}
+
+#header .forView {
+    _margin-top: -10px
+}
+
+.broker-weixin {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    _z-index: 1;
+    position: relative;
+    margin-left: 10px;
+    padding: 0 5px 0 20px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer
+}
+
+.broker-weixin:hover {
+    background-color: #f7f7f7
+}
+
+.weixin-icon {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #62ac01;
+    font-size: 16px
+}
+
+.weixin-text {
+    text-indent: 5px
+}
+
+.weixin-QRCode {
+    position: absolute;
+    bottom: -29px;
+    left: 59px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    -webkit-animation-name: rotateInDownLeft;
+    -webkit-animation-duration: .3s
+}
+
+.weixin-desc {
+    margin-top: 10px;
+    *width: 120px;
+    font-weight: normal;
+    color: #333
+}
+
+.weixin-arrow {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: -20px;
+    *height: 0;
+    *width: 0;
+    border-color: transparent;
+    border-width: 10px;
+    _border-width: 0;
+    border-style: solid;
+    border-right-color: #bbb
+}
+
+.weixin-arrow .arrow {
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: -8px;
+    *height: 0;
+    *width: 0;
+    border-color: transparent;
+    border-width: 9px;
+    _border-width: 0;
+    border-style: solid;
+    border-right-color: #fff
+}
+
+@-webkit-keyframes rotateInDownLeft {
+    0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate3d(0, 0, 1, -45deg);
+        transform: rotate3d(0, 0, 1, -45deg);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes rotateOutUpLeft {
+    0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        opacity: 1
+    }
+    100% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate3d(0, 0, 1, -45deg);
+        transform: rotate3d(0, 0, 1, -45deg);
+        opacity: 0
+    }
+}
+
+.tip_midd {
+    background-color: #fff;
+    height: 150px;
+    width: 360px;
+    _width: 340px;
+    margin: 4px;
+    border: 1px solid #666
+}
+
+.tip_m_lo {
+    background-color: #fff;
+    height: 350px;
+    width: 340px;
+    _widht: 340px;
+    margin: 4px;
+    border: 1px solid #666
+}
+
+.tip_midd .t_m_dl {
+    float: right;
+    margin: 9px 10px 0 0
+}
+
+.my_member_marked_new .outerborder .msg div {
+    _text-align: left
+}
+
+.outerborder .adds {
+    _display: block;
+    display: block;
+    background-image: url(http://pages.jinpu.com/img/list/add_img.png);
+    margin-left: 42px;
+    width: 108px;
+    height: 32px;
+    background-position: -6px -22px
+}
+
+.tip_m_lo .t_m_dl1 {
+    height: 52px;
+    margin: 0;
+    _width: 340px;
+    background: url(http://pages.jinpu.com/images/web/colef_bg.gif) repeat-x 0 0
+}
+
+.tip_m_lo .t_m_dl1 b {
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 14px 0 0 20px
+}
+
+.tip_m_lo .t_m_dl1 a {
+    float: right;
+    padding-right: 10px;
+    _padding-right: 5px;
+    padding-top: 6px
+}
+
+.tip_midd .cent_r {
+    float: left;
+    text-align: left;
+    margin: 3px 0 0 21px;
+    _margin: 3px 0 0 10px
+}
+
+.tip_midd .cent_r .c_r_m {
+    font-size: 14px;
+    margin: 0
+}
+
+.tip_midd .cent_r .c_r_te {
+    margin: 0;
+    clear: both;
+    display: inline-block
+}
+
+.tip_midd .cent_r .c_r_te input {
+    width: 200px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    border: 1px solid #9c9c9c;
+    line-height: 30px;
+    display: inline-block;
+    color: #333
+}
+
+.tip_midd .cent_r .c_r_g {
+    margin: 6px 0 10px 0
+}
+
+.tip_midd .cent_r .c_r_g span {
+    font-size: 12px;
+    color: #666
+}
+
+.tip_midd .cent_r .cent_r_clos {
+    display: inline-block;
+    margin: 0 0 13px
+}
+
+.tip_midd .cent_r .cent_r_clos .logon {
+    width: 90px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    background: url(http://pages.jinpu.com/images/web/colef_dt.jpg) no-repeat left -256px
+}
+
+.tip_midd .cent_r .cent_r_clos span {
+    float: left;
+    line-height: 28px;
+    padding: 0 0 0 19px
+}
+
+.tip_midd .cent_r .cent_r_clos span a {
+    font-size: 12px;
+    color: #335296
+}
+
+.tip_midd .cent_r .c_r_col {
+    margin: 20px 0 0 0;
+    font-size: 14px
+}
+
+.tip_midd .cent_r .c_r_col2 {
+    margin: 30px 0 0 0;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.tip_midd .cent_r .c_r_col a {
+    font-size: 12px
+}
+
+.tip_midd .cent_r .c_r_y {
+    font-size: 12px;
+    margin: 20px 0 0 0
+}
+
+.tip_midd .cen_r_clos {
+    clear: both;
+    float: right;
+    _float:;
+    *float:;
+    width: 360px;
+    height: 46px;
+    margin: 28px 0 0 0;
+    border-top: 1px solid #c9c9c9;
+    background-color: #f2f2f2
+}
+
+.tip_midd .cen_r_clos a {
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 90px;
+    margin: 10px 10px 0 0;
+    background: url(http://pages.jinpu.com/images/web/colef_dt.jpg) no-repeat left top
+}
+
+.tip_midd .cen_r_clos a:hover {
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    width: 90px;
+    margin: 10px 10px 0 0;
+    background: url(http://pages.jinpu.com/images/web/colef_dt.jpg) no-repeat left -52px
+}
+
+.tip_midd .cent_r p span {
+    font-size: 14px
+}
+
+.tip_midd .cent_r .back_none {
+    background: 0
+}
+
+.tip_midd .tip_dt {
+    float: left;
+    height: 45px;
+    margin: 24px 0 0 30px;
+    _margin: 24px 0 0 20px;
+    width: 43px;
+    background: url(http://pages.jinpu.com/images/web/colef_dt.jpg) no-repeat left -297px
+}
+
+.tip_midd .tip_dt2 {
+    float: left;
+    height: 45px;
+    margin: 24px 0 10px 30px;
+    width: 49px;
+    background: url(http://pages.jinpu.com/images/web/colef_dt.jpg) no-repeat left -353px
+}
+
+#collection_layer .tip_midd {
+    background-color: #fff;
+    border: 1px solid #666;
+    height: 95px;
+    margin: 9px;
+    width: 348px
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2012-2014, WANDA GROUP. All rights reserved. Licensed 
+	Under the WANDA GROUP Commercial License, you may not use this file except 
+	in compliance with the license you entered into with the ones obtained at 
+	www.wanda-group.com -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.bjcre.mapper.UserMapper">
+
+	<insert id="insert" parameterType="com.bjcre.po.UserPo">
+		INSERT INTO	user (name,password) VALUES	(#{name},#{password})
+	</insert>
+
+</mapper>

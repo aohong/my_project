@@ -1,0 +1,3736 @@
+body {
+	margin: 0;
+	color: #333;
+	font-family: Arial,Helvetica,\5b8b\4f53,sans-serif;
+	font-size: 12px;
+	text-align: center
+}
+
+.clearfix:after,.clearboth:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfix,.clearboth {
+	zoom: 1
+}
+
+#loginnav {
+	margin: 0;
+	text-align: left
+}
+
+#container {
+	margin: auto;
+	text-align: left;
+	width: 970px;
+	z-index: 0
+}
+
+#content {
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	width: 970px
+}
+
+#footer {
+	margin-top: 10px
+}
+
+a:link,a:visited,a:active {
+	color: #0041d9;
+	outline: none medium none;
+	text-decoration: none
+}
+
+a:hover {
+	color: #f60;
+	text-decoration: underline
+}
+
+a.icp {
+	color: #666;
+	text-decoration: underline
+}
+
+h1 {
+	color: #525252;
+	font-size: 24px;
+	margin: 20px 0 15px 0
+}
+
+img {
+	vertical-align: middle;
+	border: 0;
+	padding: 0;
+	margin: 0
+}
+
+select {
+	border: 1px solid #b3b3b3;
+	font-size: 12px;
+	padding: 2px
+}
+
+ul li {
+	padding: 0;
+	margin: 0
+}
+
+div.spacebar {
+	clear: both
+}
+
+.text_c {
+	margin: 0;
+	padding: 0;
+	color: #999;
+	text-align: center;
+	height: 30px;
+	overflow: hidden
+}
+
+.partner_line {
+	border-top: #ccc solid 1px;
+	zoom: 1;
+	height: 0;
+	overflow: hidden
+}
+
+.partner_line:after {
+	content: '.';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both
+}
+
+.footerLinkpack {
+	width: 970px
+}
+
+.partner {
+	background-color: #f9f9f9;
+	padding: 8px 0;
+	width: 970px;
+	border-top: 1px solid #e0e0e0!important;
+	border-bottom: 0!important;
+	line-height: 1.6em;
+	zoom: 1
+}
+
+.partner:after {
+	content: '.';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both
+}
+
+.partner span {
+	clear: left;
+	float: left;
+	text-align: right;
+	width: 86px
+}
+
+.partner ul {
+	float: right;
+	overflow: hidden;
+	width: 874px
+}
+
+.partner li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	margin-right: 15px;
+	display: inline;
+	width: 94px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.partner li a {
+	outline: medium none;
+	text-decoration: none;
+	color: #999!important
+}
+
+.partner li a:hover {
+	color: #f60!important
+}
+
+.partner li a:after {
+	color: #999
+}
+
+.space05em {
+	padding-left: .5em
+}
+
+.space1em {
+	padding-left: 1em
+}
+
+ul,ol,li {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+#city-panel {
+	position: absolute;
+	z-index: 30000;
+	border: 1px solid #d8d8d8;
+	background-color: #f9f9f9;
+	width: 350px;
+	padding: 7px 0 0 0;
+	left: 0;
+	top: 22px;
+	border-radius: 0 0 4px 4px
+}
+
+#city-panel dl {
+	width: 322px;
+	padding: 7px 0 6px 0;
+	margin: 0 13px;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	line-height: 23px;
+	overflow: hidden;
+	zoom: 1
+}
+
+#city-panel dt {
+	width: 72px;
+	float: left;
+	color: #666
+}
+
+#city-panel dd {
+	float: left;
+	width: 250px;
+	overflow: hidden;
+	zoom: 1
+}
+
+#city-panel dd a {
+	float: left;
+	padding: 0 11px 0 0;
+	white-space: nowrap
+}
+
+#city-panel dd a:link,.moreCity:link,#city-panel dd a:visited,.moreCity:visited,#city-panel dd a:active,.moreCity:active {
+	color: #1a519f;
+	text-decoration: none
+}
+
+#city-panel dd a:hover,.moreCity:hover {
+	color: #f60;
+	text-decoration: underline
+}
+
+#city-panel .blank {
+	float: left;
+	height: 22px;
+	line-height: 14px;
+	width: 332px;
+	text-align: right;
+	margin-top: -3px;
+	margin-left: 2px;
+	background-color: #f9f9f9
+}
+
+#container {
+	/*width: 100%!important;*/
+	_width: 1180px;
+	_margin: 0 auto;
+	_display: block
+}
+
+#header {
+	width: 100%;
+	font-family: "Microsoft YaHei","微软雅黑","Hiragino Sans GB",tahoma,arial,simhei
+}
+
+.secNavnew {
+	font-family: "Microsoft YaHei","微软雅黑","Hiragino Sans GB",tahoma,arial,simhei
+}
+
+#content {
+	margin: 0 auto
+}
+
+.L_tabsnew,.R_user {
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	*vertical-align: baseline
+}
+
+.cur_citynew {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: relative;
+	*vertical-align: bottom;
+	z-index: 100
+}
+
+.cur_citynew .city {
+	color: #666;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: pointer
+}
+
+.cur_citynew .city_icon {
+	background: url("http://pages.jinpu.ajkcdn.com/img/global/2/navigationx8.png") -2px -20px no-repeat;
+	line-height: 7px;
+	width: 10px;
+	height: 10px;
+	margin: 7px 0 0 9px;
+	cursor: pointer;
+	overflow: hidden;
+	display: inline-block
+}
+
+.cur_citynew .city_panel {
+	font-size: 12px
+}
+
+.login_info .login_tip {
+	display: none
+}
+
+#header {
+	padding-bottom: 8px
+}
+
+.top-nav,.mid-nav,.sec-nav {
+	width: 100%
+}
+
+.nav-content {
+	width: 1180px;
+	margin: 0 auto
+}
+
+.top-nav {
+	font-size: 0;
+	border-bottom: 1px solid #ddd;
+	padding: 14px 0 10px 0
+}
+
+.L_tabsnew {
+	width: 60%;
+	_width: 50%;
+	margin: 0;
+	font-size: 0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.L_tabsnew li {
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.L_tabsnew a:link,.L_tabsnew a:visited {
+	font-size: 14px;
+	color: #666;
+	padding: 0 10px;
+	border-right: 1px solid #ddd;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	line-height: 14px;
+	*line-height: 15px;
+	margin: 3px 0
+}
+
+.L_tabsnew a:hover {
+	color: #f60;
+	text-decoration: none
+}
+
+.first-child a.a_navnew,.L_tabsnew li:first-child a {
+	padding-left: 0
+}
+
+.last-child a.a_navnew,.L_tabsnew li:last-child a {
+	border-right: 0
+}
+
+.R_user {
+	width: 40%;
+	_width: 50%;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	font-size: 0;
+	text-align: right;
+	/*overflow: hidden*/
+}
+
+.R_user a:link,.R_user a:visited {
+	color: #666;
+	font-size: 13px;
+	text-decoration: none;
+	outline: 0
+}
+
+.R_user a:hover {
+	color: #f60
+}
+
+.R_user a:active {
+	color: #666
+}
+
+.mid-nav {
+	padding: 18px 0
+}
+
+a.logo {
+	padding: 0 15px 0 0;
+	display: inline-block;
+	width: 85px;
+	height: 25px;
+	background: url("http://pages.jinpu..com/img/global/2/logo.svg") 0 0 no-repeat;
+	background: url("http://pages.jinpu..com/img/global/2/logox32.png") 0 0 no-repeat\0;
+	*background: url("http://pages.jinpu..com/img/global/2/logox8.png") 0 0 no-repeat;
+	background-size: 85px 25px;
+	overflow: hidden;
+	vertical-align: bottom;
+	border-right: 1px solid #DDD
+}
+
+span.logo {
+	padding: 0 10px 0 15px;
+	color: #9A6BD5;
+	font-size: 24px;
+	height: 25px;
+	line-height: 25px;
+	*vertical-align: middle
+}
+
+.sec-nav {
+	margin: 0
+}
+
+.sec-bar {
+	background-color: #81D8F2
+}
+
+.sec-bar.nav-content {
+	font-size: 0
+}
+
+.sec-bar a:link,.sec-bar a:visited {
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFF;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 12px 25px;
+	text-decoration: none
+}
+
+.sec-bar a:hover,.sec-bar a:active {
+	background-color: #4a8101
+}
+
+.sec-bar a.sec_curr {
+	background-color: #599700
+}
+
+.nav-hr {
+	height: 1px;
+	border-top: 1px solid #62ac01;
+	margin: 0 auto
+}
+
+dl,dt,dd {
+	list-style: none outside none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0
+}
+
+#city_selector {
+	margin: 0 0 0 16px;
+	position: relative;
+	float: none;
+	display: inline;
+	top: -1px
+}
+
+.glbL .city_title {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	padding-right: 12px
+}
+
+.glbL .city_title_icon {
+	background-position: 0 5px;
+	padding: 0 4px;
+	margin-left: 9px
+}
+
+.glbL .city_float {
+	background-color: #FFF;
+	border: 1px solid #dfdfdf;
+	overflow: hidden;
+	position: absolute;
+	width: 324px;
+	z-index: 999;
+	left: 40px;
+	top: 36px;
+	padding: 5px 12px
+}
+
+.glbL iframe {
+	position: absolute;
+	z-index: 100;
+	top: 23px;
+	left: 10px
+}
+
+.glbL .city_float .city_float_more {
+	background-color: #FFF;
+	margin-top: -3px;
+	height: 20px;
+	line-height: 20px
+}
+
+.glbL .city_float dl {
+	border-bottom: 1px dashed #d5d5d5
+}
+
+.glbL .city_float dt {
+	width: 55px;
+	font-weight: 100;
+	padding: 3px 0 0;
+	_display: inline;
+	line-height: 25px
+}
+
+.glbL .city_float dd {
+	background-color: #fff;
+	_display: inline;
+	line-height: 25px;
+	width: 250px;
+	padding: 3px 0
+}
+
+.city_float dd li {
+	padding: 0 11px 0 0;
+	_display: inline;
+	float: left
+}
+
+.city_float dd li a {
+	white-space: nowrap
+}
+
+.txt_r {
+	text-align: right
+}
+
+.f_l {
+	float: left
+}
+
+.f_r {
+	float: right
+}
+
+.clear_box {
+	width: 322px;
+	overflow: hidden
+}
+
+#header {
+	position: relative;
+	z-index: 999
+}
+
+.header-top dl,.header-top dt,.header-top dd {
+	padding: 0;
+	margin: 0
+}
+
+.header-top {
+	height: 25px;
+	line-height: 25px;
+	color: #666;
+	font-family: "Hiragino Sans GB","宋体";
+	z-index: 999999;
+	border-bottom: 1px solid #d6d6d6;
+	background: url(http://pages.jinpu.com/images/web/page_public.png) repeat-x 0 0
+}
+
+.header-top-center {
+	position: relative;
+	height: 100%;
+	width: 958px;
+	padding-left: 11px;
+	margin: 0 auto;
+	z-index: 999
+}
+
+.header-top-center a:hover {
+	color: #f60!important
+}
+
+.header-top .gray,.header-top .gray:active {
+	color: #666!important
+}
+
+.header-top .top-menu {
+	display: inline;
+	float: left;
+	line-height: 14px;
+	line-height: 14px
+}
+
+.header-top .top-menu .hi {
+	margin-top: 1px
+}
+
+.header-top .hi {
+	float: left;
+	height: 12px;
+	width: 0;
+	overflow: hidden;
+	border-left: 1px solid #d3d3d3;
+	margin: 0 11px
+}
+
+.top-menu a {
+	float: left;
+	color: #666!important
+}
+
+body .header-top .text-top {
+	margin-top: 6px
+}
+
+.top-userinfo {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.top-userinfo .hi2 {
+	height: 12px;
+	float: left;
+	width: 0;
+	overflow: hidden;
+	border-left: 1px solid #d3d3d3;
+	margin: 6px 11px 0 11px
+}
+
+.top-userinfo .fl {
+	float: left
+}
+
+.welcome a {
+	color: #0041d9;
+	margin-left: 3px
+}
+
+.welcome a.membername {
+	color: #666
+}
+
+.myjinpu {
+	padding-right: 10px
+}
+
+.myjinpu a {
+	color: #0041d9
+}
+
+.mybroker {
+	display: inline;
+	cursor: pointer;
+	z-index: 2;
+	margin-left: 11px;
+	float: left;
+	height: 26px;
+	position: relative;
+	background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat -94px -149px;
+	padding-left: 30px;
+	border-left: 1px solid #d3d3d3
+}
+
+.mybroker a.title {
+	float: left;
+	height: 26px;
+	padding-right: 20px;
+	background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat right -177px;
+	font-weight: normal;
+	color: #666
+}
+
+.mybroker-menu {
+	position: absolute;
+	right: -3px;
+	top: 26px;
+	width: 188px;
+	border: 1px solid #d3d3d3;
+	border-top: 0;
+	cursor: default;
+	display: none;
+	background: #fff;
+	white-space: nowrap;
+	word-wrap: normal
+}
+
+.mybroker-menu dl {
+	width: 170px;
+	border-bottom: 1px solid #d3d3d3;
+	margin: 0 auto;
+	padding: 5px 0
+}
+
+.mybroker-menu dl dt,.mybroker-menu dl dd {
+	float: left;
+	line-height: 22px;
+	margin: 0;
+	display: inline;
+	word-wrap: normal
+}
+
+.mybroker-menu dl dt {
+	height: 44px;
+	padding: 0 10px 0 7px
+}
+
+.mybroker-menu dl dd {
+	float: left;
+	height: 22px;
+	padding: 0 3px;
+	margin: 0
+}
+
+.mybroker-menu dl dd a {
+	color: #395999!important;
+	word-wrap: normal
+}
+
+.mybroker-menu dl.bottom {
+	border: 0
+}
+
+.mybroker-over {
+	background-color: #fff
+}
+
+.mybroker-over-patch {
+	position: absolute;
+	height: 27px;
+	width: 2px;
+	right: -3px;
+	top: 0;
+	background: #fff;
+	border-right: 1px solid #d3d3d3;
+	display: none
+}
+
+.developers {
+	padding-right: 5px;
+	background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat -94px -149px;
+	padding-left: 30px;
+	border-left: 1px solid #d3d3d3;
+	margin-left: 11px
+}
+
+.login a {
+	margin: 0 2px;
+	color: #3d527f!important
+}
+
+.login2 {
+	padding-right: 8px
+}
+
+.login2 .fs {
+	float: left
+}
+
+body .login2 a,body .login2 a:active {
+	color: #666
+}
+
+.header-outage {
+	background-color: #ffc;
+	border: 1px solid #d6d6d6;
+	border-top: 0;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+	padding-left: 13px;
+	width: 955px;
+	margin: auto
+}
+
+.membername:hover {
+	text-decoration: underline!important
+}
+
+body .mybroker a.blue {
+	color: #0041d9
+}
+
+.home_icon {
+	display: inline-block;
+	float: left;
+	width: 14px;
+	height: 14px;
+	margin: 4px 3px 0 10px;
+	background: url(http://pages.jinpu.com/images/header/home_icon.gif) no-repeat 0 0
+}
+
+.fl a.mycollect {
+	display: inline-block;
+	margin: 0 0 0 4px
+}
+
+.footerLinkTitle {
+	CLEAR: left;
+	PADDING-RIGHT: 10px;
+	FLOAT: left;
+	WIDTH: 180px;
+	TEXT-ALIGN: right
+}
+
+.footerLink {
+	FLOAT: left;
+	OVERFLOW: hidden;
+	WIDTH: 750px
+}
+
+.footerLink a {
+	padding-right: 10px
+}
+
+.sidebarLink {
+	padding: 20px 0 0 12px;
+	line-height: 22px
+}
+
+.partner {
+	background-color: #f9f9f9;
+	float: left;
+	overflow: hidden;
+	padding: 10px 0;
+	width: 970px
+}
+
+.partner span {
+	display: block;
+	float: left;
+	line-height: 1.6em;
+	padding-left: 30px;
+	text-align: left;
+	width: 940px
+}
+
+.partner ul {
+	color: #999;
+	display: block;
+	float: left;
+	margin: 3px 0 6px;
+	overflow: hidden;
+	padding: 0 10px 0 30px;
+	width: 940px
+}
+
+.partner li {
+	display: block;
+	float: left;
+	line-height: 1.6em;
+	list-style-type: none;
+	margin: 0 15px 0 0;
+	padding: 0;
+	width: 85px
+}
+
+.partner li a:hover {
+	color: #999!important;
+	text-decoration: underline
+}
+
+.friendlinks {
+	clear: both;
+	margin: 0 auto;
+	width: 750px;
+	text-align: center;
+	padding-top: 10px
+}
+
+.friendlinks span {
+	margin: 0 4px;
+	white-space: nowrap
+}
+
+#view_footer {
+	background: #f9f9f9;
+	width: 970px
+}
+
+#view_footer dl,#view_footer .rel_house {
+	margin: 0;
+	clear: both;
+	width: 970px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+#view_footer dt,#view_footer .rel_house .tit {
+	width: 130px;
+	text-align: right;
+	float: left;
+	line-height: 26px;
+	margin-right: 20px
+}
+
+#view_footer dd {
+	float: left;
+	margin: 0;
+	margin-right: 20px;
+	white-space: nowrap;
+	padding-top: 1px;
+	line-height: 24px
+}
+
+#view_footer .rel_house .rel_list {
+	float: left;
+	width: 820px
+}
+
+#view_footer .rel_house .rel_hid {
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden
+}
+
+#view_footer .rel_house .rel_list a {
+	float: left;
+	margin: 1px 20px 0 0;
+	white-space: nowrap;
+	line-height: 24px
+}
+
+#city_list {
+	width: 970px;
+	margin: 0 auto;
+	padding: 10px 0 0 0
+}
+
+#city_list ul {
+	margin: 0;
+	list-style-type: none;
+	width: 967px;
+	padding: 7px 0 10px 1px;
+	border: 1px #e0e0e0 solid
+}
+
+#city_list:after,#city_list ul:after {
+	clear: both;
+	content: ".";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden
+}
+
+#city_list li {
+	float: left;
+	width: 86px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0 0 0 10px
+}
+
+#city_list li a {
+	white-space: nowrap;
+	color: #656565
+}
+
+#city_list li a:hover {
+	color: #333;
+	text-decoration: underline
+}
+
+.flink-hid {
+	height: 22px;
+	overflow: hidden
+}
+
+.flink-hid a {
+	white-space: nowrap
+}
+
+.bottom_div {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #939186;
+	line-height: 15px
+}
+
+.link_span {
+	padding-left: 9px;
+	padding-right: 10px;
+	line-height: 25px
+}
+
+.link_span a:link,.link_span a:visited {
+	font-size: 12px;
+	color: #666;
+	text-decoration: none
+}
+
+.link_span a:hover {
+	color: #333;
+	text-decoration: underline
+}
+
+.content #footer {
+	margin-top: 0
+}
+
+#container #footer {
+	margin-top: 0
+}
+
+#comm_list {
+	width: 970px;
+	margin: 0 auto;
+	text-align: left
+}
+
+#comm_list ul {
+	border: 1px solid #e0e0e0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 10px 0 0 610px
+}
+
+#comm_list ul li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 10px
+}
+
+#comm_list ul a:link,#comm_list ul a:visited {
+	color: #666
+}
+
+#comm_list ul a:hover,#comm_list ul a:active {
+	color: #333;
+	text-decoration: underline
+}
+
+#header .glbSearch {
+	margin: 10px 0 0;
+	_margin-top: -9px;
+	z-index: 1
+}
+
+.glbSearch .glbForm {
+	position: relative
+}
+
+.glbSearch .icon {
+	display: inline-block;
+	background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_icons.png") 0 0 no-repeat
+}
+
+.glbSearch .kw {
+	width: 486px;
+	padding: 7px 0 5px 15px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #cdcdcd;
+	border-right: 0;
+	color: #999;
+	border-radius: 3px;
+	vertical-align: top;
+	outline: 0;
+	font-size: 12px
+}
+
+.glbSearch .kw_hover {
+	border: 1px solid #f60;
+	border-right: 0;
+	color: #333
+}
+
+.glbSearch .btn {
+	position: absolute;
+	top: 0;
+	*top: 1px;
+	left: 500px;
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	border: 0 none;
+	cursor: pointer;
+	background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_btn.png") 0 0 no-repeat;
+	overflow: hidden
+}
+
+.glbSearch .btn:hover {
+	background-position: 0 -36px
+}
+
+.glbSearch .home_close {
+	background-position: 0 -120px;
+	cursor: pointer;
+	display: inline-block;
+	height: 15px;
+	position: absolute;
+	right: 477px;
+	top: 10px;
+	width: 15px
+}
+
+.glbSearch .smap:link,.glbSearch .smap:visited {
+	position: absolute;
+	top: 10px;
+	left: 630px;
+	padding: 0 0 0 16px;
+	background-position: 0 -85px;
+	height: 17px;
+	*line-height: 17px;
+	vertical-align: top;
+	color: #0041d9;
+	*top: 12px
+}
+
+.glbSearch .smap:hover {
+	color: #f60
+}
+
+.forView {
+	position: absolute;
+	right: 0;
+	width: auto
+}
+
+.forView .glbSearch {
+	float: right;
+	width: 442px
+}
+
+.forView .kw {
+	padding: 5px 0 3px 15px;
+	width: 335px
+}
+
+.forView .home_close {
+	right: 101px;
+	top: 8px
+}
+
+.forView .btn {
+	background-position: 0 -72px;
+	height: 30px;
+	left: 349px;
+	width: 93px
+}
+
+.t_ri_bbs {
+	border: 1px solid #ddd;
+	margin: 10px 0 0
+}
+
+.t_ri_bbs p {
+	margin: 0
+}
+
+.t_ri_bbs .ri_bbs_is {
+	clear: both;
+	height: 14px;
+	line-height: 14px;
+	margin: 11px 0 0 12px;
+	overflow: hidden
+}
+
+.t_ri_bbs .tr_bbs_lis {
+	height: 14px;
+	line-height: 14px;
+	overflow: hidden;
+	padding: 8px 0 0 14px
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_t {
+	color: #393f4c;
+	float: left;
+	font-weight: bold
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_g {
+	float: right;
+	padding: 0 12px 0 0
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_g a {
+	float: left;
+	margin: 0 5px 0 0
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_g span {
+	background: url(http://pages.jinpu.com/images/index2/i_ri_sma.gif) no-repeat scroll left -9px transparent;
+	float: left;
+	height: 6px;
+	margin: 3px 0 0;
+	width: 3px
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_d {
+	background: url(http://pages.jinpu.com/images/index2/i_ri_sma.gif) no-repeat scroll left top transparent;
+	float: left;
+	height: 6px;
+	margin: 3px 10px 0 0;
+	overflow: hidden;
+	width: 6px
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_w {
+	float: left
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_w a {
+	color: #395998
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_re a {
+	color: #f00
+}
+
+.list_ad_new_prop * {
+	margin: 0;
+	padding: 0
+}
+
+.list_ad_new_prop {
+	margin-top: 29px;
+	width: 971px
+}
+
+.list_ad_new_prop .new_prop_ad_top {
+	height: 39px;
+	background: url("http://pages.jinpu.com/images/adv/interest_bg.jpg") no-repeat 0 0
+}
+
+.list_ad_new_prop .new_prop_ad_con {
+	background: #f6f6f6;
+	margin-left: 1px;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf
+}
+
+.list_ad_new_prop .new_prop_ad_bottom {
+	height: 15px;
+	background: url("http://pages.jinpu.com/images/adv/interest_bg.jpg") no-repeat 0 -258px
+}
+
+.list_ad_new_prop .new_prop_ad_top .new_prop_title {
+	font-size: 14px;
+	padding: 12px 0 0 40px
+}
+
+.list_ad_new_prop .new_prop_ad_con {
+	padding-left: 40px
+}
+
+.list_ad_new_prop .new_prop_ad_con .go_lok_nam {
+	float: left;
+	width: 150px;
+	padding-right: 30px
+}
+
+.list_ad_new_prop .new_prop_ad_con img {
+	padding: 4px;
+	border: 1px solid #CCC;
+	background-color: #FFF
+}
+
+.list_ad_new_prop .new_prop_ad_con .go_lok_nam dl {
+	padding: 1px;
+	line-height: 18px;
+	word-break: break-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 148px
+}
+
+.list_ad_new_prop .new_prop_ad_con .go_lok_nam .prop_price {
+	color: #F60
+}
+
+.prop_name {
+	margin: 9px 0 2px 0
+}
+
+.prop_desc {
+	margin: 11px 0 0 0
+}
+
+.new-monpo .title .monpo {
+	border: 1px solid #cdcdcd;
+	margin-top: 10px
+}
+
+.monpo .title {
+	margin: 0;
+	height: 30px;
+	line-height: 35px;
+	font-size: 12px;
+	padding-left: 9px;
+	overflow: hidden
+}
+
+.monpo .title strong {
+	float: left
+}
+
+.monpo .title .icon-hot {
+	float: left;
+	margin-top: 9px;
+	margin-left: 6px
+}
+
+.icon-hot {
+	width: 20px;
+	height: 16px;
+	background: url(http://pages.jinpu.com/images/global/hot.gif) no-repeat left top
+}
+
+.monpo ul {
+	text-align: center
+}
+
+.monpo ul li {
+	height: 70px;
+	width: 212px;
+	text-align: left;
+	margin: auto;
+	border-bottom: 1px solid #ccc
+}
+
+.monpo ul li.bottom {
+	border-bottom: 0
+}
+
+.monpo ul li .img {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px
+}
+
+.monpo ul li .img img {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 50px;
+	height: 50px
+}
+
+.monpo ul li .monpo-left {
+	float: left;
+	height: 50px;
+	display: inline;
+	margin-top: 10px;
+	width: 95px;
+	margin-left: 8px;
+	line-height: 20px
+}
+
+.monpo ul li .monpo-left strong {
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	zoom: 1;
+	overflow: hidden
+}
+
+.monpo ul li .monpo-left a {
+	font-weight: normal;
+	color: #2f50a1
+}
+
+.monpo ul li .monpo-left span {
+	color: #606060
+}
+
+.monpo ul li .monpo-right {
+	float: right;
+	height: 40px;
+	display: inline;
+	margin-top: 10px;
+	width: 50px;
+	text-align: left;
+	line-height: 20px;
+	overflow: hidden
+}
+
+.monpo ul li .monpo-right em {
+	font-style: normal;
+	color: #fd6d0d;
+	font-weight: bold;
+	display: block;
+	overflow: hidden
+}
+
+.monpo .more-house {
+	line-height: 14px;
+	text-align: right;
+	padding-bottom: 8px;
+	padding-right: 9px
+}
+
+.new-monpo {
+	border: 1px solid #cdcdcd;
+	margin-top: 10px
+}
+
+.new-monpo .title {
+	margin: 0;
+	height: 30px;
+	line-height: 35px;
+	font-size: 12px;
+	padding-left: 18px;
+	overflow: hidden
+}
+
+.new-monpo .title strong {
+	float: left
+}
+
+.new-monpo .title .icon-hot {
+	float: left;
+	margin-top: 9px;
+	margin-left: 6px
+}
+
+.icon-hot {
+	width: 20px;
+	height: 16px;
+	background: url(http://pages.jinpu.com/images/global/hot.gif) no-repeat left top
+}
+
+.new-monpo .more-house {
+	line-height: 17px;
+	text-align: right;
+	padding: 4px 9px 8px 0
+}
+
+.new-monpo ul {
+	width: 212px;
+	margin: auto
+}
+
+.new-monpo ul li {
+	width: 212px;
+	border-bottom: 1px solid #ccc;
+	padding: 6px 0 9px;
+	margin-bottom: 5px
+}
+
+.new-monpo ul li div {
+	line-height: 17px;
+	height: 17px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.new-monpo ul li em.price {
+	float: right;
+	font-style: normal;
+	width: 73px
+}
+
+.new-monpo ul li em.price strong {
+	color: #fd6d0d
+}
+
+.new-monpo ul li dl {
+	padding: 7px 0 0 0;
+	margin: 0;
+	line-height: 21px;
+	width: 100%;
+	display: none;
+	height: 60px;
+	overflow: hidden
+}
+
+.new-monpo ul li dl dt,.new-monpo ul li dl dd {
+	float: left;
+	margin: 0;
+	padding: 0
+}
+
+.new-monpo ul li dl dd {
+	padding-left: 10px;
+	width: 120px
+}
+
+.side_ad .new-monpo ul li dl dt a img {
+	background: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: block
+}
+
+.group-box {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.group-title {
+	margin: 0;
+	height: 37px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #fff;
+	text-indent: 33px;
+	background: url(http://pages.jinpu.com/images/group/titlebg2.png) no-repeat left top;
+	text-indent: -9999px;
+	overflow: hidden;
+	zoom: 1
+}
+
+.group-list {
+	border: 1px solid #feb673;
+	border-top: 0;
+	padding-top: 10px
+}
+
+.group-list dl {
+	margin: 0;
+	padding-top: 7px;
+	border-bottom: 1px dashed #e1e1e1;
+	padding-bottom: 14px;
+	width:
+}
+
+.group-list dl dt {
+	width: 190px;
+	font-size: 12px;
+	line-height: 1.5em;
+	margin: auto;
+	height: 3em;
+	margin-bottom: 7px;
+	overflow: hidden;
+	zoom: 1
+}
+
+.group-list dl.group-item-last {
+	border-bottom: 0
+}
+
+.group-list dl dd.content {
+	width: 190px;
+	background: #f5f5f5;
+	margin: 0 auto
+}
+
+.group-list dl dd.content .img a {
+	display: block
+}
+
+.group-list dl dd.content .img img {
+	padding: 0;
+	width: 188px;
+	height: 125px;
+	border: 1px solid #c9cccb;
+	margin: 0;
+	display: block
+}
+
+.group-list dl dd.content .price-box {
+	overflow: hidden;
+	zoom: 1;
+	padding: 8px 0 9px
+}
+
+.group-list dl dd.content .price-box .price {
+	float: left;
+	height: 32px;
+	line-height: 16px;
+	margin-left: 7px;
+	color: #eb5f00;
+	font-weight: bold;
+	width: 96px;
+	overflow: hidden;
+	zoom: 1
+}
+
+.group-list dl dd.content .price-box .link {
+	margin-right: 7px;
+	margin-top: 5px;
+	float: right;
+	width: 68px;
+	height: 24px;
+	background: url(http://pages.jinpu.com/images/group/linkbutton_two.png) no-repeat left top;
+	text-indent: -9999px;
+	overflow: hidden
+}
+
+.parters_box {
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	padding: 0 16px 3px 16px;
+	background: #f1f8fe
+}
+
+.parters_box h2 {
+	font-size: 12px;
+	margin: 10px auto 9px auto
+}
+
+.parters_box li {
+	margin: 7px auto
+}
+
+.parters_box li img {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: 0
+}
+
+.multi-page {
+	margin: 10px auto;
+	text-align: right;
+	width: 100%
+}
+
+.multi-page i {
+	font-style: normal
+}
+
+.multi-page i,.multi-page a:link,.multi-page a:visited {
+	vertical-align: top;
+	background: #fff;
+	margin: 0 0 0 2px;
+	color: #777;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	width: 26px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	font-family: Tahoma;
+	_zoom: 1;
+	overflow: hidden;
+	display: inline-block
+}
+
+.multi-page i {
+	color: #666
+}
+
+.multi-page .curr {
+	color: #63aa02;
+	background: #fff;
+	border: 1px solid #62ac01;
+	font-weight: 700
+}
+
+.multi-page a:hover {
+	color: #fff;
+	background: #5a9b01;
+	border-color: #62ac01
+}
+
+.multi-page .iPre,.multi-page .aPre:link,.multi-page .aPre:visited,.multi-page .iNxt,.multi-page .aNxt:link,.multi-page .aNxt:visited {
+	font-size: 14px;
+	font-weight: 700
+}
+
+.multi-page .iPre,.multi-page .aPre:link,.multi-page .aPre:visited {
+	width: 68px;
+	color: #ccc;
+	border: 1px solid #ccc;
+	*line-height: 31px
+}
+
+.multi-page .aDotted,.multi-page .aDotted:link,.multi-page .aDotted:visited {
+	width: 29px;
+	border: 0
+}
+
+.multi-page .aPre:link,.multi-page .aPre:visited {
+	color: #666
+}
+
+.multi-page .iNxt,.multi-page .aNxt:link,.multi-page .aNxt:visited {
+	width: 139px;
+	color: #fff;
+	font-family: \5B8B\4F53,Helvetica,sans-serif;
+	line-height: 31px
+}
+
+.multi-page .aNxt:link,.multi-page .aNxt:visited {
+	background: #62ac01;
+	border: 1px solid #89c040
+}
+
+.multi-page .aPre:hover,.multi-page .aNxt:hover {
+	background: #5a9b01;
+	color: #fff;
+	border: 1px solid #5a9b01
+}
+
+.multi-page .iNxt {
+	background: #ccc
+}
+
+.multi-page .iPad3,.multi-page .aPad3:link,.multi-page .aPad3:visited {
+	width: auto;
+	padding: 0 5px
+}
+
+.radius-box,.new-monpo {
+	position: relative;
+	margin-top: 15px;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+	padding-bottom: 10px
+}
+
+.radius-box h3 {
+	border-bottom: 1px dotted #ccc;
+	height: 34px;
+	line-height: 34px;
+	width: 205px;
+	margin: 0 auto;
+	text-indent: 0;
+	font-size: 14px
+}
+
+.radius-box ul {
+	width: 212px;
+	margin: auto
+}
+
+.radius-box ul li {
+	width: 212px;
+	border-bottom: 1px solid #ccc;
+	padding: 6px 0 9px;
+	margin-bottom: 5px
+}
+
+.radius-box .link-more {
+	line-height: 17px;
+	text-align: right;
+	padding: 4px 9px 0 0
+}
+
+.icon-hot {
+	width: 20px;
+	height: 16px;
+	background: url(http://pages.jinpu.com/images/global/hot.gif) no-repeat left top
+}
+
+.j_sidebar_130928 {
+	position: fixed;
+	bottom: 100px;
+	right: 20px;
+	width: 50px;
+	z-index: 99999;
+	_position: absolute;
+	_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-59))
+}
+
+.j_sidebar_130928 a {
+	background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/sidebar_140103.png") no-repeat
+}
+
+.j_sidebar_130928 #favirote {
+	background-position: 0 0;
+	width: 48px;
+	height: 45px;
+	margin-bottom: 15px;
+	display: block
+}
+
+.j_sidebar_130928 #favirote:hover {
+	background-position: 0 -45px
+}
+
+.j_sidebar_130928 #weixin {
+	background-position: 0 -90px;
+	width: 48px;
+	height: 42px;
+	margin-bottom: 14px;
+	display: block
+}
+
+.j_sidebar_130928 #weixin:hover {
+	background-position: 0 -132px
+}
+
+.j_sidebar_130928 #suggestion {
+	background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/res_logo.png") no-repeat -3px 0;
+	width: 55px;
+	height: 47px;
+	margin-bottom: 15px;
+	display: block
+}
+
+.j_sidebar_130928 #suggestion:hover {
+	background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/res_logo.png") no-repeat -2px -68px
+}
+
+.j_sidebar_130928 #backTop {
+	background-position: 0 -174px;
+	width: 50px;
+	height: 51px;
+	display: block
+}
+
+.j_sidebar_130928 #backTop:hover {
+	background-position: 0 -225px
+}
+
+.j_erweima {
+	width: 99px;
+	height: 121px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	position: absolute;
+	bottom: 59px;
+	_bottom: 58px;
+	left: -132px;
+	padding: 10px;
+	background-color: #fff
+}
+
+.j_erweima .tag {
+	position: absolute;
+	background: #fff url("http://pages.jinpu.com/images/ajkglobal/3/sidebar_140103.png") no-repeat -50px -2px;
+	width: 6px;
+	height: 11px;
+	right: -6px;
+	bottom: 12px;
+	overflow: hidden
+}
+
+.j_erweima .close {
+	background: transparent url("http://pages.jinpu.com/images/ajkglobal/3/sidebar_140103.png") no-repeat -56px 0;
+	width: 8px;
+	height: 9px;
+	float: right;
+	cursor: pointer;
+	margin-top: 3px
+}
+
+.j_erweima .title {
+	display: block;
+	float: left;
+	color: #666;
+	_margin-top: 1px
+}
+
+.j_erweima .top {
+	margin-bottom: 9px;
+	height: 15px;
+	line-height: 15px;
+	overflow: hidden;
+	margin-top: -2px
+}
+
+#container {
+	overflow: hidden
+}
+
+*html {
+	_background-image: url(about:blank);
+	_background-attachment: fixed
+}
+
+.tips-info {
+	padding-top: 33px;
+	font-size: 14px;
+	line-height: 20px
+}
+
+.eprompt {
+	padding-left: 16px;
+	font-size: 14px;
+	clear: both;
+	padding-top: 10px
+}
+
+.eprompt-sub {
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+.eprompt-sub ul li {
+	height: 28px;
+	line-height: 28px;
+	padding-left: 14px;
+	background: url(http://pages.beta.dev.jinpu.com/images/web/dia.gif) no-repeat left 11px
+}
+
+.eprompt h3 {
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+	font-size: 14px
+}
+
+.eprompt div {
+	padding-top: 17px;
+	overflow: hidden;
+	line-height: 20px
+}
+
+.eprompt div a {
+	margin: 0 20px;
+	white-space: nowrap
+}
+
+.eprompt-sub div span {
+	float: left;
+	margin: 0;
+	white-space: nowrap
+}
+
+.myrecommend {
+	border: 1px solid #dfdfdf;
+	overflow: hidden;
+	margin-top: 54px;
+	width: 100%
+}
+
+.myrecommend h2 {
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	padding-left: 15px
+}
+
+.myrecommend ul {
+	zoom: 1;
+	width: 150%;
+	padding-bottom: 8px
+}
+
+.myrecommend ul li {
+	width: 133px;
+	float: left;
+	line-height: 20px;
+	display: inline;
+	margin: 0 50px 0 18px
+}
+
+#container #content,#container .search,#container .partner {
+	width: 1080px
+}
+
+#content {
+	width: 1080px
+}
+
+.glbListNavigation1180 {
+	width: 1080px
+}
+
+.secNavnew .secNav1180 {
+	width: 1080px
+}
+
+.top-poster {
+	width: 970px;
+	margin: 0 auto
+}
+
+#glbSearch {
+	margin: 10px 0;
+	*margin-bottom: 0
+}
+
+.glbSearch .home_close {
+	right: 588px
+}
+
+.condition_links2 {
+	z-index: 150;
+	margin-bottom: 9px;
+	padding-top: 9px;
+	font-family: Arial,"\5B8B\4F53",Helvetica,sans-serif;
+	font-size: 13px
+}
+
+.condition_links2 .cl_item {
+	line-height: 30px;
+	font-size: 13px;
+	color: #0041d9;
+	position: relative;
+	zoom: 1
+}
+
+.condition_links2 div.condition_title {
+	position: absolute;
+	left: 15px;
+	width: 52px;
+	color: #000;
+	line-height: 30px
+}
+
+.condition_links2 div.container {
+	margin-left: 70px
+}
+
+.condition_links2 div strong {
+	margin-right: 14px;
+	color: #eb6100
+}
+
+.condition_links2 div a {
+	margin-right: 16px;
+	_margin-right: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	_display: inline-block;
+	_zoom: 1
+}
+
+.condition_links2 div.sub {
+	margin-left: 95px;
+	padding: 0 0 0 11px;
+	border: 1px solid #dbdbdb;
+	margin-right: 10px;
+	border-radius: 4px;
+	line-height: 28px
+}
+
+.condition_links2 div.sub a {
+	margin-right: 11px;
+	margin-left: -2px
+}
+
+.condition_links2 div.containerprice {
+	margin-left: 61px;
+	line-height: 30px!important
+}
+
+.condition_links2 div.containerprice a {
+	margin-right: 14px
+}
+
+.condition_links2 div.containerprice .pricecond,.condition_links2 div.container .custom-condition {
+	line-height: 26px
+}
+
+.custom-condition {
+	display: inline
+}
+
+.condition_links2 div.containerprice .pricecond input,.condition_links2 div.container .custom-condition input {
+	width: 22px;
+	border-radius: 3px;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #ccc;
+	*width: 26px;
+	*height: 16px;
+	color: #333;
+	padding: 0 3px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -4px;
+	_margin-top: 4px
+}
+
+.condition_links2 input.yell {
+	color: #eb6100!important
+}
+
+.condition_links2 div.containerprice .pricecond input.smit,.condition_links2 div.container .custom-condition input.smit {
+	width: 40px;
+	height: 20px;
+	*width: 33px;
+	*padding-top: 2px;
+	border: 1px solid #ccc;
+	color: #333;
+	cursor: pointer;
+	background: -moz-linear-gradient(top,#fff,#e7e7e7);
+	background: -webkit-gradient(linear,0 0,0 100%,from(#dedede),color-stop(#e7e7e7));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e7e7e7');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e7e7e7')";
+	font-weight: 400
+}
+
+div.fcklinks {
+	border: 1px solid #dbdbdb;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	width: 1078px;
+	overflow: hidden
+}
+
+div.all-radius {
+	border-radius: 4px
+}
+
+div.condition_fake_352 {
+	height: 1px;
+	overflow: hidden
+}
+
+.extra-filter {
+	padding: 8px 0 4px 17px;
+	color: #666;
+	line-height: 2.2
+}
+
+.extra-filter li {
+	overflow: hidden;
+	zoom: 1
+}
+
+.extra-filter strong,.extra-filter a {
+	float: left;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.extra-filter strong {
+	padding-right: 6px;
+	font-weight: 300
+}
+
+.extra-filter a {
+	margin-right: 15px
+}
+
+.mobile-slogen {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dbdbdb
+}
+
+.custom-condition form,.pricecond form {
+	display: inline
+}
+
+.custom-condition form input,.pricecond form input {
+	_vertical-align: middle
+}
+
+#footer .footerLinkpack {
+	width: 1075px
+}
+
+#footer .partner {
+	width: 100%
+}
+
+.mainListing {
+	margin: 0 auto;
+	width: 1080px
+}
+
+.clearfix:after,.mainListing .clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden
+}
+
+.mainListing .pL {
+	float: left;
+	width: 810px
+}
+
+.mainListing .fcklinks {
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px
+}
+
+.mainListing .condition_links2 {
+	width: 100%
+}
+
+.mainListing .condition_links2 div.container,.mainListing .condition_links2 .containerprice {
+	margin-left: 60px
+}
+
+.mainListing .condition_links2 .containerprice .pricecond input {
+	width: 30px;
+	height: 18px;
+	border-radius: 4px;
+	border: 1px solid #ccc
+}
+
+.mainListing .condition_links2 .containerprice .pricecond .smit {
+	width: 40px;
+	height: 20px;
+	color: #333;
+	border-radius: 2px;
+	cursor: pointer;
+	background: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e7e7e7));
+	background-image: -moz-linear-gradient(top,#fff,#e7e7e7);
+	font-weight: 400
+}
+
+.mainListing .condition_links2 div {
+	line-height: 29px
+}
+
+.search-nofound {
+	padding: 20px 0 10px 20px
+}
+
+.search-nofound dl {
+	padding-bottom: 10px;
+	font-family: Simsun
+}
+
+.search-nofound dl dt {
+	display: inline
+}
+
+.search-nofound dl dd {
+	display: inline
+}
+
+.search-nofound dl dd a {
+	padding-right: 10px
+}
+
+div.serch-result-none {
+	background: url(http://pages.jinpu.com/img/list/search-nofound.jpg) repeat-x bottom;
+	*background-position: 0 -33px;
+	margin-top: 10px;
+	border: #e6e6e6 solid 1px;
+	position: relative
+}
+
+div.serch-result-none .recommend {
+	padding: 8px 8px 8px 23px;
+	color: #060;
+	font-weight: bold
+}
+
+div.serch-result-none .new {
+	position: absolute;
+	width: 26px;
+	height: 28px;
+	background: url(http://pages.jinpu.com/img/list/search-nofound.jpg) top left no-repeat;
+	top: -1px;
+	_top: 0;
+	left: -1px
+}
+
+div.serch-result-none .hot-cell {
+	position: absolute;
+	right: 0;
+	top: 8px;
+	color: #4c4c4c
+}
+
+div.serch-result-none .hot-cell a {
+	padding-right: 8px
+}
+
+div.serch-result-none .hot-cell a:link {
+	color: #395997
+}
+
+.mainListing .pR {
+	float: right;
+	width: 250px
+}
+
+.pL .listPager {
+	position: relative
+}
+
+.listPager .spResult {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	color: #666
+}
+
+.listPager .spResult i {
+	margin: 0 4px 0 3px;
+	font-style: normal
+}
+
+.listPager .multi-page {
+	margin: 40px 0 25px;
+	*margin: 37px 0 3px
+}
+
+.list li {
+	height: 115px;
+	border-bottom: 1px dashed #999;
+	position: relative;
+	color: #333;
+	font-size: 13px;
+	line-height: 24px;
+	padding-top: 15px;
+	cursor: pointer;
+	font-family: tahoma '宋体'
+}
+
+.list li a {
+	margin-right: 0!important
+}
+
+.list li .img_content img {
+	position: absolute;
+	width: 133px;
+	height: 100px;
+	left: 15px;
+	top: 15px;
+	border: 0
+}
+
+.list li .details {
+	padding-left: 163px;
+	margin-top: -9px;
+	_margin-top: -0px
+}
+
+.list li .details .t {
+	font-size: 14px;
+	line-height: 32px;
+	font-weight: 700;
+	text-decoration: underline;
+	color: #003fd8
+}
+
+.list li .details .t_b a {
+	vertical-align: top
+}
+
+.list li .details .t_b img {
+	vertical-align: top;
+	margin-top: 8px;
+	_margin-top: 0;
+	margin-left: 1px
+}
+
+.list li .details .t:link,.list li .details .t:active {
+	color: #003fd8
+}
+
+.list li .details .t:hover {
+	color: #F60
+}
+
+.list li .details .t:visited {
+	color: #55188a
+}
+
+.list li .price {
+	position: absolute;
+	color: #eb5f00;
+	line-height: 131px;
+	left: 682px;
+	top: 0;
+	font-weight: bold;
+	_zoom: 1
+}
+
+.list li .price strong {
+	margin-right: 5px!important;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: tahoma
+}
+
+.list li .price .s1 {
+	margin-right: 5px;
+	font-size: 18px;
+	vertical-align: middle;
+	_zoom: 1
+}
+
+.list li .price .s2 {
+	vertical-align: middle;
+	_vertical-align: bottom;
+	_zoom: 1;
+	_margin-top: -1px;
+	_padding-top: 3px
+}
+
+.list li .price strong {
+	margin-right: 5px!important;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: tahoma
+}
+
+.list .details_bot span {
+	margin-right: 14px;
+	color: #999
+}
+
+.list .details .per {
+	color: #007f00
+}
+
+.list .details em,.list .details i {
+	color: #eb6100;
+	font-style: normal
+}
+
+.list .details .t_b em {
+	font-weight: bold
+}
+
+.PL_1 {
+	color: #666
+}
+
+.pR .tg-show {
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+	margin-top: 15px
+}
+
+.pR .tg-show h3 {
+	border-bottom: 1px dotted #ccc;
+	height: 34px;
+	line-height: 34px;
+	margin-bottom: 15px;
+	width: 205px;
+	margin: 0 auto;
+	text-indent: 0;
+	margin-bottom: 5px
+}
+
+.pR .tg-show .tg-list {
+	margin: 0 auto;
+	width: 220px
+}
+
+.pR .tg-list .tg-info .tg-price {
+	text-align: right
+}
+
+.pR .tg-list .tg-item .tg-info .tg-price em {
+	float: left
+}
+
+.pR .tg-list a.tg-item {
+	background: 0
+}
+
+.pR .tg-list .tg-item .tg-info {
+	background: 0
+}
+
+.pR .tg_more {
+	background: none!important;
+	height: 36px;
+	border-top: 1px dotted #ccc;
+	line-height: 36px;
+	font-weight: 700
+}
+
+.tg-show .tg-list .tg-item {
+	cursor: pointer;
+	padding: 9px 10px 0;
+	width: 190px;
+	margin: 0 auto 15px;
+	background: 0
+}
+
+.tg-show .tg-list .tg_over {
+	background: #ededed
+}
+
+.tg-list .tg_over .tg-info .tg-title {
+	color: #f60;
+	text-decoration: underline
+}
+
+.hot-qa,.price-status {
+	position: relative;
+	margin-top: 15px;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px
+}
+
+.hot-qa .tg_more {
+	width: 207px;
+	margin: 0 auto
+}
+
+.hot-qa h3,.price-status h3 {
+	border-bottom: 1px dotted #ccc;
+	height: 34px;
+	line-height: 34px;
+	width: 205px;
+	margin: 0 auto;
+	text-indent: 0;
+	font-size: 14px
+}
+
+.hot-qa .corner {
+	position: absolute;
+	right: 10px;
+	top: 11px
+}
+
+.hot-qa ul {
+	display: block;
+	height: 196px;
+	width: 207px;
+	margin: 0 auto;
+	padding-top: 4px
+}
+
+.hot-qa ul li {
+	overflow: hidden;
+	height: 24px;
+	line-height: 24px
+}
+
+.hot-qa .ask-box {
+	color: #60ad00;
+	height: 50px;
+	width: 207px;
+	margin: 0 auto;
+	line-height: 50px;
+	font-size: 14px;
+	font-family: Arial,"\5B8B\4F53",Helvetica,sans-serif;
+	border-top: 1px dotted #ccc
+}
+
+.hot-qa .ask-btn {
+	;font-weight: 700;
+	float: right;
+	width: 91px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: 9px;
+	text-align: center;
+	color: #fff;
+	background: #62ab00;
+	letter-spacing: 1px;
+	border-radius: 3px
+}
+
+.hot-qa .ask-btn:hover,.hot-qa .ask-btn:link,.hot-qa .ask-btn:visited {
+	color: #fff;
+	text-decoration: none
+}
+
+.pR .radrec {
+	margin-top: 10px;
+	border: 1px #cdcdcd solid;
+	width: 248px;
+	border-radius: 5px
+}
+
+.pR .gold-shopshow {
+	height: 115px;
+	background-position: 0 -115px;
+	margin: 8px
+}
+
+.pR .gold-shopshow h2 {
+	font-size: 12px;
+	font-weight: normal;
+	color: #588083;
+	white-space: nowrap;
+	padding: 10px 10px 0
+}
+
+.pR .gold-shopshow h2 a {
+	color: #537f81;
+	display: block;
+	height: 18px
+}
+
+.pR .gold-shopshow h2 a:hover {
+	color: #f60;
+	text-decoration: none
+}
+
+.pR .gold-shopshow div {
+	padding: 7px 12px 10px 10px
+}
+
+.pR .gold-shopshow div a {
+	display: block;
+	height: 73px
+}
+
+.pR .gold-shopshow div p {
+	float: left;
+	overflow: hidden;
+	height: 37px;
+	line-height: 1.4;
+	margin-top: 32px;
+	width: 100px;
+	cursor: pointer
+}
+
+.pR .gold-shopshow div p {
+	color: #333
+}
+
+.pR .gold-shopshow div a:hover {
+	text-decoration: none
+}
+
+.pR .gold-shopshow div a:hover p {
+	color: #f60
+}
+
+.pR .gold-shopshow .logo-goldshop {
+	float: right;
+	width: 100px;
+	height: 65px;
+	border: 1px solid #bde381
+}
+
+.pR .findP {
+	border-radius: 5px;
+	border: 1px solid #cdcdcd;
+	margin-top: 15px;
+	line-height: 37px;
+	width: 216px;
+	padding: 0 16px
+}
+
+.pL .list .over_back {
+	border-bottom: 1px solid #ddd;
+	background: #f9f9f9
+}
+
+.list .over_bor {
+	border-bottom: 1px solid #ddd
+}
+
+.list .over_back .details .t_b a {
+	color: #f60
+}
+
+.list .xftg .t_r {
+	color: #999;
+	float: right;
+	width: 100px
+}
+
+.list .xftg {
+	background: #fffcf7
+}
+
+.moreFilter {
+	position: relative;
+	z-index: 2
+}
+
+.price-status .info {
+	width: 207px;
+	margin: 0 auto;
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 5px
+}
+
+.info .current {
+	margin-top: 3px;
+	line-height: 25px
+}
+
+.price-status {
+	padding-bottom: 10px
+}
+
+.info .trends {
+	margin-bottom: 7px
+}
+
+#header #glbSearch .home_close {
+	right: 587px
+}
+
+#IFX_p937 {
+	overflow: hidden;
+	zoom: 1
+}
+
+.details .area_name:link,.details .area_name:visited {
+	color: #333
+}
+
+.details .area_name:hover {
+	color: #f60;
+	text-decoration: underline
+}
+
+.list .details .sep_t {
+	font-size: 9px;
+	_font-size: 12px;
+	color: #bbb;
+	margin: 0 3px;
+	line-height: 24px
+}
+
+.pricecond,.custom-condition {
+	margin-left: 0
+}
+
+#footer .partner {
+	width: 1080px
+}
+
+#rec-props-info {
+	display: none;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 3px 3px 8px;
+	margin: 8px auto 5px auto;
+	line-height: 26px
+}
+
+.rec_border_solid {
+	border-bottom: 1px solid #ddd
+}
+
+.rec_border_dotted {
+	border-bottom: 1px dotted #ddd
+}
+
+#show_more_rec_button {
+	display: none;
+	background: #f8f8f8;
+	text-align: center;
+	font-size: 14px;
+	padding: 7px 0;
+	margin: 8px auto
+}
+
+#show_more_rec_button a {
+	display: block;
+	width: 115px;
+	margin: 0 auto;
+	color: #003fd8;
+	background: url(http://pages.jinpu.com/img/icon/bottion_arrow.png) right no-repeat
+}
+
+#show_more_rec_button a:hover {
+	cursor: pointer
+}
+
+#rec-list-loading-box {
+	width: 150px;
+	margin: 10px auto;
+	background: url(http://pages.jinpu.com/img/map/loading_small.gif) left no-repeat;
+	padding: 14px 0 14px 36px
+}
+
+.breadCrumbs {
+	margin: 20px 3px 3px 16px
+}
+
+.quicktabs {
+	height: 29px;
+	padding-top: 8px;
+	overflow: hidden;
+	border-bottom: 2px solid #48a843;
+	z-index: 1
+}
+
+.quicktabs li {
+	float: left;
+	height: 25px;
+	overflow: hidden;
+	text-align: center;
+	margin-right: -1px;
+	padding-left: 0;
+	border: 1px solid #e6e6e6;
+	border-bottom-width: 0;
+	background: url(http://pages.jinpu.com/img/comm/p7577-searchfield.1.png) 0 -228px no-repeat
+}
+
+.quicktabs li.map {
+	background: url(http://pages.jinpu.com/img/comm/searchfield.png) 0 0 no-repeat
+}
+
+.quicktabs li span {
+	padding-top: 0;
+	background-image: none;
+	line-height: 25px;
+	line-height: 29px\0;
+	*line-height: 27px
+}
+
+.quicktabs li.slt {
+	border-color: #48a843;
+	background-position: 0 -255px;
+	width: auto
+}
+
+.quicktabs li.map {
+	border-color: #f6e677;
+	background-position: -1px -88px;
+	width: 86px
+}
+
+.quicktabs ul li a,.quicktabs ul li a:link,.quicktabs ul li a:visited,.quicktabs ul li a:hover,.quicktabs ul li a:active {
+	padding: 0 15px;
+	margin-left: 0
+}
+
+.quicktabs ul li a:hover {
+	color: #f60;
+	text-decoration: none
+}
+
+.quicktabs li.slt a,.quicktabs li.slt a:link,.quicktabs li.slt a:visited,.quicktabs li.slt a:hover,.quicktabs li.slt a:active {
+	padding: 0 16px;
+	margin-left: 0;
+	color: #fff;
+	font-weight: bold
+}
+
+.quicktabs ul {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 3px
+}
+
+.quicktabs li.map span {
+	background-position: right -57px
+}
+
+.quicktabs .totalnum {
+	float: right;
+	display: inline;
+	margin: 9px 8px 0 0
+}
+
+.quicktabs .totalnum strong {
+	padding: 0 3px;
+	color: #eb6100;
+	font-family: Arial
+}
+
+.search_bottom {
+	padding-left: 0;
+	position: relative;
+	height: 36px;
+	padding-top: 0;
+	margin-right: 0;
+	border: 1px #ccc solid;
+	clear: both;
+	border-top: 0;
+	background: url(http://pages.jinpu.com/img/list/list_bg_20100312.gif) repeat-x 0 -160px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px
+}
+
+.search_bottom .totalnum {
+	padding-left: 16px;
+	margin-top: 4px!important;
+	padding-top: 0!important
+}
+
+.search_bottom .sortby span {
+	margin-top: 0\0
+}
+
+.search_bottom .totalnum {
+	line-height: 21px;
+	float: left;
+	padding-left: 16px
+}
+
+.search_bottom .totalnum strong {
+	color: #eb6100;
+	font-family: Tahoma,Arial
+}
+
+.search_bottom a {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1
+}
+
+div.simple_multipage div {
+	float: left
+}
+
+div.simple_multipage_spc .nextpage,div.simple_multipage_spc .nextpage a,div.simple_multipage_spc .nonextpage {
+	overflow: hidden;
+	width: 20px;
+	height: 20px
+}
+
+div.simple_multipage_spc .nextpage a,div.simple_multipage_spc .nonextpage {
+	display: block;
+	padding: 0;
+	text-indent: 50px
+}
+
+div.simple_multipage_spc .nextpage {
+	background-position: 8px -175px
+}
+
+div.simple_multipage_spc .nextpage a:hover {
+	background: #0041d9 url(http://pages.jinpu.com/img/list/list_bg.gif) no-repeat 8px -175px
+}
+
+div.simple_multipage_spc .nonextpage {
+	background-position: 8px -195px
+}
+
+.search_bottom span.tit {
+	float: left;
+	line-height: 20px
+}
+
+.search_bottom .search-result2 {
+	float: left
+}
+
+.PL_1 {
+	line-height: 40px;
+	height: 37px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	width: 808px
+}
+
+.PL_1 .sortby-filter {
+	float: right;
+	margin: 0;
+	padding-right: 5px;
+	height: 36px
+}
+
+.PL_1 .sortby-filter span,.filter .sortby-filter a {
+	float: left
+}
+
+.PL_1 .sortby-filter .tit {
+	color: #666
+}
+
+.PL_1 .sortby-filter a {
+	margin: 0 23px 0 3px;
+	width: 30px;
+	height: 21px;
+	line-height: 21px;
+	padding: 0 12px 0 0;
+	color: #000;
+	text-align: right;
+	background: url(http://pages.jinpu.com/img/list/sort.gif) no-repeat right 3px;
+	_background: url(http://pages.jinpu.com/img/list/sort.gif) no-repeat right 2px
+}
+
+.PL_1 .sortby-filter a:visited,.PL_1 .sortby-filter a:active {
+	color: #000
+}
+
+.PL_1 .sortby-filter .sort_gray_down {
+	background-position: right -27px;
+	_background-position: right -28px
+}
+
+.PL_1 .sortby-filter a:hover {
+	text-decoration: none
+}
+
+.PL_1 .sortby-filter a.default {
+	width: 253px;
+	margin-right: 21px;
+	padding: 0;
+	background: 0
+}
+
+.PL_1 .sortby-filter a.newest,.search_bottom .sortby-filter a.service {
+	padding-right: 0;
+	background: 0;
+	margin-right: 21px
+}
+
+.PL_1 .sortby-filter a.up {
+	background-position: right -57px
+}
+
+.PL_1 .sortby-filter a.down,.filter .sortby-filter a.on {
+	background-position: right -87px
+}
+
+.sortby {
+	float: right;
+	margin: 6px 3px 0 0
+}
+
+.sortby strong {
+	float: left;
+	line-height: 21px;
+	font-weight: 300
+}
+
+.sortby a {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	background: url(http://pages.jinpu.com/img/list/list_searchbar_bg4.gif) no-repeat 0 -179px;
+	width: 39px;
+	padding-left: 6px;
+	margin-left: 3px;
+	*padding-top: 1px;
+	padding-top: 1px\0;
+	color: #000;
+	line-height: 21px;
+	height: 21px
+}
+
+.pL .strong {
+	color: #f60!important
+}
+
+.sortby a.up {
+	background-position: 0 -149px
+}
+
+.sortby a.down {
+	background-position: 0 -118px
+}
+
+#selectorder_id {
+	position: relative;
+	float: left;
+	width: 138px
+}
+
+#selectorder_id a {
+	display: block
+}
+
+#selectorder_id:hover ul,#selectorder_id a:hover ul {
+	display: block
+}
+
+#selectorder_id a iframe {
+	display: none
+}
+
+#selectorder_id a.select {
+	display: block;
+	background: 0;
+	border: 1px solid #b3b3b3;
+	color: #333;
+	float: left;
+	height: 19px;
+	line-height: 19px;
+	padding: 0;
+	text-decoration: none;
+	width: 130px;
+	width: _132px;
+	margin: 0 5px 0 0
+}
+
+#selectorder_id a.on {
+	border: #f2b169 1px solid
+}
+
+#selectorder_id .select_item span.txt {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 5px;
+	white-space: nowrap;
+	width: 100px
+}
+
+#selectorder_id .select_item span.icon {
+	background: url(http://pages.jinpu.com/img/list/icon_120x83.gif) no-repeat scroll -40px -62px transparent;
+	height: 20px;
+	padding-left: 16px
+}
+
+#selectorder_id ul a {
+	display: block;
+	background: #fff;
+	color: #333;
+	width: auto;
+	height: 100%;
+	line-height: 12px;
+	padding: 6px 12px;
+	margin: 0;
+	border: 0
+}
+
+#selectorder_id ul a:hover {
+	text-decoration: none
+}
+
+#selectorder_id table {
+	border-collapse: collapse;
+	padding: 0;
+	margin: -1px;
+	width: 0;
+	height: 0;
+	font-size: 1em;
+	z-index: 1000
+}
+
+#selectorder_id:hover {
+	position: relative
+}
+
+#selectorder_id :hover>a {
+	color: #333;
+	background: #fff
+}
+
+#selectorder_id ul li:hover {
+	position: relative
+}
+
+#selectorder_id ul :hover>a {
+	color: #333;
+	background-color: #e0ebfc
+}
+
+#selectorder_id :hover ul,#selectorder_id a:hover ul {
+	visibility: visible;
+	height: auto;
+	left: 0;
+	_left: -1px
+}
+
+#selectorder_id ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #b3b3b3;
+	background: #FFF;
+	width: 130px;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	_top: 19px;
+	display: none;
+	z-index: 8888;
+	overflow: hidden;
+	zoom: 1
+}
+
+#selectorder_id ul li {
+	height: auto;
+	line-height: 12px;
+	width: 100px;
+	float: left;
+	width: 130px;
+	_width: 132px;
+	_overflow: hidden
+}
+
+#selectorder_id ul li a.select_list,#selectorder_id ul li.selected a.select_list {
+	display: block;
+	float: left;
+	width: 106px;
+	_width: 108px;
+	background: #fff;
+	color: #000;
+	height: 24px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0 12px
+}
+
+#selectorder_id ul li a.select_list:hover {
+	width: 106px;
+	_width: 108px;
+	color: #333;
+	background-color: #e0ebfc;
+	position: relative;
+	z-index: 1000;
+	text-decoration: none
+}
+
+#selectorder_id ul li.selected a.select_list {
+	background-color: #e0ebfc
+}
+
+* html #selectorder_id ul li a.select_list:hover {
+	color: #333;
+	position: relative;
+	z-index: 1000;
+	width: 106px;
+	_width: 108px
+}
+
+* html #selectorder_id a:hover {
+	color: #333;
+	background-color: #fff;
+	position: relative;
+	z-index: 1000
+}
+
+#condmenu {
+	font-size: 12px
+}
+
+#condmenu .condul {
+	padding: 0;
+	margin-left: 7px;
+	list-style-type: none
+}
+
+#condmenu .condul {
+	line-height: 20px;
+	padding-top: 7px
+}
+
+#condmenu .condlist_tip {
+	float: left;
+	color: #333;
+	margin-right: 0
+}
+
+#condmenu li {
+	float: left;
+	display: inline
+}
+
+#condhouseage_id {
+	margin-left: 1px!important
+}
+
+#condmenu a {
+	height: 100%;
+	width: 80px;
+	text-decoration: none;
+	background: #fff;
+	border: 1px solid #b3b3b3;
+	margin-left: 10px;
+	margin-right: 8px;
+	padding: 2px 0;
+	color: #333
+}
+
+#condmenu a.on {
+	border: #f2b169 1px solid
+}
+
+#condmenu ul ul a {
+	display: block;
+	background: #fff;
+	color: #333;
+	height: 100%;
+	line-height: 12px;
+	padding: 6px 12px;
+	border: 0;
+	width: 56px
+}
+
+#condmenu table {
+	border-collapse: collapse;
+	padding: 0;
+	margin: -1px;
+	width: 0;
+	height: 0;
+	font-size: 1em;
+	z-index: 1000;
+	background: #fff
+}
+
+#condmenu li:hover {
+	position: relative
+}
+
+#condmenu :hover>a {
+	color: #333;
+	background: #fff
+}
+
+#condmenu ul ul li:hover {
+	position: relative
+}
+
+#condmenu ul ul :hover>a {
+	color: #333
+}
+
+#condmenu ul ul {
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	top: 22px;
+	_top: 21px;
+	left: 0;
+	width: 96px;
+	z-index: 1000;
+	border: 1px solid #ccc;
+	border-top: 0
+}
+
+#condmenu ul ul li.selected a {
+	color: #333
+}
+
+#condmenu ul :hover ul {
+	visibility: visible;
+	height: auto;
+	left: 0;
+	_left: -1px
+}
+
+#condmenu ul ul li {
+	display: block;
+	height: auto;
+	line-height: 12px;
+	width: 70px;
+	_overflow: hidden;
+	_zoom: 1;
+	margin-left: 0
+}
+
+#condmenu .select_item span.txt {
+	display: inline-block;
+	padding-left: 7px;
+	white-space: nowrap;
+	width: 50px;
+	cursor: pointer
+}
+
+* html #condmenu a:hover {
+	color: #333;
+	background-color: #fff;
+	position: relative;
+	z-index: 1000
+}
+
+* html #condmenu ul ul a:hover {
+	color: #333;
+	position: relative;
+	z-index: 1000
+}
+
+#condmenu #condhouseage_id .select_item span.txt {
+	width: 70px
+}
+
+.condul li {
+	margin-left: 10px
+}
+
+#condmenu #condhouseage_id a {
+	display: inline-block;
+	width: 100px;
+	margin-left: 0
+}
+
+#condmenu .condul a {
+	margin-left: 0
+}
+
+#condmenu #condhouseage_id ul a {
+	width: 84px
+}
+
+#condmenu #condhouseage_id ul {
+	width: 100px
+}
+
+#condmenu #condhouseage_id ul li {
+	width: 100px;
+	margin-left: 0
+}
+
+#condmenu #condhouseage_id ul a:hover {
+	width: 84px
+}
+
+#condmenu .selected a {
+	color: #f60!important
+}
+
+#condmenu #selectfitment_id,#condmenu #selectschool_id,#condmenu #condbrand_id,#condmenu #condhouseage_id,#condmenu #condfloor_id,#condmenu #condusetype_id,#condmenu #condpubtime_id {
+	position: relative
+}
+
+#condmenu #selectfitment_id a iframe,#condmenu #selectschool_id a iframe,#condmenu #condbrand_id a iframe,#condmenu #condhouseage_id a iframe,#condmenu #condfloor_id a iframe,#condmenu #condusetype_id a iframe,#condmenu #condpubtime_id a iframe {
+	display: none
+}
+
+#condmenu #selectfitment_id a:hover iframe,#condmenu #selectschool_id a:hover iframe,#condmenu #condbrand_id a:hover iframe,#condmenu #condhouseage_id a:hover iframe,#condmenu #condfloor_id a:hover iframe,#condmenu #condusetype_id a:hover iframe,#condmenu #condpubtime_id a:hover iframe {
+	display: block
+}
+
+.search-result2 {
+	z-index: 99
+}
+
+#condmenu .condul a {
+	width: 78px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;
+	border: 1px solid #d1d1d1;
+	margin-right: 0
+}
+
+#condmenu .condul #condfloor_id a {
+	width: 86px
+}
+
+#condmenu .condul a .icon {
+	position: absolute;
+	right: 7px;
+	top: 9px;
+	display: block;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 4px solid;
+	border-color: #7b7b7b #fff #fff #fff
+}
+
+#condmenu .condul a:hover .icon {
+	_top: 8px;
+	_right: 6px
+}
+
+#condmenu .condul #condusetype_id a,#condmenu .condul #condusetype_id ul {
+	display: block
+}
+
+#condmenu .condul ul {
+	width: 68px;
+	overflow: hidden;
+	zoom: 1;
+	background: #fff
+}
+
+#condmenu .condul #condfloor_id ul {
+	width: 86px
+}
+
+#condmenu .condul #condusetype_id ul {
+	width: 78px
+}
+
+#condmenu .condul ul a,#condmenu .condul ul a:link,#condmenu .condul ul a:visited {
+	display: block;
+	width: 72px;
+	height: 100%;
+	padding: 6px 8px;
+	margin: 0;
+	line-height: 12px;
+	color: #333;
+	background: #fff;
+	border: 0 none
+}
+
+#condmenu .condul ul a:hover {
+	color: #f60;
+	text-decoration: underline
+}
+
+#filter_is_personal {
+	margin-left: 20px;
+	line-height: 22px;
+	margin-left: 17px
+}
+
+#filter_is_personal input {
+	border-radius: 5px;
+	margin-right: 4px;
+	*margin-right: 0
+}
+
+#filter_is_personal label {
+	border-radius: 5px;
+	*margin-right: 0;
+	_vertical-align: bottom
+}
+
+#filter_is_metro {
+	margin-left: 20px;
+	_margin-left: 15px;
+	line-height: 22px;
+	position: relative
+}
+
+#filter_is_metro .hot {
+	position: absolute;
+	right: -16px;
+	top: -10px;
+	display: inline-block;
+	width: 26px;
+	height: 15px;
+	background: url(http://pages.jinpu.com/img/list/hot_icon.gif) no-repeat 0 0;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d
+}
+
+#filter_is_metro .animate {
+	-webkit-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	transform: rotateY(360deg)
+}
+
+#filter_is_metro input {
+	border-radius: 5px;
+	margin-right: 4px;
+	*margin-right: 0
+}
+
+#filter_is_metro label {
+	_vertical-align: bottom
+}
+
+#recent_propertys {
+	margin-top: 15px;
+	border: 1px #cdcdcd solid;
+	width: 207px;
+	padding: 0 20px;
+	border-radius: 5px
+}
+
+#recent_propertys h5 {
+	padding: 0;
+	font-size: 14px;
+	border-bottom: 1px dotted #ccc;
+	height: 34px;
+	line-height: 34px;
+	width: 205px;
+	margin: 0 auto;
+	text-indent: 0
+}
+
+#recent_propertys em {
+	font-style: normal;
+	color: #f60
+}
+
+#recent_propertys ul {
+	padding: 0;
+	margin: 3px;
+	auto 0;list-style: none;
+	line-height: 24px;
+	width: 207px
+}
+
+#footseo-boxer {
+	margin-top: 20px
+}
+
+.new-monpo {
+	border: 1px solid #cdcdcd;
+	margin-top: 10px
+}
+
+.new-monpo .title {
+	margin: 0;
+	height: 30px;
+	line-height: 35px;
+	font-size: 12px;
+	padding-left: 18px;
+	overflow: hidden
+}
+
+.new-monpo .title strong {
+	float: left
+}
+
+.new-monpo .title .icon-hot {
+	float: left;
+	margin-top: 9px;
+	margin-left: 6px
+}
+
+.icon-hot {
+	width: 20px;
+	height: 16px;
+	background: url(http://pages.jinpu.com/images/global/hot.gif) no-repeat left top
+}
+
+.new-monpo .more-house {
+	line-height: 17px;
+	text-align: right;
+	padding: 4px 9px 8px 0
+}
+
+.new-monpo ul {
+	width: 212px;
+	margin: auto
+}
+
+.new-monpo ul li {
+	width: 212px;
+	border-bottom: 1px solid #ccc;
+	padding: 6px 0 9px;
+	margin-bottom: 5px
+}
+
+.new-monpo ul li div {
+	line-height: 17px;
+	height: 17px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.new-monpo ul li em.price {
+	float: right;
+	font-style: normal;
+	width: 73px
+}
+
+.new-monpo ul li em.price strong {
+	color: #fd6d0d
+}
+
+.new-monpo ul li dl {
+	padding: 7px 0 0 0;
+	margin: 0;
+	line-height: 21px;
+	width: 100%;
+	display: none
+}
+
+.new-monpo ul li dl dt,.new-monpo ul li dl dd {
+	float: left;
+	margin: 0;
+	padding: 0
+}
+
+.new-monpo ul li dl dd {
+	padding-left: 10px;
+	width: 120px
+}
+
+.side_ad .new-monpo ul li dl dt a img {
+	background: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: block
+}
+
+.found-info {
+	margin-left: 17px;
+	color: #666;
+	float: left
+}
+
+.found-info em,.spResult em {
+	color: #eb5f00;
+	margin: 0 3px
+}
+
+#header .glbSearch {
+	width: 1080px
+}
+
+.ifx-ad-r-box,.ifx_ajk_ad {
+	border-radius: 5px;
+	padding: 16px 16px 16px 24px;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin-top: 15px;
+	overflow: hidden
+}
+
+.user_history {
+	width: 208px;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+	margin-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px
+}
+
+.user_history .h2_title {
+	margin: 0;
+	font-size: 14px;
+	height: 33px;
+	line-height: 36px;
+	overflow: hidden;
+	color: #333
+}
+
+.user_history .content {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc
+}
+
+.user_history .content li {
+	height: 24px;
+	line-height: 24px
+}
+
+.history_more {
+	display: block;
+	height: 33px;
+	line-height: 33px
+}
+
+.content li .price {
+	color: #f60
+}
