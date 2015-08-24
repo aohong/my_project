@@ -20,7 +20,7 @@
     </div> 
     <div class="content2"> 
      <ul class="pg_content"> 
-      <li> <label class="txt">帐号：</label> <input type="text" class="ipt" maxlength="50" id="txtUserName" placeholder="请输入手机号或邮箱" name="userName" /> <span style="display: none" class="v_tooltip v_success"></span> <label id="info_userName" style="display: none;" class="v_error">用于登录和找回密码，不会公开</label> <label style="display: none" class="deftxt">用于登录和找回密码，不会公开</label> </li>
+      <li> <label class="txt">帐号：</label> <input type="text" class="ipt" maxlength="50" id="txtUserName" placeholder="请输入邮箱" name="userName" /> <span style="display: none" class="v_tooltip v_success"></span> <label id="info_userName" style="display: none;" class="v_error">用于登录和找回密码，不会公开</label> <label style="display: none" class="deftxt">用于登录和找回密码，不会公开</label> </li>
       <li> <label class="txt">密码：</label> <input type="password" maxlength="50" id="txtPassWord" class="ipt" /> <span style="display: none" class="v_tooltip v_success"></span> <label id="info_PassWord" style="display: none" class="v_error">请输入6-32个字符，不能使用<br />&lt; &quot; &gt; ' &amp;和空格</label> <label style="display:none" class="deftxt">请输入6-32个字符，不能使用<br />&lt; &quot; &gt; ' &amp;和空格</label> </li> 
       <li class="li_code" id="b_mail" style="display: none"> <label class="txt">验证码：</label> <input id="verify_pic" class="ipt" style="width: 74px;" type="text" name="code" /> <img style="display:inline;height: 32px;width: 120px;cursor:pointer;vertical-align: top;" id="img_mail" src="http://member.bjcre.com/captcha" /> <a style="line-height: 32px;" href="#" onclick="return false;">换一张</a> <label class="v_error" style="display: none;width: 170px;">验证码不能为空</label> </li>
       <li class="li_code" id="b_tel" style="display: none"> <label class="txt">验证码：</label> <input class="ipt" style="width: 74px;" type="text" name="code" /> <input class="cik_code" type="button" value="点击获取验证码" /> <label class="v_error" style="display: none">验证码不能为空</label> </li>
@@ -44,6 +44,7 @@
    });
    $(".pg_btn_register").click(function(){
 //    alert(1);
+    $.post();
     window.location.href="./user_info.html";
    });
 

@@ -14,6 +14,7 @@ public class UserPo {
     private String loginName;
 
     private String password;
+
     private Integer type;
 
     @Id
