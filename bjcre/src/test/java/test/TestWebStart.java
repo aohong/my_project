@@ -7,3 +7,5 @@ public class TestWebStart {
 		WebStart.start(8080, "/test", "src/main/webapp");
 	}
 }
+
+

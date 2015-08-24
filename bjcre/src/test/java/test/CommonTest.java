@@ -57,6 +57,8 @@ public class CommonTest {
     public void test5() {
         StringUtils.isBlank("");
 //String StingA;
+        String _a = "_a";
+        System.out.print(_a);
     }
 
     @Test

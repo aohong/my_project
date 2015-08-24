@@ -27,7 +27,7 @@
             <value>root</value>
         </property>
         <property name="password">
-            <value></value>
+            <value>1234567890</value>
         </property>
         <property name="minPoolSize">
             <value>1</value>

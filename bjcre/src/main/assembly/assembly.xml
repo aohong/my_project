@@ -15,11 +15,9 @@
 			<directory>src/main/webapp</directory>
 			<outputDirectory>/config</outputDirectory>
 		</fileSet>
-	</fileSets>
-	<files>
-		<file>
-			<source>src/main/deploy/single.sh</source>
+		<fileSet>
+			<directory>src/main/deploy</directory>
 			<outputDirectory>/bin</outputDirectory>
-		</file>
-	</files>
+		</fileSet>
+	</fileSets>
 </assembly>
