@@ -17,16 +17,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = {
         "classpath:dao.xml"
 })
-public class UserDaoTest implements SqlTemplateContextAware {
+public class UserDaoTest  {
     @Autowired
     private UserDao userDao;
 
-    private SqlTemplate<UserPo> template ;
-
-    @Override
-    public void setSqlTemplateContext(SqlTemplateContext SqlTemplateContext) {
-        template = SqlTemplateContext.getSqlTemplate(UserPo.class);
-    }
     @Test
     public void testGet() {
         System.out.println(userDao.getUniqueById(3));
@@ -36,10 +30,10 @@ public class UserDaoTest implements SqlTemplateContextAware {
     public void testInsert() {
 
         UserPo userPo=new UserPo();
-        userPo.setId(3);
+//        userPo.setId(3);
         userPo.setLoginName("aohong");
         userPo.setPassword("123456");
         userPo.setType(0);
-        template.update(userPo);
+        userDao.insert(userPo);
     }
 }

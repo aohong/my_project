@@ -107,6 +107,30 @@
                         </td>
                     </tr>
                     <tr>
+                        <th>注册公司：</th>
+                        <td colspan="2">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td class="td_input">
+                                        <div class="relative" style="z-index:15">
+                                            <input type="radio" id="campany_register_yes" name="campany_register" value="0"
+                                                   checked="checked"><label>可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" id="campany_register_no" name="campany_register" value="1"><label>不可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                        </div>
+                                    </td>
+                                    <td id="companytip" class="td_tips">
+                                        <div id="companytip1" class="check_ok" style="display:none">&nbsp;</div>
+                                        <div id="companytip2" class="check_error" style="display:none;">请在列表中选择您的所属公司。
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
                         <th>价格：</th>
                         <td class="td_input">
                             <input type="text" id="price" class="input_text" name="price" value="" maxlength="20">
