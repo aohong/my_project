@@ -1,21 +1,20 @@
-package com.bjcre.po;
+package com.bjcre.params;
 
-import com.dbframe.annotation.Id;
-import com.dbframe.annotation.Table;
-
-import java.util.Date;
+import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  * Created by aohong on 15/5/24.
  */
-@Table("house_info")
-public class HouseInfoPo {
+public class HouseAddParam {
 
-    private Integer id;
+
     private Integer infoType;
+    @NotEmpty
     private String title;
+    @NotEmpty
     private String houseName;
     private Integer areaId;
+    @NotEmpty
     private String address;
     private Integer houseType;
     private Integer isRegisterCompany;
@@ -26,16 +25,7 @@ public class HouseInfoPo {
     private String connectorMobile;
     private String description;
     private String image;
-    private Date createTime;
 
-    @Id
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public Integer getInfoType() {
         return infoType;
@@ -149,19 +139,10 @@ public class HouseInfoPo {
         this.image = image;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
     @Override
     public String toString() {
-        return "HouseInfoPo{" +
-                "id=" + id +
-                ", infoType=" + infoType +
+        return "HouseAddParam{" +
+                "infoType=" + infoType +
                 ", title='" + title + '\'' +
                 ", houseName='" + houseName + '\'' +
                 ", areaId=" + areaId +
@@ -175,7 +156,6 @@ public class HouseInfoPo {
                 ", connectorMobile='" + connectorMobile + '\'' +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +
-                ", createTime=" + createTime +
                 '}';
     }
 }

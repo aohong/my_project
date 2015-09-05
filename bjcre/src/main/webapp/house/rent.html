@@ -30,11 +30,11 @@
                     <tr id="tr_main_business">
                         <th>类型：</th>
                         <td class="business"colspan="2">
-                            <input type="radio" id="mainbusiness_1" name="mainbusiness" value="1"
+                            <input type="radio" id="infoType_1" name="infoType" value="1"
                                    checked="checked"><label>出租</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="mainbusiness_2" name="mainbusiness" value="2"><label>求租</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="mainbusiness_3" name="mainbusiness" value="3"><label>出售</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio" id="mainbusiness_4" name="mainbusiness" value="4"><label>求购</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="infoType_2" name="infoType" value="2"><label>求租</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="infoType_3" name="infoType" value="3"><label>出售</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="infoType_4" name="infoType" value="4"><label>求购</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </td>
                         <!--<td class="" id="business_tips" style="display:none">-->
                         <!--<div class="check_error" id="tip_business_error">-->
@@ -54,7 +54,7 @@
                     <tr>
                         <th>楼盘名称：</th>
                         <td class="td_input">
-                            <input type="text" id="building_name" class="input_text " name="building_name" value="" maxlength="">
+                            <input type="text" id="houseName" class="input_text " name="houseName" value="" maxlength="">
                         </td>
                         <td class="td_tips" id="passwordtip">
                             <div class=""></div>
@@ -63,8 +63,7 @@
                     <tr>
                         <th>所在区域：</th>
                         <td class="td_input">
-                            <input type="text" id="checkpwd" class="input_text" name="checkpwd" value=""
-                                   maxlength="16">
+                            <input type="text" id="areaId" class="input_text" name="areaId" value=""/>
                         </td>
                         <td class="td_tips" id="pwdtip">
                             <div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>
@@ -73,12 +72,12 @@
                     <tr>
                         <th>地址：</th>
                         <td class="td_input">
-                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                            <input type="text" id="address" class="input_text" name="address" value="" >
                         </td>
                         <td class="td_tips" id="nametip">
                             <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
                             <div class="check_error tip_name_3" style="display:none">
-                                请填写您的真实姓名(请勿使用空格)。
+
                             </div>
                         </td>
                     </tr>
@@ -90,9 +89,9 @@
                                 <tr>
                                     <td class="td_input">
                                         <div class="relative" style="z-index:15">
-                                            <input type="radio" id="building_type_1" name="building_type" value="1"
+                                            <input type="radio" id="houseType_1" name="houseType" value="1"
                                                    checked="checked"><label>写字楼</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <input type="radio" id="building_type_2" name="building_type" value="2"><label>住宅</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" id="houseType_2" name="houseType" value="2"><label>住宅</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                                         </div>
                                     </td>
@@ -114,9 +113,9 @@
                                 <tr>
                                     <td class="td_input">
                                         <div class="relative" style="z-index:15">
-                                            <input type="radio" id="campany_register_yes" name="campany_register" value="0"
+                                            <input type="radio" id="isRegisterCompany_yes" name="isRegisterCompany" value="0"
                                                    checked="checked"><label>可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <input type="radio" id="campany_register_no" name="campany_register" value="1"><label>不可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="radio" id="isRegisterCompany_no" name="isRegisterCompany" value="1"><label>不可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                                         </div>
                                     </td>
@@ -131,63 +130,80 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>价格：</th>
+                        <th>日租金：</th>
                         <td class="td_input">
-                            <input type="text" id="price" class="input_text" name="price" value="" maxlength="20">
+                            <input type="text" id="dayRent" class="input_text" name="dayRent" value=""/>
                         </td>
-                        <td class="td_tips" id="pricetip">
-                            <div class="relative" style="z-index:15">
-                                <input type="radio" id="price_type_1" name="price_type" value="1"
-                                       checked="checked"><label>元/㎡/天</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="radio" id="price_type_2" name="price_type" value="2"><label>元/月</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                            </div>
-                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
-                            <div class="check_error tip_name_3" style="display:none">
-                                请填写您的真实姓名(请勿使用空格)。
-                            </div>
+                        <td class="td_tips" id="dayRenttip">
+                            <div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>
                         </td>
                     </tr>
                     <tr>
+                        <th>总租金：</th>
+                        <td class="td_input">
+                            <input type="text" id="totalRent" class="input_text" name="totalRent" value=""/>
+                        </td>
+                        <td class="td_tips" id="totalRenttip">
+                            <div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>
+                        </td>
+                    </tr>
+                    <!--<tr>-->
+                        <!--<th>价格：</th>-->
+                        <!--<td class="td_input">-->
+                            <!--<input type="text" id="price" class="input_text" name="price" value="" maxlength="20">-->
+                        <!--</td>-->
+                        <!--<td class="td_tips" id="pricetip">-->
+                            <!--<div class="relative" style="z-index:15">-->
+                                <!--<input type="radio" id="price_type_1" name="price_type" value="1"-->
+                                       <!--checked="checked"><label>元/㎡/天</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                                <!--<input type="radio" id="price_type_2" name="price_type" value="2"><label>元/月</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+                            <!--</div>-->
+                            <!--<div class="check_ok tip_name_2" style="display:none">&nbsp;</div>-->
+                            <!--<div class="check_error tip_name_3" style="display:none">-->
+                                <!--请填写您的真实姓名(请勿使用空格)。-->
+                            <!--</div>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <tr>
                         <th>面积：</th>
                         <td class="td_input">
-                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                            <input type="text" id="acreage" class="input_text" name="acreage" value="" maxlength="20">
                         </td>
-                        <td class="td_tips" id="nametip">
+                        <td class="td_tips" id="acreagetip">
                             <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
                             <div class="check_error tip_name_3" style="display:none">
-                                请填写您的真实姓名(请勿使用空格)。
+
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <th>联系人：</th>
                         <td class="td_input">
-                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                            <input type="text" id="connector" class="input_text" name="connector" value="" maxlength="20">
                         </td>
-                        <td class="td_tips" id="nametip">
+                        <td class="td_tips" id="connectortip">
                             <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
                             <div class="check_error tip_name_3" style="display:none">
-                                请填写您的真实姓名(请勿使用空格)。
+
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <th>联系电话：</th>
                         <td class="td_input">
-                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                            <input type="text" id="connectorMobile" class="input_text" name="connectorMobile" value="" maxlength="20">
                         </td>
-                        <td class="td_tips" id="nametip">
+                        <td class="td_tips" id="connectorMobiletip">
                             <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
                             <div class="check_error tip_name_3" style="display:none">
-                                请填写您的真实姓名(请勿使用空格)。
+
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <th>说明：</th>
                         <td class="td_input" colspan="2">
-                            <!--<input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">-->
                             <textarea id="description" name="description" style="width: 400px;" rows="10"> </textarea>
                         </td>
                     </tr>
@@ -326,7 +342,30 @@
         jQuery("#storeid").val(0);
         $("#publish").click(function(){
 //            window.location.href = URL_PRE+'index.html';
-            window.location.href = 'rent_info.html';
+            $.post("/resource/houses",{
+                infoType: $("input[name='infoType']").val(),
+                title: $("#title").val(),
+                houseName: $("#houseName").val(),
+                areaId: $("#areaId").val(),
+                address: $("#address").val(),
+                houseType: $("input[name='houseType']").val(),
+                isRegisterCompany: $("input[name='isRegisterCompany']").val(),
+                dayRent: $("#dayRent").val(),
+                totalRent: $("#totalRent").val(),
+                acreage: $("#acreage").val(),
+                connector: $("#connector").val(),
+                connectorMobile: $("#connectorMobile").val(),
+                description: $("#description").val(),
+                image: $("#image").val(),
+                infoType: $("#infoType").val(),
+            },function(result){
+                console.log(result);
+                if (result.status != 200){
+                    return;
+                }
+
+                window.location.href = "/house/rent_info.html?id="+result.data.id;
+            });
         });
     </script>
 </div>

@@ -1,10 +1,11 @@
 DROP TABLE IF EXISTS `area`;
 
 CREATE TABLE `area` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
+  `type` int(11) NOT NULL COMMENT '区域类型:0-国,1-省,2-市,3-区,4-区域',
   `name` varchar(50) COLLATE utf8_bin DEFAULT NULL COMMENT '名称',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 INSERT INTO bjcre.area (id, name) VALUES (1, '朝阳');
 INSERT INTO bjcre.area (id, name) VALUES (2, '海淀');

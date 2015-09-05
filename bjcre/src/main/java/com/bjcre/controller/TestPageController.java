@@ -14,8 +14,9 @@ public class TestPageController {
 	@RequestMapping("index")
 	public String index() {
 
-		return "/index";
+		return "index2";
 	}
+
 	@RequestMapping("login")
     // 请求url地址映射，类似Struts的action-mapping
 	public String testLogin(@RequestParam(value = "username") String username,

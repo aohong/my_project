@@ -19,7 +19,7 @@ import com.bjcre.server.web.result.DataResult;
  * 
  * @author zhangyiming8 2014-12-16 19:40
  */
-@Controller
+@Controller("test")
 public class TestResouce {
     // private final static Logger logger =
     // Logger.getLogger(SettleServer.class);

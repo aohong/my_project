@@ -1,15 +1,12 @@
-package com.bjcre.po;
+package com.bjcre.vo;
 
 import com.dbframe.annotation.Id;
 import com.dbframe.annotation.Table;
 
-import java.util.Date;
-
 /**
  * Created by aohong on 15/5/24.
  */
-@Table("house_info")
-public class HouseInfoPo {
+public class HouseInfoVo {
 
     private Integer id;
     private Integer infoType;
@@ -26,9 +23,7 @@ public class HouseInfoPo {
     private String connectorMobile;
     private String description;
     private String image;
-    private Date createTime;
 
-    @Id
     public Integer getId() {
         return id;
     }
@@ -149,17 +144,9 @@ public class HouseInfoPo {
         this.image = image;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
     @Override
     public String toString() {
-        return "HouseInfoPo{" +
+        return "HouseInfoVo{" +
                 "id=" + id +
                 ", infoType=" + infoType +
                 ", title='" + title + '\'' +
@@ -175,7 +162,6 @@ public class HouseInfoPo {
                 ", connectorMobile='" + connectorMobile + '\'' +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +
-                ", createTime=" + createTime +
                 '}';
     }
 }

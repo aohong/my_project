@@ -1,1211 +1,894 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-    <head>
-        <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
-<link rel="canonical" href="http://bj.xzl.bjcre.com/zu/" />
-        <title>北京商业物业网</title>
-        
-<link rel="stylesheet" rev="stylesheet" href="css/index.css" type="text/css" />
-<link rel="icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" />
-<link rel="shortcut icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" /> 
-        <!--<script type="text/javascript">var PAGESTART = +new Date(); var PHPVERSION = '2015_10_01';</script>-->
-        <!--<script type="text/javascript"-->
-                <!--src="http://include.aifcdn.com/ujs/base/logger/dom.dom/ajax/event/ui.panel/ui.autocomplete/ui.exposure/cookie/site/utils/d08064db78183516bb9aba56704fa69a.js" crossorigin></script>-->
+<head>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+    <link rel="canonical" href="rent/"/>
+    <title>北京商业物业网</title>
 
-        <!--<script type="text/javascript" src="http://include.bjcrestatic.com/xzl/web/res/20151001/s/page/APF.js"></script>-->
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/common/common.js"></script>
+    <link rel="stylesheet" rev="stylesheet" href="css/index.css" type="text/css"/>
+    <!--<link rel="icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" />-->
+    <!--<link rel="shortcut icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" /> -->
+    <!--<script type="text/javascript">var PAGESTART = +new Date(); var PHPVERSION = '2015_10_01';</script>-->
+    <!--<script type="text/javascript"-->
+    <!--src="http://include.aifcdn.com/ujs/base/logger/dom.dom/ajax/event/ui.panel/ui.autocomplete/ui.exposure/cookie/site/utils/d08064db78183516bb9aba56704fa69a.js" crossorigin></script>-->
 
-                        <meta name="keywords" content="">
-        <link rel="search" type="application/opensearchdescription+xml" href="http://bj.xzl.bjcre.com/opensearch.xml" title="北京写字楼" />
-    </head>
-    <body>
+    <!--<script type="text/javascript" src="http://include.bjcrestatic.com/xzl/web/res/20151001/s/page/APF.js"></script>-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
 
-        <div id="container">
+    <meta name="keywords" content="">
+    <link rel="search" type="application/opensearchdescription+xml" href="http://bj.xzl.bjcre.com/opensearch.xml"
+          title="北京写字楼"/>
+</head>
+<body>
+
+<div id="container">
 
 
-            <div style="clear:both;"></div>
-            <div id="content"><div id="glbSearch" class="glbSearch forList "><!-- 注意： 单页的搜索需要添加 forView 这个class-->
-    <form class="glbForm" method="get" action="http://bj.xzl.bjcre.com/zu/" target="_self">
+    <div style="clear:both;"></div>
+    <div id="content">
+        <div id="glbSearch" class="glbSearch forList "><!-- 注意： 单页的搜索需要添加 forView 这个class-->
+            <form class="glbForm" method="get" action="rent/" target="_self">
 
-                <input type="hidden" value="14" id="currentcityid" />
-        <input type="hidden" name="t" value="rent" id="searchType" />
-        <input type="hidden" value="5" name="suggestiontypebjcre" id="suggestiontypebjcre" />
-        <input type="text" name="kw" class="kw" id="glb_search" maxlength="100" autocomplete="off" placeholder="请输入房源特征、地址、小区、楼盘名或…" value="" />
-        <em class="icon home_close" data-tracker="delete-kw" id="search_close" style="display:none;"></em><!--搜索关闭按钮-->
-        <input type="submit" class="btn" value="" id="SearchButton"/>
-                    <a href="http://bj.xzl.bjcre.com/ditu/zu/" class="icon smap" target="_blank">地图找房</a><!-- 注意： 单页此处不显示-->
+                <input type="hidden" value="14" id="currentcityid"/>
+                <input type="hidden" name="t" value="rent" id="searchType"/>
+                <input type="hidden" value="5" name="suggestiontypebjcre" id="suggestiontypebjcre"/>
+                <input type="text" name="kw" class="kw" id="glb_search" maxlength="100" autocomplete="off"
+                       placeholder="请输入房源特征、地址、小区、楼盘名或…" value=""/>
+                <em class="icon home_close" data-tracker="delete-kw" id="search_close" style="display:none;"></em><!--搜索关闭按钮-->
+                <input type="submit" class="btn" value="" id="SearchButton"/>
+                <a href="http://bj.xzl.bjcre.com/ditu/zu/" class="icon smap" target="_blank">地图找房</a><!-- 注意： 单页此处不显示-->
             </form>
-    <input type="hidden" value="" id="search_kw" />
-</div>
-
-<script type="text/javascript">
-    var home = "http://bj.xzl.bjcre.com/";
-    var ajk_home ="http://beijing.bjcre.com/";
-</script>
-<div class="fcklinks">
-    <div class="condition_links2">
-        <div class="cl_item">
-            <div class="condition_title">区&nbsp;&nbsp;&nbsp;域：</div>
-            <div class="container">
-                                    <strong>全部</strong>
-                                                        <a href="http://bj.xzl.bjcre.com/zu/chaoyangqu/">朝阳</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/haidianqu/">海淀</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/dongchengqu/">东城</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/xichengqu/">西城</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/chongwenqu/">崇文</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/fengtaiqu/">丰台</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/xuanwuqu/">宣武</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/daxingqu/">大兴</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/changpingqu/">昌平</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/shijingshanqu/">石景山</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/tongzhouqu/">通州</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/jinjiao_beijing/">近郊</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/zhoubian_beijing/">周边</a>
-                                            <a href="http://bj.xzl.bjcre.com/zu/shunyi/">顺义</a>
-                                </div>
-
-            
+            <input type="hidden" value="" id="search_kw"/>
         </div>
 
+        <script type="text/javascript">
+            var home = "http://bj.xzl.bjcre.com/";
+            var ajk_home = "http://beijing.bjcre.com/";
+        </script>
+        <div class="fcklinks">
+            <div class="condition_links2">
+                <div class="cl_item">
+                    <div class="condition_title">区&nbsp;&nbsp;&nbsp;域：</div>
+                    <div class="container">
+                        <strong>全部</strong>
+                        <a href="rent/chaoyangqu/">朝阳</a>
+                        <a href="rent/haidianqu/">海淀</a>
+                        <a href="rent/dongchengqu/">东城</a>
+                        <a href="rent/xichengqu/">西城</a>
+                        <a href="rent/chongwenqu/">崇文</a>
+                        <a href="rent/fengtaiqu/">丰台</a>
+                        <a href="rent/xuanwuqu/">宣武</a>
+                        <a href="rent/daxingqu/">大兴</a>
+                        <a href="rent/changpingqu/">昌平</a>
+                        <a href="rent/shijingshanqu/">石景山</a>
+                        <a href="rent/tongzhouqu/">通州</a>
+                        <a href="rent/jinjiao_beijing/">近郊</a>
+                        <a href="rent/zhoubian_beijing/">周边</a>
+                        <a href="rent/shunyi/">顺义</a>
+                    </div>
 
-        <div class="cl_item">
-            <div class="condition_title">面&nbsp;&nbsp;&nbsp;积：</div>
-            <div class="container">
-                                            <strong>全部</strong>
-                    
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj8/">100平米以下</a>
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj9/">100-150平米</a>
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj10/">150-200平米</a>
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj11/">200-300平米</a>
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj12/">300-500平米</a>
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj13/">500-1000平米</a>
-                                        <a href="http://bj.xzl.bjcre.com/zu/mj14/">1000平米以上</a>
-                                    <div class="custom-condition">
-                    <form style=" "  action="http://bj.xzl.bjcre.com/zu/"  enctype="application/x-www-form-urlencoded">
-                        <input type="text" name="from_area" id="from_area" autocomplete="off" maxlength="7"  value=""> -
-                        <input type="text" name="to_area" maxlength="7"   id="to_area" autocomplete="off"  value="">&nbsp;平米
-                                                <input class="smit" style="display: none;" type="submit" value="确定">
-                    </form>
+
+                </div>
+
+
+                <div class="cl_item">
+                    <div class="condition_title">面&nbsp;&nbsp;&nbsp;积：</div>
+                    <div class="container">
+                        <strong>全部</strong>
+
+                        <a href="rent/mj8/">100平米以下</a>
+                        <a href="rent/mj9/">100-150平米</a>
+                        <a href="rent/mj10/">150-200平米</a>
+                        <a href="rent/mj11/">200-300平米</a>
+                        <a href="rent/mj12/">300-500平米</a>
+                        <a href="rent/mj13/">500-1000平米</a>
+                        <a href="rent/mj14/">1000平米以上</a>
+
+                        <div class="custom-condition">
+                            <form style=" " action="rent/"
+                                  enctype="application/x-www-form-urlencoded">
+                                <input type="text" name="from_area" id="from_area" autocomplete="off" maxlength="7"
+                                       value=""> -
+                                <input type="text" name="to_area" maxlength="7" id="to_area" autocomplete="off"
+                                       value="">&nbsp;平米
+                                <input class="smit" style="display: none;" type="submit" value="确定">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cl_item">
+                    <div class="condition_title">日租金：</div>
+                    <div class="container">
+                        <strong>全部</strong>
+                        <a href="rent/rzj131/">3元/平米•天以下</a>
+                        <a href="rent/rzj132/">3-4元</a>
+                        <a href="rent/rzj133/">4-5元</a>
+                        <a href="rent/rzj134/">5-6元</a>
+                        <a href="rent/rzj135/">6-8元</a>
+                        <a href="rent/rzj136/">8-10元</a>
+                        <a href="rent/rzj137/">10元以上</a>
+
+                        <div class="custom-condition">
+                            <form style="" action="rent/"
+                                  enctype="application/x-www-form-urlencoded">
+                                <input type="text" name="from_price" id="ipt_from_price" autocomplete="off"
+                                       maxlength="7" value=""> -
+                                <input type="text" name="to_price" maxlength="7" id="ipt_to_price" autocomplete="off"
+                                       value="">&nbsp;元/平米•天 <input class="smit" style="display: none;" type="submit"
+                                                                    value="确定"/>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
 
-        <div class="cl_item">
-            <div class="condition_title">日租金：</div>
-            <div class="container">
-                                    <strong>全部</strong>
-                                                    <a href="http://bj.xzl.bjcre.com/zu/rzj131/">3元/平米•天以下</a>
-                                    <a href="http://bj.xzl.bjcre.com/zu/rzj132/">3-4元</a>
-                                    <a href="http://bj.xzl.bjcre.com/zu/rzj133/">4-5元</a>
-                                    <a href="http://bj.xzl.bjcre.com/zu/rzj134/">5-6元</a>
-                                    <a href="http://bj.xzl.bjcre.com/zu/rzj135/">6-8元</a>
-                                    <a href="http://bj.xzl.bjcre.com/zu/rzj136/">8-10元</a>
-                                    <a href="http://bj.xzl.bjcre.com/zu/rzj137/">10元以上</a>
-                
-                <div class="custom-condition">
-                    <form style=""  action="http://bj.xzl.bjcre.com/zu/"  enctype="application/x-www-form-urlencoded">
-                        <input type="text" name="from_price" id="ipt_from_price" autocomplete="off" maxlength="7"  value=""> -
-                        <input type="text" name="to_price" maxlength="7"   id="ipt_to_price" autocomplete="off"  value="">&nbsp;元/平米•天                                                <input class="smit" style="display: none;" type="submit" value="确定"/>
-                    </form>
+        <!-- Main Listing Start-->
+        <div class="mainListing clearfix">
+            <div class="pL">
+                <div class="PL_1 clearfix">
+
+                    <span class="found-info spResult">找到北京写字楼<em>0</em>套             </span>
+
+                    <div class="sortby-filter" id="filtersort">
+                        <span class="tit">排序：</span>
+                        <a rel="nofollow" data-sign="true" href="rent/#filtersort"
+                           class="default strong" title="综合排序">默认</a></li>
+                        <a rel="nofollow" data-sign="true" href="rent/px4-pv2/#filtersort"
+                           class="sort_gray_down" title="面积从大到小">面积</a></li>
+                        <a rel="nofollow" data-sign="true" href="rent/px2-pv1/#filtersort"
+                           class="" title="总租金从低到高">总租金</a></li>
+                        <a rel="nofollow" data-sign="true" href="rent/px3-pv1/#filtersort"
+                           class="" title="日租金从低到高">日租金</a></li>
+                        <a rel="nofollow" data-sign="true" href="rent/px1-pv2/#filtersort"
+                           class="sort_gray_down" title="按最新发布排序">最新</a></li>
+
+                    </div>
                 </div>
-            </div>
+                <ul class="list">
 
-        </div>
-    </div>
-</div>
+                    <li style="cursor:pointer;display: none" class="list_cent_li">
+                        <a data-sign="true" href="rent/13047393" class="img_content"
+                           target="_blank">
+                            <img src="" width="133" height="100"/>
+                        </a>
 
-<!-- Main Listing Start-->
-<div class="mainListing clearfix">
-    <div class="pL">
-            <div class="PL_1 clearfix">
+                        <div class="details">
+                            <div class="t_b">
+                                <a class="t" data-sign="true" href="rent/13047393" _soj='Filter_1'
+                                   target="_blank"></a>
+                            </div>
+                            <div>
+                                <span class="acreage">平米</span>
+                                <span class="sep_t">|</span>
+                                <span class="totalRent">元/月</span>
+                                <span class="sep_t">|</span>
+                                <span>高区楼层</span>
+                            </div>
+                            <div>
+                                <span class="address"><span>&nbsp;&nbsp;[望京</span>&nbsp;&nbsp;阜通东大街与阜安西路交叉口]</span>
+                            </div>
+                            <div class="details_bot">
+                                <span class="connector"></span><span></span></div>
+                        </div>
+                        <span class="price"><span class="s1"></span><span class="s2">元/平米•天</span></span>
+                    </li>
+                </ul>
 
-            <span class="found-info">
-                                找到北京写字楼<em>47639</em>套
-                            </span>
-
-                        <div class="sortby-filter" id="filtersort">
-                <span class="tit">排序：</span>
-
-                                <a rel="nofollow" data-sign="true" href="http://bj.xzl.bjcre.com/zu/#filtersort" class="default strong" title="综合排序">默认</a></li>
-
-                                <a rel="nofollow" data-sign="true" href="http://bj.xzl.bjcre.com/zu/px4-pv2/#filtersort" class="sort_gray_down" title="面积从大到小">面积</a></li>
-                                    <a rel="nofollow" data-sign="true" href="http://bj.xzl.bjcre.com/zu/px2-pv1/#filtersort" class="" title="总租金从低到高">总租金</a></li>
-                
-                                    <a rel="nofollow" data-sign="true" href="http://bj.xzl.bjcre.com/zu/px3-pv1/#filtersort" class="" title="日租金从低到高">日租金</a></li>
-                
-                
-                                <a rel="nofollow" data-sign="true" href="http://bj.xzl.bjcre.com/zu/px1-pv2/#filtersort" class="sort_gray_down" title="按最新发布排序">最新</a></li>
-
-            </div>
-        </div>
-            <ul class="list">
-            
-            <li style="cursor:pointer"  class="list_cent_li">
-                <a data-sign="true" href="http://bj.xzl.bjcre.com/zu/13047393"  class="img_content" target="_blank">
-                                        <img src="http://pic1.ajkimg.com/display/hj/5b40cef7fcedda2b5d9acffed2f15ab5/133x100c.jpg" width="133" height="100" title="融科望京中心写字楼5.5元/平米•天" />
-                </a>
-
-                <div class="details">
-                    <div class="t_b">
-                        <a class="t" data-sign="true" href="http://bj.xzl.bjcre.com/zu/13047393" _soj='Filter_1' target="_blank">
-                            融科望京中心 490平米 稀缺面积5.5元含物业取暖真实价钱                        </a>
-                    </div>
-                    <div>
-                                                    <span>490平米</span><span class="sep_t">|</span>
-                            <span>81982元/月</span><span class="sep_t">|</span>                            <span>高区楼层</span>
-                                            </div>
-                    <div>
-                        <span>融科望京中心<span>&nbsp;&nbsp;[望京</span>&nbsp;&nbsp;阜通东大街与阜安西路交叉口]</span>
-                    </div>
-                    <div class="details_bot">
-                        <span>王春霞</span><span></span></div>
-                </div>
-                <span class="price"><span class="s1">5.5</span><span  class="s2">元/平米•天</span></span>
-            </li>
-            
-            <li style="cursor:pointer"  class="list_cent_li">
-                <a data-sign="true" href="http://bj.xzl.bjcre.com/zu/13055653"  class="img_content" target="_blank">
-                                        <img src="http://pic1.ajkimg.com/display/hj/439d453e8a6ed0d29a33638b01694050/133x100c.jpg" width="133" height="100" title="望京SOHO写字楼7元/平米•天" />
-                </a>
-
-                <div class="details">
-                    <div class="t_b">
-                        <a class="t" data-sign="true" href="http://bj.xzl.bjcre.com/zu/13055653" _soj='Filter_2' target="_blank">
-                            新出超值户型 有钥匙【望京SOHO】方方正正  视野很好                        </a>
-                    </div>
-                    <div>
-                                                    <span>388平米</span><span class="sep_t">|</span>
-                            <span>82621元/月</span><span class="sep_t">|</span>                            <span>中区楼层</span>
-                                            </div>
-                    <div>
-                        <span>望京SOHO<span>&nbsp;&nbsp;[望京</span>&nbsp;&nbsp;望京街与阜安西路交叉路口]</span>
-                    </div>
-                    <div class="details_bot">
-                        <span>付庆飞</span><span></span></div>
-                </div>
-                <span class="price"><span class="s1">7</span><span  class="s2">元/平米•天</span></span>
-            </li>
-            
-            <li style="cursor:pointer"  class="list_cent_li">
-                <a data-sign="true" href="http://bj.xzl.bjcre.com/zu/13060067"  class="img_content" target="_blank">
-                                        <img src="http://pic1.ajkimg.com/display/hj/6d62144c58374a084347f936a0cdc234/133x100c.jpg" width="133" height="100" title="南银大厦写字楼8元/平米•天" />
-                </a>
-
-                <div class="details">
-                    <div class="t_b">
-                        <a class="t" data-sign="true" href="http://bj.xzl.bjcre.com/zu/13060067" _soj='Filter_3' target="_blank">
-                            南银大厦精装332㎡只要8块户型方正，正对电梯间全天采光！                        </a>
-                    </div>
-                    <div>
-                                                    <span>332平米</span><span class="sep_t">|</span>
-                            <span>80796元/月</span><span class="sep_t">|</span>                            <span>高区楼层</span>
-                                            </div>
-                    <div>
-                        <span>南银大厦<span>&nbsp;&nbsp;[三元桥</span>&nbsp;&nbsp;朝阳东三环北路2号]</span>
-                    </div>
-                    <div class="details_bot">
-                        <span>罗占明</span><span></span></div>
-                </div>
-                <span class="price"><span class="s1">8</span><span  class="s2">元/平米•天</span></span>
-            </li>
-            
-            <li style="cursor:pointer"  class="list_cent_li">
-                <a data-sign="true" href="http://bj.xzl.bjcre.com/zu/13029000"  class="img_content" target="_blank">
-                                        <img src="http://pic1.ajkimg.com/display/hj/4647e6e67fc1d2740744d2badcd79a9e/133x100c.jpg" width="133" height="100" title="南银大厦写字楼8元/平米•天" />
-                </a>
-
-                <div class="details">
-                    <div class="t_b">
-                        <a class="t" data-sign="true" href="http://bj.xzl.bjcre.com/zu/13029000" _soj='Filter_4' target="_blank">
-                            南银大厦纯写低价招租！198㎡只要8块户型方正遗留装修朝向好                        </a>
-                    </div>
-                    <div>
-                                                    <span>198平米</span><span class="sep_t">|</span>
-                            <span>48185元/月</span><span class="sep_t">|</span>                            <span>高区楼层</span>
-                                            </div>
-                    <div>
-                        <span>南银大厦<span>&nbsp;&nbsp;[三元桥</span>&nbsp;&nbsp;朝阳东三环北路2号]</span>
-                    </div>
-                    <div class="details_bot">
-                        <span>罗占明</span><span></span></div>
-                </div>
-                <span class="price"><span class="s1">8</span><span  class="s2">元/平米•天</span></span>
-            </li>
-            
-
-            
-            <li style="cursor:pointer"  class="list_cent_li">
-                <a data-sign="true" href="http://bj.xzl.bjcre.com/zu/13092321"  class="img_content" target="_blank">
-                                        <img src="http://pic1.ajkimg.com/display/hj/9f0503c18470d554efb488587ea0b456/133x100c.jpg" width="133" height="100" title="富力中心写字楼9元/平米•天" />
-                </a>
-
-                <div class="details">
-                    <div class="t_b">
-                        <a class="t" data-sign="true" href="http://bj.xzl.bjcre.com/zu/13092321" _soj='Filter_25' target="_blank">
-                            东三环双井地铁：富力中心200㎡精装，采光好户型棒空房特价租                        </a>
-                    </div>
-                    <div>
-                                                    <span>200平米</span><span class="sep_t">|</span>
-                            <span>54756元/月</span><span class="sep_t">|</span>                            <span>高区楼层</span>
-                                            </div>
-                    <div>
-                        <span>富力中心<span>&nbsp;&nbsp;[双井</span>&nbsp;&nbsp;东三环中路63号]</span>
-                    </div>
-                    <div class="details_bot">
-                        <span>李婷婷</span><span></span></div>
-                </div>
-                <span class="price"><span class="s1">9</span><span  class="s2">元/平米•天</span></span>
-            </li>
-                    </ul>
-
-                    <div class="listPager">
+                <div class="listPager">
                 <span class="spResult">
-                                            找到北京写字楼<em>47639</em>套
+                                            找到北京写字楼<em>0</em>套
                                      </span>
-                <div class="pager"><div class="multi-page">
-        
-                    <i class="iPre">上一页</i>
-        
-        
-        
-                    <i class="curr">1</i>
-                    <a href="http://bj.xzl.bjcre.com/zu/p2/#filtersort">2</a>
-                    <a href="http://bj.xzl.bjcre.com/zu/p3/#filtersort">3</a>
-                    <a href="http://bj.xzl.bjcre.com/zu/p4/#filtersort">4</a>
-                    <a href="http://bj.xzl.bjcre.com/zu/p5/#filtersort">5</a>
-                    <a href="http://bj.xzl.bjcre.com/zu/p6/#filtersort">6</a>
-                    <a href="http://bj.xzl.bjcre.com/zu/p7/#filtersort">7</a>
-        
-                    <i class="aDotted">...</i>
-        
-                    <a href="http://bj.xzl.bjcre.com/zu/p2/#filtersort" class="aNxt">下一页 &gt;</a>
-        
-		</div>
-</div>
-            </div>
-        
-                    <div class="breadCrumbs">
-                                                                        <a data-sign="true" href="http://beijing.bjcre.com/">北京商业物联网北京</a> &nbsp;&gt;&nbsp;                                                        <a data-sign="true" href="http://bj.xzl.bjcre.com/zu/">北京写字楼出租</a>                             </div>
+
+                    <div class="pager">
+                        <div class="multi-page">
+
+                            <i class="iPre">上一页</i>
+                            <i class="curr">1</i>
+                            <a href="rent#filtersort">2</a>
+                            <a href="rent/p3/#filtersort">3</a>
+                            <a href="rent/p4/#filtersort">4</a>
+                            <a href="rent/p5/#filtersort">5</a>
+                            <a href="rent/p6/#filtersort">6</a>
+                            <a href="rent/p7/#filtersort">7</a>
+
+                            <i class="aDotted">...</i>
+
+                            <a href="rent/p2/#filtersort" class="aNxt">下一页 &gt;</a>
+
+                        </div>
+                    </div>
                 </div>
 
-    <!-- Right Start-->
-    <div class="pR">
-        <div id="IFX_p3002" class="" style="">
-</div>
-<div style="display: none">
-    <script type="text/javascript"><!--
-        (function() {var x = document.createElement('script'); x.async = true;x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=3002&r=0&sr=0&o=1';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-        //-->
-    </script>
-</div>        <!-- 写字楼浏览历史-->
-        <div id="history_list" ></div>
+                <div class="breadCrumbs">
+                    <a data-sign="true" href="http://beijing.bjcre.com/">北京商业物联网北京</a> &nbsp;&gt;&nbsp; <a
+                        data-sign="true" href="rent/">北京写字楼出租</a></div>
+            </div>
+
+            <!-- Right Start-->
+            <div class="pR">
+                <div id="IFX_p3002" class="" style="">
+                </div>
+                <div style="display: none">
+                    <script type="text/javascript"><!--
+                    (function () {
+                        var x = document.createElement('script');
+                        x.async = true;
+                        x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=3002&r=0&sr=0&o=1';
+                        var h = document.getElementsByTagName('head')[0];
+                        if (h)h.insertBefore(x, h.lastChild);
+                    })();
+                    //-->
+                    </script>
+                </div>
+                <!-- 写字楼浏览历史-->
+                <div id="history_list"></div>
 
 
-        
-<div id="IFX_p33"></div>
-<div style="display: none"><script type="text/javascript"><!--
-(function() {var x = document.createElement('script'); x.async = true;x.src = 'http://bj.xzl.bjcre.com/s?p=33&ci=14&f1=0&f2=0';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-//-->
-</script>
-</div><div id="IFX_p11"></div>
-<div style="display: none"><script type="text/javascript"><!--
-(function() {var x = document.createElement('script'); x.async = true;x.src = 'http://bj.xzl.bjcre.com/s?p=11&ci=14&f1=0&f2=0';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-//-->
-</script>
-</div>        <div class="ifx-ad-r-box">
-            <div id="IFX_p964" class="" style="">
-</div>
-<div style="display: none">
-    <script type="text/javascript"><!--
-        (function() {var x = document.createElement('script'); x.async = true;x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=964&o=1';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-        //-->
-    </script>
-</div>        </div>
-        <div class="ifx-ad-r-box">
-            <div id="IFX_p965" class="" style="">
-</div>
-<div style="display: none">
-    <script type="text/javascript"><!--
-        (function() {var x = document.createElement('script'); x.async = true;x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=965&o=1';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-        //-->
-    </script>
-</div>        </div>
-        <div class="ifx-ad-r-box">
-            <div id="IFX_p966" class="" style="">
-</div>
-<div style="display: none">
-    <script type="text/javascript"><!--
-        (function() {var x = document.createElement('script'); x.async = true;x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=966&o=1';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-        //-->
-    </script>
-</div>        </div>
-    </div>
-    <!-- Right End-->
-</div>
-<!-- Main Listing End-->
-<div class="clear"></div>
+                <div id="IFX_p33"></div>
+                <div style="display: none">
+                    <script type="text/javascript"><!--
+                    (function () {
+                        var x = document.createElement('script');
+                        x.async = true;
+                        x.src = 'http://bj.xzl.bjcre.com/s?p=33&ci=14&f1=0&f2=0';
+                        var h = document.getElementsByTagName('head')[0];
+                        if (h)h.insertBefore(x, h.lastChild);
+                    })();
+                    //-->
+                    </script>
+                </div>
+                <div id="IFX_p11"></div>
+                <div style="display: none">
+                    <script type="text/javascript"><!--
+                    (function () {
+                        var x = document.createElement('script');
+                        x.async = true;
+                        x.src = 'http://bj.xzl.bjcre.com/s?p=11&ci=14&f1=0&f2=0';
+                        var h = document.getElementsByTagName('head')[0];
+                        if (h)h.insertBefore(x, h.lastChild);
+                    })();
+                    //-->
+                    </script>
+                </div>
+                <div class="ifx-ad-r-box">
+                    <div id="IFX_p964" class="" style="">
+                    </div>
+                    <div style="display: none">
+                        <script type="text/javascript"><!--
+                        (function () {
+                            var x = document.createElement('script');
+                            x.async = true;
+                            x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=964&o=1';
+                            var h = document.getElementsByTagName('head')[0];
+                            if (h)h.insertBefore(x, h.lastChild);
+                        })();
+                        //-->
+                        </script>
+                    </div>
+                </div>
+                <div class="ifx-ad-r-box">
+                    <div id="IFX_p965" class="" style="">
+                    </div>
+                    <div style="display: none">
+                        <script type="text/javascript"><!--
+                        (function () {
+                            var x = document.createElement('script');
+                            x.async = true;
+                            x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=965&o=1';
+                            var h = document.getElementsByTagName('head')[0];
+                            if (h)h.insertBefore(x, h.lastChild);
+                        })();
+                        //-->
+                        </script>
+                    </div>
+                </div>
+                <div class="ifx-ad-r-box">
+                    <div id="IFX_p966" class="" style="">
+                    </div>
+                    <div style="display: none">
+                        <script type="text/javascript"><!--
+                        (function () {
+                            var x = document.createElement('script');
+                            x.async = true;
+                            x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=966&o=1';
+                            var h = document.getElementsByTagName('head')[0];
+                            if (h)h.insertBefore(x, h.lastChild);
+                        })();
+                        //-->
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- Right End-->
+        </div>
+        <!-- Main Listing End-->
+        <div class="clear"></div>
 
-<div id="IFX_p45"></div>
-<div style="display: none"><script type="text/javascript"><!--
-(function() {var x = document.createElement('script'); x.async = true;x.src = 'http://bj.xzl.bjcre.com/s?p=45&ci=14&f1=0&f2=0';var h = document.getElementsByTagName('head')[0]; if(h)h.insertBefore(x,h.lastChild);})();
-//-->
-</script>
-</div>
+        <div id="IFX_p45"></div>
+        <div style="display: none">
+            <script type="text/javascript"><!--
+            (function () {
+                var x = document.createElement('script');
+                x.async = true;
+                x.src = 'http://bj.xzl.bjcre.com/s?p=45&ci=14&f1=0&f2=0';
+                var h = document.getElementsByTagName('head')[0];
+                if (h)h.insertBefore(x, h.lastChild);
+            })();
+            //-->
+            </script>
+        </div>
 
 
-<style>
-/*
-for bjcre haozu jinpu list page
-*/
-.seo_footer_boxer{
-    width:100%;
-    border:1px solid #F0F0F0;
-    border-top:2px solid #62AB00;
+        <style>
+            /*
+            for bjcre haozu jinpu list page
+            */
+            .seo_footer_boxer {
+                width: 100%;
+                border: 1px solid #F0F0F0;
+                border-top: 2px solid #62AB00;
 
-}
+            }
 
-.seo_footer_boxer_inner{
-    padding:0px 23px;
-}
+            .seo_footer_boxer_inner {
+                padding: 0px 23px;
+            }
 
-.seo_footer_boxer_line{
-    border-bottom: 1px dashed #E6E6E6;
-    padding:8px 0px 2px 0px;
-    position:relative;
-}
+            .seo_footer_boxer_line {
+                border-bottom: 1px dashed #E6E6E6;
+                padding: 8px 0px 2px 0px;
+                position: relative;
+            }
 
-.relative_left{
-    width:135px;
-    font-weight:bold;
-    color: #454545;
-    float:left;
-    display: inline-block;
-}
+            .relative_left {
+                width: 135px;
+                font-weight: bold;
+                color: #454545;
+                float: left;
+                display: inline-block;
+            }
 
-.relative_right{
-    margin-left:135px;
-    position:relative;
-}
+            .relative_right {
+                margin-left: 135px;
+                position: relative;
+            }
 
-.relative_right a{
-    margin-right:15px;
-    display:inline-block;
-    margin-bottom: 6px;
-}
+            .relative_right a {
+                margin-right: 15px;
+                display: inline-block;
+                margin-bottom: 6px;
+            }
 
-.relative_area a{
-    color:#454545 !important;
-}
+            .relative_area a {
+                color: #454545 !important;
+            }
 
-.relative_area .first{
-    font-weight:bold;
-}
+            .relative_area .first {
+                font-weight: bold;
+            }
 
-#relative_ershoufang a:hover{
-    font-weight:bold;
-}
+            #relative_ershoufang a:hover {
+                font-weight: bold;
+            }
 
-    .relative_plate a{
-        color:#999 !important;
-    }
+            .relative_plate a {
+                color: #999 !important;
+            }
 
-.relative_plate ul{
-    display:none;
-}
+            .relative_plate ul {
+                display: none;
+            }
 
-.seo_footer_boxer_line.last{
-    border-bottom:0px;
-}
+            .seo_footer_boxer_line.last {
+                border-bottom: 0px;
+            }
 
-/**partner*/
-.partner_list {
-    margin-top:-1px;
-    height:auto;
-    padding:6px 0 3px;
-    background:#f9f9f9;
-    overflow:hidden;
-}
-.partner_list li {
-    float:left;
-    width:85px;
-    line-height: 20px;
-    margin-left: 15px;
-    color:#999;
-    overflow: hidden;
-}
-.footseo_partner a:hover,.footseo_partner a:link,.footseo_partner a:visited{
-    color:#999;
-    text-decoration:none;
-}
-.footseo_partner {
-    clear:both;
-    position:relative;
-    background-color: #f9f9f9;
-}
-.footseo_partner span {
-    display: block;
-    line-height: 1.6em;
-    padding-left: 30px;
-    padding-top: 10px;
-}
-.footseo_partner ul {
-    padding-left: 15px;
-    _padding: 0 15px 0 0;
-    padding-bottom: 15px;
-}
-</style>
+            /**partner*/
+            .partner_list {
+                margin-top: -1px;
+                height: auto;
+                padding: 6px 0 3px;
+                background: #f9f9f9;
+                overflow: hidden;
+            }
 
-<script type="text/javascript">
-    if(J.g("relative_ershoufang")){
-        J.g("relative_ershoufang").s("a").each(function(i, v){
+            .partner_list li {
+                float: left;
+                width: 85px;
+                line-height: 20px;
+                margin-left: 15px;
+                color: #999;
+                overflow: hidden;
+            }
 
-            v.on("mouseover", function(){
-                J.g("relative_ershoufang").s("a").each(function(i, v){
-                    v.removeClass("first");
+            .footseo_partner a:hover, .footseo_partner a:link, .footseo_partner a:visited {
+                color: #999;
+                text-decoration: none;
+            }
+
+            .footseo_partner {
+                clear: both;
+                position: relative;
+                background-color: #f9f9f9;
+            }
+
+            .footseo_partner span {
+                display: block;
+                line-height: 1.6em;
+                padding-left: 30px;
+                padding-top: 10px;
+            }
+
+            .footseo_partner ul {
+                padding-left: 15px;
+                _padding: 0 15px 0 0;
+                padding-bottom: 15px;
+            }
+        </style>
+
+        <script type="text/javascript">
+            if (J.g("relative_ershoufang")) {
+                J.g("relative_ershoufang").s("a").each(function (i, v) {
+
+                    v.on("mouseover", function () {
+                        J.g("relative_ershoufang").s("a").each(function (i, v) {
+                            v.removeClass("first");
+                        });
+                        v.addClass("first");
+                        J.g("relative_plate_list").s("ul").each(function (i, v) {
+                            v.hide();
+                        });
+                        J.g("relative_plate_list").s("ul").eq(i).get().style.display = "block";
+                    });
                 });
-                v.addClass("first");
-                J.g("relative_plate_list").s("ul").each(function(i, v){
-                    v.hide();
-                });
-                J.g("relative_plate_list").s("ul").eq(i).get().style.display = "block";
-            });
-        });
-    }
-</script>
+            }
+        </script>
 <span style="display:none" id="url_data" data-domain="http://bj.xzl.bjcre.com/" data-viewed="?from=zuxzlrecent">
 </span>
 
-</div>
-            <script type="text/javascript" src="http://pages.jinpu.com/js/jquery.autocomplete.min-7.js"></script>
-<script type="text/javascript" src="http://pages.jinpu.com/js/jquery.lazyload.js"></script>
-<script type="text/javascript" src="http://pages.jinpu.com/js/ag_bjcre_landing.js"></script>
-<script type="text/javascript" src="http://include.bjcrestatic.com/xzl/web/res/20151001/b/officev2_List.js"></script>
-<script type="text/javascript">
+    </div>
+    <script type="text/javascript" src="http://pages.jinpu.com/js/jquery.autocomplete.min-7.js"></script>
+    <script type="text/javascript" src="http://pages.jinpu.com/js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="http://pages.jinpu.com/js/ag_bjcre_landing.js"></script>
+    <script type="text/javascript"
+            src="http://include.bjcrestatic.com/xzl/web/res/20151001/b/officev2_List.js"></script>
+    <script type="text/javascript">
 
-J.ready(function(){
-    var _citySelector = J.globalCitySelector('switch_apf_id_8', 'city-panel', 500);
-});
+        J.ready(function () {
+            var _citySelector = J.globalCitySelector('switch_apf_id_8', 'city-panel', 500);
+        });
 
-            J.ready(function() {
-                var x = document.createElement('script');
-                x.async = true;
-                x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=971&o=1';
-                var h = document.getElementsByTagName('head')[0];
-                if(h)h.insertBefore(x,h.lastChild);
-            });
-        
-    var register_source_code = 'Site_XZL_Register_Other';
-    $(document).ready(function(){
-            });
+        J.ready(function () {
+            var x = document.createElement('script');
+            x.async = true;
+            x.src = 'http://ifx.fang.bjcre.com/s?c=14&p=971&o=1';
+            var h = document.getElementsByTagName('head')[0];
+            if (h)h.insertBefore(x, h.lastChild);
+        });
 
-    (function(){
-        function init(){
-            var close = J.g('search_close'),
-                iptObj = J.g('glb_search');
+        var register_source_code = 'Site_XZL_Register_Other';
+        $(document).ready(function () {
+        });
 
-            if(iptObj) var autoSearch = searchComplete(iptObj);
-            if (close) {
-                close.on("click",function(){
-                    J.site.trackEvent(close.attr('data-tracker'));
-                    iptObj.val('');
-                    close.hide();
-                    autoSearch.hide();
-                    iptObj.get().focus();
-                });
-            }
+        (function () {
+            function init() {
+                var close = J.g('search_close'),
+                        iptObj = J.g('glb_search');
 
-            var is_contain_num = null;
-        }
-        init();
-
-        function searchComplete(elm){
-            var data_type;
-            var search = J.g('glbSearch');
-            var r = {
-                width: search.hasClass('forView') ? 347 : 498,
-                placeholder: elm.attr('placeholder'),
-                params: {
-                    c:$("#currentcityid").val(),
-                    n:10,
-                    g:1
-                },
-                offset:{
-                    x: 0,
-                    y: 0
-                },
-                url: ajk_home+"ajax/indexautocomplete",
-                tpl: "autocomplete_ajk",
-                toggleClass: "kw_hover",
-                //forceClear:false,
-
-                itemBuild:function(item){
-                    var number = is_contain_num ?  item.keyword + '<i>约' + item.num + '套</i>' : item.keyword ;
-                    return {
-                        l:number,
-                        v:item.keyword
-                    }
-                },
-
-                source: function(params, response){
-                    if(elm.attr("placeholder").trim() === elm.val().trim()){
-                        return;
-                    }
-                    data_type =  J.g('suggestiontypebjcre').val();
-                    var term = params.query;
-                    params.t = data_type;
-                    this.jsonP(params)
-                    jsonpEle.response = response;
-                },
-
-                onFocus:function(elm){
-                    if(elm.val()!='') elm.addClass('kw_hover');
-                },
-
-                onBlur:function(){
-                    var obj = J.g('glb_search');
-                    obj.removeClass('kw_hover');
-                },
-
-                onKeyUp:function(elm){
-                    var closeObj = J.g('search_close'),
-                        txt = elm.attr('placeholder').trim();
-                    if(elm.val() !='' && elm.val() != txt){
-                        closeObj.show();
-                    }else{
-                        closeObj.hide();
-                    }
-                },
-
-                onChange:function(elm){
-                    var tmp = elm.v.replace(/<[^>]+>/g,"");
-                    var obj = J.g('glb_search');
-                    obj.val(tmp);
-                },
-
-                jsonP:function(data){
-                    var url = data.url || (ajk_home+'ajax/indexautocomplete');
-                    url+= '?c='+data.c+'&n='+data.n+'&g='+data.g+'&kw='+data.kw+'&t='+data.t+'&callback=jsonpEle.callback&_r='+Math.random();
-                    var script = document.createElement("script");
-                    script.src= url;
-                    script.type="text/javascript"
-                    document.body.insertBefore(script,document.body.firstChild);
-                    if(!this.script){
-                        this.script = script;
-                        return;
-                    }
-                    this.script.parentNode.replaceChild(script,this.script);
-                    this.script = script;
-                },
-
-                onResult:function(obj,data){//有返回结果
+                if (iptObj) var autoSearch = searchComplete(iptObj);
+                if (close) {
+                    close.on("click", function () {
+                        J.site.trackEvent(close.attr('data-tracker'));
+                        iptObj.val('');
+                        close.hide();
+                        autoSearch.hide();
+                        iptObj.get().focus();
+                    });
                 }
 
-            };
+                var is_contain_num = null;
+            }
 
-            return  elm.autocomplete(r);
+            init();
+
+            function searchComplete(elm) {
+                var data_type;
+                var search = J.g('glbSearch');
+                var r = {
+                    width: search.hasClass('forView') ? 347 : 498,
+                    placeholder: elm.attr('placeholder'),
+                    params: {
+                        c: $("#currentcityid").val(),
+                        n: 10,
+                        g: 1
+                    },
+                    offset: {
+                        x: 0,
+                        y: 0
+                    },
+                    url: ajk_home + "ajax/indexautocomplete",
+                    tpl: "autocomplete_ajk",
+                    toggleClass: "kw_hover",
+                    //forceClear:false,
+
+                    itemBuild: function (item) {
+                        var number = is_contain_num ? item.keyword + '<i>约' + item.num + '套</i>' : item.keyword;
+                        return {
+                            l: number,
+                            v: item.keyword
+                        }
+                    },
+
+                    source: function (params, response) {
+                        if (elm.attr("placeholder").trim() === elm.val().trim()) {
+                            return;
+                        }
+                        data_type = J.g('suggestiontypebjcre').val();
+                        var term = params.query;
+                        params.t = data_type;
+                        this.jsonP(params)
+                        jsonpEle.response = response;
+                    },
+
+                    onFocus: function (elm) {
+                        if (elm.val() != '') elm.addClass('kw_hover');
+                    },
+
+                    onBlur: function () {
+                        var obj = J.g('glb_search');
+                        obj.removeClass('kw_hover');
+                    },
+
+                    onKeyUp: function (elm) {
+                        var closeObj = J.g('search_close'),
+                                txt = elm.attr('placeholder').trim();
+                        if (elm.val() != '' && elm.val() != txt) {
+                            closeObj.show();
+                        } else {
+                            closeObj.hide();
+                        }
+                    },
+
+                    onChange: function (elm) {
+                        var tmp = elm.v.replace(/<[^>]+>/g, "");
+                        var obj = J.g('glb_search');
+                        obj.val(tmp);
+                    },
+
+                    jsonP: function (data) {
+                        var url = data.url || (ajk_home + 'ajax/indexautocomplete');
+                        url += '?c=' + data.c + '&n=' + data.n + '&g=' + data.g + '&kw=' + data.kw + '&t=' + data.t + '&callback=jsonpEle.callback&_r=' + Math.random();
+                        var script = document.createElement("script");
+                        script.src = url;
+                        script.type = "text/javascript"
+                        document.body.insertBefore(script, document.body.firstChild);
+                        if (!this.script) {
+                            this.script = script;
+                            return;
+                        }
+                        this.script.parentNode.replaceChild(script, this.script);
+                        this.script = script;
+                    },
+
+                    onResult: function (obj, data) {//有返回结果
+                    }
+
+                };
+
+                return elm.autocomplete(r);
+            }
+
+        }.require(['ui.autocomplete'], ['ui.autocomplete_ajk']));
+
+        var jsonpEle = {
+            callback: function (data) {
+                is_contain_num = data.is_contain_num; //是否有右侧的个数
+
+                this.response(data.list);
+            }
         }
 
-    }.require(['ui.autocomplete'],['ui.autocomplete_ajk']));
 
-    var jsonpEle = {
-        callback:function(data){
-            is_contain_num = data.is_contain_num; //是否有右侧的个数
+        var headerSearchForm = $('#HeaderSearchForm');
+        var headerSearchText = $('#HeaderSearchText');
+        var headerSearchButton = $('#HeaderSearchButton');
 
-            this.response(data.list);
-        }
-    }
-
-
-    var headerSearchForm=$('#HeaderSearchForm');
-    var headerSearchText=$('#HeaderSearchText');
-    var headerSearchButton=$('#HeaderSearchButton');
-
-    var is_new = 0;
-    if (!('placeholder' in document.createElement('input'))){
-        $('[placeholder]').focus(function() {
-            var input = $(this);
-            if (input.val() == input.attr('placeholder')) {
-                input.val('');
-                input.removeClass('placeholder');
-            }
-        }).blur(function() {
-            var input = $(this);
-            if (input.val() == '' || input.val() == input.attr('placeholder')) {
-                input.addClass('placeholder');
-                input.val(input.attr('placeholder'));
-            }
-        }).blur();
-        $('[placeholder]').parents('form').submit(function() {
-            $(this).find('[placeholder]').each(function() {
+        var is_new = 0;
+        if (!('placeholder' in document.createElement('input'))) {
+            $('[placeholder]').focus(function () {
                 var input = $(this);
                 if (input.val() == input.attr('placeholder')) {
                     input.val('');
+                    input.removeClass('placeholder');
                 }
+            }).blur(function () {
+                var input = $(this);
+                if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                    input.addClass('placeholder');
+                    input.val(input.attr('placeholder'));
+                }
+            }).blur();
+            $('[placeholder]').parents('form').submit(function () {
+                $(this).find('[placeholder]').each(function () {
+                    var input = $(this);
+                    if (input.val() == input.attr('placeholder')) {
+                        input.val('');
+                    }
+                });
             });
-        });
-    }
-
-    $("#SearchButton").click(function(){
-        if( $("#glb_search").val() != $("#search_kw").val() || $.trim($("#glb_search").val()) == ''){
-            if($("#glb_search").val() == $("#glb_search").attr('placeholder')){
-                $("#glb_search").val('');
-            }
-            setTimeout(function(){
-                $('#SearchForm').submit();
-                return true;
-            },100);
-        }else{
-            return false;
-        }
-    });
-    headerSearchButton.click(function(){
-        //if(is_new == 0){
-        setTimeout(function(){
-            headerSearchForm.submit();
-        },100);
-        //}
-        return false;
-    });
-
-
-    $("#SearchButton").click(function(){
-        //if(is_new == 0){
-        if($("#glb_search").val() != $("#glb_search").attr('placeholder') && $("#glb_search").val() != $("#search_kw").val()){
-            setTimeout(function(){
-                $('#SearchForm').submit();
-            },100);
-        }else{
-            return false;
-        }
-        //}
-    });
-    $('.search-box .submit-box').bind({
-        'mouseover':function(){
-            $(this).addClass('search-button-over');
-        },
-        'mouseout':function(){
-            $(this).removeClass('search-button-over');
-        }
-    });
-    headerSearchForm.bind('keydown',function(e){
-
-        if (e.which == '13') {
-            //if(is_new == 0){
-            setTimeout(function(){
-                headerSearchForm.submit();
-            },100);
-            //}
-            return false;
         }
 
-    });
-    headerSearchForm.submit(function(){
-        if(headerSearchText.val().length>15){
-            alert('请勿超过15个中文字符');
-            return false;
-        }else{
-            //if(is_new == 0){
-            return true;
-            //}else{
-            //    return false;
-            //}
-        }
-    });
-
-    $("#HeaderSearchText").bind({
-        'mouseover':function(){
-            if($(this).val() != '' && $(this).val() != $(this).attr('placeholder')){
-                $(".serch_box_close").css('display','');
-            }
-            $("#HeaderSearchText").addClass('search_bg_on');
-
-        },
-        'mouseleave':function(){
-            $("#HeaderSearchText").removeClass('search_bg_on');
-            $("#HeaderSearchText").addClass('search_bg');
-        },
-        'focus':function(){
-            $("#HeaderSearchText").addClass('search_bg_onfocus');
-            if($(this).val() != '' && $(this).val() != $(this).attr('placeholder')){
-                $(".serch_box_close").css('display','');
-            }else{
-                $(".serch_box_close").hide();
-            }
-        },
-        'blur':function(){
-            $("#HeaderSearchText").removeClass('search_bg_onfocus');
-        },
-        'keyup':function(){
-
-            if($(this).val() != '' && $(this).val() != $(this).attr('placeholder')){
-                $(".serch_box_close").css('display','');
-            }else{
-                $(".serch_box_close").hide();
-            }
-        }
-    });
-
-    $(".serch_box_close").bind('click',function(){
-        $("#HeaderSearchText").val('');
-        $(this).hide();
-        $("#HeaderSearchText").focus();
-    });
-
-    $("#HeaderSearchText").autocomplete(
-        "/ajax/searchsuggestion",
-        {
-            resultsClass:'search_cont',
-            delay:0,
-            width:309,
-            scroll:false,
-            selectFirst:false,
-            max:14,
-            extraParams:{c:$("#currentcityid").val(),t:$('#suggestiontype').val()},
-            parse:function(rst){
-                if(rst){
-                    var data = eval('('+rst+')');
-                    var parsed = [];
-                    var rows = [];
-                    for(var i=0; i<data.length;i++){
-                        rows[i] = data[i];
-                    }
-                    for (var i=0; i < rows.length; i++) {
-                        var row = rows[i];
-                        if (row) {
-                            parsed[parsed.length] = {
-                                data: row,
-                                value: row.keyword,
-                                result: row.keyword
-                            };
-                        }
-                    }
-                    return parsed;
+        $("#SearchButton").click(function () {
+            if ($("#glb_search").val() != $("#search_kw").val() || $.trim($("#glb_search").val()) == '') {
+                if ($("#glb_search").val() == $("#glb_search").attr('placeholder')) {
+                    $("#glb_search").val('');
                 }
-            },
-            formatItem:function(row){
-                if(row.keyword && row.records){
-                    if(row.is_new == 1){
-                        var li = $('<li></li>'),
-                            title = $('<span class="search_ad">'+ row.keyword +'</span>');
-                        li.append(title);
-                        return li.html();
-                    } else {
-                        var li = $('<li></li>'),
-                            title = $('<span class="search_ad">'+ row.keyword +'</span>');
-
-                        li.append(title);
-                        return li.html();
-                    }
-                }
+                setTimeout(function () {
+                    $('#SearchForm').submit();
+                    return true;
+                }, 100);
+            } else {
                 return false;
             }
-        }
-    );
-
-    $("#HeaderSearchText").bind('focus',function(){
-        $(this).addClass('over')
-    });
-
-    /*
-
-     * 在html的a标签中添加了_soj="abc"属性，
-     * 该函数在a的href之中添加?from=abc或&from=abc
-     */
+        });
+        headerSearchButton.click(function () {
+            //if(is_new == 0){
+            setTimeout(function () {
+                headerSearchForm.submit();
+            }, 100);
+            //}
+            return false;
+        });
 
 
-    function dw_add_link_from(tag){
-        var reg=/^http:\/\/./;
-        var a = document.getElementsByTagName("a");
-        for(var i=0;i<a.length;i++){
-            var text = a[i].getAttribute(tag);
-            if(text!=null){
-                var url = a[i].href;
-                if(!url.match(reg))continue;
-                if(url.indexOf("from=")!=-1)continue;
-                text = encodeURIComponent(text);
-                var u = url.split("#");
-                if(url.indexOf("?")!=-1){
-                    url = u[0]+"&from="+text;
-                }else{
-                    url = u[0]+"?from="+text;
+        $("#SearchButton").click(function () {
+            //if(is_new == 0){
+            if ($("#glb_search").val() != $("#glb_search").attr('placeholder') && $("#glb_search").val() != $("#search_kw").val()) {
+                setTimeout(function () {
+                    $('#SearchForm').submit();
+                }, 100);
+            } else {
+                return false;
+            }
+            //}
+        });
+        $('.search-box .submit-box').bind({
+            'mouseover': function () {
+                $(this).addClass('search-button-over');
+            },
+            'mouseout': function () {
+                $(this).removeClass('search-button-over');
+            }
+        });
+        headerSearchForm.bind('keydown', function (e) {
+
+            if (e.which == '13') {
+                //if(is_new == 0){
+                setTimeout(function () {
+                    headerSearchForm.submit();
+                }, 100);
+                //}
+                return false;
+            }
+
+        });
+        headerSearchForm.submit(function () {
+            if (headerSearchText.val().length > 15) {
+                alert('请勿超过15个中文字符');
+                return false;
+            } else {
+                //if(is_new == 0){
+                return true;
+                //}else{
+                //    return false;
+                //}
+            }
+        });
+
+        $("#HeaderSearchText").bind({
+            'mouseover': function () {
+                if ($(this).val() != '' && $(this).val() != $(this).attr('placeholder')) {
+                    $(".serch_box_close").css('display', '');
                 }
-                if(u.length>1){
-                    for(var j=1;j<u.length;j++){
-                        url+="#"+u[j];
+                $("#HeaderSearchText").addClass('search_bg_on');
+
+            },
+            'mouseleave': function () {
+                $("#HeaderSearchText").removeClass('search_bg_on');
+                $("#HeaderSearchText").addClass('search_bg');
+            },
+            'focus': function () {
+                $("#HeaderSearchText").addClass('search_bg_onfocus');
+                if ($(this).val() != '' && $(this).val() != $(this).attr('placeholder')) {
+                    $(".serch_box_close").css('display', '');
+                } else {
+                    $(".serch_box_close").hide();
+                }
+            },
+            'blur': function () {
+                $("#HeaderSearchText").removeClass('search_bg_onfocus');
+            },
+            'keyup': function () {
+
+                if ($(this).val() != '' && $(this).val() != $(this).attr('placeholder')) {
+                    $(".serch_box_close").css('display', '');
+                } else {
+                    $(".serch_box_close").hide();
+                }
+            }
+        });
+
+        $(".serch_box_close").bind('click', function () {
+            $("#HeaderSearchText").val('');
+            $(this).hide();
+            $("#HeaderSearchText").focus();
+        });
+
+        $("#HeaderSearchText").autocomplete(
+                "/ajax/searchsuggestion",
+                {
+                    resultsClass: 'search_cont',
+                    delay: 0,
+                    width: 309,
+                    scroll: false,
+                    selectFirst: false,
+                    max: 14,
+                    extraParams: {c: $("#currentcityid").val(), t: $('#suggestiontype').val()},
+                    parse: function (rst) {
+                        if (rst) {
+                            var data = eval('(' + rst + ')');
+                            var parsed = [];
+                            var rows = [];
+                            for (var i = 0; i < data.length; i++) {
+                                rows[i] = data[i];
+                            }
+                            for (var i = 0; i < rows.length; i++) {
+                                var row = rows[i];
+                                if (row) {
+                                    parsed[parsed.length] = {
+                                        data: row,
+                                        value: row.keyword,
+                                        result: row.keyword
+                                    };
+                                }
+                            }
+                            return parsed;
+                        }
+                    },
+                    formatItem: function (row) {
+                        if (row.keyword && row.records) {
+                            if (row.is_new == 1) {
+                                var li = $('<li></li>'),
+                                        title = $('<span class="search_ad">' + row.keyword + '</span>');
+                                li.append(title);
+                                return li.html();
+                            } else {
+                                var li = $('<li></li>'),
+                                        title = $('<span class="search_ad">' + row.keyword + '</span>');
+
+                                li.append(title);
+                                return li.html();
+                            }
+                        }
+                        return false;
                     }
-                }//update star 2012-02-06 bug28645
-                a[i].href = ' '+ url;
+                }
+        );
+
+        $("#HeaderSearchText").bind('focus', function () {
+            $(this).addClass('over')
+        });
+
+        /*
+
+         * 在html的a标签中添加了_soj="abc"属性，
+         * 该函数在a的href之中添加?from=abc或&from=abc
+         */
+
+
+        function dw_add_link_from(tag) {
+            var reg = /^http:\/\/./;
+            var a = document.getElementsByTagName("a");
+            for (var i = 0; i < a.length; i++) {
+                var text = a[i].getAttribute(tag);
+                if (text != null) {
+                    var url = a[i].href;
+                    if (!url.match(reg))continue;
+                    if (url.indexOf("from=") != -1)continue;
+                    text = encodeURIComponent(text);
+                    var u = url.split("#");
+                    if (url.indexOf("?") != -1) {
+                        url = u[0] + "&from=" + text;
+                    } else {
+                        url = u[0] + "?from=" + text;
+                    }
+                    if (u.length > 1) {
+                        for (var j = 1; j < u.length; j++) {
+                            url += "#" + u[j];
+                        }
+                    }//update star 2012-02-06 bug28645
+                    a[i].href = ' ' + url;
+                }
             }
         }
-    }
 
 
-    $(document).bind('ready',function(){
-        dw_add_link_from('_soj');
-    });
+        $(document).bind('ready', function () {
+            dw_add_link_from('_soj');
+        });
 
 
+        J.g("SearchButton") && J.on(J.g("SearchButton"), 'click', function () {
+            var elm = J.g("glb_search");
+            if (!elm.val() || elm.val().trim() === elm.attr("placeholder").trim()) {
+                return false;
+            }
+            return true;
+        });
 
-    J.g("SearchButton")&&J.on(J.g("SearchButton"),'click',function(){
-        var elm = J.g("glb_search");
-        if(!elm.val() || elm.val().trim() === elm.attr("placeholder").trim()){
-            return false;
-        }
-        return true;
-    });
-    
-$(document).ready(function(){
-    $("#show_city_list").click(function(){
-        $("#city_list").toggle();
-    });
-    $("#city_list,#topic").bind({"mouseleave":function(){
-        $("#city_list").hide();
-    }});
-    var commList = J.g('comm_list');
-    J.g('show_comm_list').on('click', function(){
-        commList.show();
-    });
-    J.g('comm_list').on('mouseleave', function(){
-        commList.hide();
-    });
-    J.g('topic').on('mouseleave', function(){
-        commList.hide();
-    });
-});
-
-</script>        </div>
-        <script type="text/javascript">
-document.write(unescape("%3Cscript src='http://s.bjcre.com/bb.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-    var st = new SiteTracker();
-    st.setSite("bjcre");
-    st.setPage("Office_ListController");
-    st.setPageName("Office_ListController");
-    st.setReferer(document.referrer);
-    st.setNCtid("ctid");
-    st.setNGuid("aQQ_ajkguid");
-    st.setNSessid("sessid");
-    st.setNUid("jp_member_id");
-
-    var cp = '{"found":47639,"pages":1906,"abtest":null,"tradetype":"rent","view":{"list":"13047393,13055653,13060067,13029000,13090335,13040863,13099184,13066352,13105363,13066561,13076022,13066505,13081309,13103824,13103965,13026903,13064893,13096464,13082211,13090956,13088629,13055798,13097448,13070369,13092321"}}';
-    st.setCustomParam(cp);
-    st.track();
-
-    var st = new SiteTracker();
-    st.setSite("bjcre-npv");
-    st.setPage("Office_ListController");
-    st.setPageName("Office_ListController");
-    st.setReferer(document.referrer);
-    st.setNCtid("ctid");
-    st.setNGuid("aQQ_ajkguid");
-    st.setNSessid("sessid");
-    st.setNUid("jp_member_id");
-    st.setCustomParam('{"v":"2.0","userType":0,"hpPage":"Jinpu_Hp_View","channel":8,"entry":107,"commid":0,"tradeType":6,"proids":"13047393|1573275|0|1,13055653|1557848|0|1,13060067|1582530|0|1,13029000|1582530|0|1,13090335|1557848|0|1,13040863|78216|0|1,13099184|28240|0|1,13066352|24896|0|1,13105363|968117|0|1,13066561|24896|0|1,13076022|364817|0|1,13066505|143648|0|1,13081309|236952|0|1,13103824|941970|0|1,13103965|941970|0|1,13026903|69587|0|1,13064893|687924|0|1,13096464|711117|0|1,13082211|1581813|0|1,13090956|378775|0|1,13088629|1261387|0|1,13055798|864477|0|1,13097448|797777|0|1,13070369|700184|0|1,13092321|771845|0|1"}');
-
-    st.track();} catch (err) {}
-</script>
-        <script type="text/javascript">
-J.ready(function(){
-   var st =  new J.ui.exposure();
-    st.setSite("bjcre-exposure-npv");
-    st.setPage("Office_ListController");
-    st.setPageName("Office_ListController");
-    st.setReferrer(document.referrer);
-    st.setNGuid("aQQ_ajkguid");
-    st.setNUid("jp_member_id");
-    st.start();
-});
-</script>
-        <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-23868188-1']);
-  _gaq.push(['_setDomainName', '.jinpu.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-        
-<!--  baidu广告代码加载-->
-<script type="text/javascript" src="http://cbjs.baidu.com/js/s.js"></script>
-<script type="text/javascript">
-	var BaiduSlots = {};
-	var BaiduSlotsContent = {};
-	var current_time = parseInt(new Date().getTime()/1000);
-</script>
-<!--  baidu广告位置填充 -->
-<div id="baidu_adjinpu_zoneid_listing_001" style="display:none;">
-	<script type="text/javascript">
-	if($('adjinpu_zoneid_listing_001')){
-		if(window.localStorage){
-			var ad_slot_tmp = window.localStorage.getItem('baidu_ad_slot_'+'214667');
-			if(ad_slot_tmp != null){
-				ad_slot_data = eval('('+ad_slot_tmp+')');
-				if(current_time - ad_slot_data.setted > 43200){//缓存半天
-					BAIDU_CLB_singleFillSlot("214667");
-				}else{
-					BaiduSlots['slot_214667'] = ad_slot_data;
-					BaiduSlotsContent['slot_214667'] = window.localStorage.getItem('baidu_ad_slot_content_'+'214667');
-				}
-			}else{
-				BAIDU_CLB_singleFillSlot("214667");
-			}
-		}else{
-			BAIDU_CLB_singleFillSlot("214667");
-		}
-	}
-	</script>
-</div>
-<!--  baidu广告位置填充 -->
-<div id="baidu_adjinpu_zoneid_listing_002" style="display:none;">
-	<script type="text/javascript">
-	if($('adjinpu_zoneid_listing_002')){
-		if(window.localStorage){
-			var ad_slot_tmp = window.localStorage.getItem('baidu_ad_slot_'+'214668');
-			if(ad_slot_tmp != null){
-				ad_slot_data = eval('('+ad_slot_tmp+')');
-				if(current_time - ad_slot_data.setted > 43200){//缓存半天
-					BAIDU_CLB_singleFillSlot("214668");
-				}else{
-					BaiduSlots['slot_214668'] = ad_slot_data;
-					BaiduSlotsContent['slot_214668'] = window.localStorage.getItem('baidu_ad_slot_content_'+'214668');
-				}
-			}else{
-				BAIDU_CLB_singleFillSlot("214668");
-			}
-		}else{
-			BAIDU_CLB_singleFillSlot("214668");
-		}
-	}
-	</script>
-</div>
-<!--  baidu广告位置填充 -->
-<div id="baidu_adjinpu_zoneid_xieziloushou" style="display:none;">
-	<script type="text/javascript">
-	if($('adjinpu_zoneid_xieziloushou')){
-		if(window.localStorage){
-			var ad_slot_tmp = window.localStorage.getItem('baidu_ad_slot_'+'233894');
-			if(ad_slot_tmp != null){
-				ad_slot_data = eval('('+ad_slot_tmp+')');
-				if(current_time - ad_slot_data.setted > 43200){//缓存半天
-					BAIDU_CLB_singleFillSlot("233894");
-				}else{
-					BaiduSlots['slot_233894'] = ad_slot_data;
-					BaiduSlotsContent['slot_233894'] = window.localStorage.getItem('baidu_ad_slot_content_'+'233894');
-				}
-			}else{
-				BAIDU_CLB_singleFillSlot("233894");
-			}
-		}else{
-			BAIDU_CLB_singleFillSlot("233894");
-		}
-	}
-	</script>
-</div>
-<!--  baidu广告位置填充 -->
-<div id="baidu_adjinpu_zoneid_xiezilouzu" style="display:none;">
-	<script type="text/javascript">
-	if($('adjinpu_zoneid_xiezilouzu')){
-		if(window.localStorage){
-			var ad_slot_tmp = window.localStorage.getItem('baidu_ad_slot_'+'233906');
-			if(ad_slot_tmp != null){
-				ad_slot_data = eval('('+ad_slot_tmp+')');
-				if(current_time - ad_slot_data.setted > 43200){//缓存半天
-					BAIDU_CLB_singleFillSlot("233906");
-				}else{
-					BaiduSlots['slot_233906'] = ad_slot_data;
-					BaiduSlotsContent['slot_233906'] = window.localStorage.getItem('baidu_ad_slot_content_'+'233906');
-				}
-			}else{
-				BAIDU_CLB_singleFillSlot("233906");
-			}
-		}else{
-			BAIDU_CLB_singleFillSlot("233906");
-		}
-	}
-	</script>
-</div>
-
-<!--  广告的迁移-->       
-<script type="text/javascript">
-
-	var get = function(id) {
-	    return document.getElementById(id);
-	}
-
-	var moved_ads = ['cproIframe1','cproIframe2','cproIframe3'];
-	var moved_num = 0;
-	var jinpu_ad_move = function(type,slot,target,id) {
-		
-		if(type == 'google'){
-			var adslot = get(target), ifrm, ad_frame = get('google_ads_iframe_' + slot);
-		}else if(type == 'baidu'){
-			var adslot = get(slot), ifrm, ad_frame = get('baidu_clb_slot_iframe_' + id);
-		}else{
-			return;
-		}
-	    if (adslot == null){
-		    return;
-	    }
-
-		//use local cache
-		if(window.localStorage){
-			if(BaiduSlots['slot_'+id]){
-				var ItemData = BaiduSlots['slot_'+id];
-				var ItemContent = BaiduSlotsContent['slot_'+id];
-				if(ItemData.src || ItemContent){
-					create_ad_element(adslot, id, type, slot, ItemData.width, ItemData.height, ItemData.src, ItemContent, 0);
-					return;
-				}
-			}
-		}
-
-	    if(type == 'baidu' && ad_frame == null){
-			var ad_id = moved_ads[moved_num];
-			ad_frame = get(ad_id);
-			if(ad_frame){
-				moved_num++;
-			}
-		}
-	    if (ad_frame) {
-                    try{
-		    var adcontent = ad_frame.contentWindow.document.documentElement.innerHTML;
-                    create_ad_element(adslot, id, type, slot, ad_frame.getAttribute('width'), ad_frame.getAttribute('height'), ad_frame.src, adcontent, 1);
-                    }catch(e){ }
-	    } else {
-			if(type == 'google'){
-				var ad_div = get('google_ads_div_' + slot) || get('google_ads_div_' + slot + '_ad_container');
-			}else{
-				var ad_div = get(target);
-				ad_div.style.display = "block";
-			}
-			if (ad_div) {
-	            adslot.appendChild(ad_div);
-	        }
-	    }
-
-	    adslot.style.display = '';
-	}
-
-	function create_ad_element(adslot, id, type, slot, width, height, src, content, setcache){
-        ifrm = document.createElement('iframe');
-        ifrm.setAttribute('id', type+'_ads_slot_iframe_' + slot);
-        ifrm.setAttribute('frameBorder', 0);
-        ifrm.setAttribute('scrolling', 'no');
-        ifrm.setAttribute('width', width);
-        ifrm.setAttribute('height', height);
-        ifrm.setAttribute('marginwidth', 0);
-        ifrm.setAttribute('marginheight', 0);
-        adslot.appendChild (ifrm);
-        if(src && src.indexOf('http') != -1){
-        	ifrm.src = src;
-	        if(window.localStorage && setcache){
-		        var nowtime = parseInt(new Date().getTime()/1000);
-				window.localStorage.setItem('baidu_ad_slot_'+id, '{"width":"'+width+'", "height":"'+height+'", "src":"'+src+'", "setted":'+nowtime+'}');
-	        }
-        }else{
-        	ifrm.contentWindow.document.open();
-	        ifrm.contentWindow.document.write(content);
-	        ifrm.contentWindow.document.body.style.marginLeft = 0;
-	        ifrm.contentWindow.document.body.style.marginTop = 0;
-	        ifrm.contentWindow.document.close();
-	        if(window.localStorage && setcache){
-	        	var nowtime = parseInt(new Date().getTime()/1000);
-				window.localStorage.setItem('baidu_ad_slot_'+id, '{"width":"'+width+'", "height":"'+height+'", "setted":'+nowtime+'}');
-				window.localStorage.setItem('baidu_ad_slot_content_'+id, content);
-	        }
-        }
-	}
-
-	    
-        	setTimeout("jinpu_ad_move('baidu','adjinpu_zoneid_listing_001','baidu_adjinpu_zoneid_listing_001','214667')",100);
-		    
-        	setTimeout("jinpu_ad_move('baidu','adjinpu_zoneid_listing_002','baidu_adjinpu_zoneid_listing_002','214668')",200);
-		    
-        	setTimeout("jinpu_ad_move('baidu','adjinpu_zoneid_xieziloushou','baidu_adjinpu_zoneid_xieziloushou','233894')",300);
-		    
-        	setTimeout("jinpu_ad_move('baidu','adjinpu_zoneid_xiezilouzu','baidu_adjinpu_zoneid_xiezilouzu','233906')",400);
-		</script>
-
-        <div style="display: none">
-            <script type="text/javascript">
-                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F11fcb0b71752c2a47085c67923f25d97' type='text/javascript'%3E%3C/script%3E"));
-            </script>
-        </div>
-                        <!-- Google Tag Manager -->
-        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WSG9"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script type="text/javascript" defer="true">
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WSG9');
-        </script>
-        <!-- End Google Tag Manager -->
-        
-        <script type="text/javascript">
-var _mvq = _mvq || [];
-_mvq.push(['$setAccount', 'm-21014-1']);
-_mvq.push(['$logConversion']);
-(function() {
-    var mvl = document.createElement('script');
-    mvl.type = 'text/javascript'; mvl.async = true;
-    mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(mvl, s); 
-})();   
-</script>
-
-
-                                <script type="text/javascript" defer="true">
-        <!--
-        (function (d) {
-        window.bd_cpro_rtid="P1TkrHR";
-        var s = d.createElement("script");s.type = "text/javascript";s.async = true;s.src = location.protocol + "//cpro.baidu.com/cpro/ui/rt.js";
-        var s0 = d.getElementsByTagName("script")[0];s0.parentNode.insertBefore(s, s0);
-        })(document);
-        //-->
-        </script>
-        <script type='text/javascript'>
-    var _zampq=_zampq||[];
-    _zampq.push(["_setAccount","8"]);
-    (function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://":"http://")+"cdn.zampda.net/s.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})();
-</script>
-    </body>
-    <script type="text/javascript">
-        J.ready(function(){
-            $.getScript("http://t.uctrac.com/js/tc.js",function(){
-                try{
-                    $uctrac.init();
-                    $uctrac.logConv("retarget_162978");
-                }catch(err){}
+        $(document).ready(function () {
+            $("#show_city_list").click(function () {
+                $("#city_list").toggle();
+            });
+            $("#city_list,#topic").bind({
+                "mouseleave": function () {
+                    $("#city_list").hide();
+                }
+            });
+            var commList = J.g('comm_list');
+            J.g('show_comm_list').on('click', function () {
+                commList.show();
+            });
+            J.g('comm_list').on('mouseleave', function () {
+                commList.hide();
+            });
+            J.g('topic').on('mouseleave', function () {
+                commList.hide();
             });
         });
-    </script>
-    <!-- START: 性能测试监控 -->
-    <script>
-        J.ready(function(){
-            var v = 1416287629,
-                src = "http://pages.aifcdn.com/prism/performance.js?v="+v;
 
-            J.load(src, function(){
-                window.perfConfig = {
-                    pageName : 'officev2_ListPage',
-                    siteName : 'ershoufang'
-                };
-            })
-        });
     </script>
-    <!-- END: 性能测试监控 -->
+</div>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $.get("resource/houses", {
+            search: $("#glb_search").val(),
+            areaId: $("#from_area").val(),
+            acreageMin: $("#from_area").val(),
+            acreageMax: $("#to_area").val(),
+            dayRentMin: $("#from_price").val(),
+            dayRentMax: $("#to_price").val(),
+            desc: $("#desc").val()
+        }, function (result) {
+            if (result.status != 200) {
+                return;
+            }
+
+            $(".spResult em").text(result.totalCount);
+
+            for (var i in result.data) {
+                var house = result.data[i];
+                var houseLi = $(".list_cent_li:first").clone();
+                houseLi.find("img").attr("src", "" + house.image);
+                houseLi.find("a").attr("href", "house/rent_info.html?id="+house.id);
+                houseLi.find(".address").prepend(house.address);
+                houseLi.find(".details a").text(house.title);
+                houseLi.find(".totalRent").prepend(house.totalRent);
+                houseLi.find(".acreage").prepend(house.acreage);
+                houseLi.find(".price .s1").text(house.dayRent);
+                houseLi.find(".connector").text(house.connector);
+                houseLi.insertAfter($(".list_cent_li:last"));
+                houseLi.show();
+            }
+        });
+    });
+</script>
 </html>

@@ -27,9 +27,8 @@
     <bean id="integrationAOP" class="com.bjcre.server.web.aop.IntegrationAOP"/>
 
     <!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 -->
-    <bean
-            class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-            p:prefix="/jsp/" p:suffix=".jsp"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+            p:prefix="/html/" p:suffix=".html"/>
 
     <import resource="classpath:dao.xml"/>
 </beans>
