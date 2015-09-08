@@ -7,8 +7,8 @@ SET DEFAULT_JAVA_OPTS=" -server -Xmx1g -Xms256m  -XX:PermSize=128m -Xss256k -XX:
 
 echo   定义变量:
 SET APP_PATH=..
-SET CLASS_PATH="%CLASSPATH%;../config;../lib/*"
-SET MAIN_CLASS=com.bjcre.server.WebStart 8080 . ../config
+SET CLASS_PATH="%CLASSPATH%;-../config;../lib/*"
+SET MAIN_CLASS=com.bjcre.server.WebStart 8080 . ../webapp
 
 		echo $APP_PATH
 

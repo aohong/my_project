@@ -18,7 +18,7 @@ APP_PATH=${APP_PATH:-`dirname "$BASE_PATH"`}
 #CLASS_PATH=${CLASS_PATH:-$APP_PATH/config:$APP_PATH/lib/*}
 CLASS_PATH=${CLASS_PATH}:$APP_PATH/config:$APP_PATH/lib/*
 JAVA_OPTS=${JAVA_OPTS:-$DEFAULT_JAVA_OPTS}
-MAIN_CLASS=${MAIN_CLASS:-"com.bjcre.server.WebStart 8080 /test $APP_PATH/config"}
+MAIN_CLASS=${MAIN_CLASS:-"com.bjcre.server.WebStart 8080 . $APP_PATH/webapp"}
 
 echo $APP_PATH
 
