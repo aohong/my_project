@@ -21,7 +21,7 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="jdbcUrl">
-            <value>jdbc:mysql://10.1.114.110:3306/bjcre?characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull</value>
+            <value>jdbc:mysql://localhost:3306/bjcre?characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull</value>
         </property>
         <property name="user">
             <value>root</value>
@@ -62,7 +62,7 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSourceMessagecenter" />
-        <!--<property name="configLocation" value="classpath:mybatis/mybatis_config.xml" />-->
+        <property name="configLocation" value="classpath:mybatis/mybatis_config.xml" />
          <property name="mapperLocations">
              <list>
                  <value>classpath:mybatis/mapper/*.xml</value>
@@ -80,18 +80,18 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 
-    <!--<bean id="sqlTemplateRegisterBean"-->
-          <!--class="com.dbframe.spring.SqlTemplateRegisterBean">-->
-        <!--<property name="domainBingings">-->
-            <!--<list>-->
-                <!--<bean class="com.dbframe.spring.DomainBinding">-->
-                    <!--<property name="domainPackages" value="com.bjcre.po" />-->
-                    <!--<property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
-                    <!--<property name="sqlBuilder">-->
-                        <!--<bean class="com.dbframe.script.MysqlBuilder"/>-->
-                    <!--</property>-->
-                <!--</bean>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <bean id="sqlTemplateRegisterBean"
+          class="com.dbframe.spring.SqlTemplateRegisterBean">
+        <property name="domainBingings">
+            <list>
+                <bean class="com.dbframe.spring.DomainBinding">
+                    <property name="domainPackages" value="com.bjcre.po" />
+                    <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+                    <property name="sqlBuilder">
+                        <bean class="com.dbframe.script.MysqlBuilder"/>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
 </beans>
