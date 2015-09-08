@@ -13,6 +13,10 @@
 	<fileSets>
 		<fileSet>
 			<directory>src/main/webapp</directory>
+			<outputDirectory>/webapp</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resources</directory>
 			<outputDirectory>/config</outputDirectory>
 		</fileSet>
 		<fileSet>
