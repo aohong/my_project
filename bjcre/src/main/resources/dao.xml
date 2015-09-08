@@ -21,7 +21,7 @@
             <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="jdbcUrl">
-            <value>jdbc:mysql://127.0.0.1:3306/bjcre?characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull</value>
+            <value>jdbc:mysql://10.1.114.110:3306/bjcre?characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull</value>
         </property>
         <property name="user">
             <value>root</value>
