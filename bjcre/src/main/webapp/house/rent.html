@@ -11,8 +11,9 @@
     <title>发布出租</title>
     <link rel="stylesheet" rev="stylesheet" href="../css/Broker_Register.css" type="text/css">
     <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
     <script type="text/javascript" src="../js/common/common.js"></script>
-    <script type="text/javascript" src="../js/Broker_Register.js"></script>
+    <!--<script type="text/javascript" src="../js/Broker_Register.js"></script>-->
     <script type="text/javascript">
     </script>
     <!--<script src="./manager_register_files/st" async=""></script>-->
@@ -315,11 +316,17 @@
                             <!--</table>-->
                         <!--</td>-->
                     <!--</tr>-->
-                    <tr>
+
+                    <tr >
                         <th>上传图片&nbsp;</th>
                         <td colspan="2">
-                            <!--<input type="hidden" name="files" value="register">-->
-                            <input type="file"  class="" value="上传图片">
+                            <div id="fileUpLoad" class="manage">
+                                添附文件
+                                <!-- 自定义 <input type="file"/> -->
+                                <input type="file" id="btnFile" name="btnFile" onchange="txtFoo.value=this.value;com.company.project.services.newCase.fileUpLoad()" hidden="hidden" />
+                                <input type="text" id="txtFoo" readonly="readonly" style="width: 300px" />
+                                <button onclick="btnFile.click()" style="height: 25px;">选择文件</button>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -337,11 +344,96 @@
         <!--<div class="side_tips">中介门店店长注册，请拨打：<br><span>400-620-9008（9:00-18:00）</span></div>-->
     </div>
     <script type="text/javascript">
+        if (!window.com) {
+            window.com = {};
+        }
+        if (!window.com.company) {
+            window.com.company= {};
+        }
+        if (!window.com.company.project) {
+            window.com.company.project= {};
+        }
+        if (!window.com.company.project.services) {
+            window.com.company.project.services = {};
+        }
+        if (!window.com.company.project.services.newCase) {
+            window.com.company.project.services.newCase = {};
+        }
+
+        //生成随机guid数(参考网上)
+        com.company.project.services.newCase.getGuidGenerator = function() {
+            var S4 = function() {
+                return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+            };
+            return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+        };
+
+        //上传文件
+        com.company.project.services.newCase.fileUpLoad = function(){
+            var fileName = $("#btnFile").val();//文件名
+            fileName = fileName.split("\\");
+            fileName = fileName[fileName.length-1];
+            var guid = com.company.project.services.newCase.getGuidGenerator();//唯一标识guid
+            var data = {guid:guid};
+            jQuery.ajaxSettings.traditional = true;
+            $.ajaxFileUpload({
+                url:"/resource/images",
+                secureuri : false,//安全协议
+                fileElementId:'btnFile',//id
+                type : 'POST',
+//                dataType : 'json',
+                data:data,
+                async : false,
+                error : function(data,status,e) {
+//                    alert('Operate Failed!'+data);
+                },
+                success : function(json) {
+                    if (json.resultFlag==false){
+//                        alert(json.resultMessage);
+                    }else{
+//                        alert('文件上传成功!');
+                        var next = $("#fileUpLoad").html();
+                        $("#fileUpLoad").html("<div id='"+guid+"'>"+"<img width='133' height='100' src='/upload/"+guid+"."+fileName+"' />"+fileName
+                            +"   <a href='#fileUpLoad' onclick='com.company.project.services.newCase.filedelete("+"\""+guid+"\""+","+"\""+fileName+"\""+")'>删除</a>"+"<br/></div>");
+                        $("#fileUpLoad").append(next);
+                    }
+                }
+            });
+        };
+
+        //文件删除
+        com.company.project.services.newCase.filedelete = function(guid,fileName){
+            jQuery.ajaxSettings.traditional = true;
+            var data = {guid:guid,fileName:fileName};
+            $.ajax({
+                url:"/resource/images/"+guid,
+                type : 'DELETE',
+//                dataType : 'json',
+                data:data,
+                async : false,
+                error : function() {
+//                    alert('Operate Failed!');
+                },
+                success : function(json) {
+                    if (json.resultFlag==false){
+//                        alert(json.resultMessage);
+                    }else{
+//                        alert('删除成功!');
+                        $("#"+guid).remove();
+                    }
+                }
+            });
+        };
+
+    </script>
+
+        <script type="text/javascript">
         jQuery("#selectareaid").val(0);
         jQuery("#selectblockid").val(0);
         jQuery("#storeid").val(0);
+
+
         $("#publish").click(function(){
-//            window.location.href = URL_PRE+'index.html';
             $.post("/resource/houses",{
                 infoType: $("input[name='infoType']").val(),
                 title: $("#title").val(),
@@ -356,8 +448,8 @@
                 connector: $("#connector").val(),
                 connectorMobile: $("#connectorMobile").val(),
                 description: $("#description").val(),
-                image: $("#image").val(),
-                infoType: $("#infoType").val(),
+                image: $("#fileUpLoad img").attr("src"),
+                infoType: $("#infoType").val()
             },function(result){
                 console.log(result);
                 if (result.status != 200){

@@ -79,77 +79,77 @@
     <a href="javascript:void(0)" id="backTop" style="visibility:hidden;" title="返回顶部"></a>
 </div>
 
-<script type="text/javascript">
-    (function(){
-        //当页面加载时判断是否滚动超过400px 显示回到顶部
-        scroll();
+<!--<script type="text/javascript">-->
+    <!--(function(){-->
+        <!--//当页面加载时判断是否滚动超过400px 显示回到顶部-->
+        <!--scroll();-->
 
-        //判断页面滚动超过400px，显示回到顶部，小于400px隐藏
-        J.on(window, "scroll", function(){
-            scroll();
-        });
+        <!--//判断页面滚动超过400px，显示回到顶部，小于400px隐藏-->
+        <!--J.on(window, "scroll", function(){-->
+            <!--scroll();-->
+        <!--});-->
 
-        //页面load时判断浏览器宽度，小于1024则隐藏
-        min1024();
+        <!--//页面load时判断浏览器宽度，小于1024则隐藏-->
+        <!--min1024();-->
 
-        //页面缩放时判断浏览器宽度，小于1024则隐藏
-        J.on(window, "resize", function(){
-            min1024();
-        });
+        <!--//页面缩放时判断浏览器宽度，小于1024则隐藏-->
+        <!--J.on(window, "resize", function(){-->
+            <!--min1024();-->
+        <!--});-->
 
-        //回到顶部
-        J.g("backTop").on("click", function(){
-            if(document.documentElement.scrollTop > 0){
-                document.documentElement.scrollTop = 0;
-            }else if(document.body.scrollTop > 0){
-                document.body.scrollTop = 0;
-            }
-            _scrollTop = 0;
-            J.site.trackEvent('click_backTop');
-        });
+        <!--//回到顶部-->
+        <!--J.g("backTop").on("click", function(){-->
+            <!--if(document.documentElement.scrollTop > 0){-->
+                <!--document.documentElement.scrollTop = 0;-->
+            <!--}else if(document.body.scrollTop > 0){-->
+                <!--document.body.scrollTop = 0;-->
+            <!--}-->
+            <!--_scrollTop = 0;-->
+            <!--J.site.trackEvent('click_backTop');-->
+        <!--});-->
 
-        //点击收藏夹功能
-        J.g("favirote").on("click", function(){
-            addFavirote('http://bj.xzl.bjcre.com/zu/?from=navigation&from=favorite', document.title);
-            J.site.trackEvent('click_addFavirote');
-        });
+        <!--//点击收藏夹功能-->
+        <!--J.g("favirote").on("click", function(){-->
+            <!--addFavirote('http://bj.xzl.bjcre.com/zu/?from=navigation&from=favorite', document.title);-->
+            <!--J.site.trackEvent('click_addFavirote');-->
+        <!--});-->
 
-        //判断是否滚动到400px
-        function scroll(){
-            var _scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            if(_scrollTop >= 400){
-                J.g("backTop").setStyle({"visibility":"visible"});
-            }else{
-                J.g("backTop").setStyle({"visibility":"hidden"});
-            }
-        }
+        <!--//判断是否滚动到400px-->
+        <!--function scroll(){-->
+            <!--var _scrollTop = document.documentElement.scrollTop || document.body.scrollTop;-->
+            <!--if(_scrollTop >= 400){-->
+                <!--J.g("backTop").setStyle({"visibility":"visible"});-->
+            <!--}else{-->
+                <!--J.g("backTop").setStyle({"visibility":"hidden"});-->
+            <!--}-->
+        <!--}-->
 
-        function addFavirote(url, title){
-            if(document.all) { // 判断是否ie
-                window.external.addFavorite(url, title);
-            }else{
-                alert("抱歉，您的浏览器不支持此操作。\n\n 收藏失败，请使用Ctrl+D添加至浏览器哦！");
-            }
-        }
+        <!--function addFavirote(url, title){-->
+            <!--if(document.all) { // 判断是否ie-->
+                <!--window.external.addFavorite(url, title);-->
+            <!--}else{-->
+                <!--alert("抱歉，您的浏览器不支持此操作。\n\n 收藏失败，请使用Ctrl+D添加至浏览器哦！");-->
+            <!--}-->
+        <!--}-->
 
-        //如果浏览器宽度小于1024，则不显示二维码图片
-        function min1024(){
-            //获取页面宽度，小于1080P，则设置隐藏临界点为1185,大于或等于则设置隐藏临界点为1297
-            var _pageWidth = J.g("container").width(), _offsetWidth = 1285;
-            if(_pageWidth <1080){
-                _offsetWidth = 1120;
-            }else{
-                _offsetWidth = 1232;
-            }
-            if(document.documentElement.clientWidth < _offsetWidth){
-                J.g("favirote").hide();
-                J.g("suggestion").hide();
-            }else{
-                J.g("favirote").show();
-                J.g("suggestion").show();
-            }
-        }
-    })();
+        <!--//如果浏览器宽度小于1024，则不显示二维码图片-->
+        <!--function min1024(){-->
+            <!--//获取页面宽度，小于1080P，则设置隐藏临界点为1185,大于或等于则设置隐藏临界点为1297-->
+            <!--var _pageWidth = J.g("container").width(), _offsetWidth = 1285;-->
+            <!--if(_pageWidth <1080){-->
+                <!--_offsetWidth = 1120;-->
+            <!--}else{-->
+                <!--_offsetWidth = 1232;-->
+            <!--}-->
+            <!--if(document.documentElement.clientWidth < _offsetWidth){-->
+                <!--J.g("favirote").hide();-->
+                <!--J.g("suggestion").hide();-->
+            <!--}else{-->
+                <!--J.g("favirote").show();-->
+                <!--J.g("suggestion").show();-->
+            <!--}-->
+        <!--}-->
+    <!--})();-->
 
 
-</script>
+<!--</script>-->
