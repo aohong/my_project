@@ -14,6 +14,7 @@ public class HouseAddParam {
     @NotEmpty
     private String houseName;
     private Integer areaId;
+    private Integer blockId;
     @NotEmpty
     private String address;
     private Integer houseType;
@@ -139,6 +140,14 @@ public class HouseAddParam {
         this.image = image;
     }
 
+    public Integer getBlockId() {
+        return blockId;
+    }
+
+    public void setBlockId(Integer blockId) {
+        this.blockId = blockId;
+    }
+
     @Override
     public String toString() {
         return "HouseAddParam{" +
@@ -146,6 +155,7 @@ public class HouseAddParam {
                 ", title='" + title + '\'' +
                 ", houseName='" + houseName + '\'' +
                 ", areaId=" + areaId +
+                ", blockId=" + blockId +
                 ", address='" + address + '\'' +
                 ", houseType=" + houseType +
                 ", isRegisterCompany=" + isRegisterCompany +

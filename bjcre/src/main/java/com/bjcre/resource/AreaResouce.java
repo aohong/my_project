@@ -3,8 +3,6 @@ package com.bjcre.resource;
 import com.bjcre.bo.HouseInfoBo;
 import com.bjcre.params.HouseAddParam;
 import com.bjcre.params.HouseQueryParam;
-import com.bjcre.params.QueryParam;
-import com.bjcre.server.web.result.BaseResult;
 import com.bjcre.server.web.result.CountDataResult;
 import com.bjcre.server.web.result.DataResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +22,8 @@ import javax.servlet.http.HttpServletRequest;
  * @author zhangyiming8 2014-12-16 19:40
  */
 @Controller
-@RequestMapping("houses")
-public class HouseResouce {
+@RequestMapping("area")
+public class AreaResouce {
     // private final static Logger logger =
     // Logger.getLogger(SettleServer.class);
 

@@ -36,7 +36,7 @@
                        placeholder="请输入房源特征、地址、小区、楼盘名或…" value=""/>
                 <em class="icon home_close" data-tracker="delete-kw" id="search_close" style="display:none;"></em><!--搜索关闭按钮-->
                 <input type="submit" class="btn" value="" id="SearchButton"/>
-                <a href="http://bj.xzl.bjcre.com/ditu/zu/" class="icon smap" target="_blank">地图找房</a><!-- 注意： 单页此处不显示-->
+                <a href="/html/map_search.html" class="icon smap" target="_blank">地图找房</a><!-- 注意： 单页此处不显示-->
             </form>
             <input type="hidden" value="" id="search_kw"/>
         </div>
@@ -49,50 +49,34 @@
             <div class="condition_links2">
                 <div class="cl_item">
                     <div class="condition_title">区&nbsp;&nbsp;&nbsp;域：</div>
-                    <div class="container">
-                        <strong>全部</strong>
-                        <a href="rent/chaoyangqu/">朝阳</a>
-                        <a href="rent/haidianqu/">海淀</a>
-                        <a href="rent/dongchengqu/">东城</a>
-                        <a href="rent/xichengqu/">西城</a>
-                        <a href="rent/chongwenqu/">崇文</a>
-                        <a href="rent/fengtaiqu/">丰台</a>
-                        <a href="rent/xuanwuqu/">宣武</a>
-                        <a href="rent/daxingqu/">大兴</a>
-                        <a href="rent/changpingqu/">昌平</a>
-                        <a href="rent/shijingshanqu/">石景山</a>
-                        <a href="rent/tongzhouqu/">通州</a>
-                        <a href="rent/jinjiao_beijing/">近郊</a>
-                        <a href="rent/zhoubian_beijing/">周边</a>
-                        <a href="rent/shunyi/">顺义</a>
+                    <div class="container" id="area">
+                        <a href="#content" ><strong>全部</strong></a>
                     </div>
-
+                    <div class="sub" id="block" style="display: none">
+                        <strong>全部</strong>
+                    </div>
 
                 </div>
 
 
                 <div class="cl_item">
                     <div class="condition_title">面&nbsp;&nbsp;&nbsp;积：</div>
-                    <div class="container">
-                        <strong>全部</strong>
-
-                        <a href="rent/mj8/">100平米以下</a>
-                        <a href="rent/mj9/">100-150平米</a>
-                        <a href="rent/mj10/">150-200平米</a>
-                        <a href="rent/mj11/">200-300平米</a>
-                        <a href="rent/mj12/">300-500平米</a>
-                        <a href="rent/mj13/">500-1000平米</a>
-                        <a href="rent/mj14/">1000平米以上</a>
+                    <div class="container" id="acreageCondDiv">
+                        <a href="#acreageCondDiv" from="" to=""><strong>全部</strong></a>
+                        <a href="#acreageCondDiv" from="" to="100">100平米以下</a>
+                        <a href="#acreageCondDiv" from="100" to="150">100-150平米</a>
+                        <a href="#acreageCondDiv" from="150" to="200">150-200平米</a>
+                        <a href="#acreageCondDiv" from="200" to="300">200-300平米</a>
+                        <a href="#acreageCondDiv" from="300" to="500">300-500平米</a>
+                        <a href="#acreageCondDiv" from="500" to="1000">500-1000平米</a>
+                        <a href="#acreageCondDiv" from="1000" to="">1000平米以上</a>
 
                         <div class="custom-condition">
-                            <form style=" " action="rent/"
-                                  enctype="application/x-www-form-urlencoded">
-                                <input type="text" name="from_area" id="from_area" autocomplete="off" maxlength="7"
-                                       value=""> -
-                                <input type="text" name="to_area" maxlength="7" id="to_area" autocomplete="off"
-                                       value="">&nbsp;平米
-                                <input class="smit" style="display: none;" type="submit" value="确定">
-                            </form>
+                            <input type="text" name="from_acreage" id="from_acreage" autocomplete="off" maxlength="7"
+                                   value=""> -
+                            <input type="text" name="to_acreage" maxlength="7" id="to_acreage" autocomplete="off"
+                                   value="">&nbsp;平米
+                            <input class="smit" style="" type="button" value="确定">
                         </div>
                     </div>
 
@@ -100,25 +84,22 @@
 
                 <div class="cl_item">
                     <div class="condition_title">日租金：</div>
-                    <div class="container">
-                        <strong>全部</strong>
-                        <a href="rent/rzj131/">3元/平米•天以下</a>
-                        <a href="rent/rzj132/">3-4元</a>
-                        <a href="rent/rzj133/">4-5元</a>
-                        <a href="rent/rzj134/">5-6元</a>
-                        <a href="rent/rzj135/">6-8元</a>
-                        <a href="rent/rzj136/">8-10元</a>
-                        <a href="rent/rzj137/">10元以上</a>
+                    <div class="container" id="dayRentCondDiv">
+                        <a href="#dayRentCondDiv" from="" to=""><strong>全部</strong></a>
+                        <a href="#dayRentCondDiv" from="" to="3">3元/平米•天以下</a>
+                        <a href="#dayRentCondDiv" from="3" to="4">3-4元</a>
+                        <a href="#dayRentCondDiv" from="4" to="5">4-5元</a>
+                        <a href="#dayRentCondDiv" from="5" to="6">5-6元</a>
+                        <a href="#dayRentCondDiv" from="6" to="8">6-8元</a>
+                        <a href="#dayRentCondDiv" from="8" to="10">8-10元</a>
+                        <a href="#dayRentCondDiv" from="10" to="">10元以上</a>
 
                         <div class="custom-condition">
-                            <form style="" action="rent/"
-                                  enctype="application/x-www-form-urlencoded">
-                                <input type="text" name="from_price" id="ipt_from_price" autocomplete="off"
+                                <input type="text" name="from_price" id="from_price" autocomplete="off" width="22"
                                        maxlength="7" value=""> -
-                                <input type="text" name="to_price" maxlength="7" id="ipt_to_price" autocomplete="off"
-                                       value="">&nbsp;元/平米•天 <input class="smit" style="display: none;" type="submit"
-                                                                    value="确定"/>
-                            </form>
+                                <input type="text" name="to_price" maxlength="7" id="to_price" autocomplete="off" width="22"
+                                       value="">&nbsp;元/平米•天
+                                <input class="smit" style="" type="button" value="确定"/>
                         </div>
                     </div>
 
@@ -169,7 +150,7 @@
                                 <span>高区楼层</span>
                             </div>
                             <div>
-                                <span class="address"><span>&nbsp;&nbsp;[望京</span>&nbsp;&nbsp;阜通东大街与阜安西路交叉口]</span>
+                                <span class="address"></span >&nbsp;&nbsp;<span class="area"></span>
                             </div>
                             <div class="details_bot">
                                 <span class="connector"></span><span></span></div>
@@ -438,13 +419,14 @@
 
 </body>
 <script type="text/javascript">
-    $(document).ready(function () {
 
+
+    function queryHouse() {
         $.get("resource/houses", {
             search: $("#glb_search").val(),
-            areaId: $("#from_area").val(),
-            acreageMin: $("#from_area").val(),
-            acreageMax: $("#to_area").val(),
+            areaId: $("#from_acreage").val(),
+            acreageMin: $("#from_acreage").val(),
+            acreageMax: $("#to_acreage").val(),
             dayRentMin: $("#from_price").val(),
             dayRentMax: $("#to_price").val(),
             desc: $("#desc").val()
@@ -454,6 +436,7 @@
             }
 
             $(".spResult em").text(result.totalCount);
+            $(".list_cent_li:visible").remove();
 
             for (var i in result.data) {
                 var house = result.data[i];
@@ -461,6 +444,7 @@
                 houseLi.find("img").attr("src", "" + house.image);
                 houseLi.find("a").attr("href", "house/rent_info.html?id="+house.id);
                 houseLi.find(".address").prepend(house.address);
+//                houseLi.find(".area").prepend(house.area);
                 houseLi.find(".details a").text(house.title);
                 houseLi.find(".totalRent").prepend(house.totalRent);
                 houseLi.find(".acreage").prepend(house.acreage);
@@ -470,6 +454,43 @@
                 houseLi.show();
             }
         });
+    }
+
+
+    $(document).ready(function () {
+
+        $.each(AREA_14, function (k, v) {
+            var area = $('<a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a>');
+            area.click(function() {
+                var str = "";
+                var json = BLOCK_MAP.get("block_json_"+v.typeId);
+                $.each(json, function (k, v) {
+                    str += '<a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a>';
+                });
+                $("#block").html(str);
+                $("#block").show();
+            });
+            $("#area").append(area);
+        });
+
+        queryHouse();
+
+        $("#dayRentCondDiv a").click(function(){
+            $("#from_price").val($(this).attr("from"));
+            $("#to_price").val($(this).attr("to"));
+
+            queryHouse();
+        });
+
+        $("#acreageCondDiv a").click(function(){
+
+            $("#from_acreage").val($(this).attr("from"));
+            $("#to_acreage").val($(this).attr("to"));
+
+            queryHouse();
+        });
+
+        $(".smit").click(queryHouse);
     });
 </script>
 </html>

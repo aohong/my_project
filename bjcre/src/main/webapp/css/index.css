@@ -2073,7 +2073,8 @@ body .mybroker a.blue {
 }
 
 .condition_links2 div.containerprice .pricecond input,.condition_links2 div.container .custom-condition input {
-	width: 22px;
+	/*width: 22px;*/
+	width: 40px;
 	border-radius: 3px;
 	height: 16px;
 	line-height: 16px;

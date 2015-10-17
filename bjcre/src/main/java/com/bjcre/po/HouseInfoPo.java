@@ -16,6 +16,7 @@ public class HouseInfoPo {
     private String title;
     private String houseName;
     private Integer areaId;
+    private Integer blockId;
     private String address;
     private Integer houseType;
     private Integer isRegisterCompany;
@@ -27,6 +28,29 @@ public class HouseInfoPo {
     private String description;
     private String image;
     private Date createTime;
+
+    @Override
+    public String toString() {
+        return "HouseInfoPo{" +
+                "id=" + id +
+                ", infoType=" + infoType +
+                ", title='" + title + '\'' +
+                ", houseName='" + houseName + '\'' +
+                ", areaId=" + areaId +
+                ", blockId=" + blockId +
+                ", address='" + address + '\'' +
+                ", houseType=" + houseType +
+                ", isRegisterCompany=" + isRegisterCompany +
+                ", dayRent=" + dayRent +
+                ", totalRent=" + totalRent +
+                ", acreage=" + acreage +
+                ", connector='" + connector + '\'' +
+                ", connectorMobile='" + connectorMobile + '\'' +
+                ", description='" + description + '\'' +
+                ", image='" + image + '\'' +
+                ", createTime=" + createTime +
+                '}';
+    }
 
     @Id
     public Integer getId() {
@@ -157,25 +181,11 @@ public class HouseInfoPo {
         this.createTime = createTime;
     }
 
-    @Override
-    public String toString() {
-        return "HouseInfoPo{" +
-                "id=" + id +
-                ", infoType=" + infoType +
-                ", title='" + title + '\'' +
-                ", houseName='" + houseName + '\'' +
-                ", areaId=" + areaId +
-                ", address='" + address + '\'' +
-                ", houseType=" + houseType +
-                ", isRegisterCompany=" + isRegisterCompany +
-                ", dayRent=" + dayRent +
-                ", totalRent=" + totalRent +
-                ", acreage=" + acreage +
-                ", connector='" + connector + '\'' +
-                ", connectorMobile='" + connectorMobile + '\'' +
-                ", description='" + description + '\'' +
-                ", image='" + image + '\'' +
-                ", createTime=" + createTime +
-                '}';
+    public Integer getBlockId() {
+        return blockId;
+    }
+
+    public void setBlockId(Integer blockId) {
+        this.blockId = blockId;
     }
 }

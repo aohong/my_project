@@ -13,6 +13,7 @@ public class HouseInfoVo {
     private String title;
     private String houseName;
     private Integer areaId;
+    private Integer blockId;
     private String address;
     private Integer houseType;
     private Integer isRegisterCompany;
@@ -144,6 +145,14 @@ public class HouseInfoVo {
         this.image = image;
     }
 
+    public Integer getBlockId() {
+        return blockId;
+    }
+
+    public void setBlockId(Integer blockId) {
+        this.blockId = blockId;
+    }
+
     @Override
     public String toString() {
         return "HouseInfoVo{" +
@@ -152,6 +161,7 @@ public class HouseInfoVo {
                 ", title='" + title + '\'' +
                 ", houseName='" + houseName + '\'' +
                 ", areaId=" + areaId +
+                ", blockId=" + blockId +
                 ", address='" + address + '\'' +
                 ", houseType=" + houseType +
                 ", isRegisterCompany=" + isRegisterCompany +

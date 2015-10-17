@@ -5,6 +5,7 @@ import com.bjcre.params.HouseAddParam;
 import com.bjcre.params.HouseQueryParam;
 import com.bjcre.po.HouseInfoPo;
 import com.bjcre.vo.HouseInfoVo;
+import com.dbframe.enums.MatchType;
 import com.dbframe.model.SqlFilter;
 import com.dbframe.model.SqlSorter;
 import com.dbframe.script.DbInnerValue;
@@ -30,6 +31,7 @@ public class HouseInfoBo {
         result.setConnectorMobile(po.getConnectorMobile());
         result.setConnector(po.getConnector());
         result.setAreaId(po.getAreaId());
+        result.setBlockId(po.getBlockId());
         result.setAcreage(po.getAcreage());
         result.setAddress(po.getAddress());
         result.setDayRent(po.getDayRent());
@@ -50,6 +52,7 @@ public class HouseInfoBo {
         po.setConnectorMobile(param.getConnectorMobile());
         po.setConnector(param.getConnector());
         po.setAreaId(param.getAreaId());
+        po.setBlockId(param.getBlockId());
         po.setAcreage(param.getAcreage());
         po.setAddress(param.getAddress());
         po.setDayRent(param.getDayRent());
@@ -73,14 +76,41 @@ public class HouseInfoBo {
 
     public List<HouseInfoVo> query(HouseQueryParam param){
         List<HouseInfoVo> result=new ArrayList<HouseInfoVo>();
-        List<HouseInfoPo> houseInfoPoList = houseInfoDao.queryEntities(SqlFilter.init(), SqlSorter.init());
+
+        List<HouseInfoPo> houseInfoPoList = houseInfoDao.pageEntities(
+                this.getSqlFilter(param), SqlSorter.init(), param.getPageNo(),param.getLimit());
         for (HouseInfoPo po : houseInfoPoList) {
             result.add(transfer(po));
         }
         return result;
     }
 
-    public int count() {
-        return houseInfoDao.count(SqlFilter.init());
+    public int count(HouseQueryParam param) {
+        return houseInfoDao.count(this.getSqlFilter(param));
+    }
+
+    private SqlFilter getSqlFilter(HouseQueryParam param) {
+        SqlFilter sqlFilter = SqlFilter.init();
+        if (param != null) {
+            if (param.getAreaId() != null) {
+                sqlFilter.and("area_id", param.getAreaId());
+            }
+            if (param.getBlockId() != null) {
+                sqlFilter.and("block_id", param.getBlockId());
+            }
+            if (param.getDayRentMin() != null) {
+                sqlFilter.and("day_rent", param.getDayRentMin(), MatchType.GE);
+            }
+            if (param.getDayRentMax() != null) {
+                sqlFilter.and("day_rent", param.getDayRentMax(), MatchType.LE);
+            }
+            if (param.getAcreageMin() != null) {
+                sqlFilter.and("acreage", param.getAcreageMin(), MatchType.GE);
+            }
+            if (param.getAcreageMax() != null) {
+                sqlFilter.and("acreage", param.getAcreageMax(), MatchType.LE);
+            }
+        }
+        return sqlFilter;
     }
 }

@@ -5,6 +5,7 @@ import com.dbframe.enums.SortType;
 public class HouseQueryParam {
 
     private Integer areaId;
+    private Integer blockId;
 
     private Integer acreageMin;
     private Integer acreageMax;
@@ -17,6 +18,21 @@ public class HouseQueryParam {
     private String sort;
     private SortType sortType;
 
+    @Override
+    public String toString() {
+        return "HouseQueryParam{" +
+                "areaId=" + areaId +
+                ", blockId=" + blockId +
+                ", acreageMin=" + acreageMin +
+                ", acreageMax=" + acreageMax +
+                ", dayRentMin=" + dayRentMin +
+                ", dayRentMax=" + dayRentMax +
+                ", pageNo=" + pageNo +
+                ", limit=" + limit +
+                ", sort='" + sort + '\'' +
+                ", sortType=" + sortType +
+                '}';
+    }
 
     public Integer getDayRentMax() {
         return dayRentMax;
@@ -90,18 +106,11 @@ public class HouseQueryParam {
         this.sortType = sortType;
     }
 
+    public Integer getBlockId() {
+        return blockId;
+    }
 
-
-    @Override
-    public String toString() {
-        return "HouseQueryParam{" +
-                "areaId=" + areaId +
-                ", acreageMin=" + acreageMin +
-                ", acreageMax=" + acreageMax +
-                ", dayRentMin=" + dayRentMin +
-                ", dayRentMax=" + dayRentMax +
-                ", sort='" + sort + '\'' +
-                ", sortType=" + sortType +
-                '}';
+    public void setBlockId(Integer blockId) {
+        this.blockId = blockId;
     }
 }

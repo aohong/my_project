@@ -1,59 +1,62 @@
-;
 
-APF.Namespace.register("anjuke.Broker.Navigation");
+//APF.Namespace.register("anjuke.Broker.Navigation");
 
-anjuke.Broker.Navigation = {
-    initialize: function() {
-        this._subNavMask();
-        this._login_panel();
-    },
+//anjuke.Broker.Navigation = {
+//    initialize: function() {
+//        this._subNavMask();
+//        this._login_panel();
+//    },
+//
+//    _subNavMask: function() {
+//        $('.nav-item-iframe').each(function(){
+//            $(this).height($(this).next('.nav-item-list').height());
+//            $(this).width($(this).next('.nav-item-list').outerWidth());
+//        });
+//    },
+//
+//    _login_panel: function() {
+//        jQuery.ajax({
+//            url : "/ajkbroker/ajax/checklogin/?r=" + Math.random(),
+//            type : "get",
+//            dataType : "json",
+//            success : function (response) {
+//                if (response.user_info.user_id != 0) {
+//                    //经纪人姓名
+//                    $('#js_truename').html('您好，'+response.user_info.true_name);
+//
+//                    //未读消息
+//                    var strSms = '';
+//                    if(response.msg_stats.totalUnreadCount > 0) {
+//                        strSms = '<a href="'+response.nav_urls.letter+'">消息<em>'+response.msg_stats.totalUnreadCount+'</em></a>';
+//                    }else{
+//                        strSms = '<span class="not-mes"><a style="background-color: #999999;border: none;" href="' + response.nav_urls.letter + '">消息<em>0</em></a></span>';
+//                    }
+//                    $('#js_sms').html(strSms);
+//
+//                    //经纪人社区
+//                    $('#js_bbs').html('<a href="'+response.nav_urls.bbs+'">经纪人社区</a>');
+//
+//                    $('#ajk_shop_edit').attr('href', response.nav_urls.editshop.ajk);
+//                    $('#zf_shop_edit').attr('href', response.nav_urls.editshop.zf);
+//                    if ($('#jp_shop_edit')){
+//                        $('#jp_shop_edit').attr('href', response.nav_urls.editshop.jp);
+//                    }
+//
+//                    $('#nav_link_help').attr('href', response.nav_urls.help);
+//
+//                    $('#nav_link_logout').attr('href', response.nav_urls.logout);
+//                }
+//            }
+//        });
+//    }
+//};
 
-    _subNavMask: function() {
-        $('.nav-item-iframe').each(function(){
-            $(this).height($(this).next('.nav-item-list').height());
-            $(this).width($(this).next('.nav-item-list').outerWidth());
-        });
-    },
-
-    _login_panel: function() {
-        jQuery.ajax({
-            url : "/ajkbroker/ajax/checklogin/?r=" + Math.random(),
-            type : "get",
-            dataType : "json",
-            success : function (response) {
-                if (response.user_info.user_id != 0) {
-                    //经纪人姓名
-                    $('#js_truename').html('您好，'+response.user_info.true_name);
-
-                    //未读消息
-                    var strSms = '';
-                    if(response.msg_stats.totalUnreadCount > 0) {
-                        strSms = '<a href="'+response.nav_urls.letter+'">消息<em>'+response.msg_stats.totalUnreadCount+'</em></a>';
-                    }else{
-                        strSms = '<span class="not-mes"><a style="background-color: #999999;border: none;" href="' + response.nav_urls.letter + '">消息<em>0</em></a></span>';
-                    }
-                    $('#js_sms').html(strSms);
-
-                    //经纪人社区
-                    $('#js_bbs').html('<a href="'+response.nav_urls.bbs+'">经纪人社区</a>');
-
-                    $('#ajk_shop_edit').attr('href', response.nav_urls.editshop.ajk);
-                    $('#zf_shop_edit').attr('href', response.nav_urls.editshop.zf);
-                    if ($('#jp_shop_edit')){
-                        $('#jp_shop_edit').attr('href', response.nav_urls.editshop.jp);
-                    }
-
-                    $('#nav_link_help').attr('href', response.nav_urls.help);
-
-                    $('#nav_link_logout').attr('href', response.nav_urls.logout);
-                }
-            }
-        });
-    }
-};var pregflag_mobile = false;
+var pregflag_mobile = false;
 var pregflag_pwd = false;
 var pregflag_chepwd = false;
 var pregflag_truename = false;
+
+
 
 function create_area_info(cityid, info) {
     if (cityid < 11) {
@@ -93,13 +96,19 @@ function create_area_info(cityid, info) {
 function create_block_info(typeid) {
     if (typeid > 0) {
 	jQuery("#areatip").children().hide();
-        jQuery.getJSON("/ajkbroker/broker/areainfo/", {"typeid":typeid, "act":"block"}, function (json) {
-            var str = "";
-            jQuery.each(json, function (k, v) {
-                str += '<li><a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a></li>';
-		});
-            jQuery("#searchlistblock").html(str);
-	});
+     //   jQuery.getJSON("/areainfo/", {"typeid":typeid, "act":"block"}, function (json) {
+     //       var str = "";
+     //       jQuery.each(json, function (k, v) {
+     //           str += '<li><a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a></li>';
+	//	});
+     //       jQuery("#searchlistblock").html(str);
+	//});
+        var str = "";
+        var json = BLOCK_MAP.get("block_json_"+typeid);
+        jQuery.each(json, function (k, v) {
+            str += '<li><a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a></li>';
+        });
+        jQuery("#searchlistblock").html(str);
     } else {
         jQuery("#areatip").children().hide();
         jQuery("#areatip .tip_area_3").show();
@@ -293,15 +302,22 @@ jQuery(document).ready(function () {
 	jQuery("#selectcityid").val(jQuery("#defaultcityid").val());
 	jQuery("#selectcityname").val(jQuery("#defaultcityname").val());
     //检查城市是否可以手动选择主营业务
-    check_mainbusiness_access();
-	jQuery("#areatip").children().hide();
-    jQuery.getJSON("/ajkbroker/broker/areainfo/", {"cityid":jQuery("#selectcityid").val(), "act":"area"}, function (json) {
-        var str = "";
-        jQuery.each(json, function (k, v) {
-            str += '<li><a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a></li>';
-		});
-		jQuery("#searchlistarea").html(str);
-	});
+    //check_mainbusiness_access();
+    //jQuery("#areatip").children().hide();
+    //jQuery.getJSON("/ajkbroker/broker/areainfo/", {"cityid":jQuery("#selectcityid").val(), "act":"area"}, function (json) {
+    //    var str = "";
+    //    jQuery.each(json, function (k, v) {
+    //        str += '<li><a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a></li>';
+		//});
+		//jQuery("#searchlistarea").html(str);
+    //});
+
+    var str = "";
+    jQuery.each(AREA_14, function (k, v) {
+        str += '<li><a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a></li>';
+    });
+    jQuery("#searchlistarea").html(str);
+
 	//手机号码验证
     jQuery("#mobile").blur(function () {
         check_mobile();
@@ -362,7 +378,7 @@ jQuery(document).ready(function () {
 
 	})
 
-    jQuery("#searchlistarea li a").die("click").live("click", function () {
+    jQuery("#searchlistarea li a").unbind("click").bind("click", function () {
         var typeid = jQuery(this).attr("typeid");
 		jQuery("#selectareaid").val(typeid);
 		jQuery("#selectareatext").html(jQuery(this).text());
@@ -390,7 +406,8 @@ jQuery(document).ready(function () {
 	})
 
 	//板块选中
-    jQuery("#searchlistblock li a").die("click").live("click", function () {
+    //jQuery("#searchlistblock li a").unbind("click").bind("click", function () {
+    jQuery("#searchlistblock a").die("click").live("click", function () {
         var typeid = jQuery(this).attr("typeid");
 		jQuery("#selectblockid").val(typeid);
 		jQuery("#selectblocktext").html(jQuery(this).text());
@@ -398,6 +415,7 @@ jQuery(document).ready(function () {
 		jQuery("#areatip").children().hide();
 		jQuery("#areatip .tip_area_1").show();
 	})
+
 	//公司查询
     jQuery("#companytext").unbind("focus").bind("focus", function () {
         if ( (this.value == "") || (this.value == "输入并选择所属公司") ){
@@ -449,24 +467,24 @@ jQuery(document).ready(function () {
 		}
 	})
 	//公司选中
-    jQuery("#companylist a").die("click").live("click", function () {
-        var companyid = jQuery(this).attr("companyid");
-		jQuery("#companyid").val(companyid);
-		jQuery("#companytext").val(jQuery(this).text());
-		jQuery("#companylist").hide();
-
-        if (companyid == -1 || companyid == 11) {
-			jQuery("#store").hide();
-			jQuery("#storeid").val(0);
-            reset_area_block(false);
-        } else {
-			jQuery("#store").show();
-            //隐藏区域板块选择
-            jQuery('#tr_area_1').hide();
-		}
-		jQuery("#companytip").children().hide();
-		jQuery("#companytip1").show();
-	})
+    //jQuery("#companylist a").die("click").live("click", function () {
+     //   var companyid = jQuery(this).attr("companyid");
+	//	jQuery("#companyid").val(companyid);
+	//	jQuery("#companytext").val(jQuery(this).text());
+	//	jQuery("#companylist").hide();
+    //
+     //   if (companyid == -1 || companyid == 11) {
+	//		jQuery("#store").hide();
+	//		jQuery("#storeid").val(0);
+     //       reset_area_block(false);
+     //   } else {
+	//		jQuery("#store").show();
+     //       //隐藏区域板块选择
+     //       jQuery('#tr_area_1').hide();
+	//	}
+	//	jQuery("#companytip").children().hide();
+	//	jQuery("#companytip1").show();
+	//})
 	//门店选中
     jQuery("#storename").unbind("focus").bind("focus", function () {
         if (this.value == "") {
@@ -503,16 +521,16 @@ jQuery(document).ready(function () {
 		}
 	})
 
-    jQuery("#shoplist a").die("click").live("click", function () {
-        var storeid = jQuery(this).attr("storeid");
-		jQuery("#storeid").val(storeid);
-		jQuery("#storename").val(jQuery(this).text());
-		jQuery("#shoplist").hide();
-		jQuery("#storetip").children().hide();
-		jQuery("#storetip .check_ok").show();
-
-        display_area_by_store(storeid);
-	})
+    //jQuery("#shoplist a").die("click").live("click", function () {
+     //   var storeid = jQuery(this).attr("storeid");
+	//	jQuery("#storeid").val(storeid);
+	//	jQuery("#storename").val(jQuery(this).text());
+	//	jQuery("#shoplist").hide();
+	//	jQuery("#storetip").children().hide();
+	//	jQuery("#storetip .check_ok").show();
+    //
+     //   display_area_by_store(storeid);
+	//})
 
     jQuery("#checkbox_xy").click(function () {
         if (jQuery("#checkbox_xy").attr("checked") == "checked") {

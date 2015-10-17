@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0218)http://bj.xzl.anjuke.com/ditu/zu/#s1=2&p2=1&p3=2&p4=39.494&p5=40.363&p6=115.610&p7=117.817&p8=0&p9=0&p10=0&p11=0&p12=0&p13=1&p15=1&p16=1&p17=39.775747&p18=116.890555&p19=39.929956&p20=116.667488&p21=10&p22=10&p30=baidu -->
+<html slick-uniqueid="3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>北京地图找房</title>
+
+    <link rel="stylesheet" rev="stylesheet" href="/css/Map_List.css" type="text/css">
+    <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+    <meta name="description" content="">
+    <script type="text/javascript">var PAGESTART = +new Date();
+    var PHPVERSION = '2015_40_01';</script>
+    <script text="type/javascript">
+        document.write("<script src=\"http://api.map.baidu.com/api?v=1.2&services=true\" type=\"text/javascript\"></" + "script>");
+    </script>
+    <script src="./map_search_files/api" type="text/javascript"></script>
+    <script type="text/javascript" src="./map_search_files/getscript"></script>
+    <link rel="stylesheet" type="text/css" href="/css/bmap.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="jinpu-header">
+
+        <div class="f2">
+            <h1 class="logo"><a href="/">商业物业网</a></h1>
+
+            <div class="listmode">
+                <a href="/" target="_blank">列表模式</a>
+            </div>
+
+            <div class="search-box">
+                <form action="http://bj.xzl.anjuke.com/" method="get" id="HeaderSearchForm">
+                    <div class="search_bg_cont">
+                        <input type="text" class="search_bg ac_input over search_bg_onfocus" id="HeaderSearchText"
+                               maxlength="18" name="search_text" placeholders="请输入房源特征、楼盘名或地点..." autocomplete="off">
+                        <em class="serch_box_close" style="display:none;"></em><!--搜索关闭按钮-->
+                    </div>
+                    <div class="submit-box">
+                        <span>找出租</span>
+                        <input type="submit" value="搜索" class="submitcla" id="HeaderSearchButton">
+                    </div>
+                    <input type="hidden" value="14" id="currentcityid">
+                    <input type="hidden" value="rent" name="searchtype" id="searchtype">
+                    <input type="hidden" value="1" name="suggestiontype" id="suggestiontype">
+                    <input type="hidden" value="office" name="proptype" id="proptype">
+                </form>
+            </div>
+            <div class="fposition">
+                <strong class="tit">快速定位:</strong>
+
+                <div class="fppadding">
+                    <select name="area" id="area" style="display:none">
+                        <option value="{&quot;id&quot;:&quot;38&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.958953&quot;,&quot;lng&quot;:&quot;116.521695&quot;,&quot;pinyin&quot;:&quot;chaoyang&quot;}">
+                            朝阳
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;39&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;40.033162&quot;,&quot;lng&quot;:&quot;116.239678&quot;,&quot;pinyin&quot;:&quot;haidian&quot;}">
+                            海淀
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;40&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.841938&quot;,&quot;lng&quot;:&quot;116.25837&quot;,&quot;pinyin&quot;:&quot;fengtai&quot;}">
+                            丰台
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;41&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.938574&quot;,&quot;lng&quot;:&quot;116.421885&quot;,&quot;pinyin&quot;:&quot;dongcheng&quot;}">
+                            东城
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;42&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.93428&quot;,&quot;lng&quot;:&quot;116.37319&quot;,&quot;pinyin&quot;:&quot;xicheng&quot;}">
+                            西城
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;43&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.883898&quot;,&quot;lng&quot;:&quot;116.434968&quot;,&quot;pinyin&quot;:&quot;chongwen&quot;}">
+                            崇文
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;44&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.89752&quot;,&quot;lng&quot;:&quot;116.36976&quot;,&quot;pinyin&quot;:&quot;xuanwu&quot;}">
+                            宣武
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;45&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.913539&quot;,&quot;lng&quot;:&quot;116.259346&quot;,&quot;pinyin&quot;:&quot;shijingshan&quot;}">
+                            石景山
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;46&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;40.221724&quot;,&quot;lng&quot;:&quot;116.216456&quot;,&quot;pinyin&quot;:&quot;changping&quot;}">
+                            昌平
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;47&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.809815&quot;,&quot;lng&quot;:&quot;116.740079&quot;,&quot;pinyin&quot;:&quot;tongzhou&quot;}">
+                            通州
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;48&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.65279&quot;,&quot;lng&quot;:&quot;116.425195&quot;,&quot;pinyin&quot;:&quot;daxing&quot;}">
+                            大兴
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;56&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.855851&quot;,&quot;lng&quot;:&quot;116.366927&quot;,&quot;pinyin&quot;:&quot;zhoubian&quot;}">
+                            周边
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;147&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;jinjiao_bj&quot;}">
+                            近郊
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;214&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;shunyi&quot;}">
+                            顺义
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;233&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;&quot;}"></option>
+                        <option value="{&quot;id&quot;:&quot;234&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;fangshan&quot;}">
+                            房山
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;235&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;miyun&quot;}">
+                            密云
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;236&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;yanqing&quot;}">
+                            延庆
+                        </option>
+                        <option value="{&quot;id&quot;:&quot;237&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;huairou&quot;}">
+                            怀柔
+                        </option>
+                    </select>
+
+                    <div class="area-box area-select"><a class="area-title"
+                                                         v="{&quot;id&quot;:&quot;38&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.958953&quot;,&quot;lng&quot;:&quot;116.521695&quot;,&quot;pinyin&quot;:&quot;chaoyang&quot;}">区域</a>
+                        <ul class="area-ul">
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;38&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.958953&quot;,&quot;lng&quot;:&quot;116.521695&quot;,&quot;pinyin&quot;:&quot;chaoyang&quot;}">
+                                朝阳
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;39&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;40.033162&quot;,&quot;lng&quot;:&quot;116.239678&quot;,&quot;pinyin&quot;:&quot;haidian&quot;}">
+                                海淀
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;40&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.841938&quot;,&quot;lng&quot;:&quot;116.25837&quot;,&quot;pinyin&quot;:&quot;fengtai&quot;}">
+                                丰台
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;41&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.938574&quot;,&quot;lng&quot;:&quot;116.421885&quot;,&quot;pinyin&quot;:&quot;dongcheng&quot;}">
+                                东城
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;42&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.93428&quot;,&quot;lng&quot;:&quot;116.37319&quot;,&quot;pinyin&quot;:&quot;xicheng&quot;}">
+                                西城
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;43&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.883898&quot;,&quot;lng&quot;:&quot;116.434968&quot;,&quot;pinyin&quot;:&quot;chongwen&quot;}">
+                                崇文
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;44&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.89752&quot;,&quot;lng&quot;:&quot;116.36976&quot;,&quot;pinyin&quot;:&quot;xuanwu&quot;}">
+                                宣武
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;45&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.913539&quot;,&quot;lng&quot;:&quot;116.259346&quot;,&quot;pinyin&quot;:&quot;shijingshan&quot;}">
+                                石景山
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;46&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;40.221724&quot;,&quot;lng&quot;:&quot;116.216456&quot;,&quot;pinyin&quot;:&quot;changping&quot;}">
+                                昌平
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;47&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.809815&quot;,&quot;lng&quot;:&quot;116.740079&quot;,&quot;pinyin&quot;:&quot;tongzhou&quot;}">
+                                通州
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;48&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.65279&quot;,&quot;lng&quot;:&quot;116.425195&quot;,&quot;pinyin&quot;:&quot;daxing&quot;}">
+                                大兴
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;56&quot;,&quot;zoom&quot;:&quot;13&quot;,&quot;lat&quot;:&quot;39.855851&quot;,&quot;lng&quot;:&quot;116.366927&quot;,&quot;pinyin&quot;:&quot;zhoubian&quot;}">
+                                周边
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;147&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;jinjiao_bj&quot;}">
+                                近郊
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;214&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;shunyi&quot;}">
+                                顺义
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;233&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;&quot;}"></li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;234&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;fangshan&quot;}">
+                                房山
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;235&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;miyun&quot;}">
+                                密云
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;236&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;yanqing&quot;}">
+                                延庆
+                            </li>
+                            <li class="area-ul-li"
+                                v="{&quot;id&quot;:&quot;237&quot;,&quot;zoom&quot;:null,&quot;lat&quot;:null,&quot;lng&quot;:null,&quot;pinyin&quot;:&quot;huairou&quot;}">
+                                怀柔
+                            </li>
+                        </ul>
+                    </div>
+                    <select name="region" id="region" style="display:none">
+                        <option value="0">请先选择区域</option>
+                    </select>
+
+                    <div class="region-box area-select"><a class="region-title" v="0">板块</a>
+                        <ul class="region-ul">
+                            <li class="region-ul-li" v="0">请先选择区域</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="content">
+    <table id="ctable" class="ctable" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+            <td class="cleft">
+                <div class="control">
+                    <dl class="condition">
+                        <dt class="title">房源类型:<span class="prompt"></span></dt>
+                        <dd class="option">
+                            <a href="#" class="cur">写字楼出租</a>
+                            <a href="#">写字楼出售</a>
+                            <a href="#">商铺出租</a>
+                            <a href="#">商铺出售</a>
+                        </dd>
+                    </dl>
+                    <dl class="condition">
+                        <dt class="title">面积:<span class="prompt"></span></dt>
+                        <dd class="option">
+                            <a name="p8" class="cur" href="javascript:void(0);" value="{p8:0}"
+                               novalue="[&#39;type&#39;]">不限</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:8}"
+                               novalue="[&#39;type&#39;]">100平米以下</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:9}"
+                               novalue="[&#39;type&#39;]">100-150平米</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:10}"
+                               novalue="[&#39;type&#39;]">150-200平米</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:11}"
+                               novalue="[&#39;type&#39;]">200-300平米</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:12}"
+                               novalue="[&#39;type&#39;]">300-500平米</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:13}" novalue="[&#39;type&#39;]">500-1000平米</a>
+                            <a name="p8" href="javascript:void(0);" value="{p8:14}"
+                               novalue="[&#39;type&#39;]">1000平米以上</a>
+                        </dd>
+                    </dl>
+                    <dl class="condition">
+                        <dt class="title">日租金:<span class="prompt">(单位:&nbsp;元/平米•天)</span></dt>
+                        <dd class="option">
+                            <a name="p10" class="cur" href="javascript:void(0);" value="{p10:0}">不限</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:131}">3元以下</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:132}">3-4元</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:133}">4-5元</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:134}">5-6元</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:135}">6-8元</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:136}">8-10元</a>
+                            <a name="p10" href="javascript:void(0);" value="{p10:137}">10元以上</a>
+                        </dd>
+                    </dl>
+                    <dl class="condition">
+                        <dt class="title">月租金:<span class="prompt">(单位:&nbsp;元/月)</span></dt>
+                        <dd class="option">
+                            <a name="p9" class="cur" href="javascript:void(0);" value="{p9:0}">不限</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:1}">0.5万元/月以下</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:2}">0.5-1万</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:3}">1-1.5万</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:4}">1.5-2万</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:5}">2-2.5万</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:6}">2.5-3.5万</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:7}">3.5-5万</a>
+                            <a name="p9" href="javascript:void(0);" value="{p9:8}">5万以上</a>
+                        </dd>
+                    </dl>
+                </div>
+            </td>
+            <td class="cright">
+                <div class="top" style="font-size:1px;height:0px;overflow:hidden;">&nbsp;</div>
+                <div class="map-box" id="map-box" style="height: 527px; width: 1080px;"></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--[if IE 7]>
+    <script>
+        //针对ie7bug
+        void function () {
+            var ctable = document.getElementById('ctable'), box = ctable.parentNode;
+            (document.attachEvent ? document.body : window).onresize = function () {
+                ctable.style.height = 'auto';
+                ctable.style.width = 'auto';
+                ctable.style.height = box.clientHeight + 'px';
+                ctable.style.width = box.clientWidth + 'px';
+
+            };
+            ctable.style.height = 'auto';
+            ctable.style.width = 'auto';
+            ctable.style.height = box.clientHeight + 'px';
+            ctable.style.width = box.clientWidth + 'px';
+        }();
+    </script>
+    <![endif]-->
+    <script>
+        void function () {
+            var mapbox = document.getElementById('map-box'), box = mapbox.parentNode,
+                    win = (document.attachEvent ? document.body : window),
+                    onresize = win.onresize;
+            win.onresize = function () {
+                mapbox.style.height = "auto";
+                mapbox.style.width = "auto";
+                onresize && onresize.call(this);
+                mapbox.style.height = box.clientHeight + 'px';
+                mapbox.style.width = box.clientWidth + 'px';
+            };
+            mapbox.style.height = "auto";
+            mapbox.style.width = "auto";
+            mapbox.style.height = box.clientHeight + 'px';
+            mapbox.style.width = box.clientWidth + 'px';
+        }();
+    </script>
+</div>
+<div class="footer">
+</div>
+<script type="text/javascript" src="/js/jquery.autocomplete.min-5.js"></script>
+<script type="text/javascript" src="/js/Map_List.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WQiyOuqvZGeetPRBRmglQNL8"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+<script type="text/javascript">
+    var map = new BMap.Map("map-box");
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 13);
+    map.enableScrollWheelZoom();
+    var b = new BMap.Bounds(new BMap.Point(116.027143, 39.772348),new BMap.Point(116.832025, 40.126349));
+    try {
+        BMapLib.AreaRestriction.setBounds(map, b);
+    } catch (e) {
+        alert(e);
+    }
+</script>
+<script type="text/javascript">
+
+    (function () {
+        var center = {
+            "lat": 39.914739,
+            "lng": 116.403458,
+            "zoom": 14
+        };
+        var DEF_HOUSE_TYPE = '1';
+        var DEF_TRADE_TYPE = '2';
+        var filter = {"p8": 0, "p9": 0, "p10": 0, "p11": 0, "housetype": DEF_HOUSE_TYPE, tradetype: DEF_TRADE_TYPE};
+        var DEF_CITY_INFO = {
+            "cityId": 14,
+            "name": "北京",
+            "lat": center.lat,
+            "lng": center.lng,
+            "zoom": center.zoom,
+            "swlat": 39.52295699368,
+            "swlng": 115.30796420283,
+            "nelat": 40.574203511003,
+            "nelng": 117.26903484806
+        };
+        var oldhash = location.hash;
+        JMAP.URL.update();
+        var urlparams = JMAP.URL.getparam();
+        //从url传过来的选择条件(面积日租月租总价等条件)
+        if (urlparams.p8 != undefined || urlparams.p9 != undefined || urlparams.p10 != undefined || urlparams.p11 != undefined) {
+            filter.p8 = urlparams.p8;
+            filter.p9 = urlparams.p9;
+            filter.p10 = urlparams.p10;
+            filter.p11 = urlparams.p11;
+        }
+        //从url传过来的地图中心点和缩放级别
+        if (urlparams.p19 != undefined && urlparams.p20 != undefined && urlparams.p21 != undefined) {
+            DEF_CITY_INFO.lat = parseFloat(urlparams.p19);
+            DEF_CITY_INFO.lng = parseFloat(urlparams.p20);
+            DEF_CITY_INFO.zoom = parseInt(urlparams.p21);
+        }
+        this.mapsearch = new JinpuMapSearch(DEF_CITY_INFO, filter);
+        //绘制地图主窗口
+        mapsearch.drawMap();
+        //绘制地图覆盖物
+        mapsearch.getJsonMarkers();
+        var newhash = location.hash;
+        //判断是否需要强制调用urlChange函数--如果url变化会自动调用，无变化则需手动调用。
+        if (oldhash == newhash) {
+            mapsearch.urlChange();
+        }
+    })(window);
+</script>
+<dl class="left_guide" style="display:none">
+    <dt class="title">房源类型:<span class="prompt"></span></dt>
+    <dd class="option">
+        <a href="http://bj.xzl.anjuke.com/ditu/zu/">写字楼出租</a>
+        <a href="http://bj.xzl.anjuke.com/ditu/shou/">写字楼出售</a>
+        <a href="http://bj.sp.anjuke.com/ditu/zu/">商铺出租</a>
+        <a href="http://bj.sp.anjuke.com/ditu/shou/">商铺出售</a>
+    </dd>
+</dl>
+<div class="firstin-box" style="display:none">
+    <div class="firstin">
+        <h2>选择类型，立即进入地图找房：</h2>
+        <ul>
+            <li><a href="http://bj.xzl.anjuke.com/ditu/zu/">写字楼出租</a></li>
+            <li><a href="http://bj.xzl.anjuke.com/ditu/shou/">写字楼出售</a></li>
+            <li class="shop"><a href="http://bj.sp.anjuke.com/ditu/zu/">商铺出租</a></li>
+            <li><a href="http://bj.sp.anjuke.com/ditu/shou/">商铺出售</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -10,10 +10,10 @@
     <meta name="format-detection" content="telephone=no">
     <title>发布出租</title>
     <link rel="stylesheet" rev="stylesheet" href="../css/Broker_Register.css" type="text/css">
-    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
     <script type="text/javascript" src="../js/common/common.js"></script>
-    <!--<script type="text/javascript" src="../js/Broker_Register.js"></script>-->
+    <script type="text/javascript" src="../js/Broker_Register.js"></script>
     <script type="text/javascript">
     </script>
     <!--<script src="./manager_register_files/st" async=""></script>-->
@@ -63,12 +63,46 @@
                     </tr>
                     <tr>
                         <th>所在区域：</th>
-                        <td class="td_input">
-                            <input type="text" id="areaId" class="input_text" name="areaId" value=""/>
+                        <td colspan="2">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td class="td_area">
+                                        <div class="select_content area_content clearfix">
+                                            <a id="select_area" href="javascript:void(0);" class="select_boxer">
+                                                <span id="selectareatext" class="select_txt">请选择区域</span>
+                                                <input type="hidden" name="selectareaid" id="selectareaid" value="0">
+                                                <span class="arrow"></span>
+                                            </a>
+                                            <ul id="searchlistarea" class="searchlist h241" style="display:none">
+                                            </ul>
+                                        </div>
+                                        <div class="select_content block_content clearfix">
+                                            <a id="select_block" href="javascript:void(0);" class="select_boxer">
+                                                <span id="selectblocktext" class="select_txt">请选择板块</span>
+                                                <input type="hidden" name="selectblockid" id="selectblockid" value="0">
+                                                <span class="arrow"></span>
+                                            </a>
+                                            <ul id="searchlistblock" class="searchlist h241" style="display:none">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td id="areatip" class="td_area_tips">
+                                        <div class="check_ok tip_area_1" style="display: none;">&nbsp;</div>
+                                        <div class="check_error tip_area_3" style="display: none;">请选择区域。</div>
+                                        <div class="check_error tip_area_4" style="display: none;">请选择版块。</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </td>
-                        <td class="td_tips" id="pwdtip">
-                            <div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>
-                        </td>
+                        <!--<td class="td_input">-->
+                            <!--<input type="text" id="areaId" class="input_text" name="areaId" value=""/>-->
+                            <!--<div id="area_panel" class="area_panel" style="display: block">&nbsp;</div>-->
+                        <!--</td>-->
+                        <!--<td class="td_tips" id="pwdtip">-->
+                            <!--<div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>-->
+                        <!--</td>-->
                     </tr>
                     <tr>
                         <th>地址：</th>
@@ -89,7 +123,7 @@
                                 <tbody>
                                 <tr>
                                     <td class="td_input">
-                                        <div class="relative" style="z-index:15">
+                                        <div class="relative" style="z-index:9">
                                             <input type="radio" id="houseType_1" name="houseType" value="1"
                                                    checked="checked"><label>写字楼</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             <input type="radio" id="houseType_2" name="houseType" value="2"><label>住宅</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -113,7 +147,7 @@
                                 <tbody>
                                 <tr>
                                     <td class="td_input">
-                                        <div class="relative" style="z-index:15">
+                                        <div class="relative" style="z-index:9">
                                             <input type="radio" id="isRegisterCompany_yes" name="isRegisterCompany" value="0"
                                                    checked="checked"><label>可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             <input type="radio" id="isRegisterCompany_no" name="isRegisterCompany" value="1"><label>不可以</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -317,6 +351,7 @@
                         <!--</td>-->
                     <!--</tr>-->
 
+
                     <tr >
                         <th>上传图片&nbsp;</th>
                         <td colspan="2">
@@ -432,6 +467,9 @@
         jQuery("#selectblockid").val(0);
         jQuery("#storeid").val(0);
 
+//        $("#select_area").click(function(){
+//            $("#searchlistarea").show();
+//        });
 
         $("#publish").click(function(){
             $.post("/resource/houses",{
