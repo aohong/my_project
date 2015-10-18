@@ -44,6 +44,7 @@ public class HouseInfoBo {
         result.setHouseName(po.getHouseName());
         result.setTotalRent(po.getTotalRent());
         result.setTitle(po.getTitle());
+        result.setCreateTime(po.getCreateTime());
 
         return result;
     }

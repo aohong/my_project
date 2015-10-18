@@ -3,6 +3,8 @@ package com.bjcre.vo;
 import com.dbframe.annotation.Id;
 import com.dbframe.annotation.Table;
 
+import java.util.Date;
+
 /**
  * Created by aohong on 15/5/24.
  */
@@ -24,6 +26,7 @@ public class HouseInfoVo {
     private String connectorMobile;
     private String description;
     private String image;
+    private Date createTime;
 
     public Integer getId() {
         return id;
@@ -153,6 +156,14 @@ public class HouseInfoVo {
         this.blockId = blockId;
     }
 
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
     @Override
     public String toString() {
         return "HouseInfoVo{" +
@@ -172,6 +183,7 @@ public class HouseInfoVo {
                 ", connectorMobile='" + connectorMobile + '\'' +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +
+                ", createTime=" + createTime +
                 '}';
     }
 }

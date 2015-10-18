@@ -6,15 +6,8 @@
     <title>北京地图找房</title>
 
     <link rel="stylesheet" rev="stylesheet" href="/css/Map_List.css" type="text/css">
-    <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
     <meta name="description" content="">
-    <script type="text/javascript">var PAGESTART = +new Date();
-    var PHPVERSION = '2015_40_01';</script>
-    <script text="type/javascript">
-        document.write("<script src=\"http://api.map.baidu.com/api?v=1.2&services=true\" type=\"text/javascript\"></" + "script>");
-    </script>
-    <script src="./map_search_files/api" type="text/javascript"></script>
-    <script type="text/javascript" src="./map_search_files/getscript"></script>
     <link rel="stylesheet" type="text/css" href="/css/bmap.css">
 </head>
 <body>
@@ -311,10 +304,8 @@
         }();
     </script>
 </div>
-<div class="footer">
-</div>
-<script type="text/javascript" src="/js/jquery.autocomplete.min-5.js"></script>
-<script type="text/javascript" src="/js/Map_List.js"></script>
+<!--<script type="text/javascript" src="/js/jquery.autocomplete.min-5.js"></script>-->
+<!--<script type="text/javascript" src="/js/Map_List.js"></script>-->
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=WQiyOuqvZGeetPRBRmglQNL8"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
 <script type="text/javascript">
@@ -334,58 +325,8 @@
      BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
 
     //添加控件和比例尺
-        map.addControl(top_left_control);
-        map.addControl(top_left_navigation);
-</script>
-<script type="text/javascript">
-
-    (function () {
-        var center = {
-            "lat": 39.914739,
-            "lng": 116.403458,
-            "zoom": 14
-        };
-        var DEF_HOUSE_TYPE = '1';
-        var DEF_TRADE_TYPE = '2';
-        var filter = {"p8": 0, "p9": 0, "p10": 0, "p11": 0, "housetype": DEF_HOUSE_TYPE, tradetype: DEF_TRADE_TYPE};
-        var DEF_CITY_INFO = {
-            "cityId": 14,
-            "name": "北京",
-            "lat": center.lat,
-            "lng": center.lng,
-            "zoom": center.zoom,
-            "swlat": 39.52295699368,
-            "swlng": 115.30796420283,
-            "nelat": 40.574203511003,
-            "nelng": 117.26903484806
-        };
-        var oldhash = location.hash;
-        JMAP.URL.update();
-        var urlparams = JMAP.URL.getparam();
-        //从url传过来的选择条件(面积日租月租总价等条件)
-        if (urlparams.p8 != undefined || urlparams.p9 != undefined || urlparams.p10 != undefined || urlparams.p11 != undefined) {
-            filter.p8 = urlparams.p8;
-            filter.p9 = urlparams.p9;
-            filter.p10 = urlparams.p10;
-            filter.p11 = urlparams.p11;
-        }
-        //从url传过来的地图中心点和缩放级别
-        if (urlparams.p19 != undefined && urlparams.p20 != undefined && urlparams.p21 != undefined) {
-            DEF_CITY_INFO.lat = parseFloat(urlparams.p19);
-            DEF_CITY_INFO.lng = parseFloat(urlparams.p20);
-            DEF_CITY_INFO.zoom = parseInt(urlparams.p21);
-        }
-        this.mapsearch = new JinpuMapSearch(DEF_CITY_INFO, filter);
-        //绘制地图主窗口
-        mapsearch.drawMap();
-        //绘制地图覆盖物
-        mapsearch.getJsonMarkers();
-        var newhash = location.hash;
-        //判断是否需要强制调用urlChange函数--如果url变化会自动调用，无变化则需手动调用。
-        if (oldhash == newhash) {
-            mapsearch.urlChange();
-        }
-    })(window);
+    map.addControl(top_left_control);
+    map.addControl(top_left_navigation);
 </script>
 <dl class="left_guide" style="display:none">
     <dt class="title">房源类型:<span class="prompt"></span></dt>

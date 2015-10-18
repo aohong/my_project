@@ -12,7 +12,7 @@
     <!--src="http://include.aifcdn.com/ujs/base/logger/dom.dom/ajax/event/ui.panel/ui.autocomplete/ui.exposure/cookie/site/utils/d08064db78183516bb9aba56704fa69a.js" crossorigin></script>-->
 
     <!--<script type="text/javascript" src="http://include.bjcrestatic.com/xzl/web/res/20151001/s/page/APF.js"></script>-->
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/common/common.js"></script>
 
     <meta name="keywords" content="">
@@ -58,14 +58,14 @@
                 <div class="cl_item">
                     <div class="condition_title">面&nbsp;&nbsp;&nbsp;积：</div>
                     <div class="container" id="acreageCondDiv">
-                        <a href="#acreageCondDiv" from="" to=""><strong>全部</strong></a>
-                        <a href="#acreageCondDiv" from="" to="100">100平米以下</a>
-                        <a href="#acreageCondDiv" from="100" to="150">100-150平米</a>
-                        <a href="#acreageCondDiv" from="150" to="200">150-200平米</a>
-                        <a href="#acreageCondDiv" from="200" to="300">200-300平米</a>
-                        <a href="#acreageCondDiv" from="300" to="500">300-500平米</a>
-                        <a href="#acreageCondDiv" from="500" to="1000">500-1000平米</a>
-                        <a href="#acreageCondDiv" from="1000" to="">1000平米以上</a>
+                        <a href="#content" from="" to=""><strong>全部</strong></a>
+                        <a href="#content" from="" to="100">100平米以下</a>
+                        <a href="#content" from="100" to="150">100-150平米</a>
+                        <a href="#content" from="150" to="200">150-200平米</a>
+                        <a href="#content" from="200" to="300">200-300平米</a>
+                        <a href="#content" from="300" to="500">300-500平米</a>
+                        <a href="#content" from="500" to="1000">500-1000平米</a>
+                        <a href="#content" from="1000" to="">1000平米以上</a>
 
                         <div class="custom-condition">
                             <input type="text" name="from_acreage" id="from_acreage" autocomplete="off" maxlength="7"
@@ -81,14 +81,14 @@
                 <div class="cl_item">
                     <div class="condition_title">日租金：</div>
                     <div class="container" id="dayRentCondDiv">
-                        <a href="#dayRentCondDiv" from="" to=""><strong>全部</strong></a>
-                        <a href="#dayRentCondDiv" from="" to="3">3元/平米•天以下</a>
-                        <a href="#dayRentCondDiv" from="3" to="4">3-4元</a>
-                        <a href="#dayRentCondDiv" from="4" to="5">4-5元</a>
-                        <a href="#dayRentCondDiv" from="5" to="6">5-6元</a>
-                        <a href="#dayRentCondDiv" from="6" to="8">6-8元</a>
-                        <a href="#dayRentCondDiv" from="8" to="10">8-10元</a>
-                        <a href="#dayRentCondDiv" from="10" to="">10元以上</a>
+                        <a href="#content" from="" to=""><strong>全部</strong></a>
+                        <a href="#content" from="" to="3">3元/平米•天以下</a>
+                        <a href="#content" from="3" to="4">3-4元</a>
+                        <a href="#content" from="4" to="5">4-5元</a>
+                        <a href="#content" from="5" to="6">5-6元</a>
+                        <a href="#content" from="6" to="8">6-8元</a>
+                        <a href="#content" from="8" to="10">8-10元</a>
+                        <a href="#content" from="10" to="">10元以上</a>
 
                         <div class="custom-condition">
                                 <input type="text" name="from_price" id="from_price" autocomplete="off" width="22"
@@ -277,12 +277,12 @@
     $(document).ready(function () {
 
         $.each(AREA_14, function (k, v) {
-            var area = $('<a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a>');
+            var area = $('<a typeid="' + v.typeId + '" href="#content">' + v.typeName + '</a>');
             area.click(function() {
                 $("#block").html("");
                 var json = BLOCK_MAP.get("block_json_"+v.typeId);
                 $.each(json, function (k, v) {
-                    var block = $('<a typeid="' + v.typeId + '" href="javascript:void(0);">' + v.typeName + '</a>');
+                    var block = $('<a typeid="' + v.typeId + '" href="#content">' + v.typeName + '</a>');
                     block.click(function() {
                         $("#block").val(v.typeId);
                         queryHouse();
@@ -298,6 +298,12 @@
         });
 
         queryHouse();
+
+        $("#area a strong").click(function(){
+            $("#area").val("");
+            $("#block").val("").hide();
+            queryHouse();
+        });
 
         $("#dayRentCondDiv a").click(function(){
             $("#from_price").val($(this).attr("from"));
