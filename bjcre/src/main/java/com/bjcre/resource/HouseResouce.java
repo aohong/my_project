@@ -1,12 +1,7 @@
 package com.bjcre.resource;
 
-import com.bjcre.bo.HouseInfoBo;
-import com.bjcre.params.HouseAddParam;
-import com.bjcre.params.HouseQueryParam;
-import com.bjcre.params.QueryParam;
-import com.bjcre.server.web.result.BaseResult;
-import com.bjcre.server.web.result.CountDataResult;
-import com.bjcre.server.web.result.DataResult;
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -16,7 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
+import com.bjcre.bo.HouseInfoBo;
+import com.bjcre.params.HouseAddParam;
+import com.bjcre.params.HouseQueryParam;
+import com.bjcre.server.web.result.CountDataResult;
+import com.bjcre.server.web.result.DataResult;
 
 /**
  * 结算系统Server

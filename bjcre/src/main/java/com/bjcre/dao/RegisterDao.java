@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 import com.dbframe.spring.SqlTemplateProxy;
 
 @Component
-public class UserDao extends SqlTemplateProxy<UserPo> {
+public class RegisterDao extends SqlTemplateProxy<UserPo> {
 
 }

@@ -1,8 +1,5 @@
 package com.bjcre.vo;
 
-import com.dbframe.annotation.Id;
-import com.dbframe.annotation.Table;
-
 import java.util.Date;
 
 /**

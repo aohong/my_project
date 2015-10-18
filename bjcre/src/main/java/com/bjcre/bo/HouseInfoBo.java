@@ -1,5 +1,12 @@
 package com.bjcre.bo;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.bjcre.dao.HouseInfoDao;
 import com.bjcre.params.HouseAddParam;
 import com.bjcre.params.HouseQueryParam;
@@ -9,13 +16,6 @@ import com.dbframe.enums.MatchType;
 import com.dbframe.enums.SortType;
 import com.dbframe.model.SqlFilter;
 import com.dbframe.model.SqlSorter;
-import com.dbframe.script.DbInnerValue;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 /**
  * Created by aohong on 15/8/29.

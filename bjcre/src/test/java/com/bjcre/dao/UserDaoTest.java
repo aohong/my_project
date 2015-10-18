@@ -19,7 +19,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 })
 public class UserDaoTest  {
     @Autowired
-    private UserDao userDao;
+    private RegisterDao userDao;
 
     @Test
     public void testGet() {
