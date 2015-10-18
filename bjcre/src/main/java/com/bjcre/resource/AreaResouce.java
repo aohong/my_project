@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 结算系统Server
+ * 区域资源类
  * 
- * @author zhangyiming8 2014-12-16 19:40
+ * @author aohong
  */
 @Controller
 @RequestMapping("area")
