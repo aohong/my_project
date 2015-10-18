@@ -408,9 +408,6 @@ a.logo {
 	display: inline-block;
 	width: 85px;
 	height: 25px;
-	background: url("http://pages.jinpu..com/img/global/2/logo.svg") 0 0 no-repeat;
-	background: url("http://pages.jinpu..com/img/global/2/logox32.png") 0 0 no-repeat\0;
-	*background: url("http://pages.jinpu..com/img/global/2/logox8.png") 0 0 no-repeat;
 	background-size: 85px 25px;
 	overflow: hidden;
 	vertical-align: bottom;
@@ -418,11 +415,12 @@ a.logo {
 }
 
 span.logo {
-	padding: 0 10px 0 15px;
-	color: #62ab00;
+	padding: 7px 10px 0 90px;
+	color: #0094D2;
 	font-size: 24px;
 	height: 25px;
 	line-height: 25px;
+	background: url("/image/logo_40.png") 0 0 no-repeat;
 	*vertical-align: middle
 }
 
@@ -450,7 +448,7 @@ span.logo {
 }
 
 .sec-bar a:hover,.sec-bar a:active {
-	background-color: #4a8101
+	background-color: #35a3ec
 }
 
 .sec-bar a.sec_curr {

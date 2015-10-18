@@ -161,15 +161,15 @@
 
                         </div>
                     </div>
-                    <div class="housep" id="office_img" style="clear:both;">
-                        <div class="details-box-title-left">
-                            <h2 class="map_title_bg pic_tit">房源照片</h2>
-                        </div>
-                        <div class="details-box-content">
-                            <div class="house-images clearboth"></div>
-                            <!--<div class="more_img_btn"><a href="javascript://" id="more_img_btn">查看更多房源照片（共13张）</a></div>-->
-                        </div>
-                    </div>
+                    <!--<div class="housep" id="office_img" style="clear:both;">-->
+                        <!--<div class="details-box-title-left">-->
+                            <!--<h2 class="map_title_bg pic_tit">房源照片</h2>-->
+                        <!--</div>-->
+                        <!--<div class="details-box-content">-->
+                            <!--<div class="house-images clearboth"></div>-->
+                            <!--&lt;!&ndash;<div class="more_img_btn"><a href="javascript://" id="more_img_btn">查看更多房源照片（共13张）</a></div>&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                     <div class="details-box details-box-rent map_title_bg" id="office_building">
                         <div class="details-box-title clearboth">
@@ -181,13 +181,13 @@
                         </div>
                         <div class="map-cont clearboth" id="map-box">
                             <div class="map-cont-left-border">
-                                <div class="map-cont-left">
+                                <div class="map-cont-left"  id="map-cont-box">
                                     <div class="bubble-box"></div>
                                 </div>
                             </div>
                             <div class="map-cont-right">
                                 <div class="go-map clearboth">
-                                    <a class="viewmap" href="http://bj.xzl.anjuke.com/xinpan/jiaotong/17433"
+                                    <a class="viewmap" href="/html/map_search.html"
                                        target="_blank">在大地图查看</a>
                                 </div>
                                 <p></p>
@@ -314,7 +314,7 @@ $(document).ready(function () {
 <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        var map = new BMap.Map("bubble-box");
+        var map = new BMap.Map("map-cont-box");
         map.centerAndZoom(new BMap.Point(116.404, 39.915), 13);
         map.enableScrollWheelZoom();
         var b = new BMap.Bounds(new BMap.Point(116.027143, 39.772348),new BMap.Point(116.832025, 40.126349));
