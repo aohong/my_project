@@ -35,26 +35,25 @@
 
  </body>
  <script type="text/javascript">
-  $(document).ready(function(){
 
-   $("#txtPassWord").keyup(function(e){
+/*    $("#txtPassWord").keyup(function(e){
     if(e.keyCode==13){
      $(".pg_btn_register").click();
     }
-   });
+   }); */
    $(".pg_btn_register").click(function(){
-    $.post(/resource/houses),{
-    	userName: $("#txtUserName").val(),
-    	password:$("#txtPassword").val(),
+	   alert("123456");
+    $.post("/resource/users",{
+    	username:$("#txtUserName").val(),
+    	password:$("#txtPassword").val()
     },function(result){
         console.log(result);
         if (result.status != 200){
             return;
         }
+
     window.location.href="./user_info.html";
    });
-
-
   });
  </script>
 
