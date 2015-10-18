@@ -6,6 +6,7 @@ import com.bjcre.params.HouseQueryParam;
 import com.bjcre.po.HouseInfoPo;
 import com.bjcre.vo.HouseInfoVo;
 import com.dbframe.enums.MatchType;
+import com.dbframe.enums.SortType;
 import com.dbframe.model.SqlFilter;
 import com.dbframe.model.SqlSorter;
 import com.dbframe.script.DbInnerValue;
@@ -78,7 +79,7 @@ public class HouseInfoBo {
         List<HouseInfoVo> result=new ArrayList<HouseInfoVo>();
 
         List<HouseInfoPo> houseInfoPoList = houseInfoDao.pageEntities(
-                this.getSqlFilter(param), SqlSorter.init(), param.getPageNo(),param.getLimit());
+                this.getSqlFilter(param), SqlSorter.init("update_time", SortType.DESC), param.getPageNo(),param.getLimit());
         for (HouseInfoPo po : houseInfoPoList) {
             result.add(transfer(po));
         }

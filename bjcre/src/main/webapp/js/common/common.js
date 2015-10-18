@@ -1,9 +1,9 @@
-//var URL_PRE="/";
-//var URL_PRE="";
+//window.onload=function(){
+//}
 
 $(document).ready(function(){
-
-	$("body").prepend($("<div />").load("/html/common/header.html"));
+	$(window.document.body).prepend($("<div />").load("/html/common/header.html"));
+	//$("body").prepend($("<div />").load("/html/common/header.html"));
 	$("body").append($("<div />").load("/html/common/footer.html"));
 
 });
@@ -92,6 +92,7 @@ var block_json_860 = [{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCo
 var block_json_863 = [{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"pinggub","parentCode":"06000863","parentId":"863","typeCode":"060008630864","typeFlag":"0","typeId":"864","typeName":"\u5e73\u8c37","typeRank":"864"}];
 var block_json_865 = [{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"xihongmen","parentCode":"06000865","parentId":"865","typeCode":"060008650866","typeFlag":"0","typeId":"866","typeName":"\u897f\u7ea2\u95e8","typeRank":"866"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"huangcun","parentCode":"06000865","parentId":"865","typeCode":"060008650867","typeFlag":"0","typeId":"867","typeName":"\u9ec4\u6751","typeRank":"867"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"yizhuang","parentCode":"06000865","parentId":"865","typeCode":"060008650868","typeFlag":"0","typeId":"868","typeName":"\u4ea6\u5e84","typeRank":"868"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"jiugong","parentCode":"06000865","parentId":"865","typeCode":"060008650869","typeFlag":"0","typeId":"869","typeName":"\u65e7\u5bab","typeRank":"869"}];
 var block_json_2678 = [{"cityId":"14","mapX":"","mapY":"","mapZoom":"","nameCode":"yanjiao","parentCode":"06002678","parentId":"2678","typeCode":"060026782679","typeFlag":"0","typeId":"2679","typeName":"\u71d5\u90ca","typeRank":"1"},{"cityId":"14","mapX":"","mapY":"","mapZoom":"","nameCode":"xianghe","parentCode":"06002678","parentId":"2678","typeCode":"060026782680","typeFlag":"0","typeId":"2680","typeName":"\u9999\u6cb3","typeRank":"2"},{"cityId":"14","mapX":"","mapY":"","mapZoom":"","nameCode":"guany","parentCode":"06002678","parentId":"2678","typeCode":"060026782681","typeFlag":"0","typeId":"2681","typeName":"\u56fa\u5b89","typeRank":"3"},{"cityId":"14","mapX":"","mapY":"","mapZoom":"","nameCode":"zhuozhou","parentCode":"06002678","parentId":"2678","typeCode":"060026782682","typeFlag":"0","typeId":"2682","typeName":"\u6dbf\u5dde","typeRank":"4"},{"cityId":"14","mapX":"","mapY":"","mapZoom":"","nameCode":"guangyangb","parentCode":"06002678","parentId":"2678","typeCode":"060026789194","typeFlag":"0","typeId":"9194","typeName":"\u5e7f\u9633","typeRank":"0"}];
+
 var AREA_14 = [{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"haidian","parentCode":"0600","parentId":"600","typeCode":"06000601","typeFlag":"0","typeId":"601","typeName":"\u6d77\u6dc0","typeRank":"2"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"chaoyang","parentCode":"0600","parentId":"600","typeCode":"06000642","typeFlag":"0","typeId":"642","typeName":"\u671d\u9633","typeRank":"1"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"dongchenga","parentCode":"0600","parentId":"600","typeCode":"06000690","typeFlag":"0","typeId":"690","typeName":"\u4e1c\u57ce","typeRank":"4"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"xicheng","parentCode":"0600","parentId":"600","typeCode":"06000704","typeFlag":"0","typeId":"704","typeName":"\u897f\u57ce","typeRank":"5"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"chongwen","parentCode":"0600","parentId":"600","typeCode":"06000729","typeFlag":"0","typeId":"729","typeName":"\u5d07\u6587","typeRank":"6"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"xuanwu","parentCode":"0600","parentId":"600","typeCode":"06000740","typeFlag":"0","typeId":"740","typeName":"\u5ba3\u6b66","typeRank":"7"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"fengtai","parentCode":"0600","parentId":"600","typeCode":"06000753","typeFlag":"0","typeId":"753","typeName":"\u4e30\u53f0","typeRank":"3"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"shijingshan","parentCode":"0600","parentId":"600","typeCode":"06000787","typeFlag":"0","typeId":"787","typeName":"\u77f3\u666f\u5c71","typeRank":"8"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"fangshan","parentCode":"0600","parentId":"600","typeCode":"06000802","typeFlag":"0","typeId":"802","typeName":"\u623f\u5c71","typeRank":"14"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"mentougou","parentCode":"0600","parentId":"600","typeCode":"06000815","typeFlag":"0","typeId":"815","typeName":"\u95e8\u5934\u6c9f","typeRank":"15"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"tongzhou","parentCode":"0600","parentId":"600","typeCode":"06000818","typeFlag":"0","typeId":"818","typeName":"\u901a\u5dde","typeRank":"10"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"shunyi","parentCode":"0600","parentId":"600","typeCode":"06000837","typeFlag":"0","typeId":"837","typeName":"\u987a\u4e49","typeRank":"12"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"changping","parentCode":"0600","parentId":"600","typeCode":"06000843","typeFlag":"0","typeId":"843","typeName":"\u660c\u5e73","typeRank":"9"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"miyun","parentCode":"0600","parentId":"600","typeCode":"06000856","typeFlag":"0","typeId":"856","typeName":"\u5bc6\u4e91","typeRank":"16"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"huairou","parentCode":"0600","parentId":"600","typeCode":"06000858","typeFlag":"0","typeId":"858","typeName":"\u6000\u67d4","typeRank":"13"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"yanqing","parentCode":"0600","parentId":"600","typeCode":"06000860","typeFlag":"0","typeId":"860","typeName":"\u5ef6\u5e86","typeRank":"18"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"pinggua","parentCode":"0600","parentId":"600","typeCode":"06000863","typeFlag":"0","typeId":"863","typeName":"\u5e73\u8c37","typeRank":"17"},{"cityId":"14","mapX":"0","mapY":"0","mapZoom":"0","nameCode":"daxing","parentCode":"0600","parentId":"600","typeCode":"06000865","typeFlag":"0","typeId":"865","typeName":"\u5927\u5174","typeRank":"11"},{"cityId":"14","mapX":"","mapY":"","mapZoom":"","nameCode":"zhoubiana","parentCode":"0600","parentId":"600","typeCode":"06002678","typeFlag":"0","typeId":"2678","typeName":"\u5468\u8fb9","typeRank":"19"}];
 
 var BLOCK_MAP = new Map();
@@ -114,3 +115,20 @@ BLOCK_MAP.put("block_json_860", block_json_860);
 BLOCK_MAP.put("block_json_863", block_json_863);
 BLOCK_MAP.put("block_json_865", block_json_865);
 BLOCK_MAP.put("block_json_2678", block_json_2678);
+
+function getBlockName(blockId, blockArray) {
+	if(blockId == undefined) {
+		return "";
+	}
+
+	for(var i in blockArray) {
+		if (blockId == blockArray[i].typeId) {
+			return blockArray[i].typeName;
+		}
+	}
+	return "";
+}
+
+function getAreaName(areaId){
+	return getBlockName(areaId, AREA_14);
+}
