@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html slick-uniqueid="3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>企业注册</title>
+    <link rel="stylesheet" rev="stylesheet" href="../css/Broker_Register.css" type="text/css">
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/common/common.js"></script>
+    <script type="text/javascript" src="/js/Broker_Register.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <!--<div class="tipsbox inform-tips">-->
+        <!--注册为经纪人可享受更多特殊服务。普通会员可<a href="/broker/findpwd/">点此升级</a>。（升级页面就不要账号密码了）-->
+    <!--</div>-->
+    <div class="container clearfix">
+        <div class="register">
+            <h1>基本信息</h1>
+
+            <form action="" method="POST">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <th>组织机构代码证号：</th>
+                        <td class="td_input">
+                            <input type="text" id="mobile" class="input_text " name="mobile" value="" maxlength="11">
+                        </td>
+                        <td class="td_tips" id="mobiletip"></td>
+                    </tr>
+                    <tr>
+                        <th>密码：</th>
+                        <td class="td_input">
+                            <input type="password" id="password" class="input_text" name="password" value=""
+                                   maxlength="16">
+                        </td>
+                        <td class="td_tips" id="passwordtip">
+                            <div class="tip_password_1">由6-16个英文字母、数字或符号组成</div>
+                            <div class="check_ok tip_password_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_password_3" style="display:none;">请填写您的登录密码</div>
+                            <div class="check_error tip_password_4" style="display:none;">请确认密码长度为6-16位。</div>
+                            <div class="check_error tip_password_5" style="display:none;">请勿使用空格。</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>密码确认：</th>
+                        <td class="td_input">
+                            <input type="password" id="checkpwd" class="input_text" name="checkpwd" value=""
+                                   maxlength="16">
+                        </td>
+                        <td class="td_tips" id="pwdtip">
+                            <div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_pwd_2" style="display:none;">请输入确认密码。</div>
+                            <div class="check_error tip_pwd_3" style="display:none;">两次密码填写不一致。</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>企业名称：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip"></td>
+                    </tr>
+                    <tr>
+                        <th>所在区域：</th>
+                        <td colspan="2">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td class="td_area">
+                                        <div class="select_content area_content clearfix">
+                                            <a id="select_area" href="javascript:void(0);" class="select_boxer">
+                                                <span id="selectareatext" class="select_txt">请选择区域</span>
+                                                <input type="hidden" name="selectareaid" id="selectareaid" value="0">
+                                                <span class="arrow"></span>
+                                            </a>
+                                            <ul id="searchlistarea" class="searchlist h241" style="display:none">
+                                            </ul>
+                                        </div>
+                                        <div class="select_content block_content clearfix">
+                                            <a id="select_block" href="javascript:void(0);" class="select_boxer">
+                                                <span id="selectblocktext" class="select_txt">请选择板块</span>
+                                                <input type="hidden" name="selectblockid" id="selectblockid" value="0">
+                                                <span class="arrow"></span>
+                                            </a>
+                                            <ul id="searchlistblock" class="searchlist h241" style="display:none">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td id="areatip" class="td_area_tips">
+                                        <div class="check_ok tip_area_1" style="display: none;">&nbsp;</div>
+                                        <div class="check_error tip_area_3" style="display: none;">请选择区域。</div>
+                                        <div class="check_error tip_area_4" style="display: none;">请选择版块。</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <!--<td class="td_input">-->
+                        <!--<input type="text" id="areaId" class="input_text" name="areaId" value=""/>-->
+                        <!--<div id="area_panel" class="area_panel" style="display: block">&nbsp;</div>-->
+                        <!--</td>-->
+                        <!--<td class="td_tips" id="pwdtip">-->
+                        <!--<div class="check_ok tip_pwd_1" style="display:none">&nbsp;</div>-->
+                        <!--</td>-->
+                    </tr>
+                    <tr>
+                        <th>地址：</th>
+                        <td class="td_input">
+                            <input type="text" id="address" class="input_text" name="address" value="" >
+                        </td>
+                        <td class="td_tips" id="nametip">
+                            <div class="check_ok tip_name_2" style="display:none">&nbsp;</div>
+                            <div class="check_error tip_name_3" style="display:none">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>联系电话：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip"></td>
+                    </tr>
+                    <tr>
+                        <th>电子邮件：</th>
+                        <td class="td_input">
+                            <input type="text" id="truename" class="input_text" name="truename" value="" maxlength="20">
+                        </td>
+                        <td class="td_tips" id="nametip"></td>
+                    </tr>
+                    <tr id="tr_main_business">
+                        <th>主营业务：</th>
+                        <td class="business"colspan="2">
+                            <input type="radio" id="mainbusiness_1" name="mainbusiness" value="1"
+                                   checked="checked"><label>地产开发</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="mainbusiness_2" name="mainbusiness" value="2"><label>物业服务</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="mainbusiness_3" name="mainbusiness" value="3"><label>中介服务</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="mainbusiness_4" name="mainbusiness" value="4"><label>物业经营</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr >
+                        <th>上传营业执照</th>
+                        <td colspan="2">
+                            <div id="fileUpLoad" class="manage">
+                                添附文件
+                                <!-- 自定义 <input type="file"/> -->
+                                <input type="file" id="btnFile" name="btnFile" onchange="txtFoo.value=this.value;com.company.project.services.newCase.fileUpLoad()" hidden="hidden" />
+                                <input type="text" id="txtFoo" readonly="readonly" style="width: 300px" />
+                                <button onclick="btnFile.click()" style="height: 25px;">选择文件</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr >
+                        <th>上传组织机构代码证</th>
+                        <td colspan="2">
+                            <div id="fileUpLoad" class="manage">
+                                添附文件
+                                <!-- 自定义 <input type="file"/> -->
+                                <input type="file" id="btnFile" name="btnFile" onchange="txtFoo.value=this.value;com.company.project.services.newCase.fileUpLoad()" hidden="hidden" />
+                                <input type="text" id="txtFoo" readonly="readonly" style="width: 300px" />
+                                <button onclick="btnFile.click()" style="height: 25px;">选择文件</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>企业简介：</th>
+                        <td class="td_input" colspan="2">
+                            <textarea id="description" name="description" style="width: 400px;" rows="10"> </textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td colspan="2">
+                            <input type="hidden" name="action" value="register">
+                            <input type="submit" onclick="return valid_ql();" class="reg_but" value="完成注册">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!--<div class="side_tips">中介门店店长注册，请拨打：<br><span>400-620-9008（9:00-18:00）</span></div>-->
+    </div>
+    <div id="msgtips" class="msgtips" style="display:none;">
+        <div class="title"><a href="javascript:void(0);" class="close close_tip_ql">关闭</a>提&nbsp;示</div>
+        <div class="msg_content">
+            <p>手机释放后将不能恢复，是否继续？</p>
+
+            <div class="clearfix">
+                <a class="close_tip_ql" href="javascript:void(0);">取消</a><a id="btn_jx" href="javascript:void(0);"
+                                                                            kname="/broker/releasemp/W0QQurlZL2Fqa2Jyb2tlci9icm9rZXIvcmVnL1cwUVFjaGFubmVsWjBRUWNpdHlpZFoxNFFRdXJsWmFIUjBjRG92TDJKbGFXcHBibWN1WVc1cWRXdGxMbU52YlM5aGFtdGljbTlyWlhJdmJHOW5hVzR2WVVoU01HTkViM1pNTWpFMVRHMUdkV0Z1Vm5KYVV6VnFZakl3ZG1KSE9XNWhWelIyVUROU05XTkhWVGxpUnpsdVlWYzBiVnBZU25saU0wazVUVlJCZUVwdFZubGpiVEY2V25vd2JGSlVhMnhQUkVGc1QxVkZiRkpVWjJ4UlZFVnNUMFZOYkZKVVoyeFJWVmxzVDBSRmJGSlVaMnhSYWxGc1VWUlpiRkpVVld4UFJWbHNVV3BqYkZKVVdXeFBSR2RzVDFSWmJGSlVWV3hSVlZsc1QwUlpiRkpVWTJ4UlZFRnNUMFJGYkZKVVVXeFJhbWRzVDBWUmJGSlVXV3hSVlZGc1VWUk5iRkpVWTJ4UlZFVnNVVlZWUFQ5MGVYQmxQV3h2WjJsdUptVnljbTl5UFRFd01TWmxjbkp0YzJjOUpVVTVKVGd3SlRsQkpVVTRKVUV4SlRoREpVVTRKVUZHSlRneEpVVTRKVUkwSlVFMkpVVTFKVGhHSlVJM0pVVTJKVGc0SlRrMkpVVTFKVUZHSlRnMkpVVTNKVUV3SlRneEpVVTBKVUk0SlRoRUpVVTJKVUZFSlVFekpVVTNKVUV4SlVGRg==">继续</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery("#selectareaid").val(0);
+        jQuery("#selectblockid").val(0);
+        jQuery("#storeid").val(0);
+    </script>
+</div>
+
+
+
+
+</body>
+</html>

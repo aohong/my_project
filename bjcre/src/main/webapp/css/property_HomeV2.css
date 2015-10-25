@@ -1,0 +1,2304 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    color: #333;
+    font-family: Arial, Helvetica, \5b8b\4f53, sans-serif;
+    font-size: 12px;
+    text-align: center
+}
+
+.clearfix:after, .clearboth:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfix, .clearboth {
+    zoom: 1
+}
+
+#loginnav {
+    margin: 0;
+    text-align: left
+}
+
+#container {
+    margin: auto;
+    text-align: left;
+    width: 970px;
+    z-index: 0
+}
+
+#content {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 970px
+}
+
+#footer {
+    margin-top: 10px
+}
+
+a:link, a:visited, a:active {
+    color: #0041d9;
+    outline: none medium none;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+a.icp {
+    color: #666;
+    text-decoration: underline
+}
+
+h1 {
+    color: #525252;
+    font-size: 24px;
+    margin: 20px 0 15px 0
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+select {
+    border: 1px solid #b3b3b3;
+    font-size: 12px;
+    padding: 2px
+}
+
+ul li {
+    padding: 0;
+    margin: 0
+}
+
+div.spacebar {
+    clear: both
+}
+
+.text_c {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    text-align: center;
+    height: 30px;
+    overflow: hidden
+}
+
+.partner_line {
+    border-top: #ccc solid 1px;
+    zoom: 1;
+    height: 0;
+    overflow: hidden
+}
+
+.partner_line:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.footerLinkpack {
+    width: 970px
+}
+
+.partner {
+    background-color: #f9f9f9;
+    padding: 8px 0;
+    width: 970px;
+    border-top: 1px solid #e0e0e0 !important;
+    border-bottom: 0 !important;
+    line-height: 1.6em;
+    zoom: 1
+}
+
+.partner:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.partner span {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 86px
+}
+
+.partner ul {
+    float: right;
+    overflow: hidden;
+    width: 874px
+}
+
+.partner li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    margin-right: 15px;
+    display: inline;
+    width: 94px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.partner li a {
+    outline: medium none;
+    text-decoration: none;
+    color: #999 !important
+}
+
+.partner li a:hover {
+    color: #f60 !important
+}
+
+.partner li a:after {
+    color: #999
+}
+
+.space05em {
+    padding-left: .5em
+}
+
+.space1em {
+    padding-left: 1em
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#city-panel {
+    position: absolute;
+    z-index: 30000;
+    border: 1px solid #d8d8d8;
+    background-color: #f9f9f9;
+    width: 350px;
+    padding: 7px 0 0 0;
+    left: 0;
+    top: 22px;
+    border-radius: 0 0 4px 4px
+}
+
+#city-panel dl {
+    width: 322px;
+    padding: 7px 0 6px 0;
+    margin: 0 13px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 23px;
+    overflow: hidden;
+    zoom: 1
+}
+
+#city-panel dt {
+    width: 72px;
+    float: left;
+    color: #666
+}
+
+#city-panel dd {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    zoom: 1
+}
+
+#city-panel dd a {
+    float: left;
+    padding: 0 11px 0 0;
+    white-space: nowrap
+}
+
+#city-panel dd a:link, .moreCity:link, #city-panel dd a:visited, .moreCity:visited, #city-panel dd a:active, .moreCity:active {
+    color: #1a519f;
+    text-decoration: none
+}
+
+#city-panel dd a:hover, .moreCity:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+#city-panel .blank {
+    float: left;
+    height: 22px;
+    line-height: 14px;
+    width: 332px;
+    text-align: right;
+    margin-top: -3px;
+    margin-left: 2px;
+    background-color: #f9f9f9
+}
+
+#container {
+    width: 100% !important
+}
+
+#content {
+    width: 1180px;
+    margin: 0 auto
+}
+
+.glbR {
+    display: none
+}
+
+.glbListNavigation {
+    height: 40px
+}
+
+.glbListNavigation .select_icon {
+    color: #fff;
+    cursor: pointer
+}
+
+.glbListNavigation .cur_citynew {
+    float: left;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 1px;
+    z-index: 30000
+}
+
+
+.glbListNavigation .city_icon {
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px
+}
+
+.L_tabsnew {
+    float: left;
+    margin-left: 15px
+}
+
+.L_tabsnew li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer
+}
+
+.a_navnew {
+    padding: 0 15px;
+    font-size: 16px;
+    display: block
+}
+
+.a_navnew:link, .a_navnew:visited, .a_navnew:active, .a_navnew:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.arrow_upnew {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    left: 34px;
+}
+
+.sec_divnew {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    border: 1px solid #d8d8d8;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #666;
+    border-radius: 0 0 4px 4px;
+    padding: 0 10px 15px;
+    line-height: 18px;
+    z-index: 20000
+}
+
+.sec_divnew a {
+    display: block;
+    white-space: nowrap;
+    margin-top: 15px;
+    padding: 0 15px 0 10px
+}
+
+.sec_divnew a:link, .sec_divnew a:visited, .sec_divnew a:active {
+    color: #666;
+    text-decoration: none
+}
+
+.sec_divnew a:hover {
+    color: #528e01;
+    text-decoration: none
+}
+
+.underline {
+    border-top: 1px solid #ccc;
+    padding-top: 15px !important
+}
+
+.li_selected {
+    background-color: #528e01;
+    border-radius: 2px
+}
+
+.li_hover {
+    background-color: #4a8101
+}
+
+
+.appContainer {
+    padding-left: 2px;
+    width: 120px;
+    height: 40px;
+    float: left;
+    cursor: pointer
+}
+
+.downapp {
+    width: 120px;
+    height: 27px;
+    border-radius: 2px;
+    background-color: #dce8cc;
+    margin-top: 6px;
+    display: block;
+    cursor: pointer
+}
+
+.downapp:hover {
+    background-color: #f2f6e3;
+    text-decoration: none
+}
+
+.apppic1, .apppic2, .apptext {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-top: 3px
+}
+
+.apppic1 {
+    background-position: 0 -71px;
+    width: 16px;
+    height: 20px;
+    margin-left: 5px
+}
+
+.apppic2 {
+    background-position: 0 -110px;
+    width: 20px;
+    height: 20px
+}
+
+.apptext {
+    width: 60px;
+    height: 20px
+}
+
+.apptext {
+    background: 0;
+    color: #666;
+    vertical-align: top;
+    line-height: 22px;
+    font-size: 14px
+}
+
+.o_b {
+    top: 39px !important
+}
+
+.R_user {
+    _height: 40px !important
+}
+
+.login_info {
+    height: 40px !important
+}
+
+.login_info .tip_d {
+    top: 13px !important;
+    left: 90px
+}
+
+.login_info .usr {
+    line-height: 39px !important
+}
+
+.up_down_sc, .up_down_usr {
+    top: 15px !important
+}
+
+.login_info .r {
+    height: 39px !important
+}
+
+.login_info .r .my {
+    background-position: 0 -25px !important;
+    height: 40px !important;
+    line-height: 40px !important
+}
+
+.login_info .r .m_l {
+    top: 40px !important
+}
+
+.login_info .login_tip {
+    display: none !important
+}
+
+.glbListNavigation {
+    width: 1180px;
+    margin: 0 auto
+}
+
+.a_navnew {
+    padding: 0 9px;
+    *padding: 0 8px
+}
+
+.sec_divnew {
+    font-size: 14px
+}
+
+dl, dt, dd {
+    list-style: none outside none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+#city_selector {
+    margin: 0 0 0 16px;
+    position: relative;
+    float: none;
+    display: inline;
+    top: -1px
+}
+
+.glbL .city_title {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    padding-right: 12px
+}
+
+.glbL .city_title_icon {
+    background-position: 0 5px;
+    padding: 0 4px;
+    margin-left: 9px
+}
+
+.glbL .city_float {
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+    position: absolute;
+    width: 324px;
+    z-index: 999;
+    left: 40px;
+    top: 36px;
+    padding: 5px 12px
+}
+
+.glbL iframe {
+    position: absolute;
+    z-index: 100;
+    top: 23px;
+    left: 10px
+}
+
+.glbL .city_float .city_float_more {
+    background-color: #FFF;
+    margin-top: -3px;
+    height: 20px;
+    line-height: 20px
+}
+
+.glbL .city_float dl {
+    border-bottom: 1px dashed #d5d5d5
+}
+
+.glbL .city_float dt {
+    width: 55px;
+    font-weight: 100;
+    padding: 3px 0 0;
+    _display: inline;
+    line-height: 25px
+}
+
+.glbL .city_float dd {
+    background-color: #fff;
+    _display: inline;
+    line-height: 25px;
+    width: 250px;
+    padding: 3px 0
+}
+
+.city_float dd li {
+    padding: 0 11px 0 0;
+    _display: inline;
+    float: left
+}
+
+.city_float dd li a {
+    white-space: nowrap
+}
+
+.txt_r {
+    text-align: right
+}
+
+.f_l {
+    float: left
+}
+
+.f_r {
+    float: right
+}
+
+.clear_box {
+    width: 322px;
+    overflow: hidden
+}
+
+.top-userinfo {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.top-userinfo .hi2 {
+    height: 12px;
+    float: left;
+    width: 0;
+    overflow: hidden;
+    border-left: 1px solid #d3d3d3;
+    margin: 6px 11px 0 11px
+}
+
+.top-userinfo .fl {
+    float: left
+}
+
+.welcome a {
+    color: #0041d9;
+    margin-left: 3px
+}
+
+.welcome a.membername {
+    color: #666
+}
+
+.myjinpu {
+    padding-right: 10px
+}
+
+.myjinpu a {
+    color: #0041d9
+}
+
+.mybroker {
+    display: inline;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 11px;
+    float: left;
+    height: 26px;
+    position: relative;
+    padding-left: 30px;
+    border-left: 1px solid #d3d3d3
+}
+
+.mybroker a.title {
+    float: left;
+    height: 26px;
+    padding-right: 20px;
+    font-weight: normal;
+    color: #666
+}
+
+.mybroker-menu {
+    position: absolute;
+    right: -3px;
+    top: 26px;
+    width: 188px;
+    border: 1px solid #d3d3d3;
+    border-top: 0;
+    cursor: default;
+    display: none;
+    background: #fff;
+    white-space: nowrap;
+    word-wrap: normal
+}
+
+.mybroker-menu dl {
+    width: 170px;
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 auto;
+    padding: 5px 0
+}
+
+.mybroker-menu dl dt, .mybroker-menu dl dd {
+    float: left;
+    line-height: 22px;
+    margin: 0;
+    display: inline;
+    word-wrap: normal
+}
+
+.mybroker-menu dl dt {
+    height: 44px;
+    padding: 0 10px 0 7px
+}
+
+.mybroker-menu dl dd {
+    float: left;
+    height: 22px;
+    padding: 0 3px;
+    margin: 0
+}
+
+.mybroker-menu dl dd a {
+    color: #395999 !important;
+    word-wrap: normal
+}
+
+.mybroker-menu dl.bottom {
+    border: 0
+}
+
+.mybroker-over {
+    background-color: #fff
+}
+
+.mybroker-over-patch {
+    position: absolute;
+    height: 27px;
+    width: 2px;
+    right: -3px;
+    top: 0;
+    background: #fff;
+    border-right: 1px solid #d3d3d3;
+    display: none
+}
+
+.developers {
+    padding-right: 5px;
+    padding-left: 30px;
+    border-left: 1px solid #d3d3d3;
+    margin-left: 11px
+}
+
+.login a {
+    margin: 0 2px;
+    color: #3d527f !important
+}
+
+.login2 {
+    padding-right: 8px
+}
+
+.login2 .fs {
+    float: left
+}
+
+body .login2 a, body .login2 a:active {
+    color: #666
+}
+
+.membername:hover {
+    text-decoration: underline !important
+}
+
+body .mybroker a.blue {
+    color: #0041d9
+}
+
+.home_icon {
+    display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 4px 3px 0 10px;
+}
+
+.fl a.mycollect {
+    display: inline-block;
+    margin: 0 0 0 4px
+}
+
+.footerLinkTitle {
+    CLEAR: left;
+    PADDING-RIGHT: 10px;
+    FLOAT: left;
+    WIDTH: 180px;
+    TEXT-ALIGN: right
+}
+
+.footerLink {
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 750px
+}
+
+.footerLink a {
+    padding-right: 10px
+}
+
+.sidebarLink {
+    padding: 20px 0 0 12px;
+    line-height: 22px
+}
+
+.partner {
+    background-color: #f9f9f9;
+    float: left;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 970px
+}
+
+.partner span {
+    display: block;
+    float: left;
+    line-height: 1.6em;
+    padding-left: 30px;
+    text-align: left;
+    width: 940px
+}
+
+.partner ul {
+    color: #999;
+    display: block;
+    float: left;
+    margin: 3px 0 6px;
+    overflow: hidden;
+    padding: 0 10px 0 30px;
+    width: 940px
+}
+
+.partner li {
+    display: block;
+    float: left;
+    line-height: 1.6em;
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: 85px
+}
+
+.partner li a:hover {
+    color: #999 !important;
+    text-decoration: underline
+}
+
+.friendlinks {
+    clear: both;
+    margin: 0 auto;
+    width: 750px;
+    text-align: center;
+    padding-top: 10px
+}
+
+.friendlinks span {
+    margin: 0 4px;
+    white-space: nowrap
+}
+
+#view_footer {
+    background: #f9f9f9;
+    width: 970px
+}
+
+#view_footer dl, #view_footer .rel_house {
+    margin: 0;
+    clear: both;
+    width: 970px;
+    overflow: hidden;
+    _zoom: 1
+}
+
+#view_footer dt, #view_footer .rel_house .tit {
+    width: 130px;
+    text-align: right;
+    float: left;
+    line-height: 26px;
+    margin-right: 20px
+}
+
+#view_footer dd {
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    white-space: nowrap;
+    padding-top: 1px;
+    line-height: 24px
+}
+
+#view_footer .rel_house .rel_list {
+    float: left;
+    width: 820px
+}
+
+#view_footer .rel_house .rel_hid {
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden
+}
+
+#view_footer .rel_house .rel_list a {
+    float: left;
+    margin: 1px 20px 0 0;
+    white-space: nowrap;
+    line-height: 24px
+}
+
+#city_list {
+    width: 970px;
+    margin: 0 auto;
+    padding: 10px 0 0 0
+}
+
+#city_list ul {
+    margin: 0;
+    list-style-type: none;
+    width: 967px;
+    padding: 7px 0 10px 1px;
+    border: 1px #e0e0e0 solid
+}
+
+#city_list:after, #city_list ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+#city_list li {
+    float: left;
+    width: 86px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 0 0 10px
+}
+
+#city_list li a {
+    white-space: nowrap;
+    color: #656565
+}
+
+#city_list li a:hover {
+    color: #333;
+    text-decoration: underline
+}
+
+.flink-hid {
+    height: 22px;
+    overflow: hidden
+}
+
+.flink-hid a {
+    white-space: nowrap
+}
+
+.bottom_div {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #939186;
+    line-height: 15px
+}
+
+.link_span {
+    padding-left: 9px;
+    padding-right: 10px;
+    line-height: 25px
+}
+
+.link_span a:link, .link_span a:visited {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none
+}
+
+.link_span a:hover {
+    color: #333;
+    text-decoration: underline
+}
+
+.content #footer {
+    margin-top: 0
+}
+
+#container #footer {
+    margin-top: 0
+}
+
+#comm_list {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left
+}
+
+#comm_list ul {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 610px
+}
+
+#comm_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#comm_list ul a:link, #comm_list ul a:visited {
+    color: #666
+}
+
+#comm_list ul a:hover, #comm_list ul a:active {
+    color: #333;
+    text-decoration: underline
+}
+
+#map_list {
+    width: 970px;
+    margin: 0 auto
+}
+
+#map_list ul {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 100px
+}
+
+#map_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#map_list ul a:link, #map_list ul a:visited {
+    color: #666
+}
+
+#map_list ul a:hover, #map_list ul a:active {
+    color: #333
+}
+
+#house_list {
+    width: 970px;
+    margin: 0 auto
+}
+
+#house_list ul {
+    width: 330px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 320px
+}
+
+#house_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#house_list ul a:link, #house_list ul a:visited {
+    color: #666
+}
+
+#house_list ul a:hover, #house_list ul a:active {
+    color: #333
+}
+
+.footerLinkpack {
+    width: 954px;
+    float: left;
+    line-height: 25px;
+    margin: 5px 0 0 0;
+    padding: 12px 0 12px 16px;
+    border: 1px solid #d4dfdb
+}
+
+.footerLinkTitle {
+    CLEAR: left;
+    PADDING-RIGHT: 10px;
+    FLOAT: left;
+    WIDTH: 80px;
+    TEXT-ALIGN: right
+}
+
+.footerLink {
+    FLOAT: none;
+    OVERFLOW: hidden;
+    overflow: hidden
+}
+
+.footerLink a {
+    color: #999;
+    padding-right: 15px;
+    display: inline-block
+}
+
+.footerLink a:link, .footerLink a:visited, .footerLink a:active {
+    color: #3d538d
+}
+
+.footerLink a:hover {
+    color: #f60
+}
+
+.l-bread {
+    height: 31px;
+    line-height: 31px;
+    color: #335295;
+    overflow: hidden;
+    zoom: 1;
+    padding: 0 0 0 15px
+}
+
+.l-bread em {
+    float: left;
+    font-style: normal;
+    padding: 0 4px
+}
+
+.l-bread a {
+    float: left;
+    color: #0041d9 !important
+}
+
+.l-title {
+    height: 46px;
+    width: 100%;
+    line-height: 46px;
+    text-indent: 12px;
+    margin: 0;
+    padding: 0
+}
+
+.l-tab {
+    border-bottom: 2px solid #090;
+    height: 28px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 6
+}
+
+.l-tab li {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 8px 0 0
+}
+
+.l-tab li a {
+    float: left;
+    display: block;
+    color: #335296;
+    outline: 0;
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/xiaoqu_bg4.png) no-repeat scroll 0 -50px transparent;
+    color: #333;
+    height: 30px;
+    padding: 0 0 0 13px;
+    text-decoration: none
+}
+
+.l-tab li a span {
+    background: url(http://pages.jinpu.com/images/zhaoshang/home/xiaoqu_bg4.png) no-repeat scroll right -50px transparent;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    padding: 0 13px 0 0;
+    color: #333
+}
+
+.l-tab li a:hover {
+    background-position: 0 -100px;
+    cursor: pointer
+}
+
+.l-tab li a:hover span {
+    background-position: right -100px
+}
+
+.l-tab li.cur a {
+    background-position: 0 0;
+    color: #FFF
+}
+
+.l-tab li.cur a span {
+    background-position: right 0;
+    color: #FFF
+}
+
+body .det_pag_cent {
+    margin-top: 0
+}
+
+.glbSearch .glbForm {
+    position: relative
+}
+
+.glbSearch .icon {
+    display: inline-block;
+    background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_icons.png") 0 0 no-repeat
+}
+
+.glbSearch .kw {
+    width: 486px;
+    padding: 7px 0 5px 15px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #cdcdcd;
+    border-right: 0;
+    color: #999;
+    border-radius: 3px;
+    vertical-align: top;
+    outline: 0;
+    font-size: 12px
+}
+
+.glbSearch .kw_hover {
+    border: 1px solid #f60;
+    border-right: 0;
+    color: #333
+}
+
+.glbSearch .btn {
+    position: absolute;
+    top: 0;
+    *top: 1px;
+    left: 500px;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0 none;
+    cursor: pointer;
+    background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_btn.png") 0 0 no-repeat;
+    overflow: hidden
+}
+
+.glbSearch .btn:hover {
+    background-position: 0 -36px
+}
+
+.glbSearch .home_close {
+    background-position: 0 -120px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    position: absolute;
+    right: 477px;
+    top: 10px;
+    width: 15px
+}
+
+.glbSearch .smap:link, .glbSearch .smap:visited {
+    position: absolute;
+    top: 10px;
+    left: 630px;
+    padding: 0 0 0 16px;
+    background-position: 0 -85px;
+    height: 17px;
+    *line-height: 17px;
+    vertical-align: top;
+    color: #0041d9;
+    *top: 12px
+}
+
+.glbSearch .smap:hover {
+    color: #f60
+}
+
+.forView {
+    position: absolute;
+    right: 0;
+    width: auto
+}
+
+.forView .glbSearch {
+    float: right;
+    width: 442px
+}
+
+.forView .kw {
+    padding: 5px 0 3px 15px;
+    width: 335px
+}
+
+.forView .home_close {
+    right: 101px;
+    top: 8px
+}
+
+.forView .btn {
+    background-position: 0 -72px;
+    height: 30px;
+    left: 349px;
+    width: 93px
+}
+
+@charset "utf-8";
+html, body, p, h1, h2, h3, h4, h5, ul, ol, li, dl, dt, dd {
+    padding: 0;
+    margin: 0
+}
+
+em {
+    font-style: normal
+}
+
+body {
+    color: #333
+}
+
+.clearboth {
+    zoom: 1
+}
+
+.clearboth:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.text-cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    zoom: 1
+}
+
+.l-top {
+    padding: 20px 0 0 14px;
+    margin-bottom: 15px
+}
+
+.l-top-left {
+    float: left;
+    width: 450px;
+    height: 300px
+}
+
+.l-top-right {
+    float: right;
+    width: 468px;
+    font-size: 13px
+}
+
+.l-top-right .l-price {
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") repeat-x 0 -131px;
+    border: 1px solid #d0e0f0
+}
+
+.l-top-right .l-price .l-price-rent {
+    height: 72px;
+    overflow: Hidden
+}
+
+.l-top-right .l-price .l-price-sale {
+    height: 72px;
+    border-bottom: 1px solid #d0e0f0;
+    overflow: Hidden
+}
+
+.l-top-right .l-price .l-price-top {
+    padding-top: 5px
+}
+
+.l-top-right .l-price .l-price-f1 {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 18px
+}
+
+.l-top-right .l-price .l-price-f1 .price {
+    color: #eb5f00
+}
+
+.l-top-right .l-price .l-price-f1 .price em {
+    font-size: 20px
+}
+
+.l-top-right .l-price .l-price-f1 .l-price-down {
+    color: #349800
+}
+
+.l-top-right .l-price .l-price-f1 .l-price-up {
+    color: #cd0102
+}
+
+.l-top-right .l-price .l-price-f2 {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 18px
+}
+
+.l-top-bottom {
+    clear: both;
+    height: 33px;
+    line-height: 33px
+}
+
+.l-info {
+    padding-top: 12px
+}
+
+.l-info li {
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    zoom: 1;
+    background: url("http://pages.jinpu.com/images/loupan/dashed.png ") repeat-x left bottom;
+    padding-left: 20px
+}
+
+.l-info li .l-info-item {
+    height: 100%
+}
+
+.l-info li .l-info-item-half {
+    float: left;
+    width: 206px
+}
+
+.l-cblock {
+    border-top: 1px solid #9bd038;
+    background: url("http://pages.jinpu.com/images/office/repeat_hd_mod.jpg ") repeat-x left top;
+    margin-bottom: 30px
+}
+
+.l-overview {
+    float: left;
+    width: 565px;
+    display: inline;
+    margin-left: 14px
+}
+
+.l-overview .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px
+}
+
+.l-overview .l-overview-cont {
+    line-height: 25px;
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-ideograph
+}
+
+.l-recomment {
+    float: right;
+    width: 331px;
+    border-left: 1px solid #ddd;
+    margin-top: 11px
+}
+
+.l-recomment .title {
+    height: 14px;
+    line-height: 14px;
+    padding-left: 23px;
+    font-size: 12px
+}
+
+.l-recomment .l-recomlist {
+    padding-left: 17px;
+    padding-top: 9px
+}
+
+.l-recomment .l-recomlist li {
+    height: 24px;
+    line-height: 24px;
+    width: 290px;
+    margin: 5px 0;
+    float: left
+}
+
+.l-recomment .l-recomlist li.odd {
+    background: #f4f6f5
+}
+
+.l-recomment .l-recomlist li .link {
+    float: left;
+    margin-left: 6px;
+    width: 104px
+}
+
+.l-recomment .l-recomlist li .district {
+    float: left;
+    width: 48px;
+    margin-left: 5px
+}
+
+.l-recomment .l-recomlist li .price {
+    float: left;
+    width: 110px;
+    color: #eb6204
+}
+
+.salerent {
+    margin-bottom: 18px
+}
+
+.l-cblock .top {
+    height: 37px;
+    line-height: 37px
+}
+
+.l-cblock .top .title {
+    float: left;
+    font-size: 14px;
+    display: inline;
+    margin-left: 12px
+}
+
+.l-cblock .top .top-right {
+    float: left;
+    margin-left: 26px;
+    display: inline
+}
+
+.salerent .l-cont .l-list {
+    float: left;
+    width: 604px
+}
+
+.salerent .l-cont .l-list li {
+    padding: 12px 0;
+    background: url("http://pages.jinpu.com/images/loupan/dashed.png ") repeat-x left bottom;
+    margin-left: 13px
+}
+
+.salerent .l-cont .l-list li.last {
+    background: 0
+}
+
+.salerent .l-cont .l-list li .l-list-box {
+    height: 50px
+}
+
+.salerent .l-cont .l-list li .img {
+    float: left;
+    width: 67px;
+    height: 50px;
+    border: 1px solid #ddd
+}
+
+.salerent .l-cont .l-list li .img img {
+    width: 67px;
+    height: 50px
+}
+
+.salerent .l-cont .l-list li .title {
+    font-weight: normal;
+    float: left;
+    width: 247px;
+    margin-left: 16px;
+    line-height: 2em;
+    position: relative;
+    text-indent: 3em;
+    margin-right: 31px;
+    font-size: 12px;
+    height: 4em;
+    overflow: hidden;
+    zoom: 1
+}
+
+.salerent .l-cont .l-list li .region {
+    float: left;
+    width: 66px;
+    line-height: 50px
+}
+
+.salerent .l-cont .l-list li .proportion {
+    float: left;
+    width: 69px;
+    line-height: 50px
+}
+
+.salerent .l-cont .l-list li .price {
+    float: left;
+    line-height: 50px;
+    color: #ff6700
+}
+
+.salerent .l-cont .l-chart {
+    float: right;
+    width: 300px;
+    margin-right: 25px;
+    display: inline;
+    margin-top: 13px
+}
+
+.salerent .l-cont .l-chart .l-chart-img {
+    width: 100%;
+    height: 178px
+}
+
+.salerent .l-cont .l-chart .l-chart-img img {
+    width: 100%;
+    height: 100%
+}
+
+.l-list .icon-rent {
+    width: 32px;
+    height: 16px;
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") no-repeat 0 -7px;
+    position: absolute;
+    left: 0;
+    top: 4px
+}
+
+.l-list .icon-sale {
+    width: 32px;
+    height: 16px;
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") no-repeat -34px -7px;
+    position: absolute;
+    left: 0;
+    top: 4px
+}
+
+.l-chart-top {
+    height: 22px;
+    line-height: 22px;
+    text-indent: 15px
+}
+
+.situation {
+    margin-bottom: 18px
+}
+
+.map-info {
+    margin-bottom: 30px
+}
+
+.map-info-left {
+    width: 602px;
+    height: 252px;
+    float: left;
+    display: inline;
+    position: relative;
+    border: 1px solid #e1e1e1;
+    margin-left: 15px;
+    margin-top: 8px
+}
+
+.map-location {
+    position: absolute;
+    height: 38px;
+    line-height: 26px;
+    left: 50%;
+    top: 50%;
+    margin-top: -38px;
+    background: url("http://pages.jinpu.com/images/loupan/label.png ") no-repeat left top;
+    color: #fff;
+    padding-left: 18px
+}
+
+.map-location em {
+    float: left
+}
+
+.map-location em a {
+    color: #fff !important
+}
+
+.map-location em a:hover {
+    color: #fff !important
+}
+
+.map-location em.map-location-right {
+    height: 100%;
+    width: 13px;
+    background: url("http://pages.jinpu.com/images/loupan/label.png ") no-repeat right top;
+    position: absolute;
+    right: -13px;
+    top: 0
+}
+
+.map-info-right {
+    width: 285px;
+    float: right;
+    display: inline;
+    margin-right: 60px
+}
+
+.map-info-right .rim {
+    zoom: 1
+}
+
+.map-info-right .rim li {
+    padding: 5px 0 6px 25px;
+    zoom: 1;
+    line-height: 20px;
+    position: relative
+}
+
+.map-info-right .rim li:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.map-info-right .rim li .title {
+    float: left;
+    width: 45px;
+    font-weight: normal
+}
+
+.map-info-right .rim li .val {
+    float: left;
+    width: 189px
+}
+
+.map-info-right .rim li.address .icon {
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") -147px -9px;
+    float: left;
+    width: 14px;
+    height: 16px;
+    zoom: 1;
+    overflow: Hidden;
+    z-index: 999;
+    margin-right: 5px;
+    margin-top: 2px
+}
+
+.map-info-right .rim li.metro .icon {
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") -121px -10px;
+    float: left;
+    width: 16px;
+    height: 16px;
+    zoom: 1;
+    overflow: Hidden;
+    z-index: 999;
+    margin-right: 5px;
+    margin-top: 2px
+}
+
+.map-info-right .rim li.transit .icon {
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") -98px -11px;
+    float: left;
+    width: 13px;
+    height: 14px;
+    zoom: 1;
+    overflow: Hidden;
+    z-index: 999;
+    margin-right: 5px;
+    margin-top: 2px
+}
+
+.map-info-right .rim li.circum .icon {
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") -75px -7px;
+    float: left;
+    width: 12px;
+    height: 17px;
+    zoom: 1;
+    overflow: Hidden;
+    z-index: 999;
+    margin-right: 5px;
+    margin-top: 2px
+}
+
+.map-info-right .rim li.circum .inline {
+    white-space: nowrap
+}
+
+body a.bigmap {
+    font-size: 14px;
+    font-weight: bold;
+    width: 165px;
+    height: 36px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") no-repeat 0 -59px;
+    color: #fff !important;
+    margin-left: 30px
+}
+
+table.config {
+    width: 900px;
+    font-size: 13px
+}
+
+table.config td {
+    height: 24px;
+    font-family: '宋体'
+}
+
+table.config td * {
+    vertical-align: middle
+}
+
+table.config td strong {
+    font-weight: normal;
+    color: #666
+}
+
+table.config td span {
+    font-weight: normal;
+    color: #333
+}
+
+table.config td.c1 span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px
+}
+
+table.config td.c2 span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 140px
+}
+
+table.config td.c3 span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 210px
+}
+
+table.config .c1 {
+    width: 340px
+}
+
+table.config .c2 {
+    width: 240px
+}
+
+table.config_new, .property_left {
+    width: 682px;
+    float: left
+}
+
+table.config_new .c1 {
+    width: 252px
+}
+
+table.config_new .c2 {
+    width: 227px
+}
+
+table.config_new .c3 {
+    width: 203px
+}
+
+table.config_new td.c1 span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 157px
+}
+
+table.config_new td.c2 span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 123px
+}
+
+table.config_new td.c3 span {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 112px
+}
+
+.economic {
+    float: left;
+    border-left: 1px dotted #999;
+    padding: 0 0 25px 15px;
+    margin: 10px 0 0 13px
+}
+
+.economic h4 {
+    font-size: 14px;
+    margin-bottom: 19px
+}
+
+.economic_img {
+    float: left
+}
+
+.economic_infor {
+    float: left;
+    line-height: 22px;
+    padding: 0 0 0 15px
+}
+
+.economic_infor .name {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.shop_name {
+    margin: 1px 0 5px 0
+}
+
+span.wx {
+    background: url("http://pages.jinpu.com/images/broker/ineg_wx.gif") no-repeat 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    width: 15px;
+    margin: 3px 2px 0 0
+}
+
+span.jz {
+    background: url(http://pages.jinpu.com/images/broker/ineg_jz.gif) no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    width: 15px;
+    margin: 3px 2px 0 0
+}
+
+.house-config .l-cont {
+    padding-left: 14px
+}
+
+.photo .image-list {
+    width: 100%;
+    margin-left: 10px
+}
+
+.photo .image-list li {
+    float: left;
+    width: 166px;
+    height: 196px;
+    overflow: hidden;
+    zoom: 1;
+    display: inline;
+    margin-right: 28px;
+    margin-bottom: 5px
+}
+
+.photo .image-list li a {
+    display: block
+}
+
+.photo .image-list li a.img {
+    border: 1px solid #cfcfcd;
+    text-align: center;
+    padding: 2px 0
+}
+
+.photo .image-list li a.img img {
+    width: 160px;
+    height: 160px
+}
+
+.photo .image-list li a.title {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #353535
+}
+
+.photo .l-cont {
+    width: 100%;
+    overflow: hidden;
+    zoom: 1
+}
+
+.box-999 {
+    border: 1px solid #f00;
+    overflow: hidden;
+    zoom: 1;
+    padding-bottom: 20px;
+    width: 968px;
+    margin-bottom: 5px
+}
+
+.box-999-title {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 29px;
+    font-size: 14px
+}
+
+.box-999-list {
+    width: 120%;
+    margin-left: 28px
+}
+
+.box-999-list li {
+    float: left;
+    height: 182px;
+    overflow: hidden;
+    zoom: 1;
+    display: inline;
+    width: 152px;
+    margin-right: 38px
+}
+
+.box-999-list li .img {
+    display: block;
+    width: 150px;
+    height: 113px;
+    border: 1px solid #cbcbcb;
+    margin-bottom: 7px
+}
+
+.box-999-list li .img img {
+    width: 100%;
+    height: 100%
+}
+
+.box-999-list li .title, .box-999-list li .rentprice, .box-999-list li .saleprice {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    zoom: 1
+}
+
+.box-999-list li .saleprice em, .box-999-list li .rentprice em {
+    color: #eb6100
+}
+
+body .interested-xinpan {
+    border-color: #ffdcb6;
+    background: url("http://pages.jinpu.com/images/loupan/bgs.png ") repeat-x 0 -362px
+}
+
+body .interested {
+    border-color: #9bd038;
+    margin-bottom: 30px
+}
+
+body .interested .box-999-title {
+    background: url("http://pages.jinpu.com/images/office/repeat_hd_mod.jpg ") repeat-x 0 0
+}
+
+.nowmonth-price {
+    color: #f60;
+    padding-left: 5px
+}
+
+#toggle_banner {
+    height: 300px;
+    position: relative
+}
+
+.toggle_box {
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #666;
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    -khtml-opacity: .5;
+    opacity: .5;
+    width: 100%
+}
+
+.toggle_list {
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.toggle_list li {
+    float: left;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    width: 90px;
+    font-size: 12px
+}
+
+.toggle_list li.toggle_list_on {
+    background: #000;
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    -khtml-opacity: .6;
+    opacity: .6
+}
+
+.totab {
+    padding-top: 9px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #d4dfdb
+}
+
+.totab .title {
+    float: left;
+    display: inline;
+    width: 80px;
+    text-align: right;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #666
+}
+
+.totab-list {
+    float: right;
+    display: inline;
+    width: 887px
+}
+
+.totab-list li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    display: inline;
+    margin-right: 105px;
+    color: #3d518c;
+    white-space: nowrap
+}
+
+.totab-list li a {
+    color: #3d518c
+}
+
+.totab-list li a em {
+    color: #f60
+}
+
+.emptyprice {
+    line-height: 52px;
+    padding-bottom: 20px;
+    padding-left: 18px
+}
+
+.l-chart-down {
+    color: #329900
+}
+
+.l-chart-up {
+    color: #cc0001
+}
+
+.gotop {
+    background: url("http://pages.jinpu.com/images/loupan/gotop.gif") no-repeat scroll 0 0 #89b4d6;
+    bottom: 100px;
+    color: #fff;
+    margin-left: 971px;
+    position: fixed;
+    text-align: center;
+    width: 21px;
+    height: 84px;
+    text-indent: -9999px
+}
+
+a.gotop-con, a.gotop-con:visited, a.gotop-con:active {
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
+.photo .top {
+    margin-bottom: 5px
+}
+
+.photo {
+    margin-bottom: 5px
+}
+
+.mylinks {
+    padding-top: 30px
+}
+
+.citylink {
+    border-top: 1px solid #ccc;
+    border-top: 0 none !important
+}
+
+#content {
+    width: 970px
+}
+
+.appContainer {
+    display: none
+}
+
+.glbListNavigation {
+    width: 970px
+}
+
+#glbSearch {
+    position: absolute;
+    top: -2px;
+    right: 100px
+}
+
+.glbSearch .home_close {
+    right: 12px
+}
+
+.det_pag_cent {
+    width: 972px;
+    margin: 5px auto
+}
+
+.det_pag_cent .pag_cen_title a {
+    color: #3d538d;
+    font-size: 12px
+}
+
+.det_pag_cent .pag_cen_title .title_gray {
+    color: #686868
+}
+
+.det_pag_cent .det_pag_nav {
+    margin: 20px 0 0 0
+}
+
+.det_pag_cent .det_pag_nav h2 {
+    font-family: "黑体";
+    font-size: 25px;
+    color: #333;
+    margin: 0;
+    font-weight: normal
+}
+
+.det_pag_cent .det_pag_nav ul {
+    border-bottom: 2px solid #115aa9;
+    display: inline-block;
+    width: 972px;
+    margin: 8px 0 0 0
+}
+
+.det_pag_cent .det_pag_nav ul li {
+    float: left;
+    margin: 0 6px 0 0
+}
+
+.det_pag_cent .det_pag_nav ul .pag_nav_bg a {
+    background-position: 0 -74px;
+    color: #fff;
+    font-weight: bold
+}
+
+.det_pag_cent .det_pag_nav ul .pag_nav_bg a:hover {
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_nav_bot2.gif) no-repeat left -74px;
+    padding-left: 0
+}
+
+.det_pag_cent .det_pag_nav ul .pag_nav_bg a:hover span {
+    color: #fff;
+    margin-left: 5px;
+    padding-right: 5px;
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_nav_bot2.gif) repeat scroll right -74px
+}
+
+.det_pag_cent .det_pag_nav ul .pag_nav_bg a span {
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_nav_bot2.gif) repeat scroll right -74px;
+    margin-left: 5px;
+    padding-right: 5px
+}
+
+.det_pag_cent .det_pag_nav ul li a {
+    color: #375295;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_nav_bot2.gif) no-repeat 0 0
+}
+
+.det_pag_cent .det_pag_nav ul li a:hover {
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_nav_bot2.gif) no-repeat left -37px;
+    padding-left: 10px
+}
+
+.det_pag_cent .det_pag_nav ul li a:hover span {
+    background-position: right -37px;
+    color: #ff6702;
+    display: block;
+    _display: inline-block;
+    margin: 0;
+    font-weight: bold;
+    padding-left: 0
+}
+
+.det_pag_cent .det_pag_nav ul li a span {
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_nav_bot2.gif) no-repeat right 0;
+    display: block;
+    _display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    margin-left: 10px;
+    padding-right: 10px;
+    cursor: pointer
+}
+
+.det_pag_cent .pag_cent_r {
+    float: right;
+    width: 234px;
+    margin-top: 10px
+}
+
+.det_pag_cent .pag_cent_r img {
+    background-color: #f1f8fe;
+    border: 1px solid #d6d6d6;
+    padding: 16px;
+    margin-bottom: 10px
+}

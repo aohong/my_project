@@ -1,38 +1,25 @@
 <html>
 <head>
     <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
-    <link rel="canonical" href="rent/"/>
     <title>北京商业物业网</title>
 
     <link rel="stylesheet" rev="stylesheet" href="/css/common/index.css" type="text/css"/>
-    <!--<link rel="icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" />-->
-    <!--<link rel="shortcut icon" href="http://imgsrc.baidu.com/forum/pic/item/1a0ebf18972bd407d80d28b97b899e510eb30952.jpg" type="image/x-icon" /> -->
-    <!--<script type="text/javascript">var PAGESTART = +new Date(); var PHPVERSION = '2015_10_01';</script>-->
-    <!--<script type="text/javascript"-->
-    <!--src="http://include.aifcdn.com/ujs/base/logger/dom.dom/ajax/event/ui.panel/ui.autocomplete/ui.exposure/cookie/site/utils/d08064db78183516bb9aba56704fa69a.js" crossorigin></script>-->
-
-    <!--<script type="text/javascript" src="http://include.bjcrestatic.com/xzl/web/res/20151001/s/page/APF.js"></script>-->
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/common/common.js"></script>
-
-    <meta name="keywords" content="">
-    <link rel="search" type="application/opensearchdescription+xml" href="http://bj.xzl.bjcre.com/opensearch.xml"
-          title="北京写字楼"/>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/common/common.js"></script>
 </head>
 <body>
 
 <div id="container">
-
-
     <div style="clear:both;"></div>
     <div id="content">
         <div id="glbSearch" class="glbSearch forList "><!-- 注意： 单页的搜索需要添加 forView 这个class-->
-            <form class="glbForm" method="get" action="rent/" target="_self">
+            <form class="glbForm" method="get" action="/" target="_self">
 
                 <input type="hidden" value="14" id="currentcityid"/>
                 <input type="hidden" name="t" value="rent" id="searchType"/>
                 <input type="hidden" value="5" name="suggestiontypebjcre" id="suggestiontypebjcre"/>
                 <input type="text" name="kw" class="kw" id="glb_search" maxlength="100" autocomplete="off"
+                       style="height: 34px;width: 502px;"
                        placeholder="请输入房源特征、地址、小区、楼盘名或…" value=""/>
                 <em class="icon home_close" data-tracker="delete-kw" id="search_close" style="display:none;"></em><!--搜索关闭按钮-->
                 <input type="submit" class="btn" value="" id="SearchButton"/>
@@ -53,7 +40,6 @@
                     </div>
 
                 </div>
-
 
                 <div class="cl_item">
                     <div class="condition_title">面&nbsp;&nbsp;&nbsp;积：</div>
@@ -91,11 +77,11 @@
                         <a href="#content" from="10" to="">10元以上</a>
 
                         <div class="custom-condition">
-                                <input type="text" name="from_price" id="from_price" autocomplete="off" width="22"
-                                       maxlength="7" value=""> -
-                                <input type="text" name="to_price" maxlength="7" id="to_price" autocomplete="off" width="22"
-                                       value="">&nbsp;元/平米•天
-                                <input class="smit" style="" type="button" value="确定"/>
+                            <input type="text" name="from_price" id="from_price" autocomplete="off" width="22"
+                                   maxlength="7" value=""> -
+                            <input type="text" name="to_price" maxlength="7" id="to_price" autocomplete="off" width="22"
+                                   value="">&nbsp;元/平米•天
+                            <input class="smit" style="" type="button" value="确定"/>
                         </div>
                     </div>
 
@@ -113,15 +99,15 @@
                     <div class="sortby-filter" id="filtersort">
                         <!--<span class="tit">排序：</span>-->
                         <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
-                           <!--class="default strong" title="综合排序">默认</a></li>-->
+                        <!--class="default strong" title="综合排序">默认</a></li>-->
                         <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
-                           <!--class="sort_gray_down" title="面积从大到小">面积</a></li>-->
+                        <!--class="sort_gray_down" title="面积从大到小">面积</a></li>-->
                         <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
-                           <!--class="" title="总租金从低到高">总租金</a></li>-->
+                        <!--class="" title="总租金从低到高">总租金</a></li>-->
                         <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
-                           <!--class="" title="日租金从低到高">日租金</a></li>-->
+                        <!--class="" title="日租金从低到高">日租金</a></li>-->
                         <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
-                           <!--class="sort_gray_down" title="按最新发布排序">最新</a></li>-->
+                        <!--class="sort_gray_down" title="按最新发布排序">最新</a></li>-->
 
                     </div>
                 </div>
@@ -180,9 +166,6 @@
                     </div>
                 </div>
 
-                <!--<div class="breadCrumbs">-->
-                    <!--<a data-sign="true" href="/">北京商业物联网北京</a> &nbsp;&gt;&nbsp; <a-->
-                        <!--data-sign="true" href="rent/">北京写字楼出租</a></div>-->
             </div>
 
             <!-- Right Start-->
@@ -237,7 +220,7 @@
 
 
     function queryHouse() {
-        $.get("resource/houses", {
+        $.get("/resource/houses", {
             search: $("#glb_search").val(),
             areaId: $("#area").val(),
             blockId: $("#block").val(),
@@ -261,7 +244,7 @@
                 houseLi.find("a").attr("href", "house/rent_info.html?id="+house.id);
                 houseLi.find(".address").prepend(house.address);
                 houseLi.find(".area").prepend(getAreaName(house.areaId) + " " +
-                    getBlockName(house.blockId, BLOCK_MAP.get("block_json_"+house.areaId)));
+                getBlockName(house.blockId, BLOCK_MAP.get("block_json_"+house.areaId)));
                 houseLi.find(".details a").text(house.title);
                 houseLi.find(".totalRent").prepend(house.totalRent);
                 houseLi.find(".acreage").prepend(house.acreage);

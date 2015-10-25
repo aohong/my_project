@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0037)http://bj.xzl.anjuke.com/loupan/12889 -->
+<html slick-uniqueid="3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>楼盘详情</title>
+
+    <link rel="stylesheet" rev="stylesheet" href="/css/property_HomeV2.css" type="text/css">
+
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/common/common.js"></script>
+
+</head>
+<body>
+<div id="container">
+    <div id="content">
+        <div class="l-content">
+            <h1 class="l-title text-cut">房地置业大厦</h1>
+            <ul class="l-tab">
+                <li class="cur"><a href="#"><span>楼盘主页</span></a></li>
+                <li><a href="#map_div"><span>地图交通</span></a></li>
+                <li><a href="#album_div"><span>楼盘相册</span></a></li>
+                <li><a href="#parameter_div"><span>楼盘参数</span></a></li>
+            </ul>
+            <div id="glbSearch" class="glbSearch forList forView"><!-- 注意： 单页的搜索需要添加 forView 这个class-->
+                <form class="glbForm" method="get" action="/" target="_self">
+
+                    <input type="hidden" value="" name="proptype" id="proptype">
+                    <input type="hidden" value="14" id="currentcityid">
+                    <input type="hidden" name="t" value="" id="searchType">
+                    <input type="hidden" value="" name="suggestiontypeanjuke" id="suggestiontypeanjuke">
+                    <input type="text" name="kw" class="kw" id="glb_search" maxlength="100" autocomplete="off"
+                           placeholder="请输入房源特征、地址、小区、楼盘名或…" value="">
+                    <em class="icon home_close" data-tracker="delete-kw" id="search_close" style="display:none;"></em><!--搜索关闭按钮-->
+                    <input type="submit" class="btn" value="" id="SearchButton">
+                </form>
+                <input type="hidden" value="" id="search_kw">
+            </div>
+
+            <div class="l-top clearboth">
+                <div class="l-top-left">
+                    <div class="l-slide">
+                        <div class="image">
+                            <div id="toggle_banner">
+                                <a href="javascript:void(0);" style="display: none;">
+                                    <img width="450" height="300" src="./building_info_files/500x333c.jpg" alt="">
+                                </a>
+                                <a style="display: inline;" href="javascript:void(0);">
+                                    <img width="450" height="300" src="./building_info_files/500x333c(1).jpg" alt="">
+                                </a>
+                                <a style="display: none;" href="javascript:void(0);">
+                                    <img width="450" height="300" src="./building_info_files/500x333c(2).jpg" alt="">
+                                </a>
+                                <a style="display: none;" href="javascript:void(0);">
+                                    <img width="450" height="300" src="./building_info_files/500x333c(3).jpg" alt="">
+                                </a>
+                                <a style="display: none;" href="javascript:void(0);">
+                                    <img width="450" height="300" src="./building_info_files/500x333c(4).jpg" alt="">
+                                </a>
+
+                                <div class="toggle_box"></div>
+                                <ul class="toggle_list">
+                                    <li class="">外立面(3)</li>
+                                    <li class="toggle_list_on">大楼入口(1)</li>
+                                    <li class="">大堂(1)</li>
+                                    <li class="">电梯厅(3)</li>
+                                    <li class="">公共走廊(2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-top-right">
+                    <div class="l-price">
+
+                        <div class="emptyprice">暂无价格信息</div>
+                    </div>
+                    <ul class="l-info">
+                        <li>
+                            <div class="l-info-item"><em>楼盘地址：&nbsp;</em><span class="l-info-val">[朝阳 亚奥]小营北四环东路101号&nbsp;&nbsp;<a
+                                    href="#map_div">查看地图</a></span></div>
+                        </li>
+                        <li>
+                            <div class="l-info-item"><em>开间面积：&nbsp;</em><span class="l-info-val">1502300m²</span></div>
+                        </li>
+                        <li>
+                            <div class="l-info-item l-info-item-half"><em>物业类型：&nbsp;</em><span class="l-info-val">写字楼(甲级)</span>
+                            </div>
+                            <div class="l-info-item l-info-item-half"><em>物业费：&nbsp;</em><span class="l-info-val">19.8元/平米•月</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="l-info-item l-info-item-half"><em>竣工时间：&nbsp;</em><span class="l-info-val">2008年5月</span>
+                            </div>
+                            <div class="l-info-item l-info-item-half"><em>总楼层：&nbsp;</em><span
+                                    class="l-info-val">17层</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="l-top-bottom clearboth">
+                    <a href="#">查看全部房地置业大厦图片&nbsp;15&nbsp;张&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="l-cblock clearboth situation">
+                <div class="l-overview">
+                    <h3 class="title">楼盘概述</h3>
+
+                    <div class="l-overview-cont">
+                        房地集团大厦矗立于北四环安外小营，与五洲皇冠假日酒店、五洲大酒店、北辰国际会议中心为邻，拥有得天独厚的地理优势及商务氛围。　　近在咫尺的民生银行、招商银行、商业银行、工商银行、湘财证券交易所，能够提供最快捷、方便的金融信息，带来最便利的交易条件。　　同时，毗邻的进口商品大楼、华堂商场、珠宝交易中心、三菱4S店，隔桥相望的北辰购物中心，轻松、快捷的购物乐趣，以及颐和宫餐厅、成宏酒店、阿森鲍鱼店等餐饮
+                    </div>
+                </div>
+
+                <div id="IFX_p5">
+                    <div class="l-recomment"><h3 class="title">推荐新盘</h3>
+                        <ul class="l-recomlist clearboth">
+                            <li><span class="link text-cut"><a _soj="ifx_5" target="_blank"
+                                                               href="#"></a></span><span
+                                    class="district text-cut"></span><span class="price text-cut"><dd class="price">
+                                <strong></strong>
+                            </dd></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="l-cblock clearboth salerent">
+                <div class="top">
+                    <h2 class="title">出租行情</h2>
+
+                    <div class="top-right">
+                        <a href="/index.html">查看出租套&gt;&gt;</a>
+                    </div>
+                </div>
+                <div class="l-cont clearboth">
+                    <div class="l-list">
+                        <ul>
+                            <li>
+                                <div class="l-list-box">
+                                    <span class="img"><a target="_blank"
+                                                         href="/house/rent_info.html?id=1"><img
+                                            src="./building_info_files/150x113c.jpg"></a></span>
+                                    <strong class="title"><em class="icon-rent"></em>
+                                        <a target="_blank"
+                                           href="/house/rent_info.html?id=1">北四环
+                                            惠新东桥 【物业直租 仅此一套】地铁5号线</a></strong>
+                                    <span class="region">中区</span>
+                                    <span class="proportion">1450平米</span>
+                                    <span class="price">5 元/平米•天</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="l-list-box">
+                                    <span class="img"><a target="_blank"
+                                                         href="/house/rent_info.html?id=1"><img
+                                            src="./building_info_files/150x113c(1).jpg"></a></span>
+                                    <strong class="title"><em class="icon-rent"></em><a target="_blank"
+                                                                                        href="/house/rent_info.html?id=1">北四环惠新西街【房地置业】独家委托仅此一套【急租内部价】可分</a></strong>
+                                    <span class="region">中区</span>
+                                    <span class="proportion">752平米</span>
+                            <span class="price">
+                                                            4 元/平米•天
+                            </span>
+                                </div>
+                            </li>
+                            <li class="last">
+                                <div class="l-list-box">
+                                    <span class="img"><a target="_blank"
+                                                         href="/house/rent_info.html?id=1"><img
+                                            src="./building_info_files/150x113c(2).jpg"></a></span>
+                                    <strong class="title"><em class="icon-rent"></em><a target="_blank"
+                                                                                        href="/house/rent_info.html?id=1">亚运村5A纯写【房地置业】1200精装修大开间最新优质房源</a></strong>
+                                    <span class="region">中区</span>
+                                    <span class="proportion">1200平米</span>
+                            <span class="price">
+                                                            5 元/平米•天
+                            </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="l-cblock clearboth map-info" id="map_div">
+                <div class="top">
+                    <h2 class="title">地图交通</h2>
+                </div>
+                <div class="l-cont clearboth">
+                    <div class="map-info-left">
+                        <img src="./building_info_files/staticimage">
+                <span class="map-location">
+                    <em><a href="#">房地置业大厦</a></em>
+                    <em class="map-location-right"></em>
+                </span>
+                    </div>
+                    <div class="map-info-right">
+                        <ul class="rim">
+                            <li class="address">
+                                <em class="icon">&nbsp;</em>
+                                <strong class="title">地址：&nbsp;</strong>
+
+                                <div class="val">
+                                    [朝阳 亚奥]小营北四环东路101号
+                                </div>
+                            </li>
+                            <li class="metro">
+                                <em class="icon">&nbsp;</em>
+                                <strong class="title">地铁：&nbsp;</strong>
+
+                                <div class="val">
+                                    <p>距5号线惠新西街北口站432米</p></div>
+                            </li>
+                            <li class="transit">
+                                <em class="icon">&nbsp;</em>
+                                <strong class="title">公交：&nbsp;</strong>
+
+                                <div class="val"
+                                     title="18、379、386、406、408、479、656、658、660、689、696、740外、753、939、944、944支、983支、运通110、运通113、119-125联运、专22、机场巴士5线、62、215夜、361、419、422、596、674、684...">
+                                    18、379、386、406、408、479、656、658、660、689、696、740外、753、939、...
+                                </div>
+                            </li>
+                            <li class="circum">
+                                <em class="icon">&nbsp;</em>
+                                <strong class="title">周边：&nbsp;</strong>
+
+                                <div class="val">
+                                    <span class="inline">商场<a
+                                            href="/html/map_search.html">（10）</a></span><em
+                                        style="padding-left:1em"></em>
+                                    <span class="inline">超市<a
+                                            href="/html/map_search.html">（10）</a></span><em
+                                        style="padding-left:1em"></em>
+                                    <span class="inline">银行<a
+                                            href="/html/map_search.html">（10）</a></span><em
+                                        style="padding-left:1em"></em>
+                                    <span class="inline">酒店<a
+                                            href="/html/map_search.html">（10）</a></span><em
+                                        style="padding-left:1em"></em>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="bigmap" href="/html/map_search.html">查看大地图</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="l-cblock clearboth house-config" id="parameter_div">
+                <div class="top">
+                    <h2 class="title">楼盘参数</h2>
+                </div>
+                <div class="l-cont clearboth">
+                    <table class="config">
+                        <tbody>
+                        <tr>
+                            <td class="c1"><strong>开<i style="padding-left:0.5em"></i>发<i
+                                    style="padding-left:0.5em"></i>商：&nbsp;</strong><span>北京房地集团</span></td>
+                            <td class="c2"><strong>总<i style="padding-left:0.5em"></i>楼<i
+                                    style="padding-left:0.5em"></i>层：&nbsp;</strong><span>17层</span></td>
+                            <td class="c3"><strong>得<i style="padding-left:0.5em"></i>房<i
+                                    style="padding-left:0.5em"></i>率：&nbsp;</strong><span>暂无资料</span></td>
+                        </tr>
+                        <tr>
+                            <td class="c1"><strong>物业管理：&nbsp;</strong><span>北京房地集团有限公司第一物业管理分公司</span></td>
+                            <td class="c2"><strong>电梯数量：&nbsp;</strong><span>客梯5部</span></td>
+                            <td class="c3"><strong>标准面积：&nbsp;</strong><span>2300平米</span></td>
+                        </tr>
+                        <tr>
+                            <td class="c1"><strong>是否可注册：&nbsp;</strong><span>是</span></td>
+                            <td class="c2"><strong>电梯是否分区：&nbsp;</strong><span>是</span></td>
+                            <td class="c3"><strong>总建筑面积：&nbsp;</strong><span>45000平米</span></td>
+                        </tr>
+                        <tr>
+                            <td class="c1"><strong>大堂层高：&nbsp;</strong><span>8米</span></td>
+                            <td class="c2"><strong>空调类型：&nbsp;</strong><span>集中式中央空调</span></td>
+                            <td class="c3"><strong>外墙：&nbsp;</strong><span>玻璃幕墙</span></td>
+                        </tr>
+                        <tr>
+                            <td class="c1"><strong>标准层高：&nbsp;</strong><span>3.6米</span></td>
+                            <td class="c2"><strong>车位总数：&nbsp;</strong><span>地上60个,&nbsp;地下210个</span></td>
+                            <td class="c3"><a href="#parameter_div">更多楼盘参数&gt;&gt;</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="l-cblock clearboth photo" id="album_div">
+                <div class="top">
+                    <h2 class="title">楼盘相册</h2>
+
+                    <div class="top-right">
+                        <a rel="nofollow" target="_blank" href="#album_div">楼盘图(9)</a><i
+                            style="padding-left:44px;"></i> <a rel="nofollow" target="_blank"
+                                                               href="#album_div">周边图(5)</a><i
+                            style="padding-left:44px;"></i> <a rel="nofollow" target="_blank"
+                                                               href="#album_div">平面图(1)</a><i
+                            style="padding-left:44px;"></i></div>
+                </div>
+                <div class="l-cont clearboth">
+                    <ul class="image-list clearboth">
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank"
+                               href="#album_div"><img title="平面图"
+                                                                                         src="./building_info_files/160x160c.jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">平面图</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank"
+                               href="#album_div"><img title="外立面"
+                                                                                         src="./building_info_files/160x160c(1).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">外立面</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank"
+                               href="#album_div"><img title="外立面"
+                                                                                         src="./building_info_files/160x160c(2).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">外立面</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank"
+                               href="#album_div"><img title="外立面"
+                                                                                         src="./building_info_files/160x160c(3).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">外立面</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank"
+                               href="#album_div"><img title="高层景观"
+                                                                                         src="./building_info_files/160x160c(4).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">高层景观</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank"
+                               href="#album_div"><img title="周边环境"
+                                                                                         src="./building_info_files/160x160c(5).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">周边环境</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank" href="#album_div"><img title="大楼入口"
+                                                                                         src="./building_info_files/160x160c(6).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">大楼入口</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank" href="#album_div"><img title="大堂"
+                                                                                         src="./building_info_files/160x160c(7).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">大堂</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank" href="#album_div"><img title="电梯厅"
+                                                                                         src="./building_info_files/160x160c(8).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">电梯厅</a>
+                        </li>
+                        <li>
+                            <a class="img" style="cursor: pointer" target="_blank" href="#album_div"><img title="电梯厅"
+                                                                                         src="./building_info_files/160x160c(9).jpg"></a>
+                            <a class="title" href="#album_div" target="_blank">电梯厅</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p align="left" style="width: 970px; color: #999999; margin-bottom: 12px; line-height:1.5;">
+            声明：本网站所刊载的内容来源于物业顾问，不保证物业信息的准确性、完整性；该等物业信息不包含任何购买要约意图，任何文字、图片信息不构成物业交付标准或配套；相关物业信息仅供参考，请致电物业顾问了解详情，最终以物业顾问提供信息为准。</p>
+
+
+
+
+        <div style="display: none;" class="gotop png_bg">
+            <a href="#" class="gotop-con">返回顶部</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

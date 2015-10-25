@@ -16,7 +16,7 @@
                 <div class="login_info">
                     <div class="dropdown custom-login">
                         <div class="title">
-                            <a href="/html/manager_register.html" class="u_l" rel="nofollow">企业注册</a>
+                            <a href="/html/company_register.html" class="u_l" rel="nofollow">企业注册</a>
                             <a href="/html/manager_register.html" class="u_l" rel="nofollow">经纪人注册</a>
                             <!--<a href="/html/login.html" class="u_l" rel="nofollow">登录</a>-->
                             <!--<a href="/html/register.html" class="u_r" rel="nofollow">注册</a>-->
@@ -41,12 +41,12 @@
 
 <div class="sec-nav">
     <div class=" sec-bar nav-content">
-        <a href="/house/rent.html" hidefocus="true" _soj="navigation" class="sec_link   sec_curr link_shangyedichan"  >出租</a>
-        <a href="/index.html" hidefocus="true" _soj="navigation" class="sec_link"  >出售</a>
-        <a href="/index.html" hidefocus="true" _soj="navigation" class="sec_link  "  >求租</a>
-        <a href="/index.html" hidefocus="true" _soj="navigation" class="sec_link  "  >求购</a>
-        <a href="/building.html" hidefocus="true" _soj="navigation" class="sec_link  "  >楼盘</a>
-        <a href="/index.html" hidefocus="true" _soj="navigation" class="sec_link  "  >找服务</a>
+        <a href="/house/rent.html" hidefocus="true" _soj="navigation" class="sec_link "  >出租</a>
+        <a href="/index.html?id=2" hidefocus="true" _soj="navigation" class="sec_link"  >出售</a>
+        <a href="/index.html?id=3" hidefocus="true" _soj="navigation" class="sec_link  "  >求租</a>
+        <a href="/index.html?id=4" hidefocus="true" _soj="navigation" class="sec_link  "  >求购</a>
+        <a href="/building/list.html" hidefocus="true" _soj="navigation" class="sec_link  " id="building_header" >楼盘</a>
+        <a href="/index.html?id=5" hidefocus="true" _soj="navigation" class="sec_link  "  >找服务</a>
     </div>
 </div>
 
@@ -131,3 +131,10 @@
 
 
 <!--</script>-->
+<script type="text/javascript" >
+    $(document).ready(function(){
+        var sec_curr = $(window).data("sec_curr");
+        console.log(window.location.pathname);
+        $(".sec_link[href='"+window.location.pathname+"']").addClass("sec_curr");
+    });
+</script>

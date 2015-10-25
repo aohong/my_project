@@ -1,0 +1,485 @@
+<html>
+<head>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+    <title>楼盘 - 北京商业物业网</title>
+
+    <link rel="stylesheet" rev="stylesheet" href="/css/common/index.css" type="text/css"/>
+    <link rel="stylesheet" rev="stylesheet" href="/css/property_List.css" type="text/css"/>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/common/common.js" >
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+    <div style="clear:both;"></div>
+    <div id="content">
+        <div id="glbSearch" class="glbSearch forList "><!-- 注意： 单页的搜索需要添加 forView 这个class-->
+            <form class="glbForm" method="get" action="/" target="_self">
+
+                <input type="hidden" value="14" id="currentcityid"/>
+                <input type="hidden" name="t" value="rent" id="searchType"/>
+                <input type="hidden" value="5" name="suggestiontypebjcre" id="suggestiontypebjcre"/>
+                <input type="text" name="kw" class="kw" id="glb_search" maxlength="100" autocomplete="off"
+                       style="height: 34px;width: 502px;"
+                       placeholder="请输入房源特征、地址、小区、楼盘名或…" value=""/>
+                <em class="icon home_close" data-tracker="delete-kw" id="search_close" style="display:none;"></em><!--搜索关闭按钮-->
+                <input type="submit" class="btn" value="" id="SearchButton"/>
+                <a href="/building/add.html" class=" smap" target="_blank">添加楼盘</a><!-- 注意： 单页此处不显示-->
+            </form>
+            <input type="hidden" value="" id="search_kw"/>
+        </div>
+
+        <div class="fcklinks">
+            <div class="condition_links2">
+                <div class="cl_item">
+                    <div class="condition_title">区&nbsp;&nbsp;&nbsp;域：</div>
+                    <div class="container" id="area">
+                        <a href="#content" ><strong>全部</strong></a>
+                    </div>
+                    <div class="sub" id="block" style="display: none">
+                        <strong>全部</strong>
+                    </div>
+
+                </div>
+
+                <div class="cl_item">
+                    <div class="condition_title">售&nbsp;&nbsp;&nbsp;价：</div>
+                    <div class="container" id="acreageCondDiv">
+                        <a href="#content" from="" to=""><strong>全部</strong></a>
+                        <a href="#content" from="" to="8000">8000元/平米以下</a>
+                        <a href="#content" from="8000" to="12000">8000-12000元/平米</a>
+                        <a href="#content" from="12000" to="20000">12000-20000元/平米</a>
+                        <a href="#content" from="20000" to="30000">20000-30000元/平米</a>
+                        <a href="#content" from="30000" to="">30000元/平米以上</a>
+
+                        <div class="custom-condition">
+                            <input type="text" name="from_acreage" id="from_acreage" autocomplete="off" maxlength="7"
+                                   value=""> -
+                            <input type="text" name="to_acreage" maxlength="7" id="to_acreage" autocomplete="off"
+                                   value="">&nbsp;平米
+                            <input class="smit" style="" type="button" value="确定">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cl_item">
+                    <div class="condition_title">日租金：</div>
+                    <div class="container" id="dayRentCondDiv">
+                        <a href="#content" from="" to=""><strong>全部</strong></a>
+                        <a href="#content" from="" to="3">3元/平米•天以下</a>
+                        <a href="#content" from="3" to="4">3-4元</a>
+                        <a href="#content" from="4" to="5">4-5元</a>
+                        <a href="#content" from="5" to="6">5-6元</a>
+                        <a href="#content" from="6" to="8">6-8元</a>
+                        <a href="#content" from="8" to="10">8-10元</a>
+                        <a href="#content" from="10" to="">10元以上</a>
+
+                        <div class="custom-condition">
+                            <input type="text" name="from_price" id="from_price" autocomplete="off" width="22"
+                                   maxlength="7" value=""> -
+                            <input type="text" name="to_price" maxlength="7" id="to_price" autocomplete="off" width="22"
+                                   value="">&nbsp;元/平米•天
+                            <input class="smit" style="" type="button" value="确定"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Listing Start-->
+        <div class="mainListing clearfix">
+            <div class="pL">
+                <div class="PL_1 clearfix">
+
+                    <span class="found-info spResult">找到楼盘<em>20</em>套             </span>
+
+                    <div class="sortby-filter" id="filtersort">
+                        <!--<span class="tit">排序：</span>-->
+                        <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
+                        <!--class="default strong" title="综合排序">默认</a></li>-->
+                        <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
+                        <!--class="sort_gray_down" title="面积从大到小">面积</a></li>-->
+                        <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
+                        <!--class="" title="总租金从低到高">总租金</a></li>-->
+                        <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
+                        <!--class="" title="日租金从低到高">日租金</a></li>-->
+                        <!--<a rel="nofollow" data-sign="true" href="#filtersort"-->
+                        <!--class="sort_gray_down" title="按最新发布排序">最新</a></li>-->
+
+                    </div>
+                </div>
+
+                <ul class="list">
+
+                    <li style="cursor:pointer;display: none" class="list_cent_li">
+                        <a data-sign="true" href="rent/13047393" class="img_content"
+                           target="_blank">
+                            <img src="" width="133" height="100"/>
+                        </a>
+
+                        <div class="details">
+                            <div class="t_b">
+                                <a class="t" data-sign="true" href="rent/13047393" _soj='Filter_1'
+                                   target="_blank"></a>
+                            </div>
+                            <div>
+                                <span class="acreage">平米</span>
+                                <span class="sep_t">|</span>
+                                <span class="totalRent">元/月</span>
+                                <span class="sep_t">|</span>
+                                <span>高区楼层</span>
+                            </div>
+                            <div>
+                                <span class="address"></span >&nbsp;&nbsp;<span class="area"></span>
+                            </div>
+                            <div class="details_bot">
+                                <span class="connector"></span><span></span></div>
+                        </div>
+                        <span class="price"><span class="s1"></span><span class="s2">元/平米•天</span></span>
+                    </li>
+
+                </ul>
+                <div class="bd_lis_millde">
+                    <div class="bdlis_mid_bana">
+                        <!--<p class="limban_find">为您找到<span class="limban_find_numb">&nbsp;2860&nbsp;</span>个符合要求的楼盘</p>-->
+                    </div>
+                    <ul class="bdlis_mid_cent">
+                        <li class="">
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/building_default_150x113.gif" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        广宸商务楼                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亮马桥] 左家庄三区9号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(甲级)</span>
+                                    <span class="bdl_det_r">总楼层：32层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：4.2元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2009年9月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/150x133c.jpg" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        房地置业大厦                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亚奥] 小营北四环东路101号...                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(甲级)</span>
+                                    <span class="bdl_det_r">总楼层：17层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：19.8元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2008年5月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                    <a href="#ngce/12889">相册<b>(15)</b></a>
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/150x133c(1).jpg" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        北辰时代大厦                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亚奥] 北辰东路8号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：商业综合体(甲级)</span>
+                                    <span class="bdl_det_r">总楼层：33层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：27元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2008年5月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                    <a href="#ngce/12891">相册<b>(28)</b></a>
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/building_default_150x113.gif" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        金利大厦                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亚奥] 慧忠北里111号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(甲级)</span>
+                                    <span class="bdl_det_r">总楼层：20层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：25元/平米•月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/building_default_150x113.gif" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        成联兴业                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亮马桥] 安苑北里23号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(乙级)</span>
+                                    <span class="bdl_det_r">总楼层：9层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：4.5元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2000年5月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/building_default_150x113.gif" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        博纳德大厦                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  安贞/马甸] 西里三区10号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(乙级)</span>
+                                    <span class="bdl_det_r">总楼层：6层</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/building_default_150x113.gif" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        开元国际广场                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亚奥] 奥林匹克公园南区                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(乙级)</span>
+                                    <span class="bdl_det_r">总楼层：23层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：35元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2007年11月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/150x133c(2).jpg" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        京环大厦                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  亚奥] 北湖渠路15号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(甲级)</span>
+                                    <span class="bdl_det_r">总楼层：12层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：5元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2008年3月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                    <a href="#ngce/12896">相册<b>(4)</b></a>
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/150x133c(3).jpg" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        国贸中心                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  CBD] 建国门外大街1号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：写字楼(甲级)</span>
+                                    <span class="bdl_det_r">总楼层：75层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：36元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2010年5月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                    <a href="#ngce/12897">相册<b>(52)</b></a>
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bdl_mic_ps">
+                                <a target="_blank" href="/building/info.html"><img src="./building_list_files/150x133c(4).jpg" border="0"></a>
+                            </div>
+                            <div class="bdl_mic_nrjj">
+                                <h4>
+                                    <a target="_blank" href="/building/info.html">
+                                        凤凰城                                   </a>
+                                </h4>
+                                <p class="new_prop_title"></p>
+                                <p class="bdl_detail">地址：[朝阳  三元桥] 曙光西里甲5号                            </p>
+                                <p class="bdl_broker"><span class="bdl_det_l">类型：商住楼 (甲级)</span>
+                                    <span class="bdl_det_r">总楼层：38层</span>
+                                </p>
+                                <p class="bdl_broker" style="clear:both">
+                                    <span class="bdl_det_l">物业费：30元/平米•月</span>
+                                    <span class="bdl_det_r">竣工年月：2002年3月</span>
+                                </p>
+
+                                <p class="bdl_options">
+                                    <a href="#ngce/12900">相册<b>(15)</b></a>
+                                </p>
+                            </div>
+                            <div class="bdl_mic_price">
+                                <p>暂无价格信息</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+    function queryHouse() {
+        $.get("/resource/houses", {
+            search: $("#glb_search").val(),
+            areaId: $("#area").val(),
+            blockId: $("#block").val(),
+            acreageMin: $("#from_acreage").val(),
+            acreageMax: $("#to_acreage").val(),
+            dayRentMin: $("#from_price").val(),
+            dayRentMax: $("#to_price").val(),
+            desc: $("#desc").val()
+        }, function (result) {
+            if (result.status != 200) {
+                return;
+            }
+
+            $(".spResult em").text(result.totalCount);
+            $(".list_cent_li:visible").remove();
+
+            for (var i in result.data) {
+                var house = result.data[i];
+                var houseLi = $(".list_cent_li:first").clone();
+                houseLi.find("img").attr("src", "" + house.image);
+                houseLi.find("a").attr("href", "house/rent_info.html?id="+house.id);
+                houseLi.find(".address").prepend(house.address);
+                houseLi.find(".area").prepend(getAreaName(house.areaId) + " " +
+                getBlockName(house.blockId, BLOCK_MAP.get("block_json_"+house.areaId)));
+                houseLi.find(".details a").text(house.title);
+                houseLi.find(".totalRent").prepend(house.totalRent);
+                houseLi.find(".acreage").prepend(house.acreage);
+                houseLi.find(".price .s1").text(house.dayRent);
+                houseLi.find(".connector").text(house.connector);
+                houseLi.insertAfter($(".list_cent_li:last"));
+                houseLi.show();
+            }
+        });
+    }
+
+
+    $(document).ready(function () {
+
+        $.each(AREA_14, function (k, v) {
+            var area = $('<a typeid="' + v.typeId + '" href="#content">' + v.typeName + '</a>');
+            area.click(function() {
+                $("#block").html("");
+                var json = BLOCK_MAP.get("block_json_"+v.typeId);
+                $.each(json, function (k, v) {
+                    var block = $('<a typeid="' + v.typeId + '" href="#content">' + v.typeName + '</a>');
+                    block.click(function() {
+                        $("#block").val(v.typeId);
+                        queryHouse();
+                    })
+                    $("#block").append(block);
+                });
+                $("#block").show();
+                $("#area").val(v.typeId);
+                $("#block").val("");
+                queryHouse();
+            });
+            $("#area").append(area);
+        });
+
+    });
+</script>
+
+</html>

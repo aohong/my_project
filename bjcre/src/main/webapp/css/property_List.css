@@ -1,0 +1,2358 @@
+body {
+    margin: 0;
+    color: #333;
+    font-family: Arial, Helvetica, \5b8b\4f53, sans-serif;
+    font-size: 12px;
+    text-align: center
+}
+
+.clearfix:after, .clearboth:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfix, .clearboth {
+    zoom: 1
+}
+
+#loginnav {
+    margin: 0;
+    text-align: left
+}
+
+#container {
+    margin: auto;
+    text-align: left;
+    width: 970px;
+    z-index: 0
+}
+
+#content {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 970px
+}
+
+#footer {
+    margin-top: 10px
+}
+
+a:link, a:visited, a:active {
+    color: #0041d9;
+    outline: none medium none;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+a.icp {
+    color: #666;
+    text-decoration: underline
+}
+
+h1 {
+    color: #525252;
+    font-size: 24px;
+    margin: 20px 0 15px 0
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+select {
+    border: 1px solid #b3b3b3;
+    font-size: 12px;
+    padding: 2px
+}
+
+ul li {
+    padding: 0;
+    margin: 0
+}
+
+div.spacebar {
+    clear: both
+}
+
+.text_c {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    text-align: center;
+    height: 30px;
+    overflow: hidden
+}
+
+.partner_line {
+    border-top: #ccc solid 1px;
+    zoom: 1;
+    height: 0;
+    overflow: hidden
+}
+
+.partner_line:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.footerLinkpack {
+    width: 970px
+}
+
+.partner {
+    background-color: #f9f9f9;
+    padding: 8px 0;
+    width: 970px;
+    border-top: 1px solid #e0e0e0 !important;
+    border-bottom: 0 !important;
+    line-height: 1.6em;
+    zoom: 1
+}
+
+.partner:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.partner span {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 86px
+}
+
+.partner ul {
+    float: right;
+    overflow: hidden;
+    width: 874px
+}
+
+.partner li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    margin-right: 15px;
+    display: inline;
+    width: 94px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.partner li a {
+    outline: medium none;
+    text-decoration: none;
+    color: #999 !important
+}
+
+.partner li a:hover {
+    color: #f60 !important
+}
+
+.partner li a:after {
+    color: #999
+}
+
+.space05em {
+    padding-left: .5em
+}
+
+.space1em {
+    padding-left: 1em
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#city-panel {
+    position: absolute;
+    z-index: 30000;
+    border: 1px solid #d8d8d8;
+    background-color: #f9f9f9;
+    width: 350px;
+    padding: 7px 0 0 0;
+    left: 0;
+    top: 22px;
+    border-radius: 0 0 4px 4px
+}
+
+#city-panel dl {
+    width: 322px;
+    padding: 7px 0 6px 0;
+    margin: 0 13px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 23px;
+    overflow: hidden;
+    zoom: 1
+}
+
+#city-panel dt {
+    width: 72px;
+    float: left;
+    color: #666
+}
+
+#city-panel dd {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    zoom: 1
+}
+
+#city-panel dd a {
+    float: left;
+    padding: 0 11px 0 0;
+    white-space: nowrap
+}
+
+#city-panel dd a:link, .moreCity:link, #city-panel dd a:visited, .moreCity:visited, #city-panel dd a:active, .moreCity:active {
+    color: #1a519f;
+    text-decoration: none
+}
+
+#city-panel dd a:hover, .moreCity:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+#city-panel .blank {
+    float: left;
+    height: 22px;
+    line-height: 14px;
+    width: 332px;
+    text-align: right;
+    margin-top: -3px;
+    margin-left: 2px;
+    background-color: #f9f9f9
+}
+
+#container {
+    width: 100% !important;
+    _width: 1180px;
+    _margin: 0 auto;
+    _display: block
+}
+
+#header {
+    width: 100%;
+    font-family: "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", tahoma, arial, simhei
+}
+
+.secNavnew {
+    font-family: "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", tahoma, arial, simhei
+}
+
+#content {
+    margin: 0 auto
+}
+
+.L_tabsnew, .R_user {
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    *vertical-align: baseline
+}
+
+.cur_citynew {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    *vertical-align: bottom;
+    z-index: 101
+}
+
+.cur_citynew .city {
+    color: #666;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer
+}
+
+.cur_citynew .city_icon {
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/navigationx8.png") -2px -20px no-repeat;
+    line-height: 7px;
+    width: 10px;
+    height: 10px;
+    margin: 7px 0 0 9px;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block
+}
+
+.cur_citynew .city_panel {
+    font-size: 12px
+}
+
+.login_info .login_tip {
+    display: none
+}
+
+.sec-bar a:link, .sec-bar a:visited {
+    position: relative
+}
+
+.icon-new {
+    display: inline-block;
+    width: 27px;
+    height: 18px;
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/icon_new.gif") no-repeat;
+    position: absolute;
+    top: 2px;
+    right: -4px
+}
+
+#header {
+    padding-bottom: 8px
+}
+
+.top-nav, .mid-nav, .sec-nav {
+    width: 100%
+}
+
+.nav-content {
+    width: 1180px;
+    margin: 0 auto
+}
+
+.top-nav {
+    font-size: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 0 10px 0
+}
+
+.L_tabsnew {
+    width: 60%;
+    _width: 50%;
+    margin: 0;
+    font-size: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.L_tabsnew li {
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.L_tabsnew a:link, .L_tabsnew a:visited {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    line-height: 14px;
+    *line-height: 15px;
+    margin: 3px 0
+}
+
+.L_tabsnew a:hover {
+    color: #f60;
+    text-decoration: none
+}
+
+.first-child a.a_navnew, .L_tabsnew li:first-child a {
+    padding-left: 0
+}
+
+.last-child a.a_navnew, .L_tabsnew li:last-child a {
+    border-right: 0
+}
+
+.R_user {
+    width: 40%;
+    _width: 50%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 0;
+    text-align: right;
+    overflow: hidden
+}
+
+.R_user a:link, .R_user a:visited {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    outline: 0
+}
+
+.R_user a:hover {
+    color: #f60
+}
+
+.R_user a:active {
+    color: #666
+}
+
+.mid-nav {
+    padding: 18px 0
+}
+
+a.logo {
+    padding: 0 15px 0 0;
+    display: inline-block;
+    width: 85px;
+    height: 25px;
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/logo.svg") 0 0 no-repeat;
+    background: url("http://pages.jinpu.ajkcdn.com/img/global/2/logox32.png") 0 0 no-repeat \0;
+    *background: url("http://pages.jinpu.ajkcdn.com/img/global/2/logox8.png") 0 0 no-repeat;
+    background-size: 85px 25px;
+    overflow: hidden;
+    vertical-align: bottom;
+    border-right: 1px solid #DDD
+}
+
+span.logo {
+    padding: 0 10px 0 15px;
+    color: #62ab00;
+    font-size: 24px;
+    height: 25px;
+    line-height: 25px;
+    *vertical-align: middle
+}
+
+.sec-nav {
+    margin: 0
+}
+
+.sec-bar {
+    background-color: #62ab00
+}
+
+.sec-bar.nav-content {
+    font-size: 0
+}
+
+.sec-bar a:link, .sec-bar a:visited {
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 12px 25px;
+    text-decoration: none
+}
+
+.sec-bar a:hover, .sec-bar a:active {
+    background-color: #4a8101
+}
+
+.sec-bar a.sec_curr {
+    background-color: #599700
+}
+
+.nav-hr {
+    height: 1px;
+    border-top: 1px solid #62ac01;
+    margin: 0 auto
+}
+
+dl, dt, dd {
+    list-style: none outside none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+#city_selector {
+    margin: 0 0 0 16px;
+    position: relative;
+    float: none;
+    display: inline;
+    top: -1px
+}
+
+.glbL .city_title {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    padding-right: 12px
+}
+
+.glbL .city_title_icon {
+    background-position: 0 5px;
+    padding: 0 4px;
+    margin-left: 9px
+}
+
+.glbL .city_float {
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+    position: absolute;
+    width: 324px;
+    z-index: 999;
+    left: 40px;
+    top: 36px;
+    padding: 5px 12px
+}
+
+.glbL iframe {
+    position: absolute;
+    z-index: 100;
+    top: 23px;
+    left: 10px
+}
+
+.glbL .city_float .city_float_more {
+    background-color: #FFF;
+    margin-top: -3px;
+    height: 20px;
+    line-height: 20px
+}
+
+.glbL .city_float dl {
+    border-bottom: 1px dashed #d5d5d5
+}
+
+.glbL .city_float dt {
+    width: 55px;
+    font-weight: 100;
+    padding: 3px 0 0;
+    _display: inline;
+    line-height: 25px
+}
+
+.glbL .city_float dd {
+    background-color: #fff;
+    _display: inline;
+    line-height: 25px;
+    width: 250px;
+    padding: 3px 0
+}
+
+.city_float dd li {
+    padding: 0 11px 0 0;
+    _display: inline;
+    float: left
+}
+
+.city_float dd li a {
+    white-space: nowrap
+}
+
+.txt_r {
+    text-align: right
+}
+
+.f_l {
+    float: left
+}
+
+.f_r {
+    float: right
+}
+
+.clear_box {
+    width: 322px;
+    overflow: hidden
+}
+
+#header {
+    position: relative;
+    z-index: 999
+}
+
+.header-top dl, .header-top dt, .header-top dd {
+    padding: 0;
+    margin: 0
+}
+
+.header-top {
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+    font-family: "Hiragino Sans GB", "宋体";
+    z-index: 999999;
+    border-bottom: 1px solid #d6d6d6;
+    background: url(http://pages.jinpu.com/images/web/page_public.png) repeat-x 0 0
+}
+
+.header-top-center {
+    position: relative;
+    height: 100%;
+    width: 958px;
+    padding-left: 11px;
+    margin: 0 auto;
+    z-index: 999
+}
+
+.header-top-center a:hover {
+    color: #f60 !important
+}
+
+.header-top .gray, .header-top .gray:active {
+    color: #666 !important
+}
+
+.header-top .top-menu {
+    display: inline;
+    float: left;
+    line-height: 14px;
+    line-height: 14px
+}
+
+.header-top .top-menu .hi {
+    margin-top: 1px
+}
+
+.header-top .hi {
+    float: left;
+    height: 12px;
+    width: 0;
+    overflow: hidden;
+    border-left: 1px solid #d3d3d3;
+    margin: 0 11px
+}
+
+.top-menu a {
+    float: left;
+    color: #666 !important
+}
+
+body .header-top .text-top {
+    margin-top: 6px
+}
+
+.top-userinfo {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.top-userinfo .hi2 {
+    height: 12px;
+    float: left;
+    width: 0;
+    overflow: hidden;
+    border-left: 1px solid #d3d3d3;
+    margin: 6px 11px 0 11px
+}
+
+.top-userinfo .fl {
+    float: left
+}
+
+.welcome a {
+    color: #0041d9;
+    margin-left: 3px
+}
+
+.welcome a.membername {
+    color: #666
+}
+
+.myjinpu {
+    padding-right: 10px
+}
+
+.myjinpu a {
+    color: #0041d9
+}
+
+.mybroker {
+    display: inline;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 11px;
+    float: left;
+    height: 26px;
+    position: relative;
+    background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat -94px -149px;
+    padding-left: 30px;
+    border-left: 1px solid #d3d3d3
+}
+
+.mybroker a.title {
+    float: left;
+    height: 26px;
+    padding-right: 20px;
+    background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat right -177px;
+    font-weight: normal;
+    color: #666
+}
+
+.mybroker-menu {
+    position: absolute;
+    right: -3px;
+    top: 26px;
+    width: 188px;
+    border: 1px solid #d3d3d3;
+    border-top: 0;
+    cursor: default;
+    display: none;
+    background: #fff;
+    white-space: nowrap;
+    word-wrap: normal
+}
+
+.mybroker-menu dl {
+    width: 170px;
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 auto;
+    padding: 5px 0
+}
+
+.mybroker-menu dl dt, .mybroker-menu dl dd {
+    float: left;
+    line-height: 22px;
+    margin: 0;
+    display: inline;
+    word-wrap: normal
+}
+
+.mybroker-menu dl dt {
+    height: 44px;
+    padding: 0 10px 0 7px
+}
+
+.mybroker-menu dl dd {
+    float: left;
+    height: 22px;
+    padding: 0 3px;
+    margin: 0
+}
+
+.mybroker-menu dl dd a {
+    color: #395999 !important;
+    word-wrap: normal
+}
+
+.mybroker-menu dl.bottom {
+    border: 0
+}
+
+.mybroker-over {
+    background-color: #fff
+}
+
+.mybroker-over-patch {
+    position: absolute;
+    height: 27px;
+    width: 2px;
+    right: -3px;
+    top: 0;
+    background: #fff;
+    border-right: 1px solid #d3d3d3;
+    display: none
+}
+
+.developers {
+    padding-right: 5px;
+    background: url(http://pages.jinpu.com/images/header/header-bgs.png) no-repeat -94px -149px;
+    padding-left: 30px;
+    border-left: 1px solid #d3d3d3;
+    margin-left: 11px
+}
+
+.login a {
+    margin: 0 2px;
+    color: #3d527f !important
+}
+
+.login2 {
+    padding-right: 8px
+}
+
+.login2 .fs {
+    float: left
+}
+
+body .login2 a, body .login2 a:active {
+    color: #666
+}
+
+.header-outage {
+    background-color: #ffc;
+    border: 1px solid #d6d6d6;
+    border-top: 0;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 13px;
+    width: 955px;
+    margin: auto
+}
+
+.membername:hover {
+    text-decoration: underline !important
+}
+
+body .mybroker a.blue {
+    color: #0041d9
+}
+
+.home_icon {
+    display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 4px 3px 0 10px;
+    background: url(http://pages.jinpu.com/images/header/home_icon.gif) no-repeat 0 0
+}
+
+.fl a.mycollect {
+    display: inline-block;
+    margin: 0 0 0 4px
+}
+
+.footerLinkTitle {
+    CLEAR: left;
+    PADDING-RIGHT: 10px;
+    FLOAT: left;
+    WIDTH: 180px;
+    TEXT-ALIGN: right
+}
+
+.footerLink {
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 750px
+}
+
+.footerLink a {
+    padding-right: 10px
+}
+
+.sidebarLink {
+    padding: 20px 0 0 12px;
+    line-height: 22px
+}
+
+.partner {
+    background-color: #f9f9f9;
+    float: left;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 970px
+}
+
+.partner span {
+    display: block;
+    float: left;
+    line-height: 1.6em;
+    padding-left: 30px;
+    text-align: left;
+    width: 940px
+}
+
+.partner ul {
+    color: #999;
+    display: block;
+    float: left;
+    margin: 3px 0 6px;
+    overflow: hidden;
+    padding: 0 10px 0 30px;
+    width: 940px
+}
+
+.partner li {
+    display: block;
+    float: left;
+    line-height: 1.6em;
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: 85px
+}
+
+.partner li a:hover {
+    color: #999 !important;
+    text-decoration: underline
+}
+
+.friendlinks {
+    clear: both;
+    margin: 0 auto;
+    width: 750px;
+    text-align: center;
+    padding-top: 10px
+}
+
+.friendlinks span {
+    margin: 0 4px;
+    white-space: nowrap
+}
+
+#view_footer {
+    background: #f9f9f9;
+    width: 970px
+}
+
+#view_footer dl, #view_footer .rel_house {
+    margin: 0;
+    clear: both;
+    width: 970px;
+    overflow: hidden;
+    _zoom: 1
+}
+
+#view_footer dt, #view_footer .rel_house .tit {
+    width: 130px;
+    text-align: right;
+    float: left;
+    line-height: 26px;
+    margin-right: 20px
+}
+
+#view_footer dd {
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    white-space: nowrap;
+    padding-top: 1px;
+    line-height: 24px
+}
+
+#view_footer .rel_house .rel_list {
+    float: left;
+    width: 820px
+}
+
+#view_footer .rel_house .rel_hid {
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden
+}
+
+#view_footer .rel_house .rel_list a {
+    float: left;
+    margin: 1px 20px 0 0;
+    white-space: nowrap;
+    line-height: 24px
+}
+
+#city_list {
+    width: 970px;
+    margin: 0 auto;
+    padding: 10px 0 0 0
+}
+
+#city_list ul {
+    margin: 0;
+    list-style-type: none;
+    width: 967px;
+    padding: 7px 0 10px 1px;
+    border: 1px #e0e0e0 solid
+}
+
+#city_list:after, #city_list ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+#city_list li {
+    float: left;
+    width: 86px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 0 0 10px
+}
+
+#city_list li a {
+    white-space: nowrap;
+    color: #656565
+}
+
+#city_list li a:hover {
+    color: #333;
+    text-decoration: underline
+}
+
+.flink-hid {
+    height: 22px;
+    overflow: hidden
+}
+
+.flink-hid a {
+    white-space: nowrap
+}
+
+.bottom_div {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #939186;
+    line-height: 15px
+}
+
+.link_span {
+    padding-left: 9px;
+    padding-right: 10px;
+    line-height: 25px
+}
+
+.link_span a:link, .link_span a:visited {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none
+}
+
+.link_span a:hover {
+    color: #333;
+    text-decoration: underline
+}
+
+.content #footer {
+    margin-top: 0
+}
+
+#container #footer {
+    margin-top: 0
+}
+
+#comm_list {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left
+}
+
+#comm_list ul {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 610px
+}
+
+#comm_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#comm_list ul a:link, #comm_list ul a:visited {
+    color: #666
+}
+
+#comm_list ul a:hover, #comm_list ul a:active {
+    color: #333;
+    text-decoration: underline
+}
+
+#map_list {
+    width: 970px;
+    margin: 0 auto
+}
+
+#map_list ul {
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 100px
+}
+
+#map_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#map_list ul a:link, #map_list ul a:visited {
+    color: #666
+}
+
+#map_list ul a:hover, #map_list ul a:active {
+    color: #333
+}
+
+#house_list {
+    width: 970px;
+    margin: 0 auto
+}
+
+#house_list ul {
+    width: 330px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 10px 0 0 320px
+}
+
+#house_list ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 10px
+}
+
+#house_list ul a:link, #house_list ul a:visited {
+    color: #666
+}
+
+#house_list ul a:hover, #house_list ul a:active {
+    color: #333
+}
+
+#header .glbSearch {
+    margin: 10px 0 0;
+    _margin-top: -9px;
+    z-index: 1
+}
+
+.glbSearch .glbForm {
+    position: relative
+}
+
+.glbSearch .icon {
+    display: inline-block;
+    background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_icons.png") 0 0 no-repeat
+}
+
+.glbSearch .kw {
+    width: 486px;
+    padding: 7px 0 5px 15px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #cdcdcd;
+    border-right: 0;
+    color: #999;
+    border-radius: 3px;
+    vertical-align: top;
+    outline: 0;
+    font-size: 12px
+}
+
+.glbSearch .kw_hover {
+    border: 1px solid #f60;
+    border-right: 0;
+    color: #333
+}
+
+.glbSearch .btn {
+    position: absolute;
+    top: 0;
+    *top: 1px;
+    left: 500px;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0 none;
+    cursor: pointer;
+    background: url("http://pages.jinpu.com/images/ajkglobal/3/bg_btn.png") 0 0 no-repeat;
+    overflow: hidden
+}
+
+.glbSearch .btn:hover {
+    background-position: 0 -36px
+}
+
+.glbSearch .home_close {
+    background-position: 0 -120px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    position: absolute;
+    right: 477px;
+    top: 10px;
+    width: 15px
+}
+
+.glbSearch .smap:link, .glbSearch .smap:visited {
+    position: absolute;
+    top: 10px;
+    left: 630px;
+    padding: 0 0 0 16px;
+    background-position: 0 -85px;
+    height: 17px;
+    *line-height: 17px;
+    vertical-align: top;
+    color: #0041d9;
+    *top: 12px
+}
+
+.glbSearch .smap:hover {
+    color: #f60
+}
+
+.forView {
+    position: absolute;
+    right: 0;
+    width: auto
+}
+
+.forView .glbSearch {
+    float: right;
+    width: 442px
+}
+
+.forView .kw {
+    padding: 5px 0 3px 15px;
+    width: 335px
+}
+
+.forView .home_close {
+    right: 101px;
+    top: 8px
+}
+
+.forView .btn {
+    background-position: 0 -72px;
+    height: 30px;
+    left: 349px;
+    width: 93px
+}
+
+.t_ri_bbs {
+    border: 1px solid #ddd;
+    margin: 10px 0 0
+}
+
+.t_ri_bbs p {
+    margin: 0
+}
+
+.t_ri_bbs .ri_bbs_is {
+    clear: both;
+    height: 14px;
+    line-height: 14px;
+    margin: 11px 0 0 12px;
+    overflow: hidden
+}
+
+.t_ri_bbs .tr_bbs_lis {
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    padding: 8px 0 0 14px
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_t {
+    color: #393f4c;
+    float: left;
+    font-weight: bold
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_g {
+    float: right;
+    padding: 0 12px 0 0
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_g a {
+    float: left;
+    margin: 0 5px 0 0
+}
+
+.t_ri_bbs .tr_bbs_lis .bbs_li_g span {
+    background: url(http://pages.jinpu.com/images/index2/i_ri_sma.gif) no-repeat scroll left -9px transparent;
+    float: left;
+    height: 6px;
+    margin: 3px 0 0;
+    width: 3px
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_d {
+    background: url(http://pages.jinpu.com/images/index2/i_ri_sma.gif) no-repeat scroll left top transparent;
+    float: left;
+    height: 6px;
+    margin: 3px 10px 0 0;
+    overflow: hidden;
+    width: 6px
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_w {
+    float: left
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_w a {
+    color: #395998
+}
+
+.t_ri_bbs .ri_bbs_is .b_i_re a {
+    color: #f00
+}
+
+#content {
+    width: 970px;
+    padding-top: 10px
+}
+
+.glbNavigation1180, .glbListNavigation1180 {
+    width: 970px
+}
+
+.secNavnew .secNav1180 {
+    width: 970px
+}
+
+.appContainer {
+    display: none
+}
+
+.glbSearch .home_close {
+    right: 477px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+    word-wrap: break-word
+}
+
+h1, h2, h3, h4, h5, ul, li, p, b {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+select, textarea {
+    font-size: 12px
+}
+
+textarea {
+    overflow-y: auto
+}
+
+a, area {
+    outline: 0;
+    color: #003fd8;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline
+}
+
+a, a:link, a:visited {
+    text-decoration: none
+}
+
+img {
+    border: 0
+}
+
+.landingpage {
+    margin: 10px 0;
+    padding-left: 35px;
+    height: 57px;
+    background: url("http://pages.jinpu.com/images/web/search_icon.gif") no-repeat 10px 10px #f5f8ff;
+    border: 1px solid #bcd8f5
+}
+
+.landingpage h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 33px;
+    padding: 0
+}
+
+.landingpage .highlight {
+    color: #f60
+}
+
+.landingpage .relate {
+    display: block;
+    line-height: 14px
+}
+
+.landingpage .relate a {
+    padding: 0 9px
+}
+
+.det_herd {
+    width: 1400px;
+    height: 140px;
+    margin: 0 auto;
+    background: url(http://pages.jinpu.com/images/Building_dish/det_pag_he.gif) no-repeat 0 0
+}
+
+.building_list_cent {
+    width: 971px;
+    margin: 5px auto;
+    padding: 0;
+    position: relative;
+    margin: 10px auto 0;
+    z-index: 0
+}
+
+.building_list_cent .lis_ce_top .lis_ce_top_mil {
+    padding: 0 15px 3px;
+    border: 1px solid #dedede
+}
+
+.lis_ce_top .lis_ce_top_mil p {
+    margin: 12px 0;
+    padding: 0;
+    font-size: 12px;
+    color: #333
+}
+
+.lis_ce_top .lis_ce_top_mil p a:link, .lis_ce_top .lis_ce_top_mil p a:visited {
+    font-weight: normal;
+    margin-right: 5px;
+    padding: 2px
+}
+
+.lis_ce_top .lis_ce_top_mil .unlimited:link, .lis_ce_top .lis_ce_top_mil .unlimited:visited, .lis_ce_top .lis_ce_top_mil .unlimited:hover {
+    color: #f60;
+    font-weight: bold;
+    background: 0
+}
+
+.lis_ce_top .lis_ce_top_mil p a:hover {
+    color: #f60;
+    background: 0;
+    text-decoration: underline
+}
+
+.lis_ce_top .selborder {
+    background-color: #fff;
+    border: 1px solid #d0e5fd;
+    zoom: 1;
+    position: relative;
+    left: -11px
+}
+
+.building_list_cent .bd_lis_millde {
+    float: left;
+    width: 720px
+}
+
+.building_list_cent .bd_lis_millde .bdlis_mid_bana {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 2px solid #48a843;
+    height: 34px;
+    margin-top: 10px;
+    position: relative;
+    width: 720px;
+    z-index: 200;
+    background: url(http://pages.jinpu.com/images/Building_dish/ban_bg.gif) repeat-x scroll 0 0
+}
+
+.lis_sea_title {
+    height: 30px;
+    line-height: 29px;
+    margin: 4px 0 0 4px;
+    padding: 0;
+    zoom: 1
+}
+
+.building_list_cent .lis_sea_title:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both
+}
+
+.building_list_cent .lis_sea_title a {
+    float: left;
+    height: 29px;
+    line-height: 29px
+}
+
+.building_list_cent .lis_sea_title span {
+    color: #395998;
+    font-size: 12px;
+    margin: 0 30px 0 12px;
+    padding-left: 10px;
+    background: url(http://pages.jinpu.com/images/office/list_se_f.gif) no-repeat 0 10px;
+    cursor: pointer;
+    position: relative;
+    float: left
+}
+
+.building_list_cent .lis_sea_title .on {
+    height: 30px;
+    line-height: 30px;
+    _top: 1px;
+    color: #395998;
+    margin: 0;
+    position: relative;
+    font-weight: bold;
+    border: 1px solid #d0e5fd;
+    border-bottom: 0;
+    background: none #fff;
+    display: inline-block;
+    padding: 0 11px 0 14px;
+    z-index: 9
+}
+
+.search_title {
+    background-color: #fff;
+    border: 1px solid #d5e4fb;
+    width: 960px;
+    margin-left: 4px
+}
+
+.bd_lis_millde .bdlis_mid_bana .limban_find {
+    color: #333;
+    float: left;
+    font-family: \5b8b\4f53;
+    font-size: 13px;
+    margin: 10px 0 0;
+    padding: 0 0 10px 15px
+}
+
+.bdlis_mid_bana .limban_find .limban_find_numb {
+    color: #f60;
+    font-family: \5b8b\4f53;
+    font-size: 12px;
+    font-weight: bold
+}
+
+.bd_lis_millde .bdlis_mid_bana ul {
+    float: right;
+    font-family: \5b8b\4f53;
+    font-size: 13px;
+    list-style: none outside none;
+    margin: 10px 0 0;
+    padding: 0;
+    position: relative;
+    z-index: 300
+}
+
+.bd_lis_millde .bdlis_mid_bana ul .limban_pax {
+    float: left;
+    line-height: 15px;
+    font-size: 13px
+}
+
+.bdlis_mid_bana ul li {
+    float: left;
+    margin: -3px 10px 0 0;
+    position: relative;
+    z-index: 1000
+}
+
+.bdlis_mid_bana ul li .limban_bord {
+    border: 1px solid #b3b3b3;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: \5b8b\4f53;
+    font-size: 12px;
+    height: 19px;
+    line-height: 19px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 128px;
+    z-index: 300
+}
+
+.bdlis_mid_bana ul li .limban_bord .limban_txt {
+    display: block;
+    float: left;
+    padding: 0 0 0 5px;
+    width: 100px;
+    font-size: 13px
+}
+
+.bdlis_mid_bana ul li .limban_bord .limban_icon {
+    float: right;
+    width: 17px;
+    background: url(http://pages.jinpu.com/images/Building_dish/ban_box_ps.gif) no-repeat scroll 0 1px
+}
+
+.bdlis_mid_bana ul li .limban_tcc {
+    background-color: #fff;
+    border: 1px solid #b3b3b3;
+    clear: both;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    width: 128px;
+    z-index: 9999
+}
+
+.bdlis_mid_bana ul li .limban_tcc li {
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    overflow: hidden;
+    width: 128px
+}
+
+.bdlis_mid_bana ul li .limban_tcc li a:hover {
+    background-color: #e0ebfc;
+    display: block
+}
+
+.bdlis_mid_bana ul li .limban_r_cen_num {
+    float: left;
+    line-height: 22px;
+    padding: 0 10px
+}
+
+.bdlis_mid_bana ul li .limban_r_cen {
+    margin: 0;
+    *margin: -1px 0 0 0;
+    _margin: 0
+}
+
+.bdlis_mid_bana ul li .limban_r_cen .limban_r_cen_im {
+    float: left;
+    line-height: 15px;
+    height: 22px
+}
+
+.bdlis_mid_bana ul li .limban_xyy {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #0041d9;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 14px;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 3px 0;
+    text-align: center;
+    width: 58px
+}
+
+.bdlis_mid_bana ul li .limban_xyy:hover {
+    background-color: #004199;
+    color: #fff;
+    text-decoration: none
+}
+
+.bd_lis_millde .bdlis_mid_cent {
+    float: left;
+    margin: 0;
+    width: 720px;
+    display: block
+}
+
+.bd_lis_millde .bdlis_mid_cent li {
+    border-bottom: 1px dashed #7a7a7a;
+    float: left;
+    position: relative;
+    width: 720px;
+    z-index: 100
+}
+
+.bd_lis_millde .bdlis_mid_cent li.over {
+    background: #fdf6e4;
+    border-bottom-style: solid
+}
+
+.bdlis_mid_cent li .bdl_mic_ps {
+    float: left;
+    height: 113px;
+    padding: 20px 15px 20px 10px;
+    width: 150px
+}
+
+.bdlis_mid_cent li .bdl_mic_ps img {
+    border: 1px solid #ddd;
+    width: 150px;
+    height: 113px
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj {
+    float: left;
+    padding: 18px 0;
+    width: 370px;
+    _width: 368px
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj h4 {
+    line-height: 20px;
+    margin: 0 0 7px 0;
+    *margin: 0 0 10px 0;
+    padding: 0
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj h4 a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj p {
+    font-size: 12px;
+    margin: 8px 0 0 0;
+    _margin: 6px 0 0 0;
+    *margin: 6px 0 0 0;
+    line-height: .8;
+    _line-height: 1.2;
+    *line-height: 1.2;
+    display: inline-block;
+    width: 380px;
+    _width: 360px;
+    color: #333
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj .bdl_det_l {
+    font-size: 12px;
+    float: left
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj .bdl_det_r {
+    font-size: 12px;
+    float: left;
+    margin: 0 0 0 26px
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj .bdl_options {
+    clear: both;
+    margin: 18px 0 0 0
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj .bdl_options a {
+    color: #335396;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-align: left
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj .bdl_options a:hover {
+    color: #f60
+}
+
+.bdl_mic_nrjj .bdl_options a b {
+    color: #c00;
+    font-weight: normal;
+    font-size: 12px
+}
+
+.bdlis_mid_cent li .bdl_mic_price {
+    float: right;
+    margin: 40px 10px 0 0;
+    text-align: left
+}
+
+.bdlis_mid_cent li .bdl_mic_price p {
+    color: #999;
+    font-size: 12px;
+    line-height: 25px
+}
+
+.bdlis_mid_cent li .bdl_mic_price p .price65 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f60;
+    font-weight: bold
+}
+
+.bdlis_mid_cent li .bdl_mic_price p span {
+    font-size: 12px;
+    color: #333
+}
+
+.building_list_cent .bl_cent_footl {
+    float: left;
+    line-height: 34px;
+    padding-left: 15px;
+    width: 250px
+}
+
+.building_list_cent .bl_cent_footl .bl_cent_footl_numb {
+    color: #f60;
+    font-weight: 700;
+    padding: 0 5px
+}
+
+.building_list_cent .bl_cent_footr {
+    float: right;
+    position: relative;
+    top: 8px;
+    width: 450px;
+    right: 10px
+}
+
+.building_list_cent .bl_cent_footr_page, .building_list_cent .dlfoot_last_page {
+    border: 1px solid #d6d6d6;
+    color: #0040d8;
+    display: block;
+    float: right;
+    margin: 0 1px;
+    padding: 3px;
+    font-size: 12px;
+    text-decoration: none;
+    width: 52px;
+    _width: 54px
+}
+
+.building_list_cent .bl_cent_footr_page img, .building_list_cent .foot_last_page img {
+    position: relative;
+    top: -1px
+}
+
+.building_list_cent .grey {
+    color: #999
+}
+
+.building_list_cent .bl_cent_footr_pages a {
+    padding: 3px 7px 3px 7px;
+    _padding: 4px 7px 4px 7px;
+    float: right;
+    text-decoration: none;
+    display: block;
+    color: #0040d8;
+    border: 1px solid #d6d6d6;
+    margin: 0 1px 0 1px
+}
+
+.grey {
+    color: #999
+}
+
+.building_list_cent .bl_cent_footr_pages .bl_cent_footr_current {
+    float: right;
+    color: #333;
+    padding: 4px 8px 4px 8px
+}
+
+.building_list_cent .bl_cent_footr a:hover {
+    background-color: #004199;
+    color: #fff;
+    text-decoration: none
+}
+
+.pag_cent_r {
+    float: right;
+    width: 234px;
+    margin-top: 10px
+}
+
+.pag_cent_r img {
+    background-color: #f1f8fe;
+    border: 1px solid #d6d6d6;
+    margin-top: 10px;
+    padding: 16px
+}
+
+.bdlis_mid_bana ul .mian a {
+    text-decoration: none;
+    color: #000;
+    width: 44px;
+    height: 21px;
+    color: #000;
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 0 0 0 8px;
+    margin: 0 80px 0 0
+}
+
+.bdlis_mid_bana ul .mian a:hover {
+    text-decoration: underline
+}
+
+.bdlis_mid_bana ul li .ban_r_cen_num {
+    float: left;
+    line-height: 22px;
+    padding: 0 10px 0 10px
+}
+
+.bdlis_mid_bana ul li .ban_xyy {
+    cursor: pointer;
+    width: 58px;
+    height: 14px;
+    _height: 16px;
+    color: #0041d9;
+    line-height: 16px;
+    padding: 3px 0;
+    _padding: 4px 0 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    overflow: hidden
+}
+
+.ban_r_cen .ban_xyy:hover {
+    background-color: #004199;
+    color: #fff;
+    text-decoration: none
+}
+
+.bdlis_mid_bana ul li .ban_xyy_1 {
+    cursor: pointer;
+    width: 58px;
+    height: 14px;
+    _height: 16px;
+    color: #0041d9;
+    line-height: 16px;
+    padding: 3px 0;
+    _padding: 4px 0 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    overflow: hidden
+}
+
+.all_pages {
+    float: right;
+    position: relative;
+    top: 8px;
+    width: 450px;
+    right: 10px
+}
+
+.foot_next_page, .foot_last_page {
+    font-family: Arial, Helvetica, \5b8b\4f53, sans-serif;
+    border: 1px solid #d6d6d6;
+    color: #0040d8;
+    display: block;
+    float: right;
+    margin: 0 1px;
+    padding: 3px;
+    text-decoration: none;
+    width: 52px;
+    _width: 56px
+}
+
+.foot_next_page img, .foot_last_page img {
+    position: relative;
+    top: -1px
+}
+
+.grey {
+    color: #999
+}
+
+.pages a {
+    padding: 3px 7px 3px 7px;
+    float: right;
+    text-decoration: none;
+    display: block;
+    color: #0040d8;
+    border: 1px solid #d6d6d6;
+    margin: 0 1px 0 1px;
+    font-family: Arial, Helvetica, \5b8b\4f53, sans-serif
+}
+
+.pages .current {
+    float: right;
+    color: #333;
+    padding: 4px 8px 4px 8px
+}
+
+.all_pages a:hover {
+    background-color: #004199;
+    color: #fff;
+    text-decoration: none
+}
+
+.pag_cent_r img {
+    background-color: #f1f8fe;
+    border: 1px solid #d6d6d6;
+    margin: 0 0 10px;
+    padding: 16px
+}
+
+.lis_ce_top_mil {
+    padding: 3px 15px 3px 3px
+}
+
+.lis_ce_top_mil a {
+    padding: 2px;
+    margin-right: 5px;
+    font-weight: normal
+}
+
+.lis_ce_top_mil a:hover {
+    background-color: #3b5999;
+    color: #fff
+}
+
+.lis_ce_top_mil .unlimited:hover {
+    background-color: #f00
+}
+
+.lis_ce_top_mil .unlimited:link, .lis_ce_top_mil .current_choose:unlimited, .lis_ce_top_mil .unlimited:active {
+    background-color: #3b5999;
+    color: #fff
+}
+
+.bdlis_mid_bana ul li .ban_r_cen span a {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url(http://pages.jinpu.com/images/web/last_page.gif) repeat-x 0 0
+}
+
+.bdlis_mid_bana ul li .ban_r_cen span a:hover {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: url(http://pages.jinpu.com/images/web/last_page_ls.gif) repeat-x 0 0
+}
+
+.search_block {
+    border: 1px solid #f28c08;
+    line-height: 20px;
+    margin: 0 10px 5px 45px;
+    padding: 5px;
+    width: 875px
+}
+
+.search_block_by_district {
+    border: 0;
+    margin: 10px 10px 5px 0;
+    padding: 0
+}
+
+.building_list tbody td {
+    border-bottom: 1px dashed #7a7a7a;
+    height: 92px
+}
+
+.building_list tbody .null_result {
+    padding: 40px 0 0 20px;
+    border-bottom: 0 none
+}
+
+.null_result p, .null_result li {
+    font-size: 14px;
+    line-height: 30px
+}
+
+.null_result ui {
+    margin: 0
+}
+
+.null_result li {
+    margin-left: 30px;
+    list-style: disc
+}
+
+.bdlis_mid_bana ul li .limban_tcc li a:link, .bdlis_mid_bana ul li .limban_tcc li a:visited {
+    border: 0 none;
+    color: #333;
+    display: block;
+    height: 20px;
+    line-height: 16px;
+    padding: 3px 0 0 5px;
+    text-decoration: none;
+    width: 123px
+}
+
+.box {
+    margin: 38px 0 0 -15px;
+    width: 690px;
+    background-color: #e7f0ff;
+    padding: 16px 0 0 13px;
+    height: 80px
+}
+
+.box h4 {
+    margin: 0 0 15px 0;
+    font-size: 14px
+}
+
+.box input {
+    width: 358px;
+    height: 30px;
+    border: 1px solid #999;
+    margin: 0 7px 15px 0;
+    padding: 0 0 0 10px;
+    color: #999;
+    *+float: left;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.box a {
+    width: 112px;
+    height: 28px;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    margin: 2px 0 0 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    background: url(http://pages.jinpu.com/images/web/lis_xzl.gif) no-repeat scroll transparent
+}
+
+.bord_lis {
+    width: 700px;
+    height: 240px;
+    border: 1px solid #ddd;
+    margin: 20px 0 0 -15px
+}
+
+.bord_lis h4 {
+    margin: 15px 0 15px 22px;
+    font-size: 14px
+}
+
+.bord_lis ul {
+    font-size: 12px
+}
+
+.bord_lis ul li {
+    list-style: none;
+    width: 170px;
+    margin: 0;
+    float: left
+}
+
+.bord_lis ul li p {
+    padding: 0;
+    color: #333;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.bord_lis .bo_li_ljz {
+    font-size: 12px
+}
+
+.bord_lis .box_tp {
+    border: 1px solid #ddd;
+    width: 120px;
+    height: 90px;
+    display: block;
+    margin-bottom: 8px
+}
+
+.bord_lis .box_lis_4 {
+    color: #f60;
+    margin: -5px 0 0 5px
+}
+
+.bord_lis ul li .price {
+    font-size: 12px
+}
+
+.bord_lis ul li .rent {
+    font-size: 12px
+}
+
+.bord_lis ul li .rent font, .bord_lis ul li .price font {
+    font-size: 12px
+}
+
+.recent_price {
+    color: #f60;
+    font-size: 12px
+}
+
+.list {
+    height: 49px;
+    line-height: 59px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    padding: 0 0 0 18px;
+    color: #343434
+}
+
+.list a {
+    font-weight: normal;
+    font-size: 13px;
+    color: #3a5a97;
+    padding: 0 0 0 20px
+}
+
+.lis_ce_top input {
+    width: 30px
+}
+
+#from_price {
+    width: 35px
+}
+
+#to_price {
+    width: 35px
+}
+
+.lis_ce_top form {
+    margin: 0;
+    padding: 0
+}
+
+.search_p {
+    float: left;
+    margin: 0;
+    line-height: 25px
+}
+
+.search_p_range {
+    line-height: 120%;
+    color: #0041d9;
+    float: left;
+    display: inline;
+    padding: 8px 0 0
+}
+
+.clear {
+    clear: both
+}
+
+.bdlis_mid_cent a:visited {
+    color: #55188a
+}
+
+.bdlis_mid_cent i {
+    font-style: normal;
+    color: #f60
+}
+
+.pdefault {
+    background: url(http://pages.jinpu.com/images/web/ban_zhtb.gif) no-repeat 0 -62px
+}
+
+.pup {
+    background: url(http://pages.jinpu.com/images/web/ban_zhtb.gif) no-repeat 0 -29px
+}
+
+.pdown {
+    background: url(http://pages.jinpu.com/images/web/ban_zhtb.gif) no-repeat 0 0
+}
+
+.pdownz {
+    background: url(http://pages.jinpu.com/images/web/ban_zhtbz.gif) no-repeat 0 0
+}
+
+.bdlis_mid_bana ul .price a {
+    text-decoration: none;
+    color: #000;
+    width: 44px;
+    height: 21px;
+    color: #000;
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 0 0 0 8px
+}
+
+.bdlis_mid_bana ul .price a:hover {
+    text-decoration: underline
+}
+
+.spread_link {
+    color: #999;
+    line-height: 23px;
+    position: absolute;
+    right: 10px;
+    top: 0
+}
+
+.se_1em, .se_15em, .se_2em, .se_25em, .se_3em, .se_35em, .se_4em, .se_5em, .se_6em {
+    border: 1px solid #ccc;
+    height: 1.2em;
+    padding: 0 2px
+}
+
+body .se_1em {
+    width: 1em
+}
+
+body .se_15em {
+    width: 1.5em
+}
+
+body .se_2em {
+    width: 2em
+}
+
+body .se_25em {
+    width: 2.5em
+}
+
+body .se_3em {
+    width: 3em
+}
+
+body .se_35em {
+    width: 3.5em
+}
+
+body .se_4em {
+    width: 4em
+}
+
+body .se_5em {
+    width: 5em
+}
+
+body .se_6em {
+    width: 6em
+}
+
+.filter-button, .pricerange_search {
+    margin: 0;
+    padding: 1px 0;
+    *padding: 0;
+    font-size: 11px;
+    border: 1px solid #333;
+    background-color: #ededed
+}
+
+.bdlis_mid_cent li .bdl_mic_nrjj p.new_prop_title {
+    line-height: 18px;
+    color: #F60
+}
+
+.foot_partner {
+    border-top: 1px solid #fff !important;
+    line-height: 22px;
+    padding: 12px 0 10px 0
+}
+
+.foot_partner li {
+    display: inline;
+    line-height: 18px;
+    _width: 90px
+}
+
+.footerLinkpack {
+    width: 970px;
+    PADDING-RIGHT: 5px 5px 1px 0;
+    PADDING-LEFT: 0;
+    FLOAT: left;
+    LINE-HEIGHT: 22px;
+    background-color: #f9f9f9
+}

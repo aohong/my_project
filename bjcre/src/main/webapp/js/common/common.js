@@ -1,5 +1,6 @@
 //window.onload=function(){
 //}
+//console.log(TEMP);
 
 $(document).ready(function(){
 	$(window.document.body).prepend($("<div />").load("/html/common/header.html"));
